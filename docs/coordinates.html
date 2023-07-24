@@ -109,14 +109,14 @@
 <p>位置は小文字の太字を用いて表される、実数3つのベクトルである。</p>
 <p>3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。</p>
 <p>縦ベクトルとして表すことが多い。</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{p} = [ x, y, z ]^{T}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} = [ \; x, \; y, \; z \;]^{T}\)</span></p>
 </section>
 <section id="id3">
 <h3>3次元の回転<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h3>
 <p>3次元の回転は、回転行列を用いて表すことができる。</p>
 <p>回転行列は3x3の行列で、基準座標系から見た回転された座標系列の
 x軸、y軸、z軸を列方向に並べたものである。</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{R} = [ \mathbf{x} \mathbf{y} \mathbf{z} ]\)</span></p>
+<p><span class="math notranslate nohighlight">\(\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]\)</span></p>
 <p>この行列は直交行列となっており、以下の
 行列の転置と逆行列が同値となる。</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1} = \mathbf{R}^{T}\)</span></p>
@@ -186,11 +186,13 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span>
 を取り出せる。</p>
 <p>以下、Tはcoordinateクラスのインスタンスである。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T</span><span class="o">.</span><span class="n">pos</span> <span class="c1">## 3次元位置</span>
-<span class="o">&gt;&gt;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span> <span class="c1">## 3次元位置</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">rot</span> <span class="c1">## 回転行列</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span> <span class="c1">## 回転行列</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span> <span class="c1">## 4x4同次変換行列</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotationAngle</span> <span class="c1">##</span>
 </pre></div>
 </div>
 </section>
@@ -199,46 +201,35 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 <p>以下、
 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>
 は3次元ベクトル (numpy.array) である。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id10">
 <h3>座標系を返すメソッド (座標系を変更しない)<a class="headerlink" href="#id10" title="この見出しへのパーマリンク"></a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id11">
 <h3>座標系を変更するメソッド<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 
-<span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>

@@ -17,7 +17,7 @@ Coordinates
 
 縦ベクトルとして表すことが多い。
 
-:math:`\mathbf{p} = [ x, y, z ]^{T}`
+:math:`\mathbf{p} = [ \; x, \; y, \; z \;]^{T}`
 
 ^^^^^^^^^^^
 3次元の回転
@@ -28,7 +28,7 @@ Coordinates
 回転行列は3x3の行列で、基準座標系から見た回転された座標系列の
 x軸、y軸、z軸を列方向に並べたものである。
 
-:math:`\mathbf{R} = [ \mathbf{x} \mathbf{y} \mathbf{z} ]`
+:math:`\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]`
 
 この行列は直交行列となっており、以下の
 行列の転置と逆行列が同値となる。
@@ -127,12 +127,13 @@ coordinates のプロパティとして、
 
 .. code-block:: python
 
-    T.pos ## 3次元位置
-    >>>
+    >>> T.pos ## 3次元位置
 
-    T.rot ## 回転行列
-    >>>
+    >>> T.rot ## 回転行列
 
+    >>> T.cnoidPosition ## 4x4同次変換行列
+
+    >>> T.rotationAngle ##
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 ベクトルを変換するメソッド
@@ -144,17 +145,13 @@ coordinates のプロパティとして、
 
 .. code-block:: python
 
-    T.rotate_vector(v)
-    >>>
+    >>> T.rotate_vector(v)
 
-    T.inverse_rotate_vector(v)
-    >>>
+    >>> T.inverse_rotate_vector(v)
 
-    T.transform_vector(v)
-    >>>
+    >>> T.transform_vector(v)
 
-    T.inverse_transform_vector(v)
-    >>>
+    >>> T.inverse_transform_vector(v)
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -163,11 +160,9 @@ coordinates のプロパティとして、
 
 .. code-block:: python
 
-    T.inverse_transformation()
-    >>>
+    >>> T.inverse_transformation()
 
-    T.transformation(A)
-    >>>
+    >>> T.transformation(A)
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,21 +171,15 @@ coordinates のプロパティとして、
 
 .. code-block:: python
 
-    T.newcoords(A)
-    >>>
+    >>> T.newcoords(A)
 
-    T.move_to(A)
-    >>>
+    >>> T.move_to(A)
 
-    T.translate(A)
-    >>>
+    >>> T.translate(A)
 
-    T.locate(A)
-    >>>
+    >>> T.locate(A)
 
-    T.transform(A)
-    >>>
-
+    >>> T.transform(A)
 
 ^^^^
 例題

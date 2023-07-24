@@ -49,7 +49,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Coordinates Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#cnoid-irslcoords-coordinates">cnoid.IRSLCoords.coordinates</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates"><code class="docutils literal notranslate"><span class="pre">coordinates</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.RPY"><code class="docutils literal notranslate"><span class="pre">coordinates.RPY</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.__init__"><code class="docutils literal notranslate"><span class="pre">coordinates.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.angleAxis"><code class="docutils literal notranslate"><span class="pre">coordinates.angleAxis</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.cnoidPosition"><code class="docutils literal notranslate"><span class="pre">coordinates.cnoidPosition</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.copy"><code class="docutils literal notranslate"><span class="pre">coordinates.copy()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.difference_position"><code class="docutils literal notranslate"><span class="pre">coordinates.difference_position()</span></code></a></li>
@@ -66,12 +68,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.orient"><code class="docutils literal notranslate"><span class="pre">coordinates.orient()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.orient_with_matrix"><code class="docutils literal notranslate"><span class="pre">coordinates.orient_with_matrix()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.pos"><code class="docutils literal notranslate"><span class="pre">coordinates.pos</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.quaternion"><code class="docutils literal notranslate"><span class="pre">coordinates.quaternion</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rot"><code class="docutils literal notranslate"><span class="pre">coordinates.rot</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rotNormalize"><code class="docutils literal notranslate"><span class="pre">coordinates.rotNormalize()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rotate"><code class="docutils literal notranslate"><span class="pre">coordinates.rotate()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rotate_vector"><code class="docutils literal notranslate"><span class="pre">coordinates.rotate_vector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rotate_with_matrix"><code class="docutils literal notranslate"><span class="pre">coordinates.rotate_with_matrix()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.rotationAngle"><code class="docutils literal notranslate"><span class="pre">coordinates.rotationAngle()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.setRPY"><code class="docutils literal notranslate"><span class="pre">coordinates.setRPY()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.setRotationAngle"><code class="docutils literal notranslate"><span class="pre">coordinates.setRotationAngle()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.toPosition"><code class="docutils literal notranslate"><span class="pre">coordinates.toPosition()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.transform"><code class="docutils literal notranslate"><span class="pre">coordinates.transform()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.transform_vector"><code class="docutils literal notranslate"><span class="pre">coordinates.transform_vector()</span></code></a></li>
@@ -145,7 +150,21 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cnoid.IRSLCoords.</span></span><span class="sig-name descname"><span class="pre">coordinates</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates" title="この定義へのパーマリンク"></a></dt>
-<dd><dl class="py method">
+<dd><dl class="py property">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.RPY">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RPY</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.RPY" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Rotation part of transformation ( RPY angle, real vector with 3 elements, roll [radian], pitch [radian], yaw [radian] )</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1x3 vector</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.__init__" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Overloaded function.</p>
@@ -158,6 +177,20 @@
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[4, 1]]) -&gt; None</p></li>
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous]) -&gt; None</p></li>
 </ol>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.angleAxis">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">angleAxis</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.angleAxis" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Rotation part of transformation ( Angle axis, real vector with 4 elements, ax, ay, az, rotation-angle [radian] )</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1x4 vector</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.array</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py property">
@@ -290,6 +323,20 @@
 </dd></dl>
 
 <dl class="py property">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.quaternion">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">quaternion</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.quaternion" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Rotation part of transformation ( quaternion, real vector with 4 elements, x, y, z, w )</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1x4 vector</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.rot">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rot</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.rot" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Rotation part of transformation ( Rotation matrix, 3x3 real matrix)</p>
@@ -336,6 +383,11 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.rotationAngle">
+<span class="sig-name descname"><span class="pre">rotationAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><span class="pre">cnoid.IRSLCoords.coordinates</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">4</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.rotationAngle" title="この定義へのパーマリンク"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.setRPY">
 <span class="sig-name descname"><span class="pre">setRPY</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.setRPY" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Overloaded function.</p>
@@ -344,6 +396,11 @@
 <li><p>setRPY(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: float, arg2: float) -&gt; None</p></li>
 </ol>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.setRotationAngle">
+<span class="sig-name descname"><span class="pre">setRotationAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><span class="pre">cnoid.IRSLCoords.coordinates</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">4</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><span class="pre">cnoid.IRSLCoords.coordinates</span></a></span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.setRotationAngle" title="この定義へのパーマリンク"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.toPosition">
