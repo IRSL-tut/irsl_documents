@@ -1,0 +1,11 @@
+recommonmark
+six
+Sphinx
+sphinx-markdown-tables
+sphinx-rtd-theme
+sphinx-autobuild
+livereload
+Jinja2
+numpy
+pyyaml
+rospkg
