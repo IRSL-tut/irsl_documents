@@ -24,3 +24,7 @@ irsl_choreonoid.draw_coords
 .. automodule:: irsl_choreonoid.draw_coords
     :members:
     :no-undoc-members:
+
+.. autoclass:: irsl_choreonoid.irsl_draw_object.coordsWrapper
+    :members:
+    :no-undoc-members:
