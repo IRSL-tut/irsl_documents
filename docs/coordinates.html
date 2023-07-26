@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coordinates &mdash; IRSL python modules  ドキュメント</title>
+  <title>Coordinates &mdash; IRSL python modules  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,11 +17,10 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-        <script src="_static/translations.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="検索" href="search.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="Choreonoid Python Module (Body)" href="module_cnoid_body.html" /> 
 </head>
 
@@ -101,18 +100,18 @@
            <div itemprop="articleBody">
              
   <section id="coordinates">
-<h1>Coordinates<a class="headerlink" href="#coordinates" title="この見出しへのパーマリンク"></a></h1>
+<h1>Coordinates<a class="headerlink" href="#coordinates" title="Permalink to this heading"></a></h1>
 <section id="id1">
-<h2>座標変換についての説明<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h2>
+<h2>座標変換についての説明<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
 <section id="id2">
-<h3>3次元位置<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h3>
+<h3>3次元位置<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <p>位置は小文字の太字を用いて表される、実数3つのベクトルである。</p>
 <p>3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。</p>
 <p>縦ベクトルとして表すことが多い。</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} = [ \; x, \; y, \; z \;]^{T}\)</span></p>
 </section>
 <section id="id3">
-<h3>3次元の回転<a class="headerlink" href="#id3" title="この見出しへのパーマリンク"></a></h3>
+<h3>3次元の回転<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <p>3次元の回転は、回転行列を用いて表すことができる。</p>
 <p>回転行列は3x3の行列で、基準座標系から見た回転された座標系列の
 x軸、y軸、z軸を列方向に並べたものである。</p>
@@ -125,11 +124,11 @@ x軸、y軸、z軸を列方向に並べたものである。</p>
 <p>情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。
 参考書を参照いただきたい。</p>
 <section id="angleaxis">
-<h4>軸回り回転(AngleAxis)<a class="headerlink" href="#angleaxis" title="この見出しへのパーマリンク"></a></h4>
+<h4>軸回り回転(AngleAxis)<a class="headerlink" href="#angleaxis" title="Permalink to this heading"></a></h4>
 </section>
 </section>
 <section id="id4">
-<h3>同時変換行列<a class="headerlink" href="#id4" title="この見出しへのパーマリンク"></a></h3>
+<h3>同時変換行列<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
 <p>3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、
 位置の3自由度と回転の3自由度で6自由度となっている。</p>
 <p>3次元での姿勢を表すのに、同次変換行列 T を用いる。
@@ -164,21 +163,21 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 \end{pmatrix}\end{split}\]</div>
 </section>
 <section id="id5">
-<h3>座標系<a class="headerlink" href="#id5" title="この見出しへのパーマリンク"></a></h3>
+<h3>座標系<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
 </section>
 <section id="id6">
-<h3>剛体リンクの座標系<a class="headerlink" href="#id6" title="この見出しへのパーマリンク"></a></h3>
+<h3>剛体リンクの座標系<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
 </section>
 </section>
 <section id="id7">
-<h2>座標系とcoordinatesの関係<a class="headerlink" href="#id7" title="この見出しへのパーマリンク"></a></h2>
+<h2>座標系とcoordinatesの関係<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
 <p>coordinatesクラス (cnoid.IRSLCoords.coordinates) は、
 同次変換行列の操作を行うためのクラスである。</p>
 <p>coordinatesクラスのインスタンスは、
 3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と
 3次元回転行列 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を持つ。</p>
 <section id="id8">
-<h3>回転行列と３次元位置の取り出し<a class="headerlink" href="#id8" title="この見出しへのパーマリンク"></a></h3>
+<h3>回転行列と３次元位置の取り出し<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
 <p>coordinates のプロパティとして、
 以下のように
 <span class="math notranslate nohighlight">\(\mathbf{p}\)</span>
@@ -197,7 +196,7 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 </div>
 </section>
 <section id="id9">
-<h3>ベクトルを変換するメソッド<a class="headerlink" href="#id9" title="この見出しへのパーマリンク"></a></h3>
+<h3>ベクトルを変換するメソッド<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
 <p>以下、
 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>
 は3次元ベクトル (numpy.array) である。</p>
@@ -212,7 +211,7 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 </div>
 </section>
 <section id="id10">
-<h3>座標系を返すメソッド (座標系を変更しない)<a class="headerlink" href="#id10" title="この見出しへのパーマリンク"></a></h3>
+<h3>座標系を返すメソッド (座標系を変更しない)<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
@@ -220,7 +219,7 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 </div>
 </section>
 <section id="id11">
-<h3>座標系を変更するメソッド<a class="headerlink" href="#id11" title="この見出しへのパーマリンク"></a></h3>
+<h3>座標系を変更するメソッド<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
@@ -234,11 +233,11 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 </div>
 </section>
 <section id="id12">
-<h3>例題<a class="headerlink" href="#id12" title="この見出しへのパーマリンク"></a></h3>
+<h3>例題<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
 </section>
 </section>
 <section id="id13">
-<h2>参考書<a class="headerlink" href="#id13" title="この見出しへのパーマリンク"></a></h2>
+<h2>参考書<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h2>
 <p>実践ロボット制御 <a class="reference external" href="https://www.ohmsha.co.jp/book/9784274224300/">https://www.ohmsha.co.jp/book/9784274224300/</a></p>
 <p>第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる</p>
 </section>
