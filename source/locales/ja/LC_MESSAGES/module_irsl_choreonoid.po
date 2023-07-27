@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"POT-Creation-Date: 2023-07-27 18:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: ../../module_irsl_choreonoid.rst:2
-msgid "irsl_choreonoid module"
+#: ../../module_irsl_choreonoid.rst:3
+msgid "Modules in irsl_choreonoid"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:6
-msgid "irsl_choreonoid.cnoid_util"
+#: ../../module_irsl_choreonoid.rst:5
+msgid "https://github.com/IRSL-tut/irsl_choreonoid"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:9
+msgid "module irsl_choreonoid.cnoid_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:11
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.parseURL:1 of
@@ -321,8 +331,14 @@ msgstr ""
 msgid "1x3 vector ( translation part of cPosition )"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:14
-msgid "irsl_choreonoid.robot_util"
+#: ../../module_irsl_choreonoid.rst:19
+msgid "module irsl_choreonoid.robot_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:21
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.make_coordinates:1 of
@@ -607,8 +623,14 @@ msgstr ""
 msgid "rootCoords stored while initialization"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:22
-msgid "irsl_choreonoid.draw_coords"
+#: ../../module_irsl_choreonoid.rst:29
+msgid "module irsl_choreonoid.draw_coords"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:31
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.DrawCoordsList:1 of
@@ -789,6 +811,26 @@ msgstr ""
 msgid "object to be removed"
 msgstr ""
 
+#: ../../module_irsl_choreonoid.rst:39
+msgid "class coordsWrapper"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:40
+msgid "Base class for using coordinates interactively."
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:42
+msgid ""
+"Inherited by class DrawCoordsListWrapped and class "
+"GeneralDrawInterfaceWrapped."
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:44
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py"
+msgstr ""
+
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
 msgid "class coordsWrapper(cnoid.IRSLCoords.coordinates)"
 msgstr ""
@@ -894,4 +936,16 @@ msgstr ""
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.target:3 of
 msgid "instance which have method 'T' to set cnoidPosition (4x4 matrix)"
 msgstr ""
+
+#~ msgid "irsl_choreonoid module"
+#~ msgstr ""
+
+#~ msgid "irsl_choreonoid.cnoid_util"
+#~ msgstr ""
+
+#~ msgid "irsl_choreonoid.robot_util"
+#~ msgstr ""
+
+#~ msgid "irsl_choreonoid.draw_coords"
+#~ msgstr ""
 

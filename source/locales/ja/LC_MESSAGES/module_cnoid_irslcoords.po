@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"POT-Creation-Date: 2023-07-27 18:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,29 @@ msgstr ""
 msgid "Coordinates Module"
 msgstr ""
 
-#: ../../module_cnoid_irslcoords.rst:7
-msgid "cnoid.IRSLCoords.coordinates"
+#: ../../module_cnoid_irslcoords.rst:5
+msgid ""
+"C++ source code: `C++ code <https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/include/irsl_choreonoid/Coordinates.h>`_"
 msgstr ""
 
-#: ../../module_cnoid_irslcoords.rst:12
+#: ../../module_cnoid_irslcoords.rst:7
+msgid ""
+"Python Binding (pybind11) : `pybind11 code <https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/pybind11/PyIRSLCoords.cpp>`_"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:11
+msgid "class cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:16
 msgid ""
 "coordinates for choreonoid Referring to "
 "https://github.com/euslisp/EusLisp/blob/master/doc/jlatex/jmanual.pdf"
 msgstr ""
 
-#: ../../module_cnoid_irslcoords.rst:15
+#: ../../module_cnoid_irslcoords.rst:19
 msgid "Usage and description, see :doc:`coordinates`"
 msgstr ""
 
@@ -439,8 +451,8 @@ msgstr ""
 msgid "1x3 vector, z-axis of rotation matrix (3rd column vector)"
 msgstr ""
 
-#: ../../module_cnoid_irslcoords.rst:19
-msgid "cnoid.IRSLCoords"
+#: ../../module_cnoid_irslcoords.rst:23
+msgid "module cnoid.IRSLCoords"
 msgstr ""
 
 #: ../../docstring cnoid.IRSLCoords:1 of
@@ -596,4 +608,10 @@ msgstr ""
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.rotationToQuaternion:1 of
 msgid "Converting rotation matrix to quaternion"
 msgstr ""
+
+#~ msgid "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid "cnoid.IRSLCoords"
+#~ msgstr ""
 

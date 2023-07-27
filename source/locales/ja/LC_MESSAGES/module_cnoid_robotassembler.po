@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 18:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_cnoid_robotassembler.rst:3
+msgid "RobotAssembler Modules"
+msgstr ""
+
+#: ../../module_cnoid_robotassembler.rst:7
+msgid "module cnoid.RobotAssembler"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:1
+#: cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:1
+#: cnoid.RobotAssembler.RobotAssemblerGeometry.Type:1 of
+msgid "Members:"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:3
+#: cnoid.RobotAssembler.RobotAssemblerGeometry.Type:3 of
+msgid "None"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:5 of
+msgid "Mesh"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:7 of
+msgid "Box"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:9 of
+msgid "Cylinder"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:11
+#: cnoid.RobotAssembler.RobotAssemblerGeometry.Type:11 of
+msgid "Sphere"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:13 of
+msgid "Cone"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:15 of
+msgid "Capsule"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:17 of
+msgid "Ellipsoid"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerGeometry.Type:19 of
+msgid "Dummy"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:3 of
+msgid "Parts"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:5 of
+msgid "Rotational"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:7 of
+msgid "Linear"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:9 of
+msgid "Fixed"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:13 of
+msgid "Plane"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:15 of
+msgid "Spherical"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:17 of
+msgid "Free"
+msgstr ""
+
+#: ../../docstring
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:19 of
+msgid "UNDEFINED"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:5 of
+msgid "IMU"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:7 of
+msgid "Acceleration"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:9 of
+msgid "RateGyro"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:11 of
+msgid "Touch"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:13 of
+msgid "Force"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:15 of
+msgid "Color"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:17 of
+msgid "Distance"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:19 of
+msgid "Camera"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:21 of
+msgid "Depth"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:23 of
+msgid "RGBD"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:25 of
+msgid "Ray"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:27 of
+msgid "Position"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:29 of
+msgid "Light"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:31 of
+msgid "PointLight"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:33 of
+msgid "SpotLight"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:35 of
+msgid "DegitalIO"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:37 of
+msgid "AnalogIO"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:1
+#: cnoid.RobotAssembler.PyCapsule.makeParts:1
+#: cnoid.RobotAssembler.PyCapsule.parts:1 of
+msgid "Overloaded function."
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.parts:3 of
+msgid ""
+"parts(self: cnoid.RobotAssembler.RobotAssemblerSettings, arg0: int) -> "
+"object"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.parts:5 of
+msgid ""
+"parts(self: cnoid.RobotAssembler.RobotAssemblerSettings, arg0: str) -> "
+"object"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:3 of
+msgid "__init__(self: cnoid.RobotAssembler.RoboasmUtil, arg0: str) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:5 of
+msgid ""
+"__init__(self: cnoid.RobotAssembler.RoboasmUtil, arg0: "
+"cnoid.RobotAssembler.RobotAssemblerSettings) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.makeParts:3 of
+msgid ""
+"makeParts(self: cnoid.RobotAssembler.RoboasmUtil, arg0: str) -> "
+"cnoid.RobotAssembler.RoboasmParts"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.makeParts:5 of
+msgid ""
+"makeParts(self: cnoid.RobotAssembler.RoboasmUtil, arg0: str, arg1: str) "
+"-> cnoid.RobotAssembler.RoboasmParts"
+msgstr ""
+

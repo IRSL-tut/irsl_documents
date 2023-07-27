@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"POT-Creation-Date: 2023-07-27 18:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: ../../module_irsl_choreonoid_ros.rst:2
-msgid "irsl_choreonoid_ros module"
+#: ../../module_irsl_choreonoid_ros.rst:3
+msgid "Modules in irsl_choreonoidros"
 msgstr ""
 
-#: ../../module_irsl_choreonoid_ros.rst:6
+#: ../../module_irsl_choreonoid_ros.rst:5
+msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:9
 msgid "irsl_choreonoid_ros.cnoid_ros_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:11
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/cnoid_ros_util.py"
 msgstr ""
 
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:1 of
@@ -54,8 +64,14 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: ../../module_irsl_choreonoid_ros.rst:14
+#: ../../module_irsl_choreonoid_ros.rst:19
 msgid "irsl_choreonoid_ros.RobotInterface"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:21
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
@@ -119,4 +135,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1 of
 msgid "Return instance of the robot model"
 msgstr ""
+
+#~ msgid "irsl_choreonoid_ros module"
+#~ msgstr ""
 

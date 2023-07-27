@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"POT-Creation-Date: 2023-07-27 18:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.11.0\n"
 
-#: ../../choreonoid.rst:5
+#: ../../choreonoid.rst:23
 msgid "Contents:"
 msgstr ""
 
 #: ../../choreonoid.rst:3
 msgid "Choreonoid"
+msgstr ""
+
+#: ../../choreonoid.rst:5
+msgid "Choreonoid:"
+msgstr ""
+
+#: ../../choreonoid.rst:7
+msgid "https://github.com/choreonoid/choreonoid"
+msgstr ""
+
+#: ../../choreonoid.rst:9
+msgid "Choreonod_ros:"
+msgstr ""
+
+#: ../../choreonoid.rst:11
+msgid "https://github.com/choreonoid/choreonoid_ros"
+msgstr ""
+
+#: ../../choreonoid.rst:14
+msgid "Choreonoid Manual:"
+msgstr ""
+
+#: ../../choreonoid.rst:16
+msgid "https://choreonoid.org/en/manuals/latest/index.html"
+msgstr ""
+
+#: ../../choreonoid.rst:21
+msgid "Modules in Choreonoid"
 msgstr ""
 
