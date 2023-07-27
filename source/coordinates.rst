@@ -1,61 +1,78 @@
-
 ===========
 Coordinates
 ===========
 
-**********************
-座標変換についての説明
-**********************
-
-^^^^^^^^^
-3次元位置
-^^^^^^^^^
-
-位置は小文字の太字を用いて表される、実数3つのベクトルである。
-
-3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。
-
-縦ベクトルとして表すことが多い。
-
-:math:`\mathbf{p} = [ \; x, \; y, \; z \;]^{T}`
+**************************
+Coordinate Transformations
+**************************
 
 ^^^^^^^^^^^
-3次元の回転
+3D Position
 ^^^^^^^^^^^
 
-3次元の回転は、回転行列を用いて表すことができる。
+The 3D position is a vector of three real numbers, represented using lower-case boldface letters.
 
-回転行列は3x3の行列で、基準座標系から見た回転された座標系列の
-x軸、y軸、z軸を列方向に並べたものである。
+The three elements represent positions on the x-, y-, and z-axis, respectively.
 
-:math:`\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]`
+It is often denoted as a vertical vector.
 
-この行列は直交行列となっており、以下の
-行列の転置と逆行列が同値となる。
+3D position :math:`\mathbf{p}` is denoted below.
 
-:math:`\mathbf{R}^{-1} = \mathbf{R}^{T}`
+.. math::
+   \mathbf{p} = [ \; x, \; y, \; z \;]^{T}
 
-3次元の回転の表し方としては、他に、
-ロール・ピッチ・ヨー角(RPY)、単位クォータニオン(quaternion)、軸回り回転(AngleAxis)、等がある。
+^^^^^^^^^^^
+3D Rotation
+^^^^^^^^^^^
 
-情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。
-参考書を参照いただきたい。
+Rotations in 3D can be represented using a rotation matrix.
 
-.....................
-軸回り回転(AngleAxis)
-.....................
+The rotation matrix is a 3x3 matrix.
+It is the x-, y-, and z-axis of the rotated coordinate series aligned in columns,
+as referenced from the original coordinate system.
+
+Rotation matrix :math:`\mathbf{R}` is denoted below.
+
+.. math::
+   \mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]
+
+Rotation matrix is an orthogonal matrix, which means that the transpose and inverse of the matrix are equival
+
+Inverse of a rotation matrix is denoted below.
+
+.. math::
+   \mathbf{R}^{-1} = \mathbf{R}^{T}
 
 
-^^^^^^^^^^^^
-同時変換行列
-^^^^^^^^^^^^
+Other ways to represent 3D rotations are
+Roll-Pitch-Yaw angle (RPY), Quaternion, AngleAxis, etc.
 
-3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、
-位置の3自由度と回転の3自由度で6自由度となっている。
+Although the degree of freedom (DOF) of rotation is 3,
+a rotation matrix that is easy to use in calculations,
+and a quaternion that has no singular points and is easy to interpolate are used.
 
-3次元での姿勢を表すのに、同次変換行列 T を用いる。
-T は 3次元位置ベクトル :math:`\mathbf{p}` と
-3次元回転行列 ::math:`\mathbf{R}` を用いて、以下のように4x4行列として表される。
+Please refer to the reference book.
+
+........................
+AngleAxis representation
+........................
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Homogeneous transformation matrix
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+6DOF-Position in 3D can be represented using 3D position and 3D rotation,
+with 3 DOF for position and 3 DOF for rotation,
+for a total of 6 DOF.
+
+The homogeneous transformation matrix
+is used to represent 6DOF-Position in 3D.
+
+The homogeneous transformation matrix T is represented as a 4x4 matrix
+using a 3D position vector :math:`\mathbf{p}`
+and a 3D rotation matrix :math:`\mathbf{R}` as follows.
 
 .. math::
    T = \begin{pmatrix}
@@ -63,7 +80,7 @@ T は 3次元位置ベクトル :math:`\mathbf{p}` と
    \mathbf{0}  & 1
    \end{pmatrix}
 
-T の逆行列は以下のようになる。
+The inverse matrix of T is as follows.
 
 .. math::
    T^{-1} = \begin{pmatrix}
@@ -71,7 +88,16 @@ T の逆行列は以下のようになる。
    \mathbf{0}  & 1
    \end{pmatrix}
 
-T の掛け算は、a, bを添え字として以下のようになる。
+The multiplication of :math:`\mathbf{T}_{a}`
+and :math:`\mathbf{T}_{b}` is as follows.
+
+.. math::
+   T_a \times T_b = \begin{pmatrix}
+   \mathbf{R}_a\mathbf{R}_b  & \mathbf{R}_a\mathbf{p}_b  + \mathbf{p}_a \\
+   \mathbf{0}  & 1
+   \end{pmatrix}
+
+where :math:`\mathbf{T}_{a}` and :math:`\mathbf{T}_{b}` are as follows.
 
 .. math::
    T_a = \begin{pmatrix}
@@ -85,109 +111,161 @@ T の掛け算は、a, bを添え字として以下のようになる。
    \mathbf{0}  & 1
    \end{pmatrix}
 
+^^^^^^^^^^^^^^^^^^^^^
+System of coordinates
+^^^^^^^^^^^^^^^^^^^^^
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Coordinate system of rigid body link
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+************************************************************
+Relation between system of coordinates and coordinates class
+************************************************************
+
+coordinates class (cnoid.IRSLCoords.coordinates)
+is a class for manipulating homogeneous transformation matrices.
+
+An instance of the coordinates class has
+3D position vector :math:`\mathbf{p}` and
+3D rotation matrix :math:`\mathbf{R}` .
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Access to a position and a rotation matrix
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:math:`\mathbf{p}` and :math:`\mathbf{R}` can be retrieved
+by accessing to properties of coordinates class.
+
+In the following, T is an instance of the coordinates class.
+
 .. math::
-   T_a \times T_b = \begin{pmatrix}
-   \mathbf{R}_a\mathbf{R}_b  & \mathbf{R}_a\mathbf{p}_b  + \mathbf{p}_a \\
+   T = \begin{pmatrix}
+   \mathbf{R}  & \mathbf{p} \\
    \mathbf{0}  & 1
    \end{pmatrix}
 
-^^^^^^
-座標系
-^^^^^^
+.. code-block:: python
 
-
-^^^^^^^^^^^^^^^^^^
-剛体リンクの座標系
-^^^^^^^^^^^^^^^^^^
-
-
-*************************
-座標系とcoordinatesの関係
-*************************
-
-coordinatesクラス (cnoid.IRSLCoords.coordinates) は、
-同次変換行列の操作を行うためのクラスである。
-
-coordinatesクラスのインスタンスは、
-3次元位置ベクトル :math:`\mathbf{p}` と
-3次元回転行列 :math:`\mathbf{R}` を持つ。
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-回転行列と３次元位置の取り出し
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-coordinates のプロパティとして、
-以下のように
-:math:`\mathbf{p}`
-と
-:math:`\mathbf{R}`
-を取り出せる。
-
-以下、Tはcoordinateクラスのインスタンスである。
+    >>> p = numpy.array([1, 2, 3])
+    >>> R = numpy.array([[0, -1, 0],[1, 0, 0], [0, 0, 1]])
+    >>> T = coordinates(v, R)
+    >>> T
+    <coordinates[address] 1 2 3 / 0 0 0.707107 0.707107 >
 
 .. code-block:: python
 
-    >>> T.pos ## 3次元位置
-
-    >>> T.rot ## 回転行列
-
-    >>> T.cnoidPosition ## 4x4同次変換行列
-
-    >>> T.rotationAngle ##
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-ベクトルを変換するメソッド
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-以下、
-:math:`\mathbf{v}`
-は3次元ベクトル (numpy.array) である。
+    >>> T.pos ## getting 3D position
+    array([1., 2., 3.])
 
 .. code-block:: python
 
+    >>> T.rot ## getting rotation-matrix
+    array([[ 0., -1.,  0.],
+           [ 1.,  0.,  0.],
+           [ 0.,  0.,  1.]])
+
+.. code-block:: python
+
+    >>> T.cnoidPosition ## getting 4x4 homogeneous transformation matrix
+    array([[ 0., -1.,  0.,  1.],
+           [ 1.,  0.,  0.,  2.],
+           [ 0.,  0.,  1.,  3.],
+           [ 0.,  0.,  0.,  1.]])
+
+.. code-block:: python
+
+    >>> T.quaternion ## getting quaternion
+    array([0.        , 0.        , 0.70710678, 0.70710678])
+
+.. code-block:: python
+
+    >>> T.RPY ## getting roll-pitch-yaw angle
+    array([ 0.        , -0.        ,  1.57079633])
+
+.. code-block:: python
+
+    >>> T.angleAxis ## getting angle-axis
+    array([0.        , 0.        , 1.        , 1.57079633])
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Methods to convert a vector
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the following,
+:math:`\mathbf{v}` is 3D vector (numpy.array).
+
+.. code-block:: python
+
+    >>> v = numpy.array([0.1, 0.2, 0.3])
     >>> T.rotate_vector(v)
+    array([-0.2,  0.1,  0.3])
+
+.. code-block:: python
 
     >>> T.inverse_rotate_vector(v)
 
+.. code-block:: python
+
     >>> T.transform_vector(v)
+
+.. code-block:: python
 
     >>> T.inverse_transform_vector(v)
 
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-座標系を返すメソッド (座標系を変更しない)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Methods to return a coordinate (not changing itself)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. math::
+   A = \begin{pmatrix}
+   \mathbf{R}_{a}  & \mathbf{p}_{a} \\
+   \mathbf{0}  & 1
+   \end{pmatrix}
 
 .. code-block:: python
 
     >>> T.inverse_transformation()
 
+.. code-block:: python
+
     >>> T.transformation(A)
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-座標系を変更するメソッド
+Methods to change itself
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
 
     >>> T.newcoords(A)
 
+.. code-block:: python
+
     >>> T.move_to(A)
+
+.. code-block:: python
 
     >>> T.translate(A)
 
+.. code-block:: python
+
     >>> T.locate(A)
+
+.. code-block:: python
 
     >>> T.transform(A)
 
-^^^^
-例題
-^^^^
+^^^^^^^^
+Examples
+^^^^^^^^
 
-******
-参考書
-******
+**************
+Reference book
+**************
 
 実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/
 
