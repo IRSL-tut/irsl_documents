@@ -17,6 +17,7 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -46,27 +47,17 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">irsl_choreonoid module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="choreonoid.html">Choreonoid</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Choreonoid Python Module (Body)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#module-cnoid.Body">cnoid.Body</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.DeviceList"><code class="docutils literal notranslate"><span class="pre">DeviceList()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.ForceSensorList"><code class="docutils literal notranslate"><span class="pre">ForceSensorList()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.getCustomJointPath"><code class="docutils literal notranslate"><span class="pre">getCustomJointPath()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#cnoid-body-body">cnoid.Body.Body</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.Body"><code class="docutils literal notranslate"><span class="pre">Body</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#cnoid-body-link">cnoid.Body.Link</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.Link"><code class="docutils literal notranslate"><span class="pre">Link</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#cnoid-body-device">cnoid.Body.Device</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cnoid.Body.Device"><code class="docutils literal notranslate"><span class="pre">Device</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="choreonoid.html#modules-in-choreonoid">Modules in Choreonoid</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Choreonoid Python Module (Body)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#module-cnoid.Body">cnoid.Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid-body-body">cnoid.Body.Body</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid-body-link">cnoid.Body.Link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid-body-device">cnoid.Body.Device</a></li>
 </ul>
 </li>
 </ul>
@@ -101,7 +92,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="choreonoid-python-module-body">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="choreonoid-python-module-body">
 <h1>Choreonoid Python Module (Body)<a class="headerlink" href="#choreonoid-python-module-body" title="Permalink to this heading"></a></h1>
 <section id="module-cnoid.Body">
 <span id="cnoid-body"></span><h2>cnoid.Body<a class="headerlink" href="#module-cnoid.Body" title="Permalink to this heading"></a></h2>

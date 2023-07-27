@@ -17,6 +17,7 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -45,9 +46,10 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">irsl_choreonoid module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coordinates.html">Coordinates</a></li>
 </ul>
@@ -76,39 +78,68 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-irsl-choreonoid-s-python-documentation">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="welcome-to-irsl-choreonoid-s-python-documentation">
 <h1>Welcome to irsl_choreonoid’s python documentation!<a class="headerlink" href="#welcome-to-irsl-choreonoid-s-python-documentation" title="Permalink to this heading"></a></h1>
+<p>Japanese version: <a class="reference external" href="ja/index.html">japanese_doc</a></p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid-irslcoords-coordinates">cnoid.IRSLCoords.coordinates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_cnoid_irslcoords.html#module-cnoid.IRSLCoords">cnoid.IRSLCoords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_cnoid_irslcoords.html#class-cnoid-irslcoords-coordinates">class cnoid.IRSLCoords.coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_cnoid_irslcoords.html#module-cnoid.IRSLCoords">module cnoid.IRSLCoords</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">irsl_choreonoid module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl_choreonoid.cnoid_util">irsl_choreonoid.cnoid_util</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl_choreonoid.robot_util">irsl_choreonoid.robot_util</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl_choreonoid.draw_coords">irsl_choreonoid.draw_coords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl-choreonoid-cnoid-util">module irsl_choreonoid.cnoid_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl-choreonoid-robot-util">module irsl_choreonoid.robot_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid.html#module-irsl-choreonoid-draw-coords">module irsl_choreonoid.draw_coords</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid_ros.html#module-irsl_choreonoid_ros.cnoid_ros_util">irsl_choreonoid_ros.cnoid_ros_util</a></li>
-<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid_ros.html#module-irsl_choreonoid_ros.RobotInterface">irsl_choreonoid_ros.RobotInterface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid_ros.html#irsl-choreonoid-ros-cnoid-ros-util">irsl_choreonoid_ros.cnoid_ros_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="module_irsl_choreonoid_ros.html#irsl-choreonoid-ros-robotinterface">irsl_choreonoid_ros.RobotInterface</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="module_cnoid_irslutil.html#module-cnoid.IRSLUtil">cnoid.IRSLUtil</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="module_cnoid_robotassembler.html#module-cnoid-robotassembler">module cnoid.RobotAssembler</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="module_cnoid_body.html">Choreonoid Python Module (Body)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="choreonoid.html#modules-in-choreonoid">Modules in Choreonoid</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="coordinates.html">Coordinates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="coordinates.html#id1">座標変換についての説明</a></li>
-<li class="toctree-l2"><a class="reference internal" href="coordinates.html#id7">座標系とcoordinatesの関係</a></li>
-<li class="toctree-l2"><a class="reference internal" href="coordinates.html#id13">参考書</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinates.html#coordinate-transformations">Coordinate Transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinates.html#relation-between-system-of-coordinates-and-coordinates-class">Relation between system of coordinates and coordinates class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coordinates.html#reference-book">Reference book</a></li>
 </ul>
 </li>
 </ul>

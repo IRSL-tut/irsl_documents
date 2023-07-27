@@ -17,7 +17,9 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -46,31 +48,32 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">irsl_choreonoid module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Coordinates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">座標変換についての説明</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">3次元位置</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">3次元の回転</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#angleaxis">軸回り回転(AngleAxis)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-transformations">Coordinate Transformations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#d-position">3D Position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-rotation">3D Rotation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#angleaxis-representation">AngleAxis representation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">同時変換行列</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">座標系</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">剛体リンクの座標系</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#homogeneous-transformation-matrix">Homogeneous transformation matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#system-of-coordinates">System of coordinates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coordinate-system-of-rigid-body-link">Coordinate system of rigid body link</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">座標系とcoordinatesの関係</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8">回転行列と３次元位置の取り出し</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">ベクトルを変換するメソッド</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">座標系を返すメソッド (座標系を変更しない)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id11">座標系を変更するメソッド</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id12">例題</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#relation-between-system-of-coordinates-and-coordinates-class">Relation between system of coordinates and coordinates class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#access-to-a-position-and-a-rotation-matrix">Access to a position and a rotation matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">Methods to convert a vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-not-changing-itself">Methods to return a coordinate (not changing itself)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-change-itself">Methods to change itself</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id13">参考書</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reference-book">Reference book</a></li>
 </ul>
 </li>
 </ul>
@@ -99,53 +102,95 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="coordinates">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="coordinates">
 <h1>Coordinates<a class="headerlink" href="#coordinates" title="Permalink to this heading"></a></h1>
-<section id="id1">
-<h2>座標変換についての説明<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<section id="id2">
-<h3>3次元位置<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
-<p>位置は小文字の太字を用いて表される、実数3つのベクトルである。</p>
-<p>3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。</p>
-<p>縦ベクトルとして表すことが多い。</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{p} = [ \; x, \; y, \; z \;]^{T}\)</span></p>
+<section id="coordinate-transformations">
+<h2>Coordinate Transformations<a class="headerlink" href="#coordinate-transformations" title="Permalink to this heading"></a></h2>
+<section id="d-position">
+<h3>3D Position<a class="headerlink" href="#d-position" title="Permalink to this heading"></a></h3>
+<p>The 3D position is a vector of three real numbers, represented using lower-case boldface letters.</p>
+<p>The three elements represent positions on the x-, y-, and z-axis, respectively.</p>
+<p>It is often denoted as a vertical vector.</p>
+<p>3D position <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> is denoted below.</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{p} = [ \; x, \; y, \; z \;]^{T}\]</div>
 </section>
-<section id="id3">
-<h3>3次元の回転<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
-<p>3次元の回転は、回転行列を用いて表すことができる。</p>
-<p>回転行列は3x3の行列で、基準座標系から見た回転された座標系列の
-x軸、y軸、z軸を列方向に並べたものである。</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]\)</span></p>
-<p>この行列は直交行列となっており、以下の
-行列の転置と逆行列が同値となる。</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1} = \mathbf{R}^{T}\)</span></p>
-<p>3次元の回転の表し方としては、他に、
-ロール・ピッチ・ヨー角(RPY)、単位クォータニオン(quaternion)、軸回り回転(AngleAxis)、等がある。</p>
-<p>情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。
-参考書を参照いただきたい。</p>
-<section id="angleaxis">
-<h4>軸回り回転(AngleAxis)<a class="headerlink" href="#angleaxis" title="Permalink to this heading"></a></h4>
+<section id="d-rotation">
+<h3>3D Rotation<a class="headerlink" href="#d-rotation" title="Permalink to this heading"></a></h3>
+<p>Rotations in 3D can be represented using a rotation matrix.</p>
+<p>The rotation matrix is a 3x3 matrix.
+It is the x-, y-, and z-axis of the rotated coordinate series aligned in columns,
+as referenced from the original coordinate system.</p>
+<p>Rotation matrix <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> is denoted below.</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]\]</div>
+<p>Rotation matrix is an orthogonal matrix, which means that the transpose and inverse of the matrix are equival</p>
+<p>Inverse of a rotation matrix is denoted below.</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{R}^{-1} = \mathbf{R}^{T}\]</div>
+<p>Other ways to represent 3D rotations are
+Roll-Pitch-Yaw angle (RPY), Quaternion, AngleAxis, etc.</p>
+<p>Although the degree of freedom (DOF) of rotation is 3,
+a rotation matrix that is easy to use in calculations,
+and a quaternion that has no singular points and is easy to interpolate are used.</p>
+<p>Please refer to the reference book.</p>
+<section id="angleaxis-representation">
+<h4>AngleAxis representation<a class="headerlink" href="#angleaxis-representation" title="Permalink to this heading"></a></h4>
 </section>
 </section>
-<section id="id4">
-<h3>同時変換行列<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
-<p>3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、
-位置の3自由度と回転の3自由度で6自由度となっている。</p>
-<p>3次元での姿勢を表すのに、同次変換行列 T を用いる。
-T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と
-3次元回転行列 :<span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を用いて、以下のように4x4行列として表される。</p>
+<section id="homogeneous-transformation-matrix">
+<h3>Homogeneous transformation matrix<a class="headerlink" href="#homogeneous-transformation-matrix" title="Permalink to this heading"></a></h3>
+<p>6DOF-Position in 3D can be represented using 3D position and 3D rotation,
+with 3 DOF for position and 3 DOF for rotation,
+for a total of 6 DOF.</p>
+<p>The homogeneous transformation matrix
+is used to represent 6DOF-Position in 3D.</p>
+<p>The homogeneous transformation matrix T is represented as a 4x4 matrix
+using a 3D position vector <span class="math notranslate nohighlight">\(\mathbf{p}\)</span>
+and a 3D rotation matrix <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> as follows.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T = \begin{pmatrix}
 \mathbf{R}  &amp; \mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
-<p>T の逆行列は以下のようになる。</p>
+<p>The inverse matrix of T is as follows.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T^{-1} = \begin{pmatrix}
 \mathbf{R}^{-1}  &amp; - \mathbf{R}^{-1}\mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
-<p>T の掛け算は、a, bを添え字として以下のようになる。</p>
+<p>The multiplication of <span class="math notranslate nohighlight">\(\mathbf{T}_{a}\)</span>
+and <span class="math notranslate nohighlight">\(\mathbf{T}_{b}\)</span> is as follows.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}T_a \times T_b = \begin{pmatrix}
+\mathbf{R}_a\mathbf{R}_b  &amp; \mathbf{R}_a\mathbf{p}_b  + \mathbf{p}_a \\
+\mathbf{0}  &amp; 1
+\end{pmatrix}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{T}_{a}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{T}_{b}\)</span> are as follows.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T_a = \begin{pmatrix}
 \mathbf{R}_a  &amp; \mathbf{p}_a \\
@@ -156,88 +201,125 @@ T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\ma
 \mathbf{R}_b  &amp; \mathbf{p}_b \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
+</section>
+<section id="system-of-coordinates">
+<h3>System of coordinates<a class="headerlink" href="#system-of-coordinates" title="Permalink to this heading"></a></h3>
+</section>
+<section id="coordinate-system-of-rigid-body-link">
+<h3>Coordinate system of rigid body link<a class="headerlink" href="#coordinate-system-of-rigid-body-link" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="relation-between-system-of-coordinates-and-coordinates-class">
+<h2>Relation between system of coordinates and coordinates class<a class="headerlink" href="#relation-between-system-of-coordinates-and-coordinates-class" title="Permalink to this heading"></a></h2>
+<p>coordinates class (cnoid.IRSLCoords.coordinates)
+is a class for manipulating homogeneous transformation matrices.</p>
+<p>An instance of the coordinates class has
+3D position vector <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> and
+3D rotation matrix <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> .</p>
+<section id="access-to-a-position-and-a-rotation-matrix">
+<h3>Access to a position and a rotation matrix<a class="headerlink" href="#access-to-a-position-and-a-rotation-matrix" title="Permalink to this heading"></a></h3>
+<p><span class="math notranslate nohighlight">\(\mathbf{p}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> can be retrieved
+by accessing to properties of coordinates class.</p>
+<p>In the following, T is an instance of the coordinates class.</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}T_a \times T_b = \begin{pmatrix}
-\mathbf{R}_a\mathbf{R}_b  &amp; \mathbf{R}_a\mathbf{p}_b  + \mathbf{p}_a \\
+\[\begin{split}T = \begin{pmatrix}
+\mathbf{R}  &amp; \mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
-</section>
-<section id="id5">
-<h3>座標系<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
-</section>
-<section id="id6">
-<h3>剛体リンクの座標系<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="id7">
-<h2>座標系とcoordinatesの関係<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h2>
-<p>coordinatesクラス (cnoid.IRSLCoords.coordinates) は、
-同次変換行列の操作を行うためのクラスである。</p>
-<p>coordinatesクラスのインスタンスは、
-3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と
-3次元回転行列 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を持つ。</p>
-<section id="id8">
-<h3>回転行列と３次元位置の取り出し<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
-<p>coordinates のプロパティとして、
-以下のように
-<span class="math notranslate nohighlight">\(\mathbf{p}\)</span>
-と
-<span class="math notranslate nohighlight">\(\mathbf{R}\)</span>
-を取り出せる。</p>
-<p>以下、Tはcoordinateクラスのインスタンスである。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span> <span class="c1">## 3次元位置</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span> <span class="c1">## 回転行列</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span> <span class="c1">## 4x4同次変換行列</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotationAngle</span> <span class="c1">##</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>
+<span class="go">&lt;coordinates[address] 1 2 3 / 0 0 0.707107 0.707107 &gt;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span> <span class="c1">## getting 3D position</span>
+<span class="go">array([1., 2., 3.])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span> <span class="c1">## getting rotation-matrix</span>
+<span class="go">array([[ 0., -1.,  0.],</span>
+<span class="go">       [ 1.,  0.,  0.],</span>
+<span class="go">       [ 0.,  0.,  1.]])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span> <span class="c1">## getting 4x4 homogeneous transformation matrix</span>
+<span class="go">array([[ 0., -1.,  0.,  1.],</span>
+<span class="go">       [ 1.,  0.,  0.,  2.],</span>
+<span class="go">       [ 0.,  0.,  1.,  3.],</span>
+<span class="go">       [ 0.,  0.,  0.,  1.]])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span> <span class="c1">## getting quaternion</span>
+<span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span> <span class="c1">## getting roll-pitch-yaw angle</span>
+<span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span> <span class="c1">## getting angle-axis</span>
+<span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
 </pre></div>
 </div>
 </section>
-<section id="id9">
-<h3>ベクトルを変換するメソッド<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
-<p>以下、
-<span class="math notranslate nohighlight">\(\mathbf{v}\)</span>
-は3次元ベクトル (numpy.array) である。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<section id="methods-to-convert-a-vector">
+<h3>Methods to convert a vector<a class="headerlink" href="#methods-to-convert-a-vector" title="Permalink to this heading"></a></h3>
+<p>In the following,
+<span class="math notranslate nohighlight">\(\mathbf{v}\)</span> is 3D vector (numpy.array).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="go">array([-0.2,  0.1,  0.3])</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
-<section id="id10">
-<h3>座標系を返すメソッド (座標系を変更しない)<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<section id="methods-to-return-a-coordinate-not-changing-itself">
+<h3>Methods to return a coordinate (not changing itself)<a class="headerlink" href="#methods-to-return-a-coordinate-not-changing-itself" title="Permalink to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{pmatrix}
+\mathbf{R}_{a}  &amp; \mathbf{p}_{a} \\
+\mathbf{0}  &amp; 1
+\end{pmatrix}\end{split}\]</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
-<section id="id11">
-<h3>座標系を変更するメソッド<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
+<section id="methods-to-change-itself">
+<h3>Methods to change itself<a class="headerlink" href="#methods-to-change-itself" title="Permalink to this heading"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-
-<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
-<section id="id12">
-<h3>例題<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
+<section id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h3>
 </section>
 </section>
-<section id="id13">
-<h2>参考書<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h2>
+<section id="reference-book">
+<h2>Reference book<a class="headerlink" href="#reference-book" title="Permalink to this heading"></a></h2>
 <p>実践ロボット制御 <a class="reference external" href="https://www.ohmsha.co.jp/book/9784274224300/">https://www.ohmsha.co.jp/book/9784274224300/</a></p>
 <p>第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる</p>
 </section>

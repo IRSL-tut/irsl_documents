@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>irsl_choreonoid module &mdash; IRSL python modules  documentation</title>
+  <title>Modules in irsl_choreonoid &mdash; IRSL python modules  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -17,10 +17,11 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="irsl_choreonoid_ros module" href="module_irsl_choreonoid_ros.html" />
+    <link rel="next" title="Modules in irsl_choreonoidros" href="module_irsl_choreonoid_ros.html" />
     <link rel="prev" title="Coordinates Module" href="module_cnoid_irslcoords.html" /> 
 </head>
 
@@ -46,8 +47,8 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">irsl_choreonoid module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-irsl_choreonoid.cnoid_util">irsl_choreonoid.cnoid_util</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules in irsl_choreonoid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-cnoid-util">module irsl_choreonoid.cnoid_util</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.parseURL"><code class="docutils literal notranslate"><span class="pre">parseURL()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.isInChoreonoid"><code class="docutils literal notranslate"><span class="pre">isInChoreonoid()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.loadRobot"><code class="docutils literal notranslate"><span class="pre">loadRobot()</span></code></a></li>
@@ -67,7 +68,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.cnoidTranslation"><code class="docutils literal notranslate"><span class="pre">cnoidTranslation()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-irsl_choreonoid.robot_util">irsl_choreonoid.robot_util</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-robot-util">module irsl_choreonoid.robot_util</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coordinates"><code class="docutils literal notranslate"><span class="pre">make_coordinates()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coords_dict"><code class="docutils literal notranslate"><span class="pre">make_coords_dict()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper"><code class="docutils literal notranslate"><span class="pre">IKWrapper</span></code></a><ul>
@@ -95,7 +96,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#module-irsl_choreonoid.draw_coords">irsl_choreonoid.draw_coords</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-draw-coords">module irsl_choreonoid.draw_coords</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.draw_coords.DrawCoordsList"><code class="docutils literal notranslate"><span class="pre">DrawCoordsList</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.DrawCoordsList.__init__"><code class="docutils literal notranslate"><span class="pre">DrawCoordsList.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.DrawCoordsList.count"><code class="docutils literal notranslate"><span class="pre">DrawCoordsList.count</span></code></a></li>
@@ -124,23 +125,17 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.removePyObject()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.updateTarget"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.updateTarget()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.setUpdateCallback"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.setUpdateCallback()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.newcoords()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.translate"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.translate()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.rotate()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.transform"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.transform()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper.target"><code class="docutils literal notranslate"><span class="pre">coordsWrapper.target</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#class-coordswrapper">class coordsWrapper</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a></li>
 <li class="toctree-l1"><a class="reference internal" href="coordinates.html">Coordinates</a></li>
 </ul>
@@ -159,7 +154,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">irsl_choreonoid module</li>
+      <li class="breadcrumb-item active">Modules in irsl_choreonoid</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/module_irsl_choreonoid.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -169,11 +164,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="irsl-choreonoid-module">
-<h1>irsl_choreonoid module<a class="headerlink" href="#irsl-choreonoid-module" title="Permalink to this heading"></a></h1>
-<section id="module-irsl_choreonoid.cnoid_util">
-<span id="irsl-choreonoid-cnoid-util"></span><h2>irsl_choreonoid.cnoid_util<a class="headerlink" href="#module-irsl_choreonoid.cnoid_util" title="Permalink to this heading"></a></h2>
-<dl class="py function">
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="modules-in-irsl-choreonoid">
+<h1>Modules in irsl_choreonoid<a class="headerlink" href="#modules-in-irsl-choreonoid" title="Permalink to this heading"></a></h1>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid">https://github.com/IRSL-tut/irsl_choreonoid</a></p>
+<section id="module-irsl-choreonoid-cnoid-util">
+<h2>module irsl_choreonoid.cnoid_util<a class="headerlink" href="#module-irsl-choreonoid-cnoid-util" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py</a></p>
+<span class="target" id="module-irsl_choreonoid.cnoid_util"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.parseURL">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">parseURL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.parseURL" title="Permalink to this definition"></a></dt>
 <dd><p>parse URL with IRSL original scheme</p>
@@ -448,9 +469,10 @@
 </dd></dl>
 
 </section>
-<section id="module-irsl_choreonoid.robot_util">
-<span id="irsl-choreonoid-robot-util"></span><h2>irsl_choreonoid.robot_util<a class="headerlink" href="#module-irsl_choreonoid.robot_util" title="Permalink to this heading"></a></h2>
-<dl class="py function">
+<section id="module-irsl-choreonoid-robot-util">
+<h2>module irsl_choreonoid.robot_util<a class="headerlink" href="#module-irsl-choreonoid-robot-util" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py</a></p>
+<span class="target" id="module-irsl_choreonoid.robot_util"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coordinates">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coordinates" title="Permalink to this definition"></a></dt>
 <dd><p>Generating coordinates(cnoid.IRSLCoords.coordinates) from dictionary</p>
@@ -833,9 +855,10 @@ list[float] : weight of joints</p>
 </dd></dl>
 
 </section>
-<section id="module-irsl_choreonoid.draw_coords">
-<span id="irsl-choreonoid-draw-coords"></span><h2>irsl_choreonoid.draw_coords<a class="headerlink" href="#module-irsl_choreonoid.draw_coords" title="Permalink to this heading"></a></h2>
-<dl class="py class">
+<section id="module-irsl-choreonoid-draw-coords">
+<h2>module irsl_choreonoid.draw_coords<a class="headerlink" href="#module-irsl-choreonoid-draw-coords" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py</a></p>
+<span class="target" id="module-irsl_choreonoid.draw_coords"></span><dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.draw_coords.</span></span><span class="sig-name descname"><span class="pre">DrawCoordsList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([1,</span> <span class="pre">0,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsList" title="Permalink to this definition"></a></dt>
 <dd><p>Drawing list of coordinates</p>
@@ -1089,6 +1112,11 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 
 </dd></dl>
 
+<section id="class-coordswrapper">
+<h3>class coordsWrapper<a class="headerlink" href="#class-coordswrapper" title="Permalink to this heading"></a></h3>
+<p>Base class for using coordinates interactively.</p>
+<p>Inherited by class DrawCoordsListWrapped and class GeneralDrawInterfaceWrapped.</p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.irsl_draw_object.coordsWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.irsl_draw_object.</span></span><span class="sig-name descname"><span class="pre">coordsWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="Permalink to this definition"></a></dt>
@@ -1229,13 +1257,14 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 
 </section>
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="module_cnoid_irslcoords.html" class="btn btn-neutral float-left" title="Coordinates Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="module_irsl_choreonoid_ros.html" class="btn btn-neutral float-right" title="irsl_choreonoid_ros module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="module_irsl_choreonoid_ros.html" class="btn btn-neutral float-right" title="Modules in irsl_choreonoidros" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
