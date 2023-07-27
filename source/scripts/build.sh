@@ -21,6 +21,7 @@ if [ -n "${_DO_COPY}" ]; then
     git checkout gh-pages
     echo "#### COPY ####"
     cp -r _build/html/. ../docs
+    mkdir -p ../docs/ja
     cp -r ja_build/html/. ../docs/ja
 
     echo "#### WARNING: branch might be changed ( ./reset.sh ) ####"
