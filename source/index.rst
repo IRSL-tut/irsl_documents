@@ -7,6 +7,11 @@
 Welcome to irsl_choreonoid's python documentation!
 --------------------------------------------------
 
+Japanese version: japanese_doc_
+
+.. _japanese_doc: ja/index.html
+.. _english_doc: ../index.html
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

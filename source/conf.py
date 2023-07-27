@@ -33,8 +33,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', 'README.md']
 
 language = 'en'
 ## with locale
-#gettext_compact = False
-#locale_dir = [ 'locale/' ]
+gettext_compact = False
+locale_dir = [ 'locale/' ]
 #make gettext
 #sphinx-intl update -p build/gettext -l ja
 #make html -e SPHINXOPTS='-D language="ja"'
