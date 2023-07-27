@@ -1,10 +1,14 @@
-
+==================
 Coordinates Module
 ==================
 
-****************************
-cnoid.IRSLCoords.coordinates
-****************************
+C++ source code: `C++ code <https://github.com/IRSL-tut/irsl_choreonoid/blob/main/include/irsl_choreonoid/Coordinates.h>`_
+
+Python Binding (pybind11) : `pybind11 code <https://github.com/IRSL-tut/irsl_choreonoid/blob/main/pybind11/PyIRSLCoords.cpp>`_
+
+**********************************
+class cnoid.IRSLCoords.coordinates
+**********************************
 
 .. autoclass:: cnoid.IRSLCoords.coordinates
     :members:
@@ -14,9 +18,9 @@ cnoid.IRSLCoords.coordinates
 
     Usage and description, see :doc:`coordinates`
 
-****************
-cnoid.IRSLCoords
-****************
+***********************
+module cnoid.IRSLCoords
+***********************
 
 .. automodule:: cnoid.IRSLCoords
     :members:

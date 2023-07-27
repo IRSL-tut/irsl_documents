@@ -23,6 +23,12 @@ Japanese version: japanese_doc_
    ./choreonoid.rst
    ./coordinates.rst
 
+.. .. toctree::
+..    :caption: Samples:
+..
+..   ./cnoid_ik.org2.ipynb
+
+
 ------------------
 Indices and tables
 ------------------
@@ -31,3 +37,4 @@ Indices and tables
 * :ref:`modindex`
 
 .. * :ref:`search`
+
