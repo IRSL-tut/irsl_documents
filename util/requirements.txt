@@ -5,6 +5,7 @@ sphinx-markdown-tables
 sphinx-rtd-theme
 sphinx-autobuild
 sphinx-intl
+nbsphinx
 livereload
 Jinja2
 numpy

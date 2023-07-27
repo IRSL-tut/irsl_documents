@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.autosummary',
     'sphinx.ext.githubpages',
+    'nbsphinx'
 ]
 autosummary_generate = True
 templates_path = ['_templates']

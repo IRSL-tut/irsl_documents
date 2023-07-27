@@ -1,4 +1,7 @@
 ### install sphinx
+
+sudo apt install pandoc
+
 cd utils
 
 python3 -m pip install virtualenv
