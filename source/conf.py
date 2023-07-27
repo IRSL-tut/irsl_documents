@@ -30,7 +30,7 @@ templates_path = ['_templates']
 source_parsers = {
     '.md': CommonMarkParser,
 }
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', 'README.md', 'scripts']
+exclude_patterns = ['_build', 'ja_build', 'Thumbs.db', '.DS_Store', 'venv', 'README.md', 'scripts', 'locales']
 
 language = 'en'
 ## with locale
