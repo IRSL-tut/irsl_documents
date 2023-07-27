@@ -20,6 +20,7 @@ Japanese version: japanese_doc_
    ./module_irsl_choreonoid.rst
    ./module_irsl_choreonoid_ros.rst
    ./module_cnoid_irslutil.rst
+   ./module_cnoid_robotassembler.rst
    ./choreonoid.rst
    ./coordinates.rst
 
@@ -37,4 +38,3 @@ Indices and tables
 * :ref:`modindex`
 
 .. * :ref:`search`
-
