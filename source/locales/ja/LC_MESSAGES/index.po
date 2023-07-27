@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 09:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../index.rst:15
+msgid "Contents:"
+msgstr ""
+
+#: ../../index.rst:8
+msgid "Welcome to irsl_choreonoid's python documentation!"
+msgstr ""
+
+#: ../../index.rst:10
+msgid "Japanese version: japanese_doc_"
+msgstr "English version: english_doc_"
+
+#: ../../index.rst:28
+msgid "Indices and tables"
+msgstr ""
+
+#: ../../index.rst:30
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:31
+msgid ":ref:`modindex`"
+msgstr ""
+
+#~ msgid "Japanease version: japanease_doc_"
+#~ msgstr ""
+

@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_cnoid_body.rst:3
+msgid "Choreonoid Python Module (Body)"
+msgstr ""
+
+#: ../../module_cnoid_body.rst:7
+msgid "cnoid.Body"
+msgstr ""
+
+#: ../../docstring cnoid.Body:1 of
+msgid "Choreonoid Body module"
+msgstr ""
+
+#: ../../module_cnoid_body.rst:15
+msgid "cnoid.Body.Body"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.__init__:1
+#: cnoid.Body.PyCapsule.getInfo:1 cnoid.Body.PyCapsule.getLink:1
+#: cnoid.Body.PyCapsule.joint:1 cnoid.Body.PyCapsule.link:1
+#: cnoid.Body.PyCapsule.resetJointSpecificName:1
+#: cnoid.Body.PyCapsule.setMaterial:1 cnoid.Body.PyCapsule.setOffsetRotation:1
+#: cnoid.Body.PyCapsule.setRotation:1 of
+msgid "Overloaded function."
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.__init__:3 of
+msgid "__init__(self: cnoid.Body.Body) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.__init__:5 of
+msgid "__init__(self: cnoid.Body.Body, arg0: str) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getLink:3 of
+msgid "getLink(self: cnoid.Body.Body, arg0: int) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getLink:5 of
+msgid "getLink(self: cnoid.Body.Body, arg0: str) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.joint:3 of
+msgid "joint(self: cnoid.Body.Body, arg0: int) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.joint:5 of
+msgid "joint(self: cnoid.Body.Body, arg0: str) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.link:3 of
+msgid "link(self: cnoid.Body.Body, arg0: int) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.link:5 of
+msgid "link(self: cnoid.Body.Body, arg0: str) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.resetJointSpecificName:3 of
+msgid "resetJointSpecificName(self: cnoid.Body.Body, arg0: cnoid::Link) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.resetJointSpecificName:5 of
+msgid ""
+"resetJointSpecificName(self: cnoid.Body.Body, arg0: cnoid::Link, arg1: "
+"str) -> None"
+msgstr ""
+
+#: ../../module_cnoid_body.rst:23
+msgid "cnoid.Body.Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:1 cnoid.Body.Link.StateFlag:1 of
+msgid "Members:"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:3 of
+msgid "RevoluteJoint"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:5 of
+msgid "PrismaticJoint"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:7 of
+msgid "FreeJoint"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:9 of
+msgid "FixedJoint"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:11 of
+msgid "PseudoContinuousTrackJoint"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:13 of
+msgid "ROTATIONAL_JOINT"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:15 of
+msgid "SLIDE_JOINT"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:17 of
+msgid "FREE_JOINT"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:19 of
+msgid "FIXED_JOINT"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:3 of
+msgid "StateNone"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:5 of
+msgid "JointDisplacement"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:7 of
+msgid "JointAngle"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:9 of
+msgid "JointVelocity"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:11 of
+msgid "JointAcceleration"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:13 of
+msgid "JointEffort"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:15 of
+msgid "JointForce"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:17 of
+msgid "JointTorque"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:19 of
+msgid "LinkPosition"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:21 of
+msgid "LinkTwist"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:23 of
+msgid "LinkExtWrench"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.StateFlag:25 of
+msgid "LinkContactState"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getInfo:3 of
+msgid "getInfo(self: cnoid.Body.Link, arg0: str, arg1: object) -> object"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getInfo:5 of
+msgid "getInfo(self: cnoid.Body.Link) -> cnoid.Util.Mapping"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setMaterial:3 of
+msgid "setMaterial(self: cnoid.Body.Link, arg0: int) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setMaterial:5 of
+msgid "setMaterial(self: cnoid.Body.Link, arg0: str) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setOffsetRotation:3 of
+msgid ""
+"setOffsetRotation(self: cnoid.Body.Link, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setOffsetRotation:5 of
+msgid ""
+"setOffsetRotation(self: cnoid.Body.Link, arg0: cnoid.Util.AngleAxis) -> "
+"None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setRotation:3 of
+msgid ""
+"setRotation(self: cnoid.Body.Link, arg0: numpy.ndarray[numpy.float64[3, "
+"3], flags.c_contiguous]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.setRotation:5 of
+msgid "setRotation(self: cnoid.Body.Link, arg0: cnoid.Util.AngleAxis) -> None"
+msgstr ""
+
+#: ../../module_cnoid_body.rst:31
+msgid "cnoid.Body.Device"
+msgstr ""
+

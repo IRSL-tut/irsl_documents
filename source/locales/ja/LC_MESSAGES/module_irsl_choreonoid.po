@@ -1,0 +1,897 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_irsl_choreonoid.rst:2
+msgid "irsl_choreonoid module"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:6
+msgid "irsl_choreonoid.cnoid_util"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:1 of
+msgid "parse URL with IRSL original scheme"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_util.cnoidPosition
+#: irsl_choreonoid.cnoid_util.cnoidRotation
+#: irsl_choreonoid.cnoid_util.cnoidTranslation
+#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
+#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
+#: irsl_choreonoid.cnoid_util.isInChoreonoid
+#: irsl_choreonoid.cnoid_util.loadProject irsl_choreonoid.cnoid_util.loadRobot
+#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.cnoid_util.removeItem
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
+#: irsl_choreonoid.draw_coords.DrawCoordsList.clear
+#: irsl_choreonoid.draw_coords.DrawCoordsList.flush
+#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setLineWidth
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setOrigin
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setUpdateCallback
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.updateTarget
+#: irsl_choreonoid.robot_util.IKWrapper.__init__
+#: irsl_choreonoid.robot_util.IKWrapper.addNoise
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector
+#: irsl_choreonoid.robot_util.IKWrapper.flush
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
+#: irsl_choreonoid.robot_util.IKWrapper.resetPose
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints
+#: irsl_choreonoid.robot_util.IKWrapper.updateDefault
+#: irsl_choreonoid.robot_util.make_coordinates
+#: irsl_choreonoid.robot_util.make_coords_dict of
+msgid "Parameters"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:3 of
+msgid "url [ url is like 'scheme://netloc/xxx/yyy/zzz' ]"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_util.cnoidPosition
+#: irsl_choreonoid.cnoid_util.cnoidRotation
+#: irsl_choreonoid.cnoid_util.cnoidTranslation
+#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
+#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
+#: irsl_choreonoid.cnoid_util.isInChoreonoid
+#: irsl_choreonoid.cnoid_util.loadRobot
+#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
+#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
+#: irsl_choreonoid.robot_util.IKWrapper.current_joints
+#: irsl_choreonoid.robot_util.IKWrapper.default_coords
+#: irsl_choreonoid.robot_util.IKWrapper.default_joints
+#: irsl_choreonoid.robot_util.IKWrapper.default_pose
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
+#: irsl_choreonoid.robot_util.IKWrapper.resetPose
+#: irsl_choreonoid.robot_util.IKWrapper.robot
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
+#: irsl_choreonoid.robot_util.IKWrapper.tip_link
+#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.make_coordinates
+#: irsl_choreonoid.robot_util.make_coords_dict of
+msgid "Returns"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:6 of
+msgid "absolute path"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_util.cnoidPosition
+#: irsl_choreonoid.cnoid_util.cnoidRotation
+#: irsl_choreonoid.cnoid_util.cnoidTranslation
+#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
+#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
+#: irsl_choreonoid.cnoid_util.isInChoreonoid
+#: irsl_choreonoid.cnoid_util.loadRobot
+#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
+#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
+#: irsl_choreonoid.robot_util.IKWrapper.current_joints
+#: irsl_choreonoid.robot_util.IKWrapper.default_coords
+#: irsl_choreonoid.robot_util.IKWrapper.default_joints
+#: irsl_choreonoid.robot_util.IKWrapper.default_pose
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
+#: irsl_choreonoid.robot_util.IKWrapper.resetPose
+#: irsl_choreonoid.robot_util.IKWrapper.robot
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
+#: irsl_choreonoid.robot_util.IKWrapper.tip_link
+#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.make_coordinates
+#: irsl_choreonoid.robot_util.make_coords_dict of
+msgid "Return type"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:10
+#: irsl_choreonoid.robot_util.make_coordinates:12
+#: irsl_choreonoid.robot_util.make_coords_dict:10 of
+msgid "Examples"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.isInChoreonoid:3 of
+msgid "True if this script running on python-console of Choreonoid"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobot:1 of
+msgid "Loading robot model (.body, .vrml, .urdf??)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobot:3 of
+msgid "filename of robot-model"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobot:6 of
+msgid "instance of cnoid.Body.Body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadProject:1 of
+msgid "Loading project file (currend project may be changed)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadProject:3 of
+msgid "filename of project file (.cnoid)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.getItemTreeView:1 of
+msgid "DEPRECATED: use cnoid.Base.ItemTreeView.instance"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.getRootItem:1 of
+msgid "DEPRECATED: use cnoid.Base.RootItem.instance"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.getWorld:1 of
+msgid "Getting or creating WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.getWorld:3 of
+msgid "name of WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.getWorld:6 of
+msgid "added or found WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator:1 of
+msgid "Adding SimulatorItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator:3 of
+msgid "world item, simulator should be created under this world"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator:5 of
+msgid "name of SimulatorItem to be added"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.addSimulator:8 of
+msgid "Added SimulatorItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobotItem:1 of
+msgid "Load robot model and add it as a BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobotItem:3 of
+msgid "filename (or path)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobotItem:5 of
+msgid "name of loaded robot-model"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobotItem:7 of
+msgid "if True, WorldItem is added"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobotItem:10 of
+msgid "Loaded robot-model"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findItem:1 irsl_choreonoid.cnoid_util.findItems:1
+#: of
+msgid "Finding item in ItemTreeView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findItem:3 irsl_choreonoid.cnoid_util.findItems:3
+#: of
+msgid "name of item to be searched"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findItem:6 of
+msgid "found item (first one)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findItems:6 of
+msgid "all found items which has the name"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.removeItem:1 of
+msgid "Removing item"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.removeItem:3 of
+msgid "item to be removed"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findBodyItem:1 of
+msgid "Seaching BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findBodyItem:3 of
+msgid ""
+"If type is str, searching BodyItem with the same name. If type is body, "
+"searching BodyItem which has identical body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findBodyItem:6 of
+msgid "found BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.findRobot:1 of
+msgid "DEPRECATED: use findBodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidPosition:1 of
+msgid "Concatnating translation part and rotation part"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidPosition:3 of
+msgid "1x3 vector"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidPosition:5 of
+msgid "3x3 matrix"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidPosition:8
+#: irsl_choreonoid.cnoid_util.cnoidRotation:3
+#: irsl_choreonoid.cnoid_util.cnoidTranslation:3 of
+msgid "4x4 homogeneous transformation matrix"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidRotation:1 of
+msgid "Extracting rotation part of 4x4 matrix"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidRotation:6 of
+msgid "3x3 matrix ( rotation part of cPosition )"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidTranslation:1 of
+msgid "Extracting translation part of 4x4 matrix"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.cnoidTranslation:6 of
+msgid "1x3 vector ( translation part of cPosition )"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:14
+msgid "irsl_choreonoid.robot_util"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coordinates:1 of
+msgid "Generating coordinates(cnoid.IRSLCoords.coordinates) from dictionary"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coordinates:3 of
+msgid "dictionary of describing transformation"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coordinates:6 of
+msgid "generated coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coordinates of
+msgid "Raises"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coords_dict:1 of
+msgid "Generating dictonary describing transformation"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coords_dict:3 of
+msgid "Transformation"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coords_dict:6 of
+msgid "Dictonary can be used by make_coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper:1 of
+msgid "Utility class for solving inverse-kinematics"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:1 of
+msgid "robot model using this instance"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:3 of
+msgid "name or instance of tip_link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:5 of
+msgid "coordinates of end-effector relative to tip_link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:7
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints:3 of
+msgid "list of joint name, index or instance"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:9 of
+msgid "type of solver"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:14 of
+msgid "Coordinates system"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:16 of
+msgid ""
+"world -> robot(root_link) -> (using joints) -> tip_link -> tip_to_eef -> "
+"end-effector < -- > target-coords(world)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.__init__:18 of
+msgid ""
+"Inverse-kinematics would be solved to make target-coords and end-effector"
+" at the same position."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.flush:1 of
+msgid "Updating robot model"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.updateDefault:1 of
+msgid "Updating default values (using joints, default_pose, default_coords)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector:1 of
+msgid "Returns current endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector:3 of
+msgid "ignored"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.endEffector:6 of
+msgid "coordinates of current end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:1 of
+msgid "resetJointWeights(self):"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:3 of
+msgid "Args:"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:5 of
+msgid "Returns:"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints:1 of
+msgid "Adding or removing joints to/from using joint-list"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints:5 of
+msgid "if True, joints are added, else joint are removed from using joint-list"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:1 of
+msgid "Top method to solve inverse-kinematics"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:3 of
+msgid "target coordinates of inverse-kinematics"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:5 of
+msgid ""
+"if True, no modification (moving joint and root-link) to robot-model when"
+" calculation of IK is failed"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:7 of
+msgid "number of retrying solving IK"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:9 of
+msgid "'6D', 'position', 'rotation', 'xyzRPY'"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:11 of
+msgid "weight of constraint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:13 of
+msgid "'2D', 'planer', 'position', 'rotation'"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:15 of
+msgid "weight of base movement"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:17 of
+msgid "number of iteration"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:19 of
+msgid "threshold for checking convergence"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:21 of
+msgid "if True or number, adding noise to angle of joint before solving IK"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:23 of
+msgid "if True, printing debug message"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:26 of
+msgid "IK was success or not, and total count of calculation"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:31 of
+msgid "constraint : [1,1,1, 1,1,1] base_type : [1,1,1, 1,1,1]"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector:1 of
+msgid ""
+"Returning current joint angle of self.robot "
+"ロボット(self.robot)への関節角度の指定して現状の値を返す。"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector:4
+#: irsl_choreonoid.robot_util.IKWrapper.default_pose:3 of
+msgid "1 x len(self.default_joints) vector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.angleVector:9 of
+msgid ""
+"1 x len(self.default_joints) vector "
+"現在のロボットの状態で、各エレメントが関節角度になっているvector(numpy.array)。要素数はself.default_jointと同じ。"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector:1 of
+msgid "Returning current joint angle of self.robot"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector:3
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector:6 of
+msgid "1 x len(self.current_joints) vector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector:9 of
+msgid "self.current_joints would be changed by setJoints method"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords:1 of
+msgid "Setting and getting coordinates of rootLink"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords:3 of
+msgid "If argument is set, coordinates of rootLink is updated by it"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.rootCoords:6 of
+msgid "coordinates of rootLink"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.resetPose:1 of
+msgid "Resetting pose (angleVector and rootCoords)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.resetPose:5 of
+msgid "current angleVector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.addNoise:1 of
+msgid "addNoise(self, max_range = 0.1, joint_list = None):"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.addNoise:3 of
+msgid "range of adding noise"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.addNoise:5 of
+msgid "If argument is not set, self.default_joints would be used"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.robot:1 of
+msgid "Robot model using this instance"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.robot:3 of
+msgid "robot model"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.tip_link:1 of
+msgid "Tip link (direct parent of end-effector)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.tip_link:3 of
+msgid "tip link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef:1 of
+msgid "Transformation between origin of tip_link and end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.default_coords:3
+#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef:3 of
+msgid "Transformation to end-effector at tip_link coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.joint_weights:1 of
+msgid "Returns: list[float] : weight of joints"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.current_joints:1 of
+msgid "Current joint-list"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.current_joints:3 of
+msgid "current_joints using IK, currentAngleVector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.default_joints:1 of
+msgid "Initial joint-list"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.default_joints:3 of
+msgid "default_joints"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.default_pose:1 of
+msgid "angleVector stored while initialization"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.default_coords:1 of
+msgid "rootCoords stored while initialization"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:22
+msgid "irsl_choreonoid.draw_coords"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList:1 of
+msgid "Drawing list of coordinates"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:1 of
+msgid "DrawCoordsList(initializer)"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:3 of
+msgid "color of x-axis"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:5 of
+msgid "color of y-axis"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:7 of
+msgid "color of z-axis"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:9 of
+msgid "length of axis"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__:11 of
+msgid "width of axis"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.count:1 of
+msgid "Returns: int : current number of coords stored in this instance"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.T:1 of
+msgid ""
+"Returns: numpy.array : 4x4 matrix, homogeneous transformation matrix "
+"(cnoidPosition)"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.interface:1 of
+msgid "Returns: cnoid.DrawInterface.DrawInterface : actual instance to draw lines"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setOrigin:1 of
+msgid "Setting new origin"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setOrigin:3 of
+msgid "new origin to be set"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin:1 of
+msgid "Getting current origin"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin:5 of
+msgid "current origin"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setLineWidth:1 of
+msgid "Set line width"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.setLineWidth:3 of
+msgid "line width to be set"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.flush:1 of
+msgid "Force rendering coords"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.clear:1 of
+msgid "Clear all drawn coords"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords:1 of
+msgid "Draw coordinates (3-axis, position and rotation)"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords:3
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross:3 of
+msgid "coordinates to be drawn"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords:5
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross:5
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint:5
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject:5
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject:5 of
+msgid "if True, rendering scene immediately"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords:8
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross:8
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint:8 of
+msgid "number of drawn coords"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross:1 of
+msgid "Draw cross (3-axis, line is crossing at center)"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint:1 of
+msgid "Draw point (cross with no rotation)"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint:3 of
+msgid "1x3 vector, point to be drawn"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:1 of
+msgid ""
+"DrawCoordsListWrapped(irsl_choreonoid.DrawCoordsList, "
+"irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:3 of
+msgid "Wrapped version of irsl_choreonoid.DrawCoordsList"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:5 of
+msgid "Using for drawing coordinates interactively"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__:1
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__:1 of
+msgid "__init__(self, \\*\\*kwargs):"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__:3
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__:3 of
+msgid ""
+"this is passing to irsl_choreonoid.robot_util.make_coordinates for making"
+" initial_coords of coordsWrapper"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:1 of
+msgid ""
+"class "
+"GeneralDrawInterfaceWrapped(cnoid.DrawInterface.GeneralDrawInterface, "
+"irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:3 of
+msgid "Wrapped version of cnoid.DrawInterface.GeneralDrawInterface"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:5 of
+msgid "Using for drawing SceneGraph objects interactively"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush:1 of
+msgid "Force rendering scene"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject:1 of
+msgid "This method is overrided, just passing arguments to addPyObject"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject:1 of
+msgid "This method is overrided, just passing arguments to removePyObject"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject:1 of
+msgid "Adding object to be drawn"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject:3 of
+msgid "object to be drawn"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject:1 of
+msgid "Removing drawn object"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject:3 of
+msgid "object to be removed"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
+msgid "class coordsWrapper(cnoid.IRSLCoords.coordinates)"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:3 of
+msgid ""
+"This class to wrap a cnoid Object which have position (SgPosTransform, "
+"Link, etc.)"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:5 of
+msgid ""
+"You can access to this object with methods in "
+"cnoid.IRSLCoords.coordinates,"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:7 of
+msgid ""
+"Some mthods (newcoords, translate, rotate, transform) to update itself "
+"are overrided to call callback_function."
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:9 of
+msgid "Then, you can run some process when the position of the target is updated."
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__:1 of
+msgid "wrapped target which have property 'T' for setting cnoidPosition"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__:3 of
+msgid "coordinates of this instance"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__:5
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setUpdateCallback:3 of
+msgid "callback function which is called when target is updated"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.updateTarget:1 of
+msgid "Updating self.target and call callback_function"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setUpdateCallback:1 of
+msgid "Setting callback function"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords:1 of
+msgid "Wrapped method of newcoords in cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords:3 of
+msgid "replace pos and rot in self with cds"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords:6
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate:10
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform:8
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate:8 of
+msgid "identical instance which was called with this method"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate:1 of
+msgid "Wrapped method of translate in cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate:3 of
+msgid "1x3 vector, translation vector"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate:7
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform:5
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate:5 of
+msgid "Reference coordinates applying this method"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate:1 of
+msgid "Wrapped method of rotate in cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate:3 of
+msgid "angle to rotate [radian]"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate:5 of
+msgid "1x3 vector, axis to rotate around"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform:1 of
+msgid "Wrapped method of transform in cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform:3 of
+msgid "Transformation to be applied"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target:1 of
+msgid ""
+"Wrapped target of this instance, which was manipulated by methods of this"
+" class"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target:3 of
+msgid "instance which have method 'T' to set cnoidPosition (4x4 matrix)"
+msgstr ""
+

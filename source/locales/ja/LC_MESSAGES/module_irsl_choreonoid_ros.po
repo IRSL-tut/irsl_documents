@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_irsl_choreonoid_ros.rst:2
+msgid "irsl_choreonoid_ros module"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:6
+msgid "irsl_choreonoid_ros.cnoid_ros_util"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:1 of
+msgid "Refere parseURL in irsl_choreonoid.cnoid_util"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+msgid "Parameters"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:3 of
+msgid "url"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+msgid "Returns"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:6 of
+msgid "absolute path"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+msgid "Return type"
+msgstr ""
+
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:10 of
+msgid "Examples"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:14
+msgid "irsl_choreonoid_ros.RobotInterface"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
+msgid "Interface for controlling locomotion of robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop:1 of
+msgid "Stop moving of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:1 of
+msgid "Add moving velocity of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:1 of
+msgid "Set target position(relative) for MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:1 of
+msgid "Set target position on map for MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:1 of
+msgid "Set target trajectory for MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface:1 of
+msgid "Interface for controlling joints of robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1 of
+msgid "Interface for receiving data from sensors on robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:1 of
+msgid "Get data from the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:1 of
+msgid "Wait if there is no current data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:1 of
+msgid "Wait until subscribing new data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:1 of
+msgid "Get data array from devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
+msgid ""
+"Interface for controllring robot (inheriting classes JointInterface, "
+"DeviceInterface and MobileBaseInterface)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel:1 of
+msgid "Return other instance of the robot model"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1 of
+msgid "Return instance of the robot model"
+msgstr ""
+

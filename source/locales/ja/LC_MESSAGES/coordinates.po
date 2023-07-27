@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../coordinates.rst:4
+msgid "Coordinates"
+msgstr ""
+
+#: ../../coordinates.rst:8
+msgid "座標変換についての説明"
+msgstr ""
+
+#: ../../coordinates.rst:12
+msgid "3次元位置"
+msgstr ""
+
+#: ../../coordinates.rst:14
+msgid "位置は小文字の太字を用いて表される、実数3つのベクトルである。"
+msgstr ""
+
+#: ../../coordinates.rst:16
+msgid "3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。"
+msgstr ""
+
+#: ../../coordinates.rst:18
+msgid "縦ベクトルとして表すことが多い。"
+msgstr ""
+
+#: ../../coordinates.rst:20
+msgid ":math:`\\mathbf{p} = [ \\; x, \\; y, \\; z \\;]^{T}`"
+msgstr ""
+
+#: ../../coordinates.rst:24
+msgid "3次元の回転"
+msgstr ""
+
+#: ../../coordinates.rst:26
+msgid "3次元の回転は、回転行列を用いて表すことができる。"
+msgstr ""
+
+#: ../../coordinates.rst:28
+msgid "回転行列は3x3の行列で、基準座標系から見た回転された座標系列の x軸、y軸、z軸を列方向に並べたものである。"
+msgstr ""
+
+#: ../../coordinates.rst:31
+msgid ""
+":math:`\\mathbf{R} = [ \\; \\mathbf{x} \\quad \\mathbf{y} \\quad "
+"\\mathbf{z} \\; ]`"
+msgstr ""
+
+#: ../../coordinates.rst:33
+msgid "この行列は直交行列となっており、以下の 行列の転置と逆行列が同値となる。"
+msgstr ""
+
+#: ../../coordinates.rst:36
+msgid ":math:`\\mathbf{R}^{-1} = \\mathbf{R}^{T}`"
+msgstr ""
+
+#: ../../coordinates.rst:38
+msgid ""
+"3次元の回転の表し方としては、他に、 "
+"ロール・ピッチ・ヨー角(RPY)、単位クォータニオン(quaternion)、軸回り回転(AngleAxis)、等がある。"
+msgstr ""
+
+#: ../../coordinates.rst:41
+msgid "情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。 参考書を参照いただきたい。"
+msgstr ""
+
+#: ../../coordinates.rst:46
+msgid "軸回り回転(AngleAxis)"
+msgstr ""
+
+#: ../../coordinates.rst:51
+msgid "同時変換行列"
+msgstr ""
+
+#: ../../coordinates.rst:53
+msgid "3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、 位置の3自由度と回転の3自由度で6自由度となっている。"
+msgstr ""
+
+#: ../../coordinates.rst:56
+msgid ""
+"3次元での姿勢を表すのに、同次変換行列 T を用いる。 T は 3次元位置ベクトル :math:`\\mathbf{p}` と 3次元回転行列 "
+"::math:`\\mathbf{R}` を用いて、以下のように4x4行列として表される。"
+msgstr ""
+
+#: ../../coordinates.rst:60
+msgid ""
+"T = \\begin{pmatrix}\n"
+"\\mathbf{R}  & \\mathbf{p} \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+msgstr ""
+
+#: ../../coordinates.rst:66
+msgid "T の逆行列は以下のようになる。"
+msgstr ""
+
+#: ../../coordinates.rst:68
+msgid ""
+"T^{-1} = \\begin{pmatrix}\n"
+"\\mathbf{R}^{-1}  & - \\mathbf{R}^{-1}\\mathbf{p} \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+msgstr ""
+
+#: ../../coordinates.rst:74
+msgid "T の掛け算は、a, bを添え字として以下のようになる。"
+msgstr ""
+
+#: ../../coordinates.rst:76
+msgid ""
+"T_a = \\begin{pmatrix}\n"
+"\\mathbf{R}_a  & \\mathbf{p}_a \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+msgstr ""
+
+#: ../../coordinates.rst:82
+msgid ""
+"T_b = \\begin{pmatrix}\n"
+"\\mathbf{R}_b  & \\mathbf{p}_b \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+msgstr ""
+
+#: ../../coordinates.rst:88
+msgid ""
+"T_a \\times T_b = \\begin{pmatrix}\n"
+"\\mathbf{R}_a\\mathbf{R}_b  & \\mathbf{R}_a\\mathbf{p}_b  + \\mathbf{p}_a"
+" \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+msgstr ""
+
+#: ../../coordinates.rst:96
+msgid "座標系"
+msgstr ""
+
+#: ../../coordinates.rst:101
+msgid "剛体リンクの座標系"
+msgstr ""
+
+#: ../../coordinates.rst:106
+msgid "座標系とcoordinatesの関係"
+msgstr ""
+
+#: ../../coordinates.rst:108
+msgid "coordinatesクラス (cnoid.IRSLCoords.coordinates) は、 同次変換行列の操作を行うためのクラスである。"
+msgstr ""
+
+#: ../../coordinates.rst:111
+msgid ""
+"coordinatesクラスのインスタンスは、 3次元位置ベクトル :math:`\\mathbf{p}` と 3次元回転行列 "
+":math:`\\mathbf{R}` を持つ。"
+msgstr ""
+
+#: ../../coordinates.rst:117
+msgid "回転行列と３次元位置の取り出し"
+msgstr ""
+
+#: ../../coordinates.rst:119
+msgid ""
+"coordinates のプロパティとして、 以下のように :math:`\\mathbf{p}` と :math:`\\mathbf{R}` "
+"を取り出せる。"
+msgstr ""
+
+#: ../../coordinates.rst:126
+msgid "以下、Tはcoordinateクラスのインスタンスである。"
+msgstr ""
+
+#: ../../coordinates.rst:140
+msgid "ベクトルを変換するメソッド"
+msgstr ""
+
+#: ../../coordinates.rst:142
+msgid "以下、 :math:`\\mathbf{v}` は3次元ベクトル (numpy.array) である。"
+msgstr ""
+
+#: ../../coordinates.rst:159
+msgid "座標系を返すメソッド (座標系を変更しない)"
+msgstr ""
+
+#: ../../coordinates.rst:170
+msgid "座標系を変更するメソッド"
+msgstr ""
+
+#: ../../coordinates.rst:186
+msgid "例題"
+msgstr ""
+
+#: ../../coordinates.rst:190
+msgid "参考書"
+msgstr ""
+
+#: ../../coordinates.rst:192
+msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"
+msgstr ""
+
+#: ../../coordinates.rst:194
+msgid "第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる"
+msgstr ""
+

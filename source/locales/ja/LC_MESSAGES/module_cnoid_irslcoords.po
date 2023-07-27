@@ -1,0 +1,599 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_cnoid_irslcoords.rst:3
+msgid "Coordinates Module"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:7
+msgid "cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:12
+msgid ""
+"coordinates for choreonoid Referring to "
+"https://github.com/euslisp/EusLisp/blob/master/doc/jlatex/jmanual.pdf"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:15
+msgid "Usage and description, see :doc:`coordinates`"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.RPY:1 of
+msgid ""
+"Rotation part of transformation ( RPY angle, real vector with 3 elements,"
+" roll [radian], pitch [radian], yaw [radian] )"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse
+#: cnoid.IRSLCoords.PyCapsule.Position_quaternion
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation
+#: cnoid.IRSLCoords.PyCapsule.Position_translation
+#: cnoid.IRSLCoords.PyCapsule.angleAxisNormalized
+#: cnoid.IRSLCoords.PyCapsule.copy cnoid.IRSLCoords.PyCapsule.inverse
+#: cnoid.IRSLCoords.PyCapsule.mid_coords
+#: cnoid.IRSLCoords.PyCapsule.quaternionToRotation
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion
+#: cnoid.IRSLCoords.coordinates.RPY cnoid.IRSLCoords.coordinates.angleAxis
+#: cnoid.IRSLCoords.coordinates.cnoidPosition cnoid.IRSLCoords.coordinates.pos
+#: cnoid.IRSLCoords.coordinates.quaternion cnoid.IRSLCoords.coordinates.rot
+#: cnoid.IRSLCoords.coordinates.x_axis cnoid.IRSLCoords.coordinates.y_axis
+#: cnoid.IRSLCoords.coordinates.z_axis of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.RPY:3
+#: cnoid.IRSLCoords.coordinates.pos:3 of
+msgid "1x3 vector"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse
+#: cnoid.IRSLCoords.PyCapsule.Position_quaternion
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation
+#: cnoid.IRSLCoords.PyCapsule.Position_translation
+#: cnoid.IRSLCoords.PyCapsule.angleAxisNormalized
+#: cnoid.IRSLCoords.PyCapsule.copy cnoid.IRSLCoords.PyCapsule.inverse
+#: cnoid.IRSLCoords.PyCapsule.mid_coords
+#: cnoid.IRSLCoords.PyCapsule.quaternionToRotation
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion
+#: cnoid.IRSLCoords.coordinates.RPY cnoid.IRSLCoords.coordinates.angleAxis
+#: cnoid.IRSLCoords.coordinates.cnoidPosition cnoid.IRSLCoords.coordinates.pos
+#: cnoid.IRSLCoords.coordinates.quaternion cnoid.IRSLCoords.coordinates.rot
+#: cnoid.IRSLCoords.coordinates.x_axis cnoid.IRSLCoords.coordinates.y_axis
+#: cnoid.IRSLCoords.coordinates.z_axis of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:1
+#: cnoid.IRSLCoords.PyCapsule.angleVector:1
+#: cnoid.IRSLCoords.PyCapsule.cnoidPosition:1
+#: cnoid.IRSLCoords.PyCapsule.eps_eq:1 cnoid.IRSLCoords.PyCapsule.locate:1
+#: cnoid.IRSLCoords.PyCapsule.move_to:1
+#: cnoid.IRSLCoords.PyCapsule.normalizeVector:1
+#: cnoid.IRSLCoords.PyCapsule.orient:1
+#: cnoid.IRSLCoords.PyCapsule.orient_with_matrix:1
+#: cnoid.IRSLCoords.PyCapsule.rotate:1
+#: cnoid.IRSLCoords.PyCapsule.rotate_with_matrix:1
+#: cnoid.IRSLCoords.PyCapsule.setRPY:1 cnoid.IRSLCoords.PyCapsule.transform:1
+#: cnoid.IRSLCoords.PyCapsule.transformation:1
+#: cnoid.IRSLCoords.PyCapsule.translate:1 of
+msgid "Overloaded function."
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:3 of
+msgid "__init__(self: cnoid.IRSLCoords.coordinates) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:5 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[3, "
+"3], flags.c_contiguous]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:7 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:9 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:11 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[4, 1]]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:13 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[4, "
+"1]]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:15 of
+msgid ""
+"__init__(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.angleAxis:1 of
+msgid ""
+"Rotation part of transformation ( Angle axis, real vector with 4 "
+"elements, ax, ay, az, rotation-angle [radian] )"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.angleAxis:3
+#: cnoid.IRSLCoords.coordinates.quaternion:3 of
+msgid "1x4 vector"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.cnoidPosition:1 of
+msgid ""
+"Transformation matrix ( 4x4 homogeneous transformation matrix, using in "
+"Choreonoid )"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.cnoidPosition:3 of
+msgid "4x4 matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.copy:1 of
+msgid "Creating new instance with the same value of this instance"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.copy:3 of
+msgid "copy of this instance (created new instance)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.inverse:1 of
+msgid "Updating self transformation as an inverse transformation"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.inverse:3 of
+msgid "identical instance which was called with this method"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.locate:3 of
+msgid ""
+"locate(self: cnoid.IRSLCoords.coordinates, vector: "
+"numpy.ndarray[numpy.float64[3, 1]], wrt: cnoid.IRSLCoords.coordinates.wrt"
+" = <wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.locate:5 of
+msgid ""
+"locate(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]], arg1: cnoid.IRSLCoords.coordinates) "
+"-> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.mid_coords:1 of
+msgid "Calculating interpolated coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse
+#: cnoid.IRSLCoords.PyCapsule.Position_quaternion
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation
+#: cnoid.IRSLCoords.PyCapsule.Position_translation
+#: cnoid.IRSLCoords.PyCapsule.angleAxisNormalized
+#: cnoid.IRSLCoords.PyCapsule.mid_coords
+#: cnoid.IRSLCoords.PyCapsule.quaternionToRotation
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.mid_coords:3 of
+msgid ""
+"parameter 0.0 to 1.0, if p == 0.0, coords euqal to self is return. If p "
+"== 1.0, coords equal to c2 is return."
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.mid_coords:5 of
+msgid "target coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.mid_coords:7 of
+msgid "precision"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.mid_coords:10 of
+msgid "Interpolated coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.move_to:3 of
+msgid ""
+"move_to(self: cnoid.IRSLCoords.coordinates, vector: "
+"cnoid.IRSLCoords.coordinates, wrt: cnoid.IRSLCoords.coordinates.wrt = "
+"<wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.move_to:5 of
+msgid ""
+"move_to(self: cnoid.IRSLCoords.coordinates, arg0: "
+"cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient:3 of
+msgid ""
+"orient(self: cnoid.IRSLCoords.coordinates, theta: float, axis: "
+"numpy.ndarray[numpy.float64[3, 1]], wrt: cnoid.IRSLCoords.coordinates.wrt"
+" = <wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient:5 of
+msgid ""
+"orient(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: "
+"numpy.ndarray[numpy.float64[3, 1]], arg2: cnoid.IRSLCoords.coordinates) "
+"-> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient:7 of
+msgid ""
+"orient(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: "
+"numpy.ndarray[numpy.float64[3, 1]], arg2: numpy.ndarray[numpy.float64[3, "
+"3], flags.c_contiguous]) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient_with_matrix:3 of
+msgid ""
+"orient_with_matrix(self: cnoid.IRSLCoords.coordinates, mat: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], wrt: "
+"cnoid.IRSLCoords.coordinates.wrt = <wrt.local: 1>) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient_with_matrix:5 of
+msgid ""
+"orient_with_matrix(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], arg1: "
+"cnoid.IRSLCoords.coordinates) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.orient_with_matrix:7 of
+msgid ""
+"orient_with_matrix(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], arg1: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous]) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.pos:1 of
+msgid ""
+"Translation part ( real vector with 3 elements, x, y, z ) of "
+"transformation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.quaternion:1 of
+msgid ""
+"Rotation part of transformation ( quaternion, real vector with 4 "
+"elements, x, y, z, w )"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.rot:1 of
+msgid "Rotation part of transformation ( Rotation matrix, 3x3 real matrix)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.rot:3 of
+msgid "3x3 matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate:3 of
+msgid ""
+"rotate(self: cnoid.IRSLCoords.coordinates, theta: float, axis: "
+"numpy.ndarray[numpy.float64[3, 1]], wrt: cnoid.IRSLCoords.coordinates.wrt"
+" = <wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate:5 of
+msgid ""
+"rotate(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: "
+"numpy.ndarray[numpy.float64[3, 1]], arg2: cnoid.IRSLCoords.coordinates) "
+"-> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate:7 of
+msgid ""
+"rotate(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: "
+"numpy.ndarray[numpy.float64[3, 1]], arg2: numpy.ndarray[numpy.float64[3, "
+"3], flags.c_contiguous]) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate_with_matrix:3 of
+msgid ""
+"rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, mat: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], wrt: "
+"cnoid.IRSLCoords.coordinates.wrt = <wrt.local: 1>) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate_with_matrix:5 of
+msgid ""
+"rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], arg1: "
+"cnoid.IRSLCoords.coordinates) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotate_with_matrix:7 of
+msgid ""
+"rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], arg1: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous]) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.setRPY:3 of
+msgid ""
+"setRPY(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.setRPY:5 of
+msgid ""
+"setRPY(self: cnoid.IRSLCoords.coordinates, arg0: float, arg1: float, "
+"arg2: float) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.transform:3 of
+msgid ""
+"transform(self: cnoid.IRSLCoords.coordinates, coords: "
+"cnoid.IRSLCoords.coordinates, wrt: cnoid.IRSLCoords.coordinates.wrt = "
+"<wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.transform:5 of
+msgid ""
+"transform(self: cnoid.IRSLCoords.coordinates, arg0: "
+"cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.transformation:3 of
+msgid ""
+"transformation(self: cnoid.IRSLCoords.coordinates, coords: "
+"cnoid.IRSLCoords.coordinates, wrt: cnoid.IRSLCoords.coordinates.wrt = "
+"<wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.transformation:5 of
+msgid ""
+"transformation(self: cnoid.IRSLCoords.coordinates, arg0: "
+"cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.translate:3 of
+msgid ""
+"translate(self: cnoid.IRSLCoords.coordinates, vector: "
+"numpy.ndarray[numpy.float64[3, 1]], wrt: cnoid.IRSLCoords.coordinates.wrt"
+" = <wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.translate:5 of
+msgid ""
+"translate(self: cnoid.IRSLCoords.coordinates, arg0: "
+"numpy.ndarray[numpy.float64[3, 1]], arg1: cnoid.IRSLCoords.coordinates) "
+"-> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.wrt:1 of
+msgid "Members:"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.wrt:3 of
+msgid "local"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.wrt:5 of
+msgid "world"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.wrt:7 of
+msgid "parent"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.x_axis:1 of
+msgid "Extracting x-axis of rotation matrix (1st column vector)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.x_axis:3 of
+msgid "1x3 vector, x-axis of rotation matrix (1st column vector)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.y_axis:1 of
+msgid "Extracting y-axis of rotation matrix (2nd column vector)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.y_axis:3 of
+msgid "1x3 vector, y-axis of rotation matrix (2nd column vector)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.z_axis:1 of
+msgid "Extracting z-axis of rotation matrix (3rd column vector)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates.z_axis:3 of
+msgid "1x3 vector, z-axis of rotation matrix (3rd column vector)"
+msgstr ""
+
+#: ../../module_cnoid_irslcoords.rst:19
+msgid "cnoid.IRSLCoords"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords:1 of
+msgid "Functions for manipulating 4x4 matrix as homogeneous transformation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:1 of
+msgid "Generating inverse transformation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:3
+#: cnoid.IRSLCoords.PyCapsule.Position_quaternion:3
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation:3
+#: cnoid.IRSLCoords.PyCapsule.Position_translation:3 of
+msgid "4x4 homogeneous transformation matrix, using in Choreonoid"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:6 of
+msgid "4x4 matrix, inverse matrix of _position"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.Position_quaternion:1
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation:1 of
+msgid "Extracting rotation part of transformation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.Position_quaternion:6 of
+msgid "1x4 vector, quaternion(x,y,z,w), rotation part of _position"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.Position_rotation:6 of
+msgid "3x3 matrix, rotation matrix, rotation part of _position"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.Position_translation:1 of
+msgid "Extracting translation part of transformation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.Position_translation:6 of
+msgid "1x3 vector, translation part of _position"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleAxisNormalized:1 of
+msgid "Converting AngleAxis to rotation matrix, axis is normalized"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleAxisNormalized:3 of
+msgid "rotation angle [radian]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleAxisNormalized:5 of
+msgid "1x3 vector, rotation axis"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleAxisNormalized:8
+#: cnoid.IRSLCoords.PyCapsule.quaternionToRotation:6
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion:3 of
+msgid "3x3, rotation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleVector:3 of
+msgid "angleVector(arg0: cnoid.Body.Body) -> numpy.ndarray[numpy.float64[m, 1]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.angleVector:5 of
+msgid ""
+"angleVector(arg0: cnoid.Body.Body, arg1: numpy.ndarray[numpy.float64[m, "
+"1]]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.cnoidPosition:3 of
+msgid ""
+"cnoidPosition(arg0: numpy.ndarray[numpy.float64[3, 3], "
+"flags.c_contiguous], arg1: numpy.ndarray[numpy.float64[3, 1]]) -> "
+"numpy.ndarray[numpy.float64[4, 4]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.cnoidPosition:5 of
+msgid ""
+"cnoidPosition(arg0: numpy.ndarray[numpy.float64[4, 1]], arg1: "
+"numpy.ndarray[numpy.float64[3, 1]]) -> numpy.ndarray[numpy.float64[4, 4]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.cnoidPosition:7 of
+msgid ""
+"cnoidPosition(arg0: numpy.ndarray[numpy.float64[3, 1]]) -> "
+"numpy.ndarray[numpy.float64[4, 4]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.cnoidPosition:9 of
+msgid ""
+"cnoidPosition(arg0: numpy.ndarray[numpy.float64[3, 3], "
+"flags.c_contiguous]) -> numpy.ndarray[numpy.float64[4, 4]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.cnoidPosition:11 of
+msgid ""
+"cnoidPosition(arg0: numpy.ndarray[numpy.float64[4, 1]]) -> "
+"numpy.ndarray[numpy.float64[4, 4]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.eps_eq:3 of
+msgid "eps_eq(a: float, b: float, eps: float = 1e-05) -> bool"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.eps_eq:5 of
+msgid ""
+"eps_eq(a: numpy.ndarray[numpy.float64[3, 1]], b: "
+"numpy.ndarray[numpy.float64[3, 1]], eps: float = 1e-05) -> bool"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.eps_eq:7 of
+msgid ""
+"eps_eq(a: numpy.ndarray[numpy.float64[4, 1]], b: "
+"numpy.ndarray[numpy.float64[4, 1]], eps: float = 1e-05) -> bool"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.eps_eq:9 of
+msgid ""
+"eps_eq(a: numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], b: "
+"numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous], eps: float = "
+"1e-05) -> bool"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.eps_eq:11 of
+msgid ""
+"eps_eq(a: numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous], b: "
+"numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous], eps: float = "
+"1e-05) -> bool"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalizeVector:3 of
+msgid ""
+"normalizeVector(arg0: numpy.ndarray[numpy.float64[3, 1]]) -> "
+"numpy.ndarray[numpy.float64[3, 1]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalizeVector:5 of
+msgid ""
+"normalizeVector(arg0: numpy.ndarray[numpy.float64[4, 1]]) -> "
+"numpy.ndarray[numpy.float64[4, 1]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.quaternionToRotation:1 of
+msgid "Converting quaternion to rotation matrix"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.quaternionToRotation:3
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion:6 of
+msgid "1x4 vector, quaternion(x,y,z,w)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.rotationToQuaternion:1 of
+msgid "Converting rotation matrix to quaternion"
+msgstr ""
+
