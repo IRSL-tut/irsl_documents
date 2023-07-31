@@ -2,7 +2,7 @@
 
 ### clean generated files
 
-set -e
+# set -e
 
 echo "#### rm locales/ja/LC_MESSAGES/*.mo ####"
 rm locales/ja/LC_MESSAGES/*.mo
