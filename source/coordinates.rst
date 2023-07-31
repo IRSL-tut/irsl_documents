@@ -132,14 +132,17 @@ An instance of the coordinates class has
 3D position vector :math:`\mathbf{p}` and
 3D rotation matrix :math:`\mathbf{R}` .
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Access to a position and a rotation matrix
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Initializing and accessing to a position and a rotation matrix
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :math:`\mathbf{p}` and :math:`\mathbf{R}` can be retrieved
 by accessing to properties of coordinates class.
 
 In the following, T is an instance of the coordinates class.
+
+Mathmatical representaion of T is following.
 
 .. math::
    T = \begin{pmatrix}
@@ -154,48 +157,69 @@ In the following, T is an instance of the coordinates class.
     >>> T = coordinates(v, R)
     >>> T
     <coordinates[address] 1 2 3 / 0 0 0.707107 0.707107 >
+    >>> coordinates(p) ### set pos, rot is Identity
+    >>> coordinates(R) ### set rot, pos is  Zero
+    >>> coordinates(numpy.array([0, 0, 0, 1])) ### set rot by quaternion
+    >>> coordinates(v, numpy.array([0, 0, 0, 1])) ### set pos and rot by quaternion
+    >>> coordinates(numpy.array([[0, -1, 0, 0],[1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) ### 4x4 homogeneous transformation matrix
+
+- Initalizing coordinates
 
 .. code-block:: python
 
-    >>> T.pos ## getting 3D position
+    >>> T.pos
     array([1., 2., 3.])
 
+- Getting and setting 3D position (access attribute pos)
+
 .. code-block:: python
 
-    >>> T.rot ## getting rotation-matrix
+    >>> T.rot
     array([[ 0., -1.,  0.],
            [ 1.,  0.,  0.],
            [ 0.,  0.,  1.]])
 
+- Getting and setting Rotation matrix (access attribute rot)
+
 .. code-block:: python
 
-    >>> T.cnoidPosition ## getting 4x4 homogeneous transformation matrix
+    >>> T.quaternion
+    array([0.        , 0.        , 0.70710678, 0.70710678])
+
+- Getting and setting quaternion (access attribute quaternion)
+
+.. code-block:: python
+
+    >>> T.RPY
+    array([ 0.        , -0.        ,  1.57079633])
+
+- Getting and setting roll-pitch-yaw angle (access attribute RPY)
+
+.. code-block:: python
+
+    >>> T.angleAxis
+    array([0.        , 0.        , 1.        , 1.57079633])
+
+- Getting and setting angle-axis (access attribute angleAxis)
+
+.. code-block:: python
+
+    >>> T.cnoidPosition
     array([[ 0., -1.,  0.,  1.],
            [ 1.,  0.,  0.,  2.],
            [ 0.,  0.,  1.,  3.],
            [ 0.,  0.,  0.,  1.]])
 
-.. code-block:: python
+- Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
 
-    >>> T.quaternion ## getting quaternion
-    array([0.        , 0.        , 0.70710678, 0.70710678])
-
-.. code-block:: python
-
-    >>> T.RPY ## getting roll-pitch-yaw angle
-    array([ 0.        , -0.        ,  1.57079633])
-
-.. code-block:: python
-
-    >>> T.angleAxis ## getting angle-axis
-    array([0.        , 0.        , 1.        , 1.57079633])
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Methods to convert a vector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the following,
-:math:`\mathbf{v}` is 3D vector (numpy.array).
+:math:`\mathbf{v}` is 3D position vector (numpy.array).
+Folowing 4 functions do not change the input value.
 
 .. code-block:: python
 
@@ -203,61 +227,178 @@ In the following,
     >>> T.rotate_vector(v)
     array([-0.2,  0.1,  0.3])
 
+- Mathmatical representation of a return value is
+
+:math:`\mathbf{R} \mathbf{v}`
+
 .. code-block:: python
 
     >>> T.inverse_rotate_vector(v)
+
+- Mathmatical representation of a return value is
+
+:math:`\mathbf{v}^T \mathbf{R}`
 
 .. code-block:: python
 
     >>> T.transform_vector(v)
 
+Converts a vector represented in a local coordinate system T
+to a vector represented in the world coordinate system.
+
+- Mathmatical representation of a return value is
+
+:math:`\mathbf{R}\mathbf{v} + \mathbf{p}`
+
 .. code-block:: python
 
     >>> T.inverse_transform_vector(v)
 
+Converts a vector represented in the world coordinate system.
+to a vector represented in a local coordinate system T.
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Methods to return a coordinate (not changing itself)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Mathmatical representation of a return value is
 
-.. math::
-   A = \begin{pmatrix}
-   \mathbf{R}_{a}  & \mathbf{p}_{a} \\
-   \mathbf{0}  & 1
-   \end{pmatrix}
+:math:`\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)`
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Methods to convert a vector(change input value)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are functions which change the input value.
+
+Input value v will be changed as the same of return value.
+
+.. code-block:: python
+
+    >>> v = numpy.array([0.1, 0.2, 0.3])
+    >>> T.rotateVector(v)
+    >>> T.inverseRotateVector(v)
+    >>> T.transformVector(v)
+    >>> T.inverseTransformVector(v)
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Methods to return a coordinate (without modifying itself)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the following, A is an instance of the coordinates class.
 
 .. code-block:: python
 
     >>> T.inverse_transformation()
 
+Returns inverse transformation.
+
+- Mathmatical representation of a return value is following.
+
+.. math::
+   T^{-1} = \begin{pmatrix}
+   \mathbf{R}^{-1}  & - \mathbf{R}^{-1}\mathbf{p} \\
+   \mathbf{0}  & 1
+   \end{pmatrix}
+
 .. code-block:: python
 
-    >>> T.transformation(A)
+    >>> T.transformation(A, wrt)
+
+*wrt* is an optional value and defult value is 'local'
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`T^{-1}A` is returned
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`AT^{-1}` is returned
+
+- If *wrt* = W (coordinates class)
+
+:math:`W^{-1}AT^{-1}W` is returned
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Methods to change itself
+Methods to modify itself
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the following, :math:`\leftarrow` represents substitution.
 
 .. code-block:: python
 
     >>> T.newcoords(A)
 
-.. code-block:: python
+- Attributes pos and rot is substituted
 
-    >>> T.move_to(A)
-
-.. code-block:: python
-
-    >>> T.translate(A)
+:math:`T \leftarrow A`
 
 .. code-block:: python
 
-    >>> T.locate(A)
+    >>> T.move_to(A, wrt)
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`T \leftarrow TA`
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`T \leftarrow A`
+
+- If *wrt* = W (coordinates class)
+
+:math:`T \leftarrow WA`
+
 
 .. code-block:: python
 
-    >>> T.transform(A)
+    >>> T.translate(v, wrt)
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}`
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}`
+
+- If *wrt* = W (coordinates class)
+
+:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}`
+
+:math:`\mathbf{R}_{W}` is rotation matrix of W
+
+.. code-block:: python
+
+    >>> T.locate(v, wrt)
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}`
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`\mathbf{p} \leftarrow \mathbf{v}`
+
+- If *wrt* = W (coordinates class)
+
+:math:`\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}`
+
+:math:`\mathbf{R}_{W}` is rotation matrix of W, and :math:`\mathbf{p}_{W}` is 3D position of W.
+
+.. code-block:: python
+
+    >>> T.transform(A, wrt)
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`T \leftarrow TA`
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`T \leftarrow AT`
+
+- If *wrt* = W (coordinates class)
+
+:math:`T \leftarrow$ $\left( W A W^{-1} \right) T`
+
 
 ^^^^^^^^
 Examples
