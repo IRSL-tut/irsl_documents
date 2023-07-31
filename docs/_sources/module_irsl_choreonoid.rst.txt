@@ -15,6 +15,16 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cno
     :no-undoc-members:
 
 *********************************
+module irsl_choreonoid.cnoid_base
+*********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py
+
+.. automodule:: irsl_choreonoid.cnoid_base
+    :members:
+    :no-undoc-members:
+
+*********************************
 module irsl_choreonoid.robot_util
 *********************************
 

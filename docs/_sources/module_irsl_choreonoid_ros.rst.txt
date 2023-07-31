@@ -1,6 +1,6 @@
-=============================
-Modules in irsl_choreonoidros
-=============================
+==============================
+Modules in irsl_choreonoid_ros
+==============================
 
 https://github.com/IRSL-tut/irsl_choreonoid_ros
 

@@ -45,7 +45,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoid_ros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a></li>
@@ -100,7 +100,6 @@
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
  | <a href="#U"><strong>U</strong></a>
- | <a href="#V"><strong>V</strong></a>
  | <a href="#W"><strong>W</strong></a>
  | <a href="#X"><strong>X</strong></a>
  | <a href="#Y"><strong>Y</strong></a>
@@ -180,8 +179,6 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.actuators">actuators() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
-</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.addCollisionShapeNode">addCollisionShapeNode() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.addCoords">addCoords() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
@@ -200,17 +197,17 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.addNoise">addNoise() (irsl_choreonoid.robot_util.IKWrapper method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject">addObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.addPoint">addPoint() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject">addPyObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.addShapeNode">addShapeNode() (cnoid.Body.Link method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.addSimulator">addSimulator() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.addSimulator">addSimulator() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.addVisualShapeNode">addVisualShapeNode() (cnoid.Body.Link method)</a>
 </li>
@@ -247,6 +244,10 @@
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.calcRfromAttitude">calcRfromAttitude() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.calcTotalMomentum">calcTotalMomentum() (cnoid.Body.Body method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.cameraPositionLookingAt">cameraPositionLookingAt() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.cameraPositionLookingFor">cameraPositionLookingFor() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.clear">clear() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
 </li>
@@ -301,10 +302,6 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.cnoidTranslation">cnoidTranslation() (in module irsl_choreonoid.cnoid_util)</a>
 </li>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.collision">collision() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
-</li>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.connecting_points">connecting_points() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
-</li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates">coordinates (class in cnoid.IRSLCoords)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt">coordinates.wrt (class in cnoid.IRSLCoords)</a>
@@ -317,13 +314,23 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.count">count (irsl_choreonoid.draw_coords.DrawCoordsList property)</a>
 </li>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.create_visual">create_visual() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
-</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.createLink">createLink() (cnoid.Body.Body method)</a>
+</li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.createVisual">createVisual() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.current_joints">current_joints (irsl_choreonoid.robot_util.IKWrapper property)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.currentAngleVector">currentAngleVector() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords">currentMapCoords (irsl_choreonoid_ros.RobotInterface.MobileBaseInterface property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
+</li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.currentSceneView">currentSceneView() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.currentSceneWidget">currentSceneWidget() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -351,17 +358,31 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Device">Device (class in cnoid.Body)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.device">device() (cnoid.Body.Body method)</a>
 </li>
       <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface">DeviceInterface (class in irsl_choreonoid_ros.RobotInterface)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList">deviceList (irsl_choreonoid_ros.RobotInterface.DeviceInterface property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.DeviceList">DeviceList() (in module cnoid.Body)</a>
 </li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames">deviceNames (irsl_choreonoid_ros.RobotInterface.DeviceInterface property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.difference_position">difference_position() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.difference_rotation">difference_rotation() (cnoid.IRSLCoords.coordinates method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.disableGrid">disableGrid() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RASceneParts.drawBoundingBox">drawBoundingBox() (cnoid.RobotAssembler.RASceneParts method)</a>
 </li>
@@ -375,15 +396,15 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.endEffector">endEffector() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.enableGrid">enableGrid() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
-      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.eps_eq">eps_eq() (in module cnoid.IRSLCoords)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.endEffector">endEffector (irsl_choreonoid.robot_util.IKWrapper property)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.equal">equal() (cnoid.IRSLCoords.coordinates method)</a>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.eps_eq">eps_eq() (in module cnoid.IRSLCoords)</a>
 </li>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.extra_data">extra_data() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.equal">equal() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -391,18 +412,24 @@
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.findBodyItem">findBodyItem() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findBodyItem">findBodyItem() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.findDevice">findDevice() (cnoid.Body.Body method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.findItem">findItem() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findItem">findItem() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.findItems">findItems() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findItems">findItems() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.findRobot">findRobot() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findItemsByClass">findItemsByClass() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findItemsByName">findItemsByName() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findItemsByQuery">findItemsByQuery() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.findRobot">findRobot() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.findUniqueEndLink">findUniqueEndLink() (cnoid.Body.Body method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.floatInfo">floatInfo() (cnoid.Body.Link method)</a>
@@ -425,7 +452,13 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped">GeneralDrawInterfaceWrapped (class in irsl_choreonoid.draw_coords)</a>
 </li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getActuators">getActuators() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getAttitude">getAttitude() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.getCameraCoords">getCameraCoords() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.getCameraCoordsParam">getCameraCoordsParam() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getCenterOfMass">getCenterOfMass() (cnoid.Body.Body method)</a>
 
@@ -437,7 +470,11 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getChild">getChild() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getCollision">getCollision() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getCollisionShape">getCollisionShape() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getConnectingPoint">getConnectingPoint() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.getCoords">getCoords() (in module cnoid.IRSLCoords)</a>
 </li>
@@ -446,6 +483,16 @@
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getDefaultPosition">getDefaultPosition() (cnoid.Body.Body method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getDevice">getDevice() (cnoid.Body.Body method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice">(irsl_choreonoid_ros.RobotInterface.DeviceInterface method)</a>
+</li>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevice">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.getEndEffector">getEndEffector() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+</li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getExtraData">getExtraData() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getFloatInfo">getFloatInfo() (cnoid.Body.Link method)</a>
 </li>
@@ -463,7 +510,7 @@
         <li><a href="module_cnoid_body.html#cnoid.Body.Link.getInfo">(cnoid.Body.Link method)</a>
 </li>
       </ul></li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.getItemTreeView">getItemTreeView() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.getItemTreeView">getItemTreeView() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getJoint">getJoint() (cnoid.Body.Body method)</a>
 </li>
@@ -485,10 +532,10 @@
         <li><a href="module_cnoid_body.html#cnoid.Body.Link.getMass">(cnoid.Body.Link method)</a>
 </li>
       </ul></li>
-      <li><a href="module_cnoid_body.html#cnoid.Body.Link.getMaterialId">getMaterialId() (cnoid.Body.Link method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_cnoid_body.html#cnoid.Body.Link.getMaterialId">getMaterialId() (cnoid.Body.Link method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getMaterialName">getMaterialName() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getModelName">getModelName() (cnoid.Body.Body method)</a>
@@ -519,17 +566,23 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getOffsetTranslation">getOffsetTranslation() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.getOrAddWorld">getOrAddWorld() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin">getOrigin() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getParent">getParent() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerSettings.getParts">getParts() (cnoid.RobotAssembler.RobotAssemblerSettings method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getPosition">getPosition() (cnoid.Body.Link method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.getRootItem">getRootItem() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.getRootItem">getRootItem() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getRootLink">getRootLink() (cnoid.Body.Body method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getRotation">getRotation() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.getRotationAngle">getRotationAngle() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.getRPY">getRPY() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
@@ -543,10 +596,22 @@
 </li>
       <li><a href="module_cnoid_irslutil.html#cnoid.IRSLUtil.getViewTitles">getViewTitles() (in module cnoid.IRSLUtil)</a>
 </li>
+      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getVisual">getVisual() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getVisualShape">getVisualShape() (cnoid.Body.Link method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.getWorld">getWorld() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.groupList">groupList (irsl_choreonoid_ros.RobotInterface.JointInterface property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
 </li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList">groupNameList (irsl_choreonoid_ros.RobotInterface.JointInterface property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -593,6 +658,17 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.inverseKinematics">inverseKinematics() (irsl_choreonoid.robot_util.IKWrapper method)</a>
 </li>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.inverseRotateVector">inverseRotateVector() (cnoid.IRSLCoords.coordinates method)</a>
+</li>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.inverseTransformVector">inverseTransformVector() (cnoid.IRSLCoords.coordinates method)</a>
+</li>
+      <li>
+    irsl_choreonoid.cnoid_base
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#module-irsl_choreonoid.cnoid_base">module</a>
+</li>
+      </ul></li>
       <li>
     irsl_choreonoid.cnoid_util
 
@@ -634,6 +710,12 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.isEndLink">isEndLink() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished">isFinished() (irsl_choreonoid_ros.RobotInterface.JointInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.isFinished">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.isFixedJoint">isFixedJoint() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.isFixedRootModel">isFixedRootModel() (cnoid.Body.Body method)</a>
@@ -698,11 +780,11 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.linkTraverse">linkTraverse() (cnoid.Body.Body method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.loadProject">loadProject() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.loadProject">loadProject() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.loadRobot">loadRobot() (in module irsl_choreonoid.cnoid_util)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.loadRobotItem">loadRobotItem() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.loadRobotItem">loadRobotItem() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.locate">locate() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
@@ -733,6 +815,8 @@
         <li><a href="module_cnoid_irslcoords.html#module-cnoid.IRSLCoords">cnoid.IRSLCoords</a>
 </li>
         <li><a href="module_cnoid_irslutil.html#module-cnoid.IRSLUtil">cnoid.IRSLUtil</a>
+</li>
+        <li><a href="module_irsl_choreonoid.html#module-irsl_choreonoid.cnoid_base">irsl_choreonoid.cnoid_base</a>
 </li>
         <li><a href="module_irsl_choreonoid.html#module-irsl_choreonoid.cnoid_util">irsl_choreonoid.cnoid_util</a>
 </li>
@@ -795,8 +879,12 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords">newcoords() (irsl_choreonoid.irsl_draw_object.coordsWrapper method)</a>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.newcoords">newcoords() (cnoid.IRSLCoords.coordinates method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords">(irsl_choreonoid.irsl_draw_object.coordsWrapper method)</a>
 </li>
+      </ul></li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.normalizeVector">normalizeVector() (in module cnoid.IRSLCoords)</a>
 </li>
   </ul></td>
@@ -823,18 +911,16 @@
 </li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerSettings.parseYaml">parseYaml() (cnoid.RobotAssembler.RobotAssemblerSettings method)</a>
 </li>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerSettings.parts">parts() (cnoid.RobotAssembler.RobotAssemblerSettings method)</a>
-</li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.pos">pos (cnoid.IRSLCoords.coordinates property)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.Position_mid_coords">Position_mid_coords() (in module cnoid.IRSLCoords)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.Position_quaternion">Position_quaternion() (in module cnoid.IRSLCoords)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.Position_rotate">Position_rotate() (in module cnoid.IRSLCoords)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.Position_rotate_with_matrix">Position_rotate_with_matrix() (in module cnoid.IRSLCoords)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.Position_rotation">Position_rotation() (in module cnoid.IRSLCoords)</a>
@@ -875,7 +961,7 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.removeDevicesOfLink">removeDevicesOfLink() (cnoid.Body.Body method)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.removeItem">removeItem() (in module irsl_choreonoid.cnoid_util)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.removeItem">removeItem() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject">removeObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
@@ -951,7 +1037,7 @@
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.rotate_with_matrix">rotate_with_matrix() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
-      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.rotationAngle">rotationAngle() (cnoid.IRSLCoords.coordinates method)</a>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.rotateVector">rotateVector() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.rotationToQuaternion">rotationToQuaternion() (in module cnoid.IRSLCoords)</a>
 </li>
@@ -965,9 +1051,35 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.saveImageOfScene">saveImageOfScene() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict">sendAngleDict() (irsl_choreonoid_ros.RobotInterface.JointInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleDict">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles">sendAngles() (irsl_choreonoid_ros.RobotInterface.JointInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngles">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector">sendAngleVector() (irsl_choreonoid_ros.RobotInterface.JointInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleVector">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setActuationMode">setActuationMode() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setAttitude">setAttitude() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.setBackgroundColor">setBackgroundColor() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.setCameraCoords">setCameraCoords() (in module irsl_choreonoid.cnoid_base)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.setCameraCoordsParam">setCameraCoordsParam() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setCenterOfMass">setCenterOfMass() (cnoid.Body.Link method)</a>
 </li>
@@ -1007,6 +1119,8 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setJointVelocityRange">setJointVelocityRange() (cnoid.Body.Link method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.setLineWidth">setLineWidth() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Device.setLink">setLink() (cnoid.Body.Device method)</a>
@@ -1017,8 +1131,6 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.setModelName">setModelName() (cnoid.Body.Body method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.setName">setName() (cnoid.Body.Body method)</a>
 
       <ul>
@@ -1093,17 +1205,19 @@
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.toPosition">toPosition() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transform">transform() (cnoid.IRSLCoords.coordinates method)</a>
 
       <ul>
         <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.transform">(irsl_choreonoid.irsl_draw_object.coordsWrapper method)</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transform_vector">transform_vector() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transformation">transformation() (cnoid.IRSLCoords.coordinates method)</a>
+</li>
+      <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transformVector">transformVector() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.translate">translate() (cnoid.IRSLCoords.coordinates method)</a>
 
@@ -1134,14 +1248,6 @@
   </ul></td>
 </tr></table>
 
-<h2 id="V">V</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.visual">visual() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
-</li>
-  </ul></td>
-</tr></table>
-
 <h2 id="W">W</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -1151,12 +1257,24 @@
         <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitData">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
 </li>
       </ul></li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray">waitDataArray() (irsl_choreonoid_ros.RobotInterface.DeviceInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitDataArray">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData">waitNextData() (irsl_choreonoid_ros.RobotInterface.DeviceInterface method)</a>
 
       <ul>
         <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextData">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
+</li>
+      </ul></li>
+      <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray">waitNextDataArray() (irsl_choreonoid_ros.RobotInterface.DeviceInterface method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextDataArray">(irsl_choreonoid_ros.RobotInterface.RobotInterface method)</a>
 </li>
       </ul></li>
   </ul></td>

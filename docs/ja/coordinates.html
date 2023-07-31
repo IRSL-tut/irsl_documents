@@ -50,7 +50,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoidros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoid_ros</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="choreonoid.html">Choreonoid</a></li>
@@ -67,10 +67,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#relation-between-system-of-coordinates-and-coordinates-class">Relation between system of coordinates and coordinates class</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#access-to-a-position-and-a-rotation-matrix">Access to a position and a rotation matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix">Initializing and accessing to a position and a rotation matrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">Methods to convert a vector</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-not-changing-itself">Methods to return a coordinate (not changing itself)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-change-itself">Methods to change itself</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">Methods to convert a vector(change input value)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">Methods to return a coordinate (without modifying itself)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">Methods to modify itself</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
@@ -217,11 +218,12 @@ is a class for manipulating homogeneous transformation matrices.</p>
 <p>An instance of the coordinates class has
 3D position vector <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> and
 3D rotation matrix <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> .</p>
-<section id="access-to-a-position-and-a-rotation-matrix">
-<h3>Access to a position and a rotation matrix<a class="headerlink" href="#access-to-a-position-and-a-rotation-matrix" title="この見出しへのパーマリンク"></a></h3>
+<section id="initializing-and-accessing-to-a-position-and-a-rotation-matrix">
+<h3>Initializing and accessing to a position and a rotation matrix<a class="headerlink" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix" title="この見出しへのパーマリンク"></a></h3>
 <p><span class="math notranslate nohighlight">\(\mathbf{p}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> can be retrieved
 by accessing to properties of coordinates class.</p>
 <p>In the following, T is an instance of the coordinates class.</p>
+<p>Mathmatical representaion of T is following.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T = \begin{pmatrix}
 \mathbf{R}  &amp; \mathbf{p} \\
@@ -232,88 +234,220 @@ by accessing to properties of coordinates class.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>
 <span class="go">&lt;coordinates[address] 1 2 3 / 0 0 0.707107 0.707107 &gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="c1">### set pos, rot is Identity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> <span class="c1">### set rot, pos is  Zero</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span> <span class="c1">### set rot by quaternion</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]))</span> <span class="c1">### set pos and rot by quaternion</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span> <span class="c1">### 4x4 homogeneous transformation matrix</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span> <span class="c1">## getting 3D position</span>
+<ul class="simple">
+<li><p>Initalizing coordinates</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span>
 <span class="go">array([1., 2., 3.])</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span> <span class="c1">## getting rotation-matrix</span>
+<ul class="simple">
+<li><p>Getting and setting 3D position (access attribute pos)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span>
 <span class="go">array([[ 0., -1.,  0.],</span>
 <span class="go">       [ 1.,  0.,  0.],</span>
 <span class="go">       [ 0.,  0.,  1.]])</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span> <span class="c1">## getting 4x4 homogeneous transformation matrix</span>
+<ul class="simple">
+<li><p>Getting and setting Rotation matrix (access attribute rot)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span>
+<span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Getting and setting quaternion (access attribute quaternion)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span>
+<span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Getting and setting roll-pitch-yaw angle (access attribute RPY)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span>
+<span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Getting and setting angle-axis (access attribute angleAxis)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span>
 <span class="go">array([[ 0., -1.,  0.,  1.],</span>
 <span class="go">       [ 1.,  0.,  0.,  2.],</span>
 <span class="go">       [ 0.,  0.,  1.,  3.],</span>
 <span class="go">       [ 0.,  0.,  0.,  1.]])</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span> <span class="c1">## getting quaternion</span>
-<span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span> <span class="c1">## getting roll-pitch-yaw angle</span>
-<span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span> <span class="c1">## getting angle-axis</span>
-<span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
-</pre></div>
-</div>
+<ul class="simple">
+<li><p>Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)</p></li>
+</ul>
 </section>
 <section id="methods-to-convert-a-vector">
 <h3>Methods to convert a vector<a class="headerlink" href="#methods-to-convert-a-vector" title="この見出しへのパーマリンク"></a></h3>
 <p>In the following,
-<span class="math notranslate nohighlight">\(\mathbf{v}\)</span> is 3D vector (numpy.array).</p>
+<span class="math notranslate nohighlight">\(\mathbf{v}\)</span> is 3D position vector (numpy.array).
+Folowing 4 functions do not change the input value.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 <span class="go">array([-0.2,  0.1,  0.3])</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Mathmatical representation of a return value is</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{R} \mathbf{v}\)</span></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>Mathmatical representation of a return value is</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{v}^T \mathbf{R}\)</span></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Converts a vector represented in a local coordinate system T
+to a vector represented in the world coordinate system.</p>
+<ul class="simple">
+<li><p>Mathmatical representation of a return value is</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{R}\mathbf{v} + \mathbf{p}\)</span></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Converts a vector represented in the world coordinate system.
+to a vector represented in a local coordinate system T.</p>
+<ul class="simple">
+<li><p>Mathmatical representation of a return value is</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)\)</span></p>
 </section>
-<section id="methods-to-return-a-coordinate-not-changing-itself">
-<h3>Methods to return a coordinate (not changing itself)<a class="headerlink" href="#methods-to-return-a-coordinate-not-changing-itself" title="この見出しへのパーマリンク"></a></h3>
-<div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{pmatrix}
-\mathbf{R}_{a}  &amp; \mathbf{p}_{a} \\
-\mathbf{0}  &amp; 1
-\end{pmatrix}\end{split}\]</div>
+<section id="methods-to-convert-a-vector-change-input-value">
+<h3>Methods to convert a vector(change input value)<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="この見出しへのパーマリンク"></a></h3>
+<p>There are functions which change the input value.</p>
+<p>Input value v will be changed as the same of return value.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotateVector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverseRotateVector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformVector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverseTransformVector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="methods-to-return-a-coordinate-without-modifying-itself">
+<h3>Methods to return a coordinate (without modifying itself)<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="この見出しへのパーマリンク"></a></h3>
+<p>In the following, A is an instance of the coordinates class.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<p>Returns inverse transformation.</p>
+<ul class="simple">
+<li><p>Mathmatical representation of a return value is following.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}T^{-1} = \begin{pmatrix}
+\mathbf{R}^{-1}  &amp; - \mathbf{R}^{-1}\mathbf{p} \\
+\mathbf{0}  &amp; 1
+\end{pmatrix}\end{split}\]</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
+<p><em>wrt</em> is an optional value and defult value is 'local'</p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T^{-1}A\)</span> is returned</p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(AT^{-1}\)</span> is returned</p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(W^{-1}AT^{-1}W\)</span> is returned</p>
 </section>
-<section id="methods-to-change-itself">
-<h3>Methods to change itself<a class="headerlink" href="#methods-to-change-itself" title="この見出しへのパーマリンク"></a></h3>
+<section id="methods-to-modify-itself">
+<h3>Methods to modify itself<a class="headerlink" href="#methods-to-modify-itself" title="この見出しへのパーマリンク"></a></h3>
+<p>In the following, <span class="math notranslate nohighlight">\(\leftarrow\)</span> represents substitution.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<ul class="simple">
+<li><p>Attributes pos and rot is substituted</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow WA\)</span></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{v}\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W, and <span class="math notranslate nohighlight">\(\mathbf{p}_{W}\)</span> is 3D position of W.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
+<ul class="simple">
+<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow$ $\left( W A W^{-1} \right) T\)</span></p>
 </section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="この見出しへのパーマリンク"></a></h3>
