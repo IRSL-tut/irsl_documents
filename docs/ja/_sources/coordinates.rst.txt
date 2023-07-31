@@ -21,6 +21,9 @@ It is often denoted as a vertical vector.
 .. math::
    \mathbf{p} = [ \; x, \; y, \; z \;]^{T}
 
+.. image:: images/position.PNG
+
+
 ^^^^^^^^^^^
 3D Rotation
 ^^^^^^^^^^^
@@ -35,6 +38,9 @@ Rotation matrix :math:`\mathbf{R}` is denoted below.
 
 .. math::
    \mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]
+
+.. image:: images/rotation.PNG
+
 
 Rotation matrix is an orthogonal matrix, which means that the transpose and inverse of the matrix are equival
 
@@ -80,6 +86,9 @@ and a 3D rotation matrix :math:`\mathbf{R}` as follows.
    \mathbf{0}  & 1
    \end{pmatrix}
 
+.. image:: images/transformation.PNG
+
+
 The inverse matrix of T is as follows.
 
 .. math::
@@ -114,11 +123,20 @@ where :math:`\mathbf{T}_{a}` and :math:`\mathbf{T}_{b}` are as follows.
 ^^^^^^^^^^^^^^^^^^^^^
 System of coordinates
 ^^^^^^^^^^^^^^^^^^^^^
+.. image:: images/coordinates_system.PNG
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Coordinate system of rigid body link
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: images/link_original.PNG
+
+
+.. image:: images/link_transformed.PNG
+
+
+.. image:: images/link_joint.PNG
 
 
 ************************************************************
