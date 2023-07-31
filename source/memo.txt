@@ -1,0 +1,8 @@
+convert images/rotation.PNG -crop 934x934+769+298  new_images/rotation.PNG
+convert images/rotation.PNG -crop 934x934+769+298  new_images/rotation.PNG
+convert images/transformation.PNG -crop 1550x856+808+102  new_images/transformation.PNG
+convert images/coordinates_system.PNG -crop 1550x856+808+102  new_images/coordinates_system.PNG
+convert images/link_original.PNG -crop 1572x1162+432+32  new_images/link_original.PNG
+convert images/link_transformed.PNG -crop 1572x1162+432+32  new_images/link_transformed.PNG
+convert images/link_joint.PNG -crop 1572x1162+432+32  new_images/link_joint.PNG
+
