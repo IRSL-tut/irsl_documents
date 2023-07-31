@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 18:38+0900\n"
+"POT-Creation-Date: 2023-07-31 17:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,16 +40,32 @@ msgstr ""
 msgid "parse URL with IRSL original scheme"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_base.addSimulator
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
+#: irsl_choreonoid.cnoid_base.currentSceneView
+#: irsl_choreonoid.cnoid_base.currentSceneWidget
+#: irsl_choreonoid.cnoid_base.disableGrid irsl_choreonoid.cnoid_base.enableGrid
+#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
+#: irsl_choreonoid.cnoid_base.findItems
+#: irsl_choreonoid.cnoid_base.findItemsByClass
+#: irsl_choreonoid.cnoid_base.findItemsByName
+#: irsl_choreonoid.cnoid_base.findItemsByQuery
+#: irsl_choreonoid.cnoid_base.getCameraCoords
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
+#: irsl_choreonoid.cnoid_base.getOrAddWorld
+#: irsl_choreonoid.cnoid_base.loadProject
+#: irsl_choreonoid.cnoid_base.loadRobotItem
+#: irsl_choreonoid.cnoid_base.removeItem
+#: irsl_choreonoid.cnoid_base.saveImageOfScene
+#: irsl_choreonoid.cnoid_base.setBackgroundColor
+#: irsl_choreonoid.cnoid_base.setCameraCoords
+#: irsl_choreonoid.cnoid_base.setCameraCoordsParam
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
-#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.loadProject irsl_choreonoid.cnoid_util.loadRobot
-#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
-#: irsl_choreonoid.cnoid_util.removeItem
+#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.draw_coords.DrawCoordsList.__init__
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
@@ -75,9 +91,10 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.addNoise
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
 #: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
-#: irsl_choreonoid.robot_util.IKWrapper.endEffector
 #: irsl_choreonoid.robot_util.IKWrapper.flush
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
+#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights
 #: irsl_choreonoid.robot_util.IKWrapper.resetPose
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.setJoints
@@ -91,15 +108,25 @@ msgstr ""
 msgid "url [ url is like 'scheme://netloc/xxx/yyy/zzz' ]"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_base.addSimulator
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
+#: irsl_choreonoid.cnoid_base.currentSceneView
+#: irsl_choreonoid.cnoid_base.currentSceneWidget
+#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
+#: irsl_choreonoid.cnoid_base.findItems
+#: irsl_choreonoid.cnoid_base.findItemsByClass
+#: irsl_choreonoid.cnoid_base.findItemsByName
+#: irsl_choreonoid.cnoid_base.findItemsByQuery
+#: irsl_choreonoid.cnoid_base.getCameraCoords
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
+#: irsl_choreonoid.cnoid_base.getOrAddWorld
+#: irsl_choreonoid.cnoid_base.loadRobotItem
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
-#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.loadRobot
-#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
@@ -116,6 +143,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.default_joints
 #: irsl_choreonoid.robot_util.IKWrapper.default_pose
 #: irsl_choreonoid.robot_util.IKWrapper.endEffector
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
 #: irsl_choreonoid.robot_util.IKWrapper.resetPose
 #: irsl_choreonoid.robot_util.IKWrapper.robot
@@ -128,18 +156,28 @@ msgid "Returns"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.parseURL:6 of
-msgid "absolute path"
+msgid "Absolute path"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.addSimulator
+#: irsl_choreonoid.cnoid_base.addSimulator
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
+#: irsl_choreonoid.cnoid_base.currentSceneView
+#: irsl_choreonoid.cnoid_base.currentSceneWidget
+#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
+#: irsl_choreonoid.cnoid_base.findItems
+#: irsl_choreonoid.cnoid_base.findItemsByClass
+#: irsl_choreonoid.cnoid_base.findItemsByName
+#: irsl_choreonoid.cnoid_base.findItemsByQuery
+#: irsl_choreonoid.cnoid_base.getCameraCoords
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
+#: irsl_choreonoid.cnoid_base.getOrAddWorld
+#: irsl_choreonoid.cnoid_base.loadRobotItem
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.findBodyItem irsl_choreonoid.cnoid_util.findItem
-#: irsl_choreonoid.cnoid_util.findItems irsl_choreonoid.cnoid_util.getWorld
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.loadRobot
-#: irsl_choreonoid.cnoid_util.loadRobotItem irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
@@ -156,6 +194,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.default_joints
 #: irsl_choreonoid.robot_util.IKWrapper.default_pose
 #: irsl_choreonoid.robot_util.IKWrapper.endEffector
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
 #: irsl_choreonoid.robot_util.IKWrapper.resetPose
 #: irsl_choreonoid.robot_util.IKWrapper.robot
@@ -173,8 +212,12 @@ msgstr ""
 msgid "Examples"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.isInChoreonoid:3 of
-msgid "True if this script running on python-console of Choreonoid"
+#: irsl_choreonoid.cnoid_util.parseURL:26 of
+msgid "Note: URL is like 'scheme://netloc/xxx/yyy/zzz'"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:29 of
+msgid "Implemented scheme is 'choreonoid', 'env', 'file'"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.loadRobot:1 of
@@ -187,114 +230,6 @@ msgstr ""
 
 #: irsl_choreonoid.cnoid_util.loadRobot:6 of
 msgid "instance of cnoid.Body.Body"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadProject:1 of
-msgid "Loading project file (currend project may be changed)"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadProject:3 of
-msgid "filename of project file (.cnoid)"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.getItemTreeView:1 of
-msgid "DEPRECATED: use cnoid.Base.ItemTreeView.instance"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.getRootItem:1 of
-msgid "DEPRECATED: use cnoid.Base.RootItem.instance"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.getWorld:1 of
-msgid "Getting or creating WorldItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.getWorld:3 of
-msgid "name of WorldItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.getWorld:6 of
-msgid "added or found WorldItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.addSimulator:1 of
-msgid "Adding SimulatorItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.addSimulator:3 of
-msgid "world item, simulator should be created under this world"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.addSimulator:5 of
-msgid "name of SimulatorItem to be added"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.addSimulator:8 of
-msgid "Added SimulatorItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadRobotItem:1 of
-msgid "Load robot model and add it as a BodyItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadRobotItem:3 of
-msgid "filename (or path)"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadRobotItem:5 of
-msgid "name of loaded robot-model"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadRobotItem:7 of
-msgid "if True, WorldItem is added"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.loadRobotItem:10 of
-msgid "Loaded robot-model"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findItem:1 irsl_choreonoid.cnoid_util.findItems:1
-#: of
-msgid "Finding item in ItemTreeView"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findItem:3 irsl_choreonoid.cnoid_util.findItems:3
-#: of
-msgid "name of item to be searched"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findItem:6 of
-msgid "found item (first one)"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findItems:6 of
-msgid "all found items which has the name"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.removeItem:1 of
-msgid "Removing item"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.removeItem:3 of
-msgid "item to be removed"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findBodyItem:1 of
-msgid "Seaching BodyItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findBodyItem:3 of
-msgid ""
-"If type is str, searching BodyItem with the same name. If type is body, "
-"searching BodyItem which has identical body"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findBodyItem:6 of
-msgid "found BodyItem"
-msgstr ""
-
-#: irsl_choreonoid.cnoid_util.findRobot:1 of
-msgid "DEPRECATED: use findBodyItem"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.cnoidPosition:1 of
@@ -331,11 +266,294 @@ msgstr ""
 msgid "1x3 vector ( translation part of cPosition )"
 msgstr ""
 
+#: irsl_choreonoid.cnoid_util.isInChoreonoid:3 of
+msgid "True if this script running on python-console of Choreonoid"
+msgstr ""
+
 #: ../../module_irsl_choreonoid.rst:19
-msgid "module irsl_choreonoid.robot_util"
+msgid "module irsl_choreonoid.cnoid_base"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:21
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadProject:1 of
+msgid "Loading project file (currend project may be changed)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadProject:3 of
+msgid "filename of project file (.cnoid)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getItemTreeView:1 of
+msgid "DEPRECATED: use cnoid.Base.ItemTreeView.instance"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getRootItem:1 of
+msgid "DEPRECATED: use cnoid.Base.RootItem.instance"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getOrAddWorld:1 of
+msgid "Getting or creating WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getOrAddWorld:3 of
+msgid "name of WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getOrAddWorld:6 of
+msgid "added or found WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.addSimulator:1 of
+msgid "Adding SimulatorItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.addSimulator:3 of
+msgid "world item, simulator should be created under this world"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.addSimulator:5 of
+msgid "name of SimulatorItem to be added"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.addSimulator:8 of
+msgid "Added SimulatorItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:1 of
+msgid "Load robot model and add it as a BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:3 of
+msgid "filename (or path)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:5 of
+msgid "name of loaded robot-model"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:7 of
+msgid "if True, WorldItem is added"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:10 of
+msgid "Loaded robot-model"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItem:1 irsl_choreonoid.cnoid_base.findItems:1
+#: of
+msgid "Finding item in ItemTreeView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItem:3 irsl_choreonoid.cnoid_base.findItems:3
+#: irsl_choreonoid.cnoid_base.findItemsByName:3 of
+msgid "name of item to be searched"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItem:6 of
+msgid "found item (first one)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItems:6
+#: irsl_choreonoid.cnoid_base.findItemsByClass:6
+#: irsl_choreonoid.cnoid_base.findItemsByName:6 of
+msgid "all found items which has the name"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByQuery:1 of
+msgid "Finding item which is query returning True in ItemTreeView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByQuery:3 of
+msgid "Query function which rturns true if the item should be extracted"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByQuery:6 of
+msgid "all found items that query returns True"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByName:1 of
+msgid "Finding item with the same name in ItemTreeView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByClass:1 of
+msgid "Finding item with class given as the argument in ItemTreeView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findItemsByClass:3 of
+msgid "class of item to be searched"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.removeItem:1 of
+msgid "Removing item"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.removeItem:3 of
+msgid "item to be removed"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findBodyItem:1 of
+msgid "Seaching BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findBodyItem:3 of
+msgid ""
+"If type is str, searching BodyItem with the same name. If type is body, "
+"searching BodyItem which has identical body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findBodyItem:6 of
+msgid "found BodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.findRobot:1 of
+msgid "DEPRECATED: use findBodyItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:1 of
+msgid ""
+"Generating camera coordinates where designated direction is the camera's "
+"optical axis"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:3
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:3 of
+msgid "3D position of the camera"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:5 of
+msgid "Direction of the camera's optical axis"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:7
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:7 of
+msgid "Up direction"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:10
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:10 of
+msgid "Camera coordinates"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor:13 of
+msgid "Refer cnoid.Util.SgCamera.positionLookingFor"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:1 of
+msgid "Generating camera coordinates looking at the point"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:5 of
+msgid "3D position wherer the camera's optical axis passes through"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt:13 of
+msgid "Refer cnoid.Util.SgCamera.positionLookingAt"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.saveImageOfScene:1 of
+msgid "Saving scene as image file"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.saveImageOfScene:3 of
+msgid "Name of the file to be saved"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.saveImageOfScene:6 of
+msgid "Refer cnoid.Base.SceneWidget.saveImage"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.currentSceneView:1 of
+msgid "Returning the instance of SceneView"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.currentSceneView:5 of
+msgid "Current Instance of SceneView ( return cnoid.Base.SceneView.instance )"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.currentSceneWidget:1 of
+msgid "Returning the instance of SceneWidget"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.currentSceneWidget:5 of
+msgid ""
+"Current Instance of SceneWidget ( return "
+"cnoid.Base.SceneView.instance.sceneWidget )"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getCameraCoords:1 of
+msgid "Returning camera position of current scene"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getCameraCoords:3
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam:3 of
+msgid "If true, getting camera's field of view"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getCameraCoords:6 of
+msgid "Tuple with camera coordinates and camera's filed of view"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setCameraCoords:1 of
+msgid "Setting camera coordinates of current scene"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setCameraCoords:3 of
+msgid "Camera's coordinates to be set"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setCameraCoords:5 of
+msgid "Camera's filed of view to be set"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam:1 of
+msgid "Returning camera position of current scene (returning dictionary type)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.getCameraCoordsParam:6
+#: irsl_choreonoid.cnoid_base.setCameraCoordsParam:3 of
+msgid ""
+"Dictionary can be read with irsl_choreonoid.robot_util.make_coordinates, "
+"and added the keyword 'fov'"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setCameraCoordsParam:1 of
+msgid "Setting camera coordinates of current scene (receiving dictionary type)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setBackgroundColor:1 of
+msgid "Setting color of background"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.setBackgroundColor:3 of
+msgid "Vector with 3 elements. Eech element represents 'Red', 'Green', 'Blue'."
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.disableGrid:1 of
+msgid "Disabling to show grids"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.disableGrid:3 of
+msgid "ID of plane to be disabled. 0\\: XY, 1\\: XZ, 2\\: YZ"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.enableGrid:1 of
+msgid "SHowing grids"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.enableGrid:3 of
+msgid "ID of plane to show. 0\\: XY, 1\\: XZ, 2\\: YZ"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:29
+msgid "module irsl_choreonoid.robot_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:31
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py"
@@ -411,7 +629,7 @@ msgid ""
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.flush:1 of
-msgid "Updating robot model"
+msgid "Updating the robot in scene"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.updateDefault:1 of
@@ -419,27 +637,29 @@ msgid "Updating default values (using joints, default_pose, default_coords)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.endEffector:1 of
-msgid "Returns current endEffector"
+msgid "Current 6DOF coordinates of end-effector"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.endEffector:3 of
-msgid "ignored"
-msgstr ""
-
-#: irsl_choreonoid.robot_util.IKWrapper.endEffector:6 of
 msgid "coordinates of current end-effector"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector:1 of
+msgid "Getting end-effector (function version of self.endEffector)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector:3 of
+msgid "ignored"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector:6 of
+msgid "end-effector"
+msgstr ""
+
 #: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:1 of
-msgid "resetJointWeights(self):"
-msgstr ""
-
-#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:3 of
-msgid "Args:"
-msgstr ""
-
-#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights:5 of
-msgid "Returns:"
+msgid ""
+"Reset current joint-list to default joint-list (reverting effects of "
+"using setJoints)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.setJoints:1 of
@@ -608,7 +828,7 @@ msgid "current_joints using IK, currentAngleVector"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.default_joints:1 of
-msgid "Initial joint-list"
+msgid "Default joint-list (stored while initialization)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.default_joints:3 of
@@ -623,11 +843,11 @@ msgstr ""
 msgid "rootCoords stored while initialization"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:29
+#: ../../module_irsl_choreonoid.rst:39
 msgid "module irsl_choreonoid.draw_coords"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:31
+#: ../../module_irsl_choreonoid.rst:41
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py"
@@ -811,21 +1031,21 @@ msgstr ""
 msgid "object to be removed"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:39
+#: ../../module_irsl_choreonoid.rst:49
 msgid "class coordsWrapper"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:40
+#: ../../module_irsl_choreonoid.rst:50
 msgid "Base class for using coordinates interactively."
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:42
+#: ../../module_irsl_choreonoid.rst:52
 msgid ""
 "Inherited by class DrawCoordsListWrapped and class "
 "GeneralDrawInterfaceWrapped."
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:44
+#: ../../module_irsl_choreonoid.rst:54
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py"
@@ -947,5 +1167,26 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "irsl_choreonoid.draw_coords"
+#~ msgstr ""
+
+#~ msgid "absolute path"
+#~ msgstr ""
+
+#~ msgid "Updating robot model"
+#~ msgstr ""
+
+#~ msgid "Returns current endEffector"
+#~ msgstr ""
+
+#~ msgid "resetJointWeights(self):"
+#~ msgstr ""
+
+#~ msgid "Args:"
+#~ msgstr ""
+
+#~ msgid "Returns:"
+#~ msgstr ""
+
+#~ msgid "Initial joint-list"
 #~ msgstr ""
 

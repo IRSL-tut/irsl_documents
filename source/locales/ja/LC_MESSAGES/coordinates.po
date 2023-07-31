@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 18:38+0900\n"
+"POT-Creation-Date: 2023-07-31 17:54+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgid ""
 ":math:`\\mathbf{R}` as follows."
 msgstr ""
 
-#: ../../coordinates.rst:77 ../../coordinates.rst:144
+#: ../../coordinates.rst:77 ../../coordinates.rst:147
 msgid ""
 "T = \\begin{pmatrix}\n"
 "\\mathbf{R}  & \\mathbf{p} \\\\\n"
@@ -155,7 +155,7 @@ msgstr ""
 msgid "The inverse matrix of T is as follows."
 msgstr ""
 
-#: ../../coordinates.rst:85
+#: ../../coordinates.rst:85 ../../coordinates.rst:294
 msgid ""
 "T^{-1} = \\begin{pmatrix}\n"
 "\\mathbf{R}^{-1}  & - \\mathbf{R}^{-1}\\mathbf{p} \\\\\n"
@@ -226,58 +226,240 @@ msgid ""
 ":math:`\\mathbf{p}` and 3D rotation matrix :math:`\\mathbf{R}` ."
 msgstr ""
 
-#: ../../coordinates.rst:137
-msgid "Access to a position and a rotation matrix"
+#: ../../coordinates.rst:138
+msgid "Initializing and accessing to a position and a rotation matrix"
 msgstr ""
 
-#: ../../coordinates.rst:139
+#: ../../coordinates.rst:140
 msgid ""
 ":math:`\\mathbf{p}` and :math:`\\mathbf{R}` can be retrieved by accessing"
 " to properties of coordinates class."
 msgstr ""
 
-#: ../../coordinates.rst:142
+#: ../../coordinates.rst:143
 msgid "In the following, T is an instance of the coordinates class."
 msgstr ""
 
-#: ../../coordinates.rst:195
+#: ../../coordinates.rst:145
+msgid "Mathmatical representaion of T is following."
+msgstr ""
+
+#: ../../coordinates.rst:166
+msgid "Initalizing coordinates"
+msgstr ""
+
+#: ../../coordinates.rst:173
+msgid "Getting and setting 3D position (access attribute pos)"
+msgstr ""
+
+#: ../../coordinates.rst:182
+msgid "Getting and setting Rotation matrix (access attribute rot)"
+msgstr ""
+
+#: ../../coordinates.rst:189
+msgid "Getting and setting quaternion (access attribute quaternion)"
+msgstr ""
+
+#: ../../coordinates.rst:196
+msgid "Getting and setting roll-pitch-yaw angle (access attribute RPY)"
+msgstr ""
+
+#: ../../coordinates.rst:203
+msgid "Getting and setting angle-axis (access attribute angleAxis)"
+msgstr ""
+
+#: ../../coordinates.rst:213
+msgid ""
+"Getting and setting 4x4 homogeneous transformation matrix (access "
+"attribute cnoidPosition)"
+msgstr ""
+
+#: ../../coordinates.rst:218
 msgid "Methods to convert a vector"
 msgstr ""
 
-#: ../../coordinates.rst:197
-msgid "In the following, :math:`\\mathbf{v}` is 3D vector (numpy.array)."
-msgstr ""
-
-#: ../../coordinates.rst:221
-msgid "Methods to return a coordinate (not changing itself)"
-msgstr ""
-
-#: ../../coordinates.rst:223
+#: ../../coordinates.rst:220
 msgid ""
-"A = \\begin{pmatrix}\n"
-"\\mathbf{R}_{a}  & \\mathbf{p}_{a} \\\\\n"
-"\\mathbf{0}  & 1\n"
-"\\end{pmatrix}\n"
-"\n"
+"In the following, :math:`\\mathbf{v}` is 3D position vector "
+"(numpy.array). Folowing 4 functions do not change the input value."
+msgstr ""
+
+#: ../../coordinates.rst:230 ../../coordinates.rst:238
+#: ../../coordinates.rst:249 ../../coordinates.rst:260
+msgid "Mathmatical representation of a return value is"
+msgstr ""
+
+#: ../../coordinates.rst:232
+msgid ":math:`\\mathbf{R} \\mathbf{v}`"
 msgstr ""
 
 #: ../../coordinates.rst:240
-msgid "Methods to change itself"
+msgid ":math:`\\mathbf{v}^T \\mathbf{R}`"
 msgstr ""
 
-#: ../../coordinates.rst:264
-msgid "Examples"
+#: ../../coordinates.rst:246
+msgid ""
+"Converts a vector represented in a local coordinate system T to a vector "
+"represented in the world coordinate system."
+msgstr ""
+
+#: ../../coordinates.rst:251
+msgid ":math:`\\mathbf{R}\\mathbf{v} + \\mathbf{p}`"
+msgstr ""
+
+#: ../../coordinates.rst:257
+msgid ""
+"Converts a vector represented in the world coordinate system. to a vector"
+" represented in a local coordinate system T."
+msgstr ""
+
+#: ../../coordinates.rst:262
+msgid ":math:`\\mathbf{R}^{-1}\\left( \\mathbf{v} - \\mathbf{p} \\right)`"
+msgstr ""
+
+#: ../../coordinates.rst:266
+msgid "Methods to convert a vector(change input value)"
 msgstr ""
 
 #: ../../coordinates.rst:268
-msgid "Reference book"
+msgid "There are functions which change the input value."
 msgstr ""
 
 #: ../../coordinates.rst:270
+msgid "Input value v will be changed as the same of return value."
+msgstr ""
+
+#: ../../coordinates.rst:282
+msgid "Methods to return a coordinate (without modifying itself)"
+msgstr ""
+
+#: ../../coordinates.rst:284
+msgid "In the following, A is an instance of the coordinates class."
+msgstr ""
+
+#: ../../coordinates.rst:290
+msgid "Returns inverse transformation."
+msgstr ""
+
+#: ../../coordinates.rst:292
+msgid "Mathmatical representation of a return value is following."
+msgstr ""
+
+#: ../../coordinates.rst:304
+msgid "*wrt* is an optional value and defult value is 'local'"
+msgstr ""
+
+#: ../../coordinates.rst:306 ../../coordinates.rst:337
+#: ../../coordinates.rst:354 ../../coordinates.rst:372
+#: ../../coordinates.rst:390
+msgid "If *wrt* = coordinates.wrt.local"
+msgstr ""
+
+#: ../../coordinates.rst:308
+msgid ":math:`T^{-1}A` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:310 ../../coordinates.rst:341
+#: ../../coordinates.rst:358 ../../coordinates.rst:376
+#: ../../coordinates.rst:394
+msgid "If *wrt* = coordinates.wrt.world"
+msgstr ""
+
+#: ../../coordinates.rst:312
+msgid ":math:`AT^{-1}` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:314 ../../coordinates.rst:345
+#: ../../coordinates.rst:362 ../../coordinates.rst:380
+#: ../../coordinates.rst:398
+msgid "If *wrt* = W (coordinates class)"
+msgstr ""
+
+#: ../../coordinates.rst:316
+msgid ":math:`W^{-1}AT^{-1}W` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:321
+msgid "Methods to modify itself"
+msgstr ""
+
+#: ../../coordinates.rst:323
+msgid "In the following, :math:`\\leftarrow` represents substitution."
+msgstr ""
+
+#: ../../coordinates.rst:329
+msgid "Attributes pos and rot is substituted"
+msgstr ""
+
+#: ../../coordinates.rst:331 ../../coordinates.rst:343
+msgid ":math:`T \\leftarrow A`"
+msgstr ""
+
+#: ../../coordinates.rst:339 ../../coordinates.rst:392
+msgid ":math:`T \\leftarrow TA`"
+msgstr ""
+
+#: ../../coordinates.rst:347
+msgid ":math:`T \\leftarrow WA`"
+msgstr ""
+
+#: ../../coordinates.rst:356
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}\\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:360
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p}+ \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:364
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}_{W}\\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:366
+msgid ":math:`\\mathbf{R}_{W}` is rotation matrix of W"
+msgstr ""
+
+#: ../../coordinates.rst:374
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R} \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:378
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:382
+msgid ""
+":math:`\\mathbf{p} \\leftarrow \\mathbf{p}_{W} + \\mathbf{R}_{W} "
+"\\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:384
+msgid ""
+":math:`\\mathbf{R}_{W}` is rotation matrix of W, and "
+":math:`\\mathbf{p}_{W}` is 3D position of W."
+msgstr ""
+
+#: ../../coordinates.rst:396
+msgid ":math:`T \\leftarrow AT`"
+msgstr ""
+
+#: ../../coordinates.rst:400
+msgid ":math:`T \\leftarrow$ $\\left( W A W^{-1} \\right) T`"
+msgstr ""
+
+#: ../../coordinates.rst:405
+msgid "Examples"
+msgstr ""
+
+#: ../../coordinates.rst:409
+msgid "Reference book"
+msgstr ""
+
+#: ../../coordinates.rst:411
 msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"
 msgstr ""
 
-#: ../../coordinates.rst:272
+#: ../../coordinates.rst:413
 msgid "第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる"
 msgstr ""
 
@@ -393,5 +575,37 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "参考書"
+#~ msgstr ""
+
+#~ msgid "Access to a position and a rotation matrix"
+#~ msgstr ""
+
+#~ msgid "In the following, :math:`\\mathbf{v}` is 3D vector (numpy.array)."
+#~ msgstr ""
+
+#~ msgid "Methods to return a coordinate (not changing itself)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A = \\begin{pmatrix}\n"
+#~ "\\mathbf{R}_{a}  & \\mathbf{p}_{a} \\\\\n"
+#~ "\\mathbf{0}  & 1\n"
+#~ "\\end{pmatrix}\n"
+#~ "\n"
+#~ msgstr ""
+
+#~ msgid "Methods to change itself"
+#~ msgstr ""
+
+#~ msgid "wrt is an optional value and defult value is 'local'"
+#~ msgstr ""
+
+#~ msgid "If wrt = coordinates.wrt.local"
+#~ msgstr ""
+
+#~ msgid "If wrt = coordinates.wrt.world"
+#~ msgstr ""
+
+#~ msgid "If wrt = W (coordinates class)"
 #~ msgstr ""
 

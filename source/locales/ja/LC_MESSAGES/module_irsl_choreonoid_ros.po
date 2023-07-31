@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 18:38+0900\n"
+"POT-Creation-Date: 2023-07-31 17:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../module_irsl_choreonoid_ros.rst:3
-msgid "Modules in irsl_choreonoidros"
+msgid "Modules in irsl_choreonoid_ros"
 msgstr ""
 
 #: ../../module_irsl_choreonoid_ros.rst:5
@@ -40,6 +40,23 @@ msgstr ""
 msgid "Refere parseURL in irsl_choreonoid.cnoid_util"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Parameters"
 msgstr ""
@@ -48,14 +65,50 @@ msgstr ""
 msgid "url"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Returns"
 msgstr ""
 
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:6 of
-msgid "absolute path"
+msgid "Absolute path"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Return type"
 msgstr ""
@@ -75,7 +128,7 @@ msgid ""
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
-msgid "Interface for controlling locomotion of robot"
+msgid "Interface for controlling locomotion of the robot"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop:1 of
@@ -83,43 +136,234 @@ msgid "Stop moving of MobileBase"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:1 of
-msgid "Add moving velocity of MobileBase"
+msgid "Set moving velocity of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:3 of
+msgid "Velocity of x-axis [ m/sec ]"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:5 of
+msgid "Velocity of y-axis [ m/sec ]"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:7 of
+msgid "Angular velocity of yaw [ radian/sec ]"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:1 of
+msgid "Current robot's coordinate on the map"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:3
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:3 of
+msgid "Not implemented yet [TODO]"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:5 of
+msgid "Returns:"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:6
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:6 of
+msgid "cnoid.IRSLCoords.coordinates : Current robot's coordinate on the map"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:1 of
-msgid "Set target position(relative) for MobileBase"
+msgid ""
+"Set target position for MobileBase, target is reletive to current robot's"
+" coordinates"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:3 of
+msgid "Target coordinates for moving (reletive to current robot's coordinates)"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:1 of
-msgid "Set target position on map for MobileBase"
+msgid ""
+"Set target position on map for MobileBase, target is relative to map "
+"coordinates"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:3 of
+msgid "Target coordinates for moving (map coordinates)"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:1 of
 msgid "Set target trajectory for MobileBase"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:6 of
+msgid "Args:"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:6 of
+msgid ""
+"traj (list[(cnoid.IRSLCoords.coordinates, float)]) : List of pair of "
+"coordinates and time relative (boolean, default = False) : If True, "
+"trajectory is considered it is relative to robot's coordinates."
+msgstr ""
+
 #: irsl_choreonoid_ros.RobotInterface.JointInterface:1 of
-msgid "Interface for controlling joints of robot"
+msgid "Interface for controlling joints of the robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList:1 of
+msgid "Getting list of instance of joint-group"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList:3 of
+msgid "List of instance of joint-groups"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList:1 of
+msgid "Getting list of name of joint-groups"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList:3 of
+msgid "List of name of joint-groups"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:1 of
+msgid "Sending angles of self.robot to the actual robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:5
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:5
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:3 of
+msgid "Moving duration in second"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:3
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:7
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5 of
+msgid "Name of group to be used"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:1 of
+msgid ""
+"Sending angle-vector to the actual robot. angle_vector is set to "
+"self.robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:3 of
+msgid "Vector of angles"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:1 of
+msgid "Sending angles to the actual robot. angles is set to self.robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:3 of
+msgid "Dictionary, whose key is joint-name, and value is joint-angle"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:1 of
+msgid "Checking method for finishing to send angles"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:6 of
+msgid "If True, the robot is not moving"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1 of
-msgid "Interface for receiving data from sensors on robot"
+msgid "Interface for receiving data from sensors on the robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList:1 of
+msgid "Getting list of the instances for gathering data from the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList:3 of
+msgid "List of the instances for gathering data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames:1 of
+msgid "Getting list of name of the devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames:3 of
+msgid "List of name of the devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:1 of
+msgid "Getting the instance for gathering data from the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:3
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:3 of
+msgid "Name of the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:6 of
+msgid "The instance for gathering data"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:1 of
-msgid "Get data from the device"
+msgid "Getting data from the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:5
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:5
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:7
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:7
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:7
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:7 of
+msgid "Clear current-data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:8
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:8
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:10
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:10
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:10
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:10 of
+msgid ""
+"Data from the device. Type of a return value depends on type of the "
+"devide."
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:1 of
-msgid "Wait if there is no current data"
+msgid "Getting data, waiting if there is no current data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:5
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:5
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:5
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:5 of
+msgid "Time out in second"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:1 of
-msgid "Wait until subscribing new data"
+msgid "Getting data, waiting until subscribing new data"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:1 of
-msgid "Get data array from devices"
+msgid "Getting list of data from devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:1 of
+msgid "Getting list of data, waiting if there is no current data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:1 of
+msgid "Getting list of data, waiting until subscribing new data"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
@@ -128,14 +372,80 @@ msgid ""
 "DeviceInterface and MobileBaseInterface)"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface:3 of
+msgid ""
+"At a instance of this interface, all methods in JointInterface, "
+"DeviceInterface and MobileBaseInterface can be used."
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface:5 of
+msgid "Then, please refer methods of these classes."
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:1 of
+msgid "Name of setting file"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:3 of
+msgid "Name of node"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:5 of
+msgid "If True, ROS node will start with this node-name."
+msgstr ""
+
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel:1 of
 msgid "Return other instance of the robot model"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel:5 of
+msgid "Copy of self.robot (this is not identical to self.robot)"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1 of
 msgid "Return instance of the robot model"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:3 of
+msgid "Instance of the robot model using in this instance"
+msgstr ""
+
 #~ msgid "irsl_choreonoid_ros module"
+#~ msgstr ""
+
+#~ msgid "Modules in irsl_choreonoidros"
+#~ msgstr ""
+
+#~ msgid "absolute path"
+#~ msgstr ""
+
+#~ msgid "Interface for controlling locomotion of robot"
+#~ msgstr ""
+
+#~ msgid "Add moving velocity of MobileBase"
+#~ msgstr ""
+
+#~ msgid "Set target position(relative) for MobileBase"
+#~ msgstr ""
+
+#~ msgid "Set target position on map for MobileBase"
+#~ msgstr ""
+
+#~ msgid "Interface for controlling joints of robot"
+#~ msgstr ""
+
+#~ msgid "Interface for receiving data from sensors on robot"
+#~ msgstr ""
+
+#~ msgid "Get data from the device"
+#~ msgstr ""
+
+#~ msgid "Wait if there is no current data"
+#~ msgstr ""
+
+#~ msgid "Wait until subscribing new data"
+#~ msgstr ""
+
+#~ msgid "Get data array from devices"
 #~ msgstr ""
 

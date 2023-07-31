@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 18:38+0900\n"
+"POT-Creation-Date: 2023-07-31 17:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,7 +213,8 @@ msgstr ""
 #: cnoid.IRSLCoords.PyCapsule.angleAxisNormalized
 #: cnoid.IRSLCoords.PyCapsule.mid_coords
 #: cnoid.IRSLCoords.PyCapsule.quaternionToRotation
-#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion of
+#: cnoid.IRSLCoords.PyCapsule.rotationToQuaternion
+#: cnoid.IRSLCoords.PyCapsule.setCoordsToPosition of
 msgid "Parameters"
 msgstr ""
 
@@ -357,6 +358,18 @@ msgid ""
 "cnoid.IRSLCoords.coordinates"
 msgstr ""
 
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.setCoordsToPosition:1 of
+msgid "Set transformation matrix (changing value of argument)"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:3
+#: cnoid.IRSLCoords.PyCapsule.Position_quaternion:3
+#: cnoid.IRSLCoords.PyCapsule.Position_rotation:3
+#: cnoid.IRSLCoords.PyCapsule.Position_translation:3
+#: cnoid.IRSLCoords.PyCapsule.setCoordsToPosition:3 of
+msgid "4x4 homogeneous transformation matrix, using in Choreonoid"
+msgstr ""
+
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.setRPY:3 of
 msgid ""
 "setRPY(self: cnoid.IRSLCoords.coordinates, arg0: "
@@ -461,13 +474,6 @@ msgstr ""
 
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:1 of
 msgid "Generating inverse transformation matrix"
-msgstr ""
-
-#: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:3
-#: cnoid.IRSLCoords.PyCapsule.Position_quaternion:3
-#: cnoid.IRSLCoords.PyCapsule.Position_rotation:3
-#: cnoid.IRSLCoords.PyCapsule.Position_translation:3 of
-msgid "4x4 homogeneous transformation matrix, using in Choreonoid"
 msgstr ""
 
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse:6 of
