@@ -164,6 +164,10 @@
 </li>
         <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.__init__">(irsl_choreonoid.robot_util.IKWrapper method)</a>
 </li>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.__init__">(irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.__init__">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
+</li>
         <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__">(irsl_choreonoid_ros.RobotInterface.DeviceInterface method)</a>
 </li>
         <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface.__init__">(irsl_choreonoid_ros.RobotInterface.JointInterface method)</a>
@@ -199,12 +203,12 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject">addObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.DrawCoordsList.addPoint">addPoint() (irsl_choreonoid.draw_coords.DrawCoordsList method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject">addPyObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.addShapeNode">addShapeNode() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.addSimulator">addSimulator() (in module irsl_choreonoid.cnoid_base)</a>
@@ -220,8 +224,16 @@
       <ul>
         <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.angleVector">(irsl_choreonoid.robot_util.IKWrapper method)</a>
 </li>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.angleVector">(irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
+</li>
       </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.appendChild">appendChild() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.arm">arm (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector">armEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -399,7 +411,11 @@
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.enableGrid">enableGrid() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.endEffector">endEffector (irsl_choreonoid.robot_util.IKWrapper property)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector property)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.eps_eq">eps_eq() (in module cnoid.IRSLCoords)</a>
@@ -491,7 +507,11 @@
 </li>
       </ul></li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.getEndEffector">getEndEffector() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector">(irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
 </li>
+      </ul></li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerParts.getExtraData">getExtraData() (cnoid.RobotAssembler.RobotAssemblerParts method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getFloatInfo">getFloatInfo() (cnoid.Body.Link method)</a>
@@ -519,6 +539,8 @@
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getJointId">getJointId() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.getJointType">getJointType() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.getLimb">getLimb() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.getLink">getLink() (cnoid.Body.Body method)</a>
 
@@ -624,13 +646,17 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.hasJointEffortLimits">hasJointEffortLimits() (cnoid.Body.Link method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.hasJointVelocityLimits">hasJointVelocityLimits() (cnoid.Body.Link method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Device.hasStateOnly">hasStateOnly() (cnoid.Body.Device method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.hasVirtualJointForces">hasVirtualJointForces() (cnoid.Body.Body method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.head">head (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector">headEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -657,7 +683,13 @@
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.inverse_transformation">inverse_transformation() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.inverseKinematics">inverseKinematics() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics">(irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
 </li>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.inverseRotateVector">inverseRotateVector() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.inverseTransformVector">inverseTransformVector() (cnoid.IRSLCoords.coordinates method)</a>
@@ -690,6 +722,8 @@
         <li><a href="module_irsl_choreonoid.html#module-irsl_choreonoid.robot_util">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     irsl_choreonoid_ros.cnoid_ros_util
 
@@ -697,8 +731,6 @@
         <li><a href="module_irsl_choreonoid_ros.html#module-irsl_choreonoid_ros.cnoid_ros_util">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     irsl_choreonoid_ros.RobotInterface
 
@@ -752,11 +784,19 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.joint">joint() (cnoid.Body.Body method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.joint_weights">joint_weights (irsl_choreonoid.robot_util.IKWrapper property)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle">jointAngle() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.JointInterface">JointInterface (class in irsl_choreonoid_ros.RobotInterface)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.jointList">jointList (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -764,6 +804,10 @@
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.larm">larm (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector">larmEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link">Link (class in cnoid.Body)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.link">link() (cnoid.Body.Body method)</a>
@@ -778,7 +822,13 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.linkList">linkList (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.linkTraverse">linkTraverse() (cnoid.Body.Body method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.lleg">lleg (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector">llegEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.loadProject">loadProject() (in module irsl_choreonoid.cnoid_base)</a>
 </li>
@@ -953,7 +1003,15 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.rarm">rarm (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector">rarmEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RASceneParts">RASceneParts (class in cnoid.RobotAssembler)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector">registerEndEffector() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose">registerNamedPose() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.removeChild">removeChild() (cnoid.Body.Link method)</a>
 </li>
@@ -968,6 +1026,8 @@
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject">removePyObject() (irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.removeShapeNode">removeShapeNode() (cnoid.Body.Link method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename">rename() (irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.resetDefaultPosition">resetDefaultPosition() (cnoid.Body.Body method)</a>
 </li>
@@ -985,6 +1045,10 @@
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.resetPose">resetPose() (irsl_choreonoid.robot_util.IKWrapper method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.rleg">rleg (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector">rlegEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RoboasmConnectingPoint">RoboasmConnectingPoint (class in cnoid.RobotAssembler)</a>
 </li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RoboasmCoords">RoboasmCoords (class in cnoid.RobotAssembler)</a>
@@ -993,16 +1057,18 @@
 </li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RoboasmRobot">RoboasmRobot (class in cnoid.RobotAssembler)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RoboasmUtil">RoboasmUtil (class in cnoid.RobotAssembler)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.robot">robot (irsl_choreonoid.robot_util.IKWrapper property)</a>
 
       <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.robot">(irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
         <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot">(irsl_choreonoid_ros.RobotInterface.RobotInterface property)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerActuator">RobotAssemblerActuator (class in cnoid.RobotAssembler)</a>
 </li>
       <li><a href="module_cnoid_robotassembler.html#cnoid.RobotAssembler.RobotAssemblerConnectingPoint">RobotAssemblerConnectingPoint (class in cnoid.RobotAssembler)</a>
@@ -1023,8 +1089,16 @@
 </li>
       <li><a href="module_irsl_choreonoid_ros.html#irsl_choreonoid_ros.RobotInterface.RobotInterface">RobotInterface (class in irsl_choreonoid_ros.RobotInterface)</a>
 </li>
-      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.rootCoords">rootCoords() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped">RobotModelWrapped (class in irsl_choreonoid.robot_util)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector">RobotModelWrapped.EndEffector (class in irsl_choreonoid.robot_util)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.IKWrapper.rootCoords">rootCoords() (irsl_choreonoid.robot_util.IKWrapper method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords">(irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.rot">rot (cnoid.IRSLCoords.coordinates property)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.rotate">rotate() (cnoid.IRSLCoords.coordinates method)</a>
@@ -1073,6 +1147,12 @@
       </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setActuationMode">setActuationMode() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap">setAngleMap() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+
+      <ul>
+        <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap">(irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector method)</a>
+</li>
+      </ul></li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setAttitude">setAttitude() (cnoid.Body.Link method)</a>
 </li>
       <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.cnoid_base.setBackgroundColor">setBackgroundColor() (in module irsl_choreonoid.cnoid_base)</a>
@@ -1086,6 +1166,8 @@
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.setCoords">setCoords() (in module cnoid.IRSLCoords)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.setCoordsToPosition">setCoordsToPosition() (cnoid.IRSLCoords.coordinates method)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose">setDefaultPose() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setEquivalentRotorInertia">setEquivalentRotorInertia() (cnoid.Body.Link method)</a>
 </li>
@@ -1129,6 +1211,8 @@
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setMaterial">setMaterial() (cnoid.Body.Link method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.setMode">setMode() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.setModelName">setModelName() (cnoid.Body.Body method)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Body.setName">setName() (cnoid.Body.Body method)</a>
@@ -1139,6 +1223,8 @@
         <li><a href="module_cnoid_body.html#cnoid.Body.Link.setName">(cnoid.Body.Link method)</a>
 </li>
       </ul></li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose">setNamedPose() (irsl_choreonoid.robot_util.RobotModelWrapped method)</a>
+</li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.setOffsetCoords">setOffsetCoords() (in module cnoid.IRSLCoords)</a>
 </li>
       <li><a href="module_cnoid_body.html#cnoid.Body.Link.setOffsetPosition">setOffsetPosition() (cnoid.Body.Link method)</a>
@@ -1205,14 +1291,18 @@
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.toPosition">toPosition() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.torso">torso (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+      <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector">torsoEndEffector (irsl_choreonoid.robot_util.RobotModelWrapped property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transform">transform() (cnoid.IRSLCoords.coordinates method)</a>
 
       <ul>
         <li><a href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.transform">(irsl_choreonoid.irsl_draw_object.coordsWrapper method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transform_vector">transform_vector() (cnoid.IRSLCoords.coordinates method)</a>
 </li>
       <li><a href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.transformation">transformation() (cnoid.IRSLCoords.coordinates method)</a>
