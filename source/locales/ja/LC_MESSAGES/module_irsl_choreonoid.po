@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 17:46+0900\n"
+"POT-Creation-Date: 2023-08-01 12:54+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,6 +99,23 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.setJoints
 #: irsl_choreonoid.robot_util.IKWrapper.updateDefault
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.__init__
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose
 #: irsl_choreonoid.robot_util.make_coordinates
 #: irsl_choreonoid.robot_util.make_coords_dict of
 msgid "Parameters"
@@ -150,6 +167,34 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.tip_link
 #: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.arm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
+#: irsl_choreonoid.robot_util.RobotModelWrapped.head
+#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg
+#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torso
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
 #: irsl_choreonoid.robot_util.make_coords_dict of
 msgid "Returns"
@@ -201,6 +246,34 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.tip_link
 #: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.arm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
+#: irsl_choreonoid.robot_util.RobotModelWrapped.head
+#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg
+#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torso
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
 #: irsl_choreonoid.robot_util.make_coords_dict of
 msgid "Return type"
@@ -340,7 +413,11 @@ msgstr ""
 msgid "if True, WorldItem is added"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_base.loadRobotItem:10 of
+#: irsl_choreonoid.cnoid_base.loadRobotItem:9 of
+msgid "if True and world if False, loaded item is added to RootItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.loadRobotItem:12 of
 msgid "Loaded robot-model"
 msgstr ""
 
@@ -720,7 +797,9 @@ msgstr ""
 msgid "if True, printing debug message"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:26 of
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:26
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:8
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:10 of
 msgid "IK was success or not, and total count of calculation"
 msgstr ""
 
@@ -841,6 +920,375 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.default_coords:1 of
 msgid "rootCoords stored while initialization"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
+msgid "RobotModel for programming Inteactively"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.__init__:1 of
+msgid "robot model using this class"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose:1 of
+msgid ""
+"Registering named pose for using with "
+"irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose:3 of
+msgid "Name of registered pose"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose:5 of
+msgid ""
+"Angle-vector to be able to pass "
+"irsl_choreonoid.robot_util.RobotModelWrapped.angleVector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose:7 of
+msgid "Coordinates of Root"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector:1 of
+msgid ""
+"Registering named pose for using with "
+"irsl_choreonoid.robot_util.RobotModelWrapped.getLimb, etc."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector:3 of
+msgid "Name of limb as registered end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector:5 of
+msgid "Link which is direct parent of coordinates of end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector:7 of
+msgid "Coordinates tip_link to end_effector represented on link's coordinate"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector:11 of
+msgid "str, nickname:str)) ) : Tuple of actual_name and nick_name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector:1 of
+msgid "EndEffector class for manipulating end-effector, limb, joint-group"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.__init__:1 of
+msgid "Use RobotModelWrapped.registerEndEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename:1 of
+msgid "Renaming using registered nick-name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename:3 of
+msgid "nick-name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename:6 of
+msgid "actual name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector:1 of
+msgid ""
+"Getting coordinate of the end-effector (return value is generated on "
+"demand)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector:3 of
+msgid "Coordinate of the end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:1
+#: of
+msgid "Solving inverse kinematic on this limb"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:3 of
+msgid "Coordinate of the target"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:5
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:7 of
+msgid "Just passing to IKWrapper"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle:1 of
+msgid "Setting or getting angle of the joint (limb version)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle:3 of
+msgid "Name of a joint, 'nickname' is acceptable."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle:5
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle:5 of
+msgid "Angle [radian] to be set"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle:8
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle:8 of
+msgid "Angle of the joint, if do not find the name, None would be returned"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap:1 of
+msgid "Setting angles of the joint (limb version)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap:3 of
+msgid ""
+"Keyword is a joint name and value is a joint angle. 'nickname' is "
+"acceptable."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap:6
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap:6 of
+msgid "If angles is set, returns True"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector:1 of
+msgid "Setting or getting angle-vector (limb version)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector:3 of
+msgid "Vector of angle[radian] to be set"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector:6
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector:6 of
+msgid "Vector of angle[radian]"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.robot:1 of
+msgid "Returns: cnoid.Body.Body : Instance of robot model currently using"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode:1 of
+msgid "Set updating mode"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode:3 of
+msgid "Mode to be set (0\\: kinematics mode, 1\\: rendering mode)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode:6 of
+msgid "Current mode (0\\: kinematics mode, 1\\: rendering mode)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.linkList:1 of
+msgid "Returns: list [cnoid.Body.Link] : List of links"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointList:1 of
+msgid "Returns: list [cnoid.Body.Link] : List of joints"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector:1 of
+msgid "Setting or getting angle-vector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle:1 of
+msgid "Setting or getting angle of the joint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle:3 of
+msgid "Name of a joint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap:1 of
+msgid "Setting angles of the joint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords:1 of
+msgid "Getting or setting coordinates of root link of robot"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords:3 of
+msgid "Coordinate to be set"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords:6 of
+msgid "Current coordinates of root link of robot"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose:1 of
+msgid "Setting default pose if registered"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose:1 of
+msgid ""
+"Setting named pose, name should be registered by "
+"irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb:1 of
+msgid ""
+"Getting limb as end-effector, name should be registered by "
+"irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb:3 of
+msgid "Name of registered limb as end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb:6 of
+msgid "Instance of EndEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb:9 of
+msgid "Raise:"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector:1 of
+msgid ""
+"Getting coordinates of end-effector of limb (return value is generated on"
+" demand)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector:6 of
+msgid "Current coordinates of end-effector of limb"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('rleg')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg:3 of
+msgid "Instance of EndEffector (rleg)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('lleg')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg:3 of
+msgid "Instance of EndEffector (lleg)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('rarm')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm:3 of
+msgid "Instance of EndEffector (rarm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larm:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('larm')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larm:3 of
+msgid "Instance of EndEffector (larm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.arm:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('arm')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.arm:3 of
+msgid "Instance of EndEffector (arm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.head:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('head')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.head:3 of
+msgid "Instance of EndEffector (head)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torso:1 of
+msgid "Pre defined accessor of limb, same as self.getLimb('torso')"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torso:3 of
+msgid "Instance of EndEffector (torso)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('rleg').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(rleg)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('lleg').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(lleg)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('rarm').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(rarm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('larm').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(larm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('arm').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(arm)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('head').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(head)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector:1 of
+msgid ""
+"Pre defined accessor to end-effector, same as "
+"self.getLimb('torso').endEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector:3 of
+msgid "Current coordinates of end-effector of limb(torso)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:1 of
+msgid "Solving inverse kinematic of the limb"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:5 of
+msgid "Name of the limb"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:39
@@ -1188,5 +1636,26 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Initial joint-list"
+#~ msgstr ""
+
+#~ msgid "Registering named pose for using with self.setNamedPose"
+#~ msgstr ""
+
+#~ msgid "Angle-vector to be able to pass self.angleVector()"
+#~ msgstr ""
+
+#~ msgid "Registering named pose for using with self.getLimb(), etc."
+#~ msgstr ""
+
+#~ msgid "str, nickname:str)) ) :"
+#~ msgstr ""
+
+#~ msgid "Setting named pose, name should be registered by self.registerNamedPose"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Getting limb as end-effector, name "
+#~ "should be registered by "
+#~ "self.registerEndEffector"
 #~ msgstr ""
 
