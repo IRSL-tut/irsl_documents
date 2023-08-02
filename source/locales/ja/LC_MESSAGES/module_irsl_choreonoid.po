@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-01 12:54+0900\n"
+"POT-Creation-Date: 2023-08-02 19:45+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
 #: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_dict of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Parameters"
 msgstr ""
 
@@ -167,6 +167,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.tip_link
 #: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
@@ -196,7 +197,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torso
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_dict of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Returns"
 msgstr ""
 
@@ -246,6 +247,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.rootCoords
 #: irsl_choreonoid.robot_util.IKWrapper.tip_link
 #: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
@@ -275,13 +277,13 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torso
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_dict of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Return type"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.parseURL:10
 #: irsl_choreonoid.robot_util.make_coordinates:12
-#: irsl_choreonoid.robot_util.make_coords_dict:10 of
+#: irsl_choreonoid.robot_util.make_coords_map:10 of
 msgid "Examples"
 msgstr ""
 
@@ -652,15 +654,15 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coords_dict:1 of
+#: irsl_choreonoid.robot_util.make_coords_map:1 of
 msgid "Generating dictonary describing transformation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coords_dict:3 of
+#: irsl_choreonoid.robot_util.make_coords_map:3 of
 msgid "Transformation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coords_dict:6 of
+#: irsl_choreonoid.robot_util.make_coords_map:6 of
 msgid "Dictonary can be used by make_coordinates"
 msgstr ""
 
@@ -1003,6 +1005,14 @@ msgstr ""
 msgid "Coordinate of the end-effector"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK:1 of
+msgid "Getting IKWrapper instance using this EndEffector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK:3 of
+msgid "IKWrapper instance using this EndEffector"
+msgstr ""
+
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:1
 #: of
 msgid "Solving inverse kinematic on this limb"
@@ -1118,7 +1128,8 @@ msgstr ""
 msgid "Current coordinates of root link of robot"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose:1 of
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose:1
+#: irsl_choreonoid.robot_util.RobotModelWrapped.setInitialPose:1 of
 msgid "Setting default pose if registered"
 msgstr ""
 
