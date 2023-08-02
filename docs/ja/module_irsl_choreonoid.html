@@ -89,7 +89,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-robot-util">module irsl_choreonoid.robot_util</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coordinates"><code class="docutils literal notranslate"><span class="pre">make_coordinates()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coords_dict"><code class="docutils literal notranslate"><span class="pre">make_coords_dict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coords_map"><code class="docutils literal notranslate"><span class="pre">make_coords_map()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper"><code class="docutils literal notranslate"><span class="pre">IKWrapper</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper.__init__"><code class="docutils literal notranslate"><span class="pre">IKWrapper.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper.flush"><code class="docutils literal notranslate"><span class="pre">IKWrapper.flush()</span></code></a></li>
@@ -128,6 +128,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setAngleMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.rootCoords()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setDefaultPose()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setInitialPose"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setInitialPose()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setNamedPose()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.getLimb"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.getLimb()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.getEndEffector()</span></code></a></li>
@@ -818,8 +819,8 @@ URL is like 'scheme://netloc/xxx/yyy/zzz'</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coords_dict">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_dict" title="この定義へのパーマリンク"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coords_map">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_map" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Generating dictonary describing transformation</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -833,7 +834,7 @@ URL is like 'scheme://netloc/xxx/yyy/zzz'</p>
 </dd>
 </dl>
 <p class="rubric">サンプル</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">make_coords_dict</span><span class="p">(</span> <span class="n">make_coordinates</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;position&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]}</span> <span class="p">)</span> <span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">make_coords_map</span><span class="p">(</span> <span class="n">make_coordinates</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;position&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]}</span> <span class="p">)</span> <span class="p">)</span>
 <span class="go">{&#39;pos&#39;: [1.0, 2.0, 3.0], &#39;aa&#39;: [1.0, 0.0, 0.0, 0.0]}</span>
 </pre></div>
 </div>
@@ -1197,7 +1198,7 @@ list[float] : weight of joints</p>
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<em>str</em>) -- Name of registered pose</p></li>
-<li><p><strong>angles</strong> (<em>numpy.array</em>) -- Angle-vector to be able to pass irsl_choreonoid.robot_util.RobotModelWrapped.angleVector</p></li>
+<li><p><strong>angles</strong> (<em>numpy.array</em><em> or </em><em>list</em><em>[</em><em>float</em><em>]</em>) -- Angle-vector to be able to pass irsl_choreonoid.robot_util.RobotModelWrapped.angleVector</p></li>
 <li><p><strong>root_coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Coordinates of Root</p></li>
 </ul>
 </dd>
@@ -1258,6 +1259,20 @@ list[float] : weight of joints</p>
 </dd>
 <dt class="field-even">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates">cnoid.IRSLCoords.coordinates</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">IK</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting IKWrapper instance using this EndEffector</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>IKWrapper instance using this EndEffector</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper" title="irsl_choreonoid.robot_util.IKWrapper">irsl_choreonoid.robot_util.IKWrapper</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1450,6 +1465,12 @@ list [cnoid.Body.Link] : List of joints</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose">
 <span class="sig-name descname"><span class="pre">setDefaultPose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setDefaultPose" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Setting default pose if registered</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.setInitialPose">
+<span class="sig-name descname"><span class="pre">setInitialPose</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setInitialPose" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Setting default pose if registered</p>
 </dd></dl>
 

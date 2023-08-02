@@ -70,7 +70,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList"><code class="docutils literal notranslate"><span class="pre">JointInterface.groupNameList</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngles()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngleVector()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngleDict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngleMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished"><code class="docutils literal notranslate"><span class="pre">JointInterface.isFinished()</span></code></a></li>
 </ul>
 </li>
@@ -104,7 +104,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_trajectory"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_trajectory()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_velocity"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_velocity()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.robot</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleDict"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngleDict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleMap"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngleMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngleVector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngles"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngles()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.stop"><code class="docutils literal notranslate"><span class="pre">RobotInterface.stop()</span></code></a></li>
@@ -357,13 +357,13 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict">
-<span class="sig-name descname"><span class="pre">sendAngleDict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap">
+<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap" title="Permalink to this definition"></a></dt>
 <dd><p>Sending angles to the actual robot. angles is set to self.robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>angle_dict</strong> (<em>dict</em><em>[</em><em>name</em><em>, </em><em>float</em><em>]</em>) – Dictionary, whose key is joint-name, and value is joint-angle</p></li>
+<li><p><strong>angle_map</strong> (<em>dict</em><em>[</em><em>name</em><em>, </em><em>float</em><em>]</em>) – Dictionary, whose key is joint-name, and value is joint-angle</p></li>
 <li><p><strong>tm</strong> (<em>float</em>) – Moving duration in second</p></li>
 </ul>
 </dd>
@@ -815,13 +815,13 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleDict">
-<span class="sig-name descname"><span class="pre">sendAngleDict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleDict" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleMap">
+<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleMap" title="Permalink to this definition"></a></dt>
 <dd><p>Sending angles to the actual robot. angles is set to self.robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>angle_dict</strong> (<em>dict</em><em>[</em><em>name</em><em>, </em><em>float</em><em>]</em>) – Dictionary, whose key is joint-name, and value is joint-angle</p></li>
+<li><p><strong>angle_map</strong> (<em>dict</em><em>[</em><em>name</em><em>, </em><em>float</em><em>]</em>) – Dictionary, whose key is joint-name, and value is joint-angle</p></li>
 <li><p><strong>tm</strong> (<em>float</em>) – Moving duration in second</p></li>
 </ul>
 </dd>
