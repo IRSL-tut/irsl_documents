@@ -24,6 +24,16 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cno
     :members:
     :no-undoc-members:
 
+**********************************
+module irsl_choreonoid.make_shapes
+**********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py
+
+.. automodule:: irsl_choreonoid.make_shapes
+    :members:
+    :no-undoc-members:
+
 *********************************
 module irsl_choreonoid.robot_util
 *********************************
@@ -42,7 +52,19 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/dra
 
 .. automodule:: irsl_choreonoid.draw_coords
     :members:
+    :exclude-members: GeneralDrawInterfaceWrapped
     :no-undoc-members:
+
+.. autoclass:: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped
+    :members:
+
+    .. property:: SgPosTransform
+
+       Generating instance of cnoid.Util.SgPosTransform, which represents the root position of this instance
+
+       Returns:
+           cnoid.Util.SgPosTransform : Root of drawn objects in this instance at SceneGraph
+
 
 ^^^^^^^^^^^^^^^^^^^
 class coordsWrapper

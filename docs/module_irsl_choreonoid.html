@@ -49,6 +49,7 @@
 <li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Modules in irsl_choreonoid</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-cnoid-util">module irsl_choreonoid.cnoid_util</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.load_script"><code class="docutils literal notranslate"><span class="pre">load_script()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.parseURL"><code class="docutils literal notranslate"><span class="pre">parseURL()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.loadRobot"><code class="docutils literal notranslate"><span class="pre">loadRobot()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.cnoidPosition"><code class="docutils literal notranslate"><span class="pre">cnoidPosition()</span></code></a></li>
@@ -84,6 +85,21 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_base.setBackgroundColor"><code class="docutils literal notranslate"><span class="pre">setBackgroundColor()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_base.disableGrid"><code class="docutils literal notranslate"><span class="pre">disableGrid()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_base.enableGrid"><code class="docutils literal notranslate"><span class="pre">enableGrid()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-make-shapes">module irsl_choreonoid.make_shapes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.loadScene"><code class="docutils literal notranslate"><span class="pre">loadScene()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.loadMesh"><code class="docutils literal notranslate"><span class="pre">loadMesh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeBox"><code class="docutils literal notranslate"><span class="pre">makeBox()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeCylinder"><code class="docutils literal notranslate"><span class="pre">makeCylinder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeSphere"><code class="docutils literal notranslate"><span class="pre">makeSphere()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeCone"><code class="docutils literal notranslate"><span class="pre">makeCone()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeCapsule"><code class="docutils literal notranslate"><span class="pre">makeCapsule()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeTorus"><code class="docutils literal notranslate"><span class="pre">makeTorus()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeExtrusionParam"><code class="docutils literal notranslate"><span class="pre">makeExtrusionParam()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeExtrusion"><code class="docutils literal notranslate"><span class="pre">makeExtrusion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeElevationParam"><code class="docutils literal notranslate"><span class="pre">makeElevationParam()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeElevationGrid"><code class="docutils literal notranslate"><span class="pre">makeElevationGrid()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-robot-util">module irsl_choreonoid.robot_util</a><ul>
@@ -171,8 +187,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.SgPosTransform"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.SgPosTransform</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.flush()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.clear()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.addObject()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.removeObject()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject"><code class="docutils literal notranslate"><span class="pre">GeneralDrawInterfaceWrapped.addPyObject()</span></code></a></li>
@@ -249,12 +267,23 @@
 <h2>module irsl_choreonoid.cnoid_util<a class="headerlink" href="#module-irsl-choreonoid-cnoid-util" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py</a></p>
 <span class="target" id="module-irsl_choreonoid.cnoid_util"></span><dl class="py function">
-<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.parseURL">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">parseURL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.parseURL" title="Permalink to this definition"></a></dt>
-<dd><p>parse URL with IRSL original scheme</p>
+<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.load_script">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">load_script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.load_script" title="Permalink to this definition"></a></dt>
+<dd><p>Loading a script file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>url</strong> (<em>str</em>) – url [ url is like ‘scheme://netloc/xxx/yyy/zzz’ ]</p>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – URL [ URL is like ‘scheme://netloc/xxx/yyy/zzz’ ]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.parseURL">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">parseURL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.parseURL" title="Permalink to this definition"></a></dt>
+<dd><p>Parsing URL with IRSL original scheme</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>url</strong> (<em>str</em>) – URL</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Absolute path</p>
@@ -262,10 +291,13 @@
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
 </dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>SyntaxError</strong> – Unknown scheme or netloc is passed</p>
+</dd>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">parseURL</span><span class="p">(</span><span class="s1">&#39;choreonoid://share/dir/file&#39;</span><span class="p">)</span>
-<span class="go">/choreonoid/share/choreonoid-1.8/dir/file</span>
+<span class="go">/choreonoid/share/choreonoid-2.0/dir/file</span>
 </pre></div>
 </div>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">parseURL</span><span class="p">(</span><span class="s1">&#39;env://HOME/dir/file&#39;</span><span class="p">)</span>
@@ -773,16 +805,304 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 </dd></dl>
 
 </section>
+<section id="module-irsl-choreonoid-make-shapes">
+<h2>module irsl_choreonoid.make_shapes<a class="headerlink" href="#module-irsl-choreonoid-make-shapes" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py</a></p>
+<span class="target" id="module-irsl_choreonoid.make_shapes"></span><dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.loadScene">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadScene" title="Permalink to this definition"></a></dt>
+<dd><p>Loading scene(wrl, scene, …) file using cnoid.Util.SceneLoader</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fname</strong> (<em>str</em>) – File name to be loaded</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.loadMesh">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadMesh" title="Permalink to this definition"></a></dt>
+<dd><p>Loading mesh file using cnoid.AssimpPlugin module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fname</strong> (<em>str</em>) – File name to be loaded</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeBox">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeBox" title="Permalink to this definition"></a></dt>
+<dd><p>Making ‘Box’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – Length of x-axis, if y and z is None, making ‘cube’</p></li>
+<li><p><strong>y</strong> (<em>float</em><em>, </em><em>optional</em>) – Length of y-direction edge</p></li>
+<li><p><strong>z</strong> (<em>float</em><em>, </em><em>optional</em>) – Length of z-direction edge</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Origin of generated shape is the center of it</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeCylinder">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeCylinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeCylinder" title="Permalink to this definition"></a></dt>
+<dd><p>Making ‘Cylinder’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) – Radius of the cylinder</p></li>
+<li><p><strong>height</strong> (<em>float</em>) – Height of the cylinder</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Center circle with indicated radius on XZ-plane and sweep to both side with half of height, along y-direction</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeSphere">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeSphere</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeSphere" title="Permalink to this definition"></a></dt>
+<dd><p>Make ‘Sphere’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) – Radius of the sphere</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Origin of generated shape is the center of it</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeCone">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeCone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeCone" title="Permalink to this definition"></a></dt>
+<dd><p>Making ‘Cone’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) – Radius of the cone</p></li>
+<li><p><strong>height</strong> (<em>float</em>) – Height of the cone</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeCapsule">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeCapsule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeCapsule" title="Permalink to this definition"></a></dt>
+<dd><p>Makeing ‘Capsule’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) – Radius of the cupsule</p></li>
+<li><p><strong>height</strong> (<em>float</em><em>, </em><em>optional</em>) – Height of the capsule</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Similar dimensions to ‘makeCylinder’ (bottom cricle is at minus y, cone’s tip is at plus y)</p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeTorus">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeTorus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corssSectionRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beginAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeTorus" title="Permalink to this definition"></a></dt>
+<dd><p>Makeing ‘Torus’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) – Outer radius of the torus</p></li>
+<li><p><strong>crossSectionRadius</strong> (<em>float</em>) – Radius of cross section</p></li>
+<li><p><strong>beginAngle</strong> (<em>float</em><em>, </em><em>optional</em>) – If beginAngle and endAngle is passed, part of whole torus is created</p></li>
+<li><p><strong>endAngle</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material and mesh</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeExtrusionParam">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeExtrusionParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossSection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creaseAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beginCap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endCap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeExtrusionParam" title="Permalink to this definition"></a></dt>
+<dd><p>Generating cnoid.Util.MeshGenerator.Extrusion</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>crossSection</strong> (<em>list</em><em>[</em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em><em>,  </em><em>N x 2 matrix</em>) – </p></li>
+<li><p><strong>spine</strong> (<em>list</em><em>[</em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em><em>, </em><em>M x 3 matrix</em>) – </p></li>
+<li><p><strong>orientation</strong> (<em>list</em><em>[</em><em>AngleAxis</em><em>]</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>scale</strong> (<em>list</em><em>[</em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em><em>,  </em><em>N x 2 matrix</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>creaseAngle</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>beginCap</strong> (<em>boolean</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>endCap</strong> (<em>boolean</em><em>, </em><em>optional</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Generated result</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.MeshGenerator.Extrusion</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeExtrusion">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeExtrusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_extrusion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeExtrusion" title="Permalink to this definition"></a></dt>
+<dd><p>Makeing ‘Extrusion’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_extrusion</strong> (<em>cnoid.Util.MeshGenerator.Extrusion</em><em>, </em><em>optional</em>) – Adding parameters by cnoid.Util.MeshGenerator.Extrusion</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material, mesh, and makeExtrusionParam</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeElevationParam">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeElevationParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xSpacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zSpacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ccw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creaseAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeElevationParam" title="Permalink to this definition"></a></dt>
+<dd><p>Generating cnoid.Util.MeshGenerator.ElevationGrid</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>xDimension</strong> (<em>int</em>) – Dimension of x-direction</p></li>
+<li><p><strong>zDimension</strong> (<em>int</em>) – Dimension of z-direction</p></li>
+<li><p><strong>xSpacing</strong> (<em>float</em>) – X length is (xDimension - 1) x xSpacing</p></li>
+<li><p><strong>zSpacing</strong> (<em>float</em>) – Z length is (zDimension - 1) x zSpacing</p></li>
+<li><p><strong>height</strong> (<em>list</em><em>[</em><em>float</em><em>]</em>) – Size is ( xDimension x zDimension )</p></li>
+<li><p><strong>ccw</strong> (<em>boolean</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>creaseAngl</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Generated result</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.MeshGenerator.ElevationGrid</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeElevationGrid">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeElevationGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_elevation_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeElevationGrid" title="Permalink to this definition"></a></dt>
+<dd><p>Makeing ‘Extrusion’ shape using cnoid.Util.MeshGenerator</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_elevation_grid</strong> (<em>cnoid.Util.MeshGenerator.ElevationGrid</em><em>, </em><em>optional</em>) – Adding parameters by cnoid.Util.MeshGenerator.ElevationGrid</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If True, the loaded scene is wrapped by irsl_choreonoid.irsl_draw_object.coordsWrapper</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Keywords for generating material, mesh, and makeElevationParam</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Loaded scene as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="module-irsl-choreonoid-robot-util">
 <h2>module irsl_choreonoid.robot_util<a class="headerlink" href="#module-irsl-choreonoid-robot-util" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py</a></p>
 <span class="target" id="module-irsl_choreonoid.robot_util"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coordinates">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coordinates" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coordinates" title="Permalink to this definition"></a></dt>
 <dd><p>Generating coordinates(cnoid.IRSLCoords.coordinates) from dictionary</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>coords_dict</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em>) – dictionary of describing transformation</p>
+<dd class="field-odd"><p><strong>coords_map</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em>) – dictionary of describing transformation</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>generated coordinates</p>
@@ -791,7 +1111,7 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dd class="field-odd"><p><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates">cnoid.IRSLCoords.coordinates</a></p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Exeption if there is not valid keyword</strong> – </p>
+<dd class="field-even"><p><strong>Exeption</strong> – If there is not valid keyword</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -842,7 +1162,8 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.IKWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">IKWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_to_eef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_joints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'QP'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.IKWrapper" title="Permalink to this definition"></a></dt>
-<dd><p>Utility class for solving inverse-kinematics</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Utility class for solving inverse-kinematics</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.IKWrapper.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_to_eef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_joints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'QP'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.IKWrapper.__init__" title="Permalink to this definition"></a></dt>
@@ -939,6 +1260,9 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <li><p><strong>jlist</strong> (<em>list</em><em>[</em><em>str</em><em>, </em><em>int</em><em>, </em><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Link" title="cnoid.Body.Link"><em>cnoid.Body.Link</em></a><em>]</em>) – list of joint name, index or instance</p></li>
 <li><p><strong>enable</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – if True, joints are added, else joint are removed from using joint-list</p></li>
 </ul>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> – If wrong joint is passed</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1178,7 +1502,8 @@ list[float] : weight of joints</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">RobotModelWrapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped" title="Permalink to this definition"></a></dt>
-<dd><p>RobotModel for programming Inteactively</p>
+<dd><p>Bases: <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
+<p>RobotModel for programming Inteactively</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.__init__" title="Permalink to this definition"></a></dt>
@@ -1224,7 +1549,8 @@ list[float] : weight of joints</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EndEffector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link_to_eef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">joint_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">joint_tuples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector" title="Permalink to this definition"></a></dt>
-<dd><p>EndEffector class for manipulating end-effector, limb, joint-group</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>EndEffector class for manipulating end-effector, limb, joint-group</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tip_link_to_eef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">joint_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">joint_tuples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hook</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.__init__" title="Permalink to this definition"></a></dt>
@@ -1498,8 +1824,10 @@ list [cnoid.Body.Link] : List of joints</p>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector" title="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector">irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector</a></p>
 </dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exeption</strong> – If wrong limb name is passed</p>
+</dd>
 </dl>
-<p>Raise:</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1745,7 +2073,8 @@ list [cnoid.Body.Link] : List of joints</p>
 <span class="target" id="module-irsl_choreonoid.draw_coords"></span><dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.draw_coords.</span></span><span class="sig-name descname"><span class="pre">DrawCoordsList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([1,</span> <span class="pre">0,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsList" title="Permalink to this definition"></a></dt>
-<dd><p>Drawing list of coordinates</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Drawing list of coordinates</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsList.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([1,</span> <span class="pre">0,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsList.__init__" title="Permalink to this definition"></a></dt>
@@ -1910,14 +2239,13 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsListWrapped">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.draw_coords.</span></span><span class="sig-name descname"><span class="pre">DrawCoordsListWrapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsListWrapped" title="Permalink to this definition"></a></dt>
-<dd><p>DrawCoordsListWrapped(irsl_choreonoid.DrawCoordsList, irsl_choreonoid.irsl_draw_object.coordsWrapper):</p>
+<dd><p>Bases: <a class="reference internal" href="#irsl_choreonoid.draw_coords.DrawCoordsList" title="irsl_choreonoid.draw_coords.DrawCoordsList"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawCoordsList</span></code></a>, <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
 <p>Wrapped version of irsl_choreonoid.DrawCoordsList</p>
 <p>Using for drawing coordinates interactively</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__" title="Permalink to this definition"></a></dt>
-<dd><p>__init__(self, **kwargs):</p>
-<dl class="field-list simple">
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – this is passing to irsl_choreonoid.robot_util.make_coordinates for making initial_coords of coordsWrapper</p>
 </dd>
@@ -1929,14 +2257,23 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.draw_coords.</span></span><span class="sig-name descname"><span class="pre">GeneralDrawInterfaceWrapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped" title="Permalink to this definition"></a></dt>
-<dd><p>class GeneralDrawInterfaceWrapped(cnoid.DrawInterface.GeneralDrawInterface, irsl_choreonoid.irsl_draw_object.coordsWrapper):</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">GeneralDrawInterface</span></code>, <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
 <p>Wrapped version of cnoid.DrawInterface.GeneralDrawInterface</p>
 <p>Using for drawing SceneGraph objects interactively</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.SgPosTransform">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SgPosTransform</span></span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.SgPosTransform" title="Permalink to this definition"></a></dt>
+<dd><p>Generating instance of cnoid.Util.SgPosTransform, which represents the root position of this instance</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>cnoid.Util.SgPosTransform : Root of drawn objects in this instance at SceneGraph</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__" title="Permalink to this definition"></a></dt>
-<dd><p>__init__(self, **kwargs):</p>
-<dl class="field-list simple">
+<dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – this is passing to irsl_choreonoid.robot_util.make_coordinates for making initial_coords of coordsWrapper</p>
 </dd>
@@ -1955,20 +2292,31 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear">
+<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flush</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear" title="Permalink to this definition"></a></dt>
+<dd><p>Clear all added objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>flush</strong> (<em>boolean</em><em>, </em><em>default = True</em>) – If it is False, the scene is not rendered</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject">
-<span class="sig-name descname"><span class="pre">addObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">addObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject" title="Permalink to this definition"></a></dt>
 <dd><p>This method is overrided, just passing arguments to addPyObject</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject">
-<span class="sig-name descname"><span class="pre">removeObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">removeObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObject" title="Permalink to this definition"></a></dt>
 <dd><p>This method is overrided, just passing arguments to removePyObject</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject">
-<span class="sig-name descname"><span class="pre">addPyObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">addPyObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject" title="Permalink to this definition"></a></dt>
 <dd><p>Adding object to be drawn</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1982,7 +2330,7 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject">
-<span class="sig-name descname"><span class="pre">removePyObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">removePyObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject" title="Permalink to this definition"></a></dt>
 <dd><p>Removing drawn object</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -2004,7 +2352,8 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.irsl_draw_object.coordsWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.irsl_draw_object.</span></span><span class="sig-name descname"><span class="pre">coordsWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="Permalink to this definition"></a></dt>
-<dd><p>class coordsWrapper(cnoid.IRSLCoords.coordinates)</p>
+<dd><p>Bases: <a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordinates</span></code></a></p>
+<p>class coordsWrapper(cnoid.IRSLCoords.coordinates)</p>
 <p>This class to wrap a cnoid Object which have position (SgPosTransform, Link, etc.)</p>
 <p>You can access to this object with methods in cnoid.IRSLCoords.coordinates,</p>
 <p>Some mthods (newcoords, translate, rotate, transform) to update itself are overrided to call callback_function.</p>
