@@ -25,3 +25,5 @@ Modules in Choreonoid
    :caption: Contents:
 
    ./module_cnoid_body.rst
+   ./module_cnoid_util.rst
+   ./module_cnoid_assimp.rst
