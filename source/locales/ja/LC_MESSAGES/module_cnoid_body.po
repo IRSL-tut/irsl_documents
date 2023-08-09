@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-27 08:38+0900\n"
+"POT-Creation-Date: 2023-08-03 19:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgstr ""
 
 #: ../../module_cnoid_body.rst:15
 msgid "cnoid.Body.Body"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Body:1 cnoid.Body.Device:1 cnoid.Body.Link:1 of
+msgid "Bases: :py:class:`~cnoid.Util.Referenced`"
 msgstr ""
 
 #: ../../docstring cnoid.Body.PyCapsule.__init__:1
@@ -87,6 +91,10 @@ msgstr ""
 
 #: ../../module_cnoid_body.rst:23
 msgid "cnoid.Body.Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.Link.JointType:1 cnoid.Body.Link.StateFlag:1 of
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
 msgstr ""
 
 #: ../../docstring cnoid.Body.Link.JointType:1 cnoid.Body.Link.StateFlag:1 of

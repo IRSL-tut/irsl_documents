@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 17:46+0900\n"
+"POT-Creation-Date: 2023-08-03 19:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,11 @@ msgstr ""
 
 #: ../../module_cnoid_irslcoords.rst:11
 msgid "class cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.coordinates:1
+#: cnoid.IRSLCoords.coordinates.wrt:1 of
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
 msgstr ""
 
 #: ../../module_cnoid_irslcoords.rst:16

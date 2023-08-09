@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 17:46+0900\n"
+"POT-Creation-Date: 2023-08-03 19:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,18 @@ msgstr ""
 
 #: ../../module_cnoid_robotassembler.rst:7
 msgid "module cnoid.RobotAssembler"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RoboasmUtil:1
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint:1
+#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:1
+#: cnoid.RobotAssembler.RobotAssemblerExtraInfo:1
+#: cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:1
+#: cnoid.RobotAssembler.RobotAssemblerGeometry:1
+#: cnoid.RobotAssembler.RobotAssemblerGeometry.Type:1
+#: cnoid.RobotAssembler.RobotAssemblerParts:1
+#: cnoid.RobotAssembler.RobotAssemblerSettings:1 of
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
 msgstr ""
 
 #: ../../docstring
@@ -112,6 +124,10 @@ msgstr ""
 msgid "UNDEFINED"
 msgstr ""
 
+#: ../../docstring cnoid.RobotAssembler.RobotAssemblerActuator:1 of
+msgid "Bases: :py:class:`~cnoid.RobotAssembler.RobotAssemblerConnectingPoint`"
+msgstr ""
+
 #: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:5 of
 msgid "IMU"
 msgstr ""
@@ -198,6 +214,15 @@ msgid ""
 " object"
 msgstr ""
 
+#: ../../docstring cnoid.RobotAssembler.RoboasmCoords:1 of
+msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RoboasmConnectingPoint:1
+#: cnoid.RobotAssembler.RoboasmParts:1 cnoid.RobotAssembler.RoboasmRobot:1 of
+msgid "Bases: :py:class:`~cnoid.RobotAssembler.RoboasmCoords`"
+msgstr ""
+
 #: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:3 of
 msgid "__init__(self: cnoid.RobotAssembler.RoboasmUtil, arg0: str) -> None"
 msgstr ""
@@ -218,6 +243,10 @@ msgstr ""
 msgid ""
 "makeParts(self: cnoid.RobotAssembler.RoboasmUtil, arg0: str, arg1: str) "
 "-> cnoid.RobotAssembler.RoboasmParts"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.RASceneParts:1 of
+msgid "Bases: :py:class:`~cnoid.Util.SgPosTransform`"
 msgstr ""
 
 #~ msgid ""

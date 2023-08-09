@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-09 10:57+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_cnoid_assimp.rst:3
+msgid "Choreonoid Python Module (AssimpPlugin)"
+msgstr ""
+
+#: ../../module_cnoid_assimp.rst:7
+msgid "cnoid.AssimpPlugin"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin:1 of
+msgid "Choreonoid Assimp Utility module"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneLoader:1
+#: cnoid.AssimpPlugin.AssimpSceneWriter:1 of
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneLoader:1 of
+msgid ""
+"AssimpSceneLoader : loading mesh file as a scene for Util/SceneGraph in "
+"choreonoid using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.load:1 of
+msgid "Loading a mesh file using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType
+#: cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh
+#: cnoid.AssimpPlugin.PyCapsule.load
+#: cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr
+#: cnoid.AssimpPlugin.PyCapsule.setVerbose
+#: cnoid.AssimpPlugin.PyCapsule.writeScene of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.load:3 of
+msgid "Filename to be loaded"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType:7
+#: cnoid.AssimpPlugin.PyCapsule.load cnoid.AssimpPlugin.PyCapsule.writeScene of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.load:6 of
+msgid "Root object of loaded mesh"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.load
+#: cnoid.AssimpPlugin.PyCapsule.writeScene of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr:1 of
+msgid ""
+"Setting MessageSkin to stderr. It is required to read error messages in "
+"console"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter:1 of
+msgid ""
+"AssimpSceneWriter : Saving a scene for Util/SceneGraph in choreonoid as a"
+" mesh file using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh:1 of
+msgid "Setting for generating meshes for primitives"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh:3 of
+msgid ""
+"If True, this scene writer generates a mesh file including meshes "
+"converted from primitive type"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType:1 of
+msgid ""
+"Setting output type of saving mesh. If not set, output type is determined"
+" from filename. For saving mesh as 'stl', you shoud set outputType = "
+"'stlb', if you want a stl binary file."
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType:4 of
+msgid "output type to be set"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType:8 of
+msgid "str : Current output type"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setVerbose:1 of
+msgid "Setting debug message level"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setVerbose:3 of
+msgid "Set debug message level"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.writeScene:1 of
+msgid ""
+"Writing scene as a mesh file using Assimp ( "
+"https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.writeScene:3 of
+msgid "Filename to be saved"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.writeScene:5 of
+msgid "An object of SceneGraph to be saved"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.writeScene:8 of
+msgid "If the process succeeds, True is returned."
+msgstr ""
+

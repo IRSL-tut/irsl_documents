@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-02 19:45+0900\n"
+"POT-Creation-Date: 2023-08-09 10:52+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgid ""
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL:1 of
-msgid "parse URL with IRSL original scheme"
+#: irsl_choreonoid.cnoid_util.load_script:1 of
+msgid "Loading a script file"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_base.addSimulator
@@ -65,7 +65,8 @@ msgstr ""
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.load_script
+#: irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.draw_coords.DrawCoordsList.__init__
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
@@ -78,6 +79,7 @@ msgstr ""
 #: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__
@@ -87,6 +89,15 @@ msgstr ""
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.updateTarget
+#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
+#: irsl_choreonoid.make_shapes.makeBox irsl_choreonoid.make_shapes.makeCapsule
+#: irsl_choreonoid.make_shapes.makeCone
+#: irsl_choreonoid.make_shapes.makeCylinder
+#: irsl_choreonoid.make_shapes.makeElevationGrid
+#: irsl_choreonoid.make_shapes.makeElevationParam
+#: irsl_choreonoid.make_shapes.makeExtrusion
+#: irsl_choreonoid.make_shapes.makeExtrusionParam
+#: irsl_choreonoid.make_shapes.makeSphere irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.__init__
 #: irsl_choreonoid.robot_util.IKWrapper.addNoise
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
@@ -121,8 +132,16 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
+#: irsl_choreonoid.cnoid_util.load_script:3 of
+msgid "URL [ URL is like 'scheme://netloc/xxx/yyy/zzz' ]"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:1 of
+msgid "Parsing URL with IRSL original scheme"
+msgstr ""
+
 #: irsl_choreonoid.cnoid_util.parseURL:3 of
-msgid "url [ url is like 'scheme://netloc/xxx/yyy/zzz' ]"
+msgid "URL"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_base.addSimulator
@@ -153,6 +172,15 @@ msgstr ""
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
+#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
+#: irsl_choreonoid.make_shapes.makeBox irsl_choreonoid.make_shapes.makeCapsule
+#: irsl_choreonoid.make_shapes.makeCone
+#: irsl_choreonoid.make_shapes.makeCylinder
+#: irsl_choreonoid.make_shapes.makeElevationGrid
+#: irsl_choreonoid.make_shapes.makeElevationParam
+#: irsl_choreonoid.make_shapes.makeExtrusion
+#: irsl_choreonoid.make_shapes.makeExtrusionParam
+#: irsl_choreonoid.make_shapes.makeSphere irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
 #: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
 #: irsl_choreonoid.robot_util.IKWrapper.current_joints
@@ -233,6 +261,15 @@ msgstr ""
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
+#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
+#: irsl_choreonoid.make_shapes.makeBox irsl_choreonoid.make_shapes.makeCapsule
+#: irsl_choreonoid.make_shapes.makeCone
+#: irsl_choreonoid.make_shapes.makeCylinder
+#: irsl_choreonoid.make_shapes.makeElevationGrid
+#: irsl_choreonoid.make_shapes.makeElevationParam
+#: irsl_choreonoid.make_shapes.makeExtrusion
+#: irsl_choreonoid.make_shapes.makeExtrusionParam
+#: irsl_choreonoid.make_shapes.makeSphere irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
 #: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
 #: irsl_choreonoid.robot_util.IKWrapper.current_joints
@@ -281,17 +318,28 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL:10
+#: irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
+#: irsl_choreonoid.robot_util.make_coordinates of
+msgid "Raises"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:9 of
+msgid "Unknown scheme or netloc is passed"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.parseURL:12
 #: irsl_choreonoid.robot_util.make_coordinates:12
 #: irsl_choreonoid.robot_util.make_coords_map:10 of
 msgid "Examples"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL:26 of
+#: irsl_choreonoid.cnoid_util.parseURL:28 of
 msgid "Note: URL is like 'scheme://netloc/xxx/yyy/zzz'"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL:29 of
+#: irsl_choreonoid.cnoid_util.parseURL:31 of
 msgid "Implemented scheme is 'choreonoid', 'env', 'file'"
 msgstr ""
 
@@ -629,10 +677,221 @@ msgid "ID of plane to show. 0\\: XY, 1\\: XZ, 2\\: YZ"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:29
-msgid "module irsl_choreonoid.robot_util"
+msgid "module irsl_choreonoid.make_shapes"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:31
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadScene:1 of
+msgid "Loading scene(wrl, scene, ...) file using cnoid.Util.SceneLoader"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadMesh:3
+#: irsl_choreonoid.make_shapes.loadScene:3 of
+msgid "File name to be loaded"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadMesh:5
+#: irsl_choreonoid.make_shapes.loadScene:5
+#: irsl_choreonoid.make_shapes.makeBox:9
+#: irsl_choreonoid.make_shapes.makeCapsule:7
+#: irsl_choreonoid.make_shapes.makeCone:7
+#: irsl_choreonoid.make_shapes.makeCylinder:7
+#: irsl_choreonoid.make_shapes.makeElevationGrid:5
+#: irsl_choreonoid.make_shapes.makeExtrusion:5
+#: irsl_choreonoid.make_shapes.makeSphere:5
+#: irsl_choreonoid.make_shapes.makeTorus:11 of
+msgid ""
+"If True, the loaded scene is wrapped by "
+"irsl_choreonoid.irsl_draw_object.coordsWrapper"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadMesh:7
+#: irsl_choreonoid.make_shapes.loadScene:7
+#: irsl_choreonoid.make_shapes.makeBox:11
+#: irsl_choreonoid.make_shapes.makeCapsule:9
+#: irsl_choreonoid.make_shapes.makeCone:9
+#: irsl_choreonoid.make_shapes.makeCylinder:9
+#: irsl_choreonoid.make_shapes.makeSphere:7
+#: irsl_choreonoid.make_shapes.makeTorus:13 of
+msgid "Keywords for generating material and mesh"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadMesh:10
+#: irsl_choreonoid.make_shapes.loadScene:10
+#: irsl_choreonoid.make_shapes.makeBox:14
+#: irsl_choreonoid.make_shapes.makeCapsule:12
+#: irsl_choreonoid.make_shapes.makeCone:12
+#: irsl_choreonoid.make_shapes.makeCylinder:12
+#: irsl_choreonoid.make_shapes.makeElevationGrid:10
+#: irsl_choreonoid.make_shapes.makeExtrusion:10
+#: irsl_choreonoid.make_shapes.makeSphere:10
+#: irsl_choreonoid.make_shapes.makeTorus:16 of
+msgid ""
+"Loaded scene as a node of SceneGraph or wrapped class for interactive "
+"programming"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.loadMesh:1 of
+msgid "Loading mesh file using cnoid.AssimpPlugin module"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBox:1 of
+msgid "Making 'Box' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBox:3 of
+msgid "Length of x-axis, if y and z is None, making 'cube'"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBox:5 of
+msgid "Length of y-direction edge"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBox:7 of
+msgid "Length of z-direction edge"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBox:17
+#: irsl_choreonoid.make_shapes.makeSphere:13 of
+msgid "Origin of generated shape is the center of it"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCylinder:1 of
+msgid "Making 'Cylinder' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCylinder:3 of
+msgid "Radius of the cylinder"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCylinder:5 of
+msgid "Height of the cylinder"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCylinder:15 of
+msgid ""
+"Center circle with indicated radius on XZ-plane and sweep to both side "
+"with half of height, along y-direction"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeSphere:1 of
+msgid "Make 'Sphere' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeSphere:3 of
+msgid "Radius of the sphere"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCone:1 of
+msgid "Making 'Cone' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCone:3 of
+msgid "Radius of the cone"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCone:5 of
+msgid "Height of the cone"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCapsule:1 of
+msgid "Makeing 'Capsule' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCapsule:3 of
+msgid "Radius of the cupsule"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCapsule:5 of
+msgid "Height of the capsule"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeCapsule:15 of
+msgid ""
+"Similar dimensions to 'makeCylinder' (bottom cricle is at minus y, cone's"
+" tip is at plus y)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTorus:1 of
+msgid "Makeing 'Torus' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTorus:3 of
+msgid "Outer radius of the torus"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTorus:5 of
+msgid "Radius of cross section"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTorus:7 of
+msgid "If beginAngle and endAngle is passed, part of whole torus is created"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeExtrusionParam:1 of
+msgid "Generating cnoid.Util.MeshGenerator.Extrusion"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:18
+#: irsl_choreonoid.make_shapes.makeExtrusionParam:18 of
+msgid "Generated result"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationGrid:1
+#: irsl_choreonoid.make_shapes.makeExtrusion:1 of
+msgid "Makeing 'Extrusion' shape using cnoid.Util.MeshGenerator"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeExtrusion:3 of
+msgid "Adding parameters by cnoid.Util.MeshGenerator.Extrusion"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeExtrusion:7 of
+msgid "Keywords for generating material, mesh, and makeExtrusionParam"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:1 of
+msgid "Generating cnoid.Util.MeshGenerator.ElevationGrid"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:3 of
+msgid "Dimension of x-direction"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:5 of
+msgid "Dimension of z-direction"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:7 of
+msgid "X length is (xDimension - 1) x xSpacing"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:9 of
+msgid "Z length is (zDimension - 1) x zSpacing"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationParam:11 of
+msgid "Size is ( xDimension x zDimension )"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationGrid:3 of
+msgid "Adding parameters by cnoid.Util.MeshGenerator.ElevationGrid"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeElevationGrid:7 of
+msgid "Keywords for generating material, mesh, and makeElevationParam"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:39
+msgid "module irsl_choreonoid.robot_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:41
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py"
@@ -650,8 +909,8 @@ msgstr ""
 msgid "generated coordinates"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coordinates of
-msgid "Raises"
+#: irsl_choreonoid.robot_util.make_coordinates:9 of
+msgid "If there is not valid keyword"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.make_coords_map:1 of
@@ -664,6 +923,12 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.make_coords_map:6 of
 msgid "Dictonary can be used by make_coordinates"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.DrawCoordsList:1
+#: irsl_choreonoid.robot_util.IKWrapper:1
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper:1 of
@@ -747,6 +1012,10 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.setJoints:5 of
 msgid "if True, joints are added, else joint are removed from using joint-list"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.setJoints:8 of
+msgid "If wrong joint is passed"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:1 of
@@ -922,6 +1191,10 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.default_coords:1 of
 msgid "rootCoords stored while initialization"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
+msgid "Bases: :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
@@ -1155,7 +1428,7 @@ msgid "Instance of EndEffector"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb:9 of
-msgid "Raise:"
+msgid "If wrong limb name is passed"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector:1 of
@@ -1302,11 +1575,11 @@ msgstr ""
 msgid "Name of the limb"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:39
+#: ../../module_irsl_choreonoid.rst:49
 msgid "module irsl_choreonoid.draw_coords"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:41
+#: ../../module_irsl_choreonoid.rst:51
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py"
@@ -1423,25 +1696,20 @@ msgstr ""
 
 #: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:1 of
 msgid ""
-"DrawCoordsListWrapped(irsl_choreonoid.DrawCoordsList, "
-"irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+"Bases: :py:class:`~irsl_choreonoid.draw_coords.DrawCoordsList`, "
+":py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
 msgstr ""
 
-#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:3 of
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:1 of
 msgid "Wrapped version of irsl_choreonoid.DrawCoordsList"
 msgstr ""
 
-#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:5 of
+#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:3 of
 msgid "Using for drawing coordinates interactively"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__:1
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__:1 of
-msgid "__init__(self, \\*\\*kwargs):"
-msgstr ""
-
-#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__:3
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__:3 of
 msgid ""
 "this is passing to irsl_choreonoid.robot_util.make_coordinates for making"
 " initial_coords of coordsWrapper"
@@ -1449,21 +1717,44 @@ msgstr ""
 
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:1 of
 msgid ""
-"class "
-"GeneralDrawInterfaceWrapped(cnoid.DrawInterface.GeneralDrawInterface, "
-"irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+"Bases: :py:class:`~cnoid.DrawInterface.GeneralDrawInterface`, "
+":py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
 msgstr ""
 
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:3 of
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:1 of
 msgid "Wrapped version of cnoid.DrawInterface.GeneralDrawInterface"
 msgstr ""
 
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:5 of
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:3 of
 msgid "Using for drawing SceneGraph objects interactively"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:63
+msgid ""
+"Generating instance of cnoid.Util.SgPosTransform, which represents the "
+"root position of this instance"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:65
+msgid "Returns:"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:66
+msgid ""
+"cnoid.Util.SgPosTransform : Root of drawn objects in this instance at "
+"SceneGraph"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush:1 of
 msgid "Force rendering scene"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear:1 of
+msgid "Clear all added objects"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear:3 of
+msgid "If it is False, the scene is not rendered"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObject:1 of
@@ -1490,24 +1781,28 @@ msgstr ""
 msgid "object to be removed"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:49
+#: ../../module_irsl_choreonoid.rst:71
 msgid "class coordsWrapper"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:50
+#: ../../module_irsl_choreonoid.rst:72
 msgid "Base class for using coordinates interactively."
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:52
+#: ../../module_irsl_choreonoid.rst:74
 msgid ""
 "Inherited by class DrawCoordsListWrapped and class "
 "GeneralDrawInterfaceWrapped."
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:54
+#: ../../module_irsl_choreonoid.rst:76
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py"
+msgstr ""
+
+#: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
+msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
 msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
@@ -1668,5 +1963,325 @@ msgstr ""
 #~ "Getting limb as end-effector, name "
 #~ "should be registered by "
 #~ "self.registerEndEffector"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Rotation part of transformation ( RPY"
+#~ " angle, real vector with 3 elements,"
+#~ " roll [radian], pitch [radian], yaw "
+#~ "[radian] )"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Rotation part of transformation ( Angle"
+#~ " axis, real vector with 4 elements,"
+#~ " ax, ay, az, rotation-angle [radian]"
+#~ " )"
+#~ msgstr ""
+
+#~ msgid "1x4 vector"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Transformation matrix ( 4x4 homogeneous "
+#~ "transformation matrix, using in Choreonoid "
+#~ ")"
+#~ msgstr ""
+
+#~ msgid "4x4 matrix"
+#~ msgstr ""
+
+#~ msgid "Creating new instance with the same value of this instance"
+#~ msgstr ""
+
+#~ msgid "copy of this instance (created new instance)"
+#~ msgstr ""
+
+#~ msgid "Updating self transformation as an inverse transformation"
+#~ msgstr ""
+
+#~ msgid "Overloaded function."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "locate(self: cnoid.IRSLCoords.coordinates, vector: "
+#~ "numpy.ndarray[numpy.float64[3, 1]], wrt: "
+#~ "cnoid.IRSLCoords.coordinates.wrt = <wrt.local: 1>)"
+#~ " -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "locate(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "numpy.ndarray[numpy.float64[3, 1]], arg1: "
+#~ "cnoid.IRSLCoords.coordinates) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid "Calculating interpolated coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "parameter 0.0 to 1.0, if p == "
+#~ "0.0, coords euqal to self is "
+#~ "return. If p == 1.0, coords equal"
+#~ " to c2 is return."
+#~ msgstr ""
+
+#~ msgid "target coordinates"
+#~ msgstr ""
+
+#~ msgid "precision"
+#~ msgstr ""
+
+#~ msgid "Interpolated coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "move_to(self: cnoid.IRSLCoords.coordinates, vector: "
+#~ "cnoid.IRSLCoords.coordinates, wrt: "
+#~ "cnoid.IRSLCoords.coordinates.wrt = <wrt.local: 1>)"
+#~ " -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "move_to(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "cnoid.IRSLCoords.coordinates, arg1: "
+#~ "cnoid.IRSLCoords.coordinates) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient(self: cnoid.IRSLCoords.coordinates, theta: "
+#~ "float, axis: numpy.ndarray[numpy.float64[3, 1]], "
+#~ "wrt: cnoid.IRSLCoords.coordinates.wrt = <wrt.local:"
+#~ " 1>) -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "float, arg1: numpy.ndarray[numpy.float64[3, 1]], "
+#~ "arg2: cnoid.IRSLCoords.coordinates) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "float, arg1: numpy.ndarray[numpy.float64[3, 1]], "
+#~ "arg2: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous]) -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "mat: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], wrt: cnoid.IRSLCoords.coordinates.wrt"
+#~ " = <wrt.local: 1>) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "arg0: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], arg1: cnoid.IRSLCoords.coordinates)"
+#~ " -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "orient_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "arg0: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], arg1: numpy.ndarray[numpy.float64[3,"
+#~ " 3], flags.c_contiguous]) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Translation part ( real vector with "
+#~ "3 elements, x, y, z ) of "
+#~ "transformation matrix"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Rotation part of transformation ( "
+#~ "quaternion, real vector with 4 elements,"
+#~ " x, y, z, w )"
+#~ msgstr ""
+
+#~ msgid "Rotation part of transformation ( Rotation matrix, 3x3 real matrix)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "mat: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], wrt: cnoid.IRSLCoords.coordinates.wrt"
+#~ " = <wrt.local: 1>) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "arg0: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], arg1: cnoid.IRSLCoords.coordinates)"
+#~ " -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "rotate_with_matrix(self: cnoid.IRSLCoords.coordinates, "
+#~ "arg0: numpy.ndarray[numpy.float64[3, 3], "
+#~ "flags.c_contiguous], arg1: numpy.ndarray[numpy.float64[3,"
+#~ " 3], flags.c_contiguous]) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid "Set transformation matrix (changing value of argument)"
+#~ msgstr ""
+
+#~ msgid "4x4 homogeneous transformation matrix, using in Choreonoid"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setRPY(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "numpy.ndarray[numpy.float64[3, 1]]) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setRPY(self: cnoid.IRSLCoords.coordinates, arg0: "
+#~ "float, arg1: float, arg2: float) -> "
+#~ "None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "transformation(self: cnoid.IRSLCoords.coordinates, coords:"
+#~ " cnoid.IRSLCoords.coordinates, wrt: "
+#~ "cnoid.IRSLCoords.coordinates.wrt = <wrt.local: 1>)"
+#~ " -> cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "transformation(self: cnoid.IRSLCoords.coordinates, arg0:"
+#~ " cnoid.IRSLCoords.coordinates, arg1: "
+#~ "cnoid.IRSLCoords.coordinates) -> "
+#~ "cnoid.IRSLCoords.coordinates"
+#~ msgstr ""
+
+#~ msgid "Members:"
+#~ msgstr ""
+
+#~ msgid "local"
+#~ msgstr ""
+
+#~ msgid "world"
+#~ msgstr ""
+
+#~ msgid "parent"
+#~ msgstr ""
+
+#~ msgid "Extracting x-axis of rotation matrix (1st column vector)"
+#~ msgstr ""
+
+#~ msgid "1x3 vector, x-axis of rotation matrix (1st column vector)"
+#~ msgstr ""
+
+#~ msgid "Extracting y-axis of rotation matrix (2nd column vector)"
+#~ msgstr ""
+
+#~ msgid "1x3 vector, y-axis of rotation matrix (2nd column vector)"
+#~ msgstr ""
+
+#~ msgid "Extracting z-axis of rotation matrix (3rd column vector)"
+#~ msgstr ""
+
+#~ msgid "1x3 vector, z-axis of rotation matrix (3rd column vector)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generating instance of cnoid.Util.SgPosTransform,"
+#~ " which represents the root position "
+#~ "of this instance"
+#~ msgstr ""
+
+#~ msgid "root of objects in this instance at SceneGraph"
+#~ msgstr ""
+
+#~ msgid "Force rendering scene"
+#~ msgstr ""
+
+#~ msgid "This method is overrided, just passing arguments to addPyObject"
+#~ msgstr ""
+
+#~ msgid "This method is overrided, just passing arguments to removePyObject"
+#~ msgstr ""
+
+#~ msgid "Adding object to be drawn"
+#~ msgstr ""
+
+#~ msgid "object to be drawn"
+#~ msgstr ""
+
+#~ msgid "Removing drawn object"
+#~ msgstr ""
+
+#~ msgid "object to be removed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "class "
+#~ "GeneralDrawInterfaceWrapped(cnoid.DrawInterface.GeneralDrawInterface,"
+#~ " irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+#~ msgstr ""
+
+#~ msgid "Wrapped version of cnoid.DrawInterface.GeneralDrawInterface"
+#~ msgstr ""
+
+#~ msgid "Using for drawing SceneGraph objects interactively"
+#~ msgstr ""
+
+#~ msgid "Loading scene(wrl, scene, ...) file"
+#~ msgstr ""
+
+#~ msgid "Loading mesh file"
+#~ msgstr ""
+
+#~ msgid "make 'Box' shape"
+#~ msgstr ""
+
+#~ msgid "parse URL with IRSL original scheme"
+#~ msgstr ""
+
+#~ msgid "url [ url is like 'scheme://netloc/xxx/yyy/zzz' ]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "{ cnoid.Util.SgPosTransform : HOGE "
+#~ "irsl_choreonoid.irsl_draw_object.coordsWrapper : MOGE "
+#~ "}"
+#~ msgstr ""
+
+#~ msgid "irsl_choreonoid.irsl_draw_object.coordsWrapper :"
+#~ msgstr ""
+
+#~ msgid "make 'Cylinder' shape"
+#~ msgstr ""
+
+#~ msgid "make 'Sphere' shape"
+#~ msgstr ""
+
+#~ msgid "make 'Cone' shape"
+#~ msgstr ""
+
+#~ msgid "make 'Capsule' shape"
+#~ msgstr ""
+
+#~ msgid "make 'Torus' shape"
+#~ msgstr ""
+
+#~ msgid "Raise:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "DrawCoordsListWrapped(irsl_choreonoid.DrawCoordsList, "
+#~ "irsl_choreonoid.irsl_draw_object.coordsWrapper):"
+#~ msgstr ""
+
+#~ msgid "__init__(self, \\*\\*kwargs):"
 #~ msgstr ""
 

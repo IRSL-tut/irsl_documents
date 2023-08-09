@@ -1,0 +1,652 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-09 10:57+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../module_cnoid_util.rst:3
+msgid "Choreonoid Python Module (Util)"
+msgstr ""
+
+#: ../../module_cnoid_util.rst:7
+msgid "cnoid.Util"
+msgstr ""
+
+#: ../../docstring cnoid.Util:1 of
+msgid "Choreonoid Util module"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:1 of
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:1 of
+msgid "Members:"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:3 of
+msgid "PLAING_STRING"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:5 of
+msgid "SINGLE_QUOTED"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:7 of
+msgid "DOUBLE_QUOTED"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:9 of
+msgid "LITERAL_STRING"
+msgstr ""
+
+#: ../../docstring cnoid.Util.StringStyle:11 of
+msgid "FOLDED_STRING"
+msgstr ""
+
+#: ../../docstring cnoid.Util.PyCapsule.rotFromRpy:1 of
+msgid "Overloaded function."
+msgstr ""
+
+#: ../../docstring cnoid.Util.PyCapsule.rotFromRpy:3 of
+msgid ""
+"rotFromRpy(arg0: numpy.ndarray[numpy.float64[3, 1]]) -> "
+"numpy.ndarray[numpy.float64[3, 3]]"
+msgstr ""
+
+#: ../../docstring cnoid.Util.PyCapsule.rotFromRpy:5 of
+msgid ""
+"rotFromRpy(arg0: float, arg1: float, arg2: float) -> "
+"numpy.ndarray[numpy.float64[3, 3]]"
+msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.AngleAxis) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.AngleAxis, arg0: "
+#~ "numpy.ndarray[numpy.float64[3, 3], flags.f_contiguous])"
+#~ " -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.AngleAxis, arg0: float,"
+#~ " arg1: numpy.ndarray[numpy.float64[3, 1]]) -> "
+#~ "None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.AngleAxisf) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.AngleAxisf, arg0: "
+#~ "numpy.ndarray[numpy.float32[3, 3], flags.f_contiguous])"
+#~ " -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.AngleAxisf, arg0: float,"
+#~ " arg1: numpy.ndarray[numpy.float32[3, 1]]) -> "
+#~ "None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.BoundingBox) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.BoundingBox, arg0: "
+#~ "cnoid.Util.BoundingBox) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.Connection) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.Connection, arg0: "
+#~ "cnoid.Util.Connection) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.ConnectionSet) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.ConnectionSet, arg0: "
+#~ "cnoid.Util.ConnectionSet) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "add(self: cnoid.Util.ConnectionSetBase, arg0: "
+#~ "cnoid.Util.Connection) -> int"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "add(self: cnoid.Util.ConnectionSetBase, arg0: "
+#~ "cnoid.Util.ConnectionSetBase) -> None"
+#~ msgstr ""
+
+#~ msgid "block(self: cnoid.Util.ConnectionSetBase) -> None"
+#~ msgstr ""
+
+#~ msgid "block(self: cnoid.Util.ConnectionSetBase, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid "unblock(self: cnoid.Util.ConnectionSetBase) -> None"
+#~ msgstr ""
+
+#~ msgid "unblock(self: cnoid.Util.ConnectionSetBase, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.Listing) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.Listing, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid "append(self: cnoid.Util.Listing, arg0: cnoid.Util.ValueNode) -> None"
+#~ msgstr ""
+
+#~ msgid "append(self: cnoid.Util.Listing, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid "append(self: cnoid.Util.Listing, arg0: float) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "append(self: cnoid.Util.Listing, arg0: str, "
+#~ "arg1: cnoid.Util.StringStyle) -> None"
+#~ msgstr ""
+
+#~ msgid "append(self: cnoid.Util.Listing, arg0: str) -> None"
+#~ msgstr ""
+
+#~ msgid "write(self: cnoid.Util.Listing, arg0: int, arg1: int) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "write(self: cnoid.Util.Listing, arg0: int, "
+#~ "arg1: str, arg2: cnoid.Util.StringStyle) ->"
+#~ " None"
+#~ msgstr ""
+
+#~ msgid "write(self: cnoid.Util.Listing, arg0: int, arg1: str) -> None"
+#~ msgstr ""
+
+#~ msgid "write(self: cnoid.Util.Mapping, arg0: str, arg1: str) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "write(self: cnoid.Util.Mapping, arg0: str, "
+#~ "arg1: str, arg2: cnoid.Util.StringStyle) ->"
+#~ " None"
+#~ msgstr ""
+
+#~ msgid "write(self: cnoid.Util.Mapping, arg0: str, arg1: object) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "write(self: cnoid.Util.Mapping, arg0: str, "
+#~ "arg1: cnoid.Util.ValueNode) -> None"
+#~ msgstr ""
+
+#~ msgid "DivisionMax"
+#~ msgstr ""
+
+#~ msgid "DivisionX"
+#~ msgstr ""
+
+#~ msgid "DivisionY"
+#~ msgstr ""
+
+#~ msgid "DivisionZ"
+#~ msgstr ""
+
+#~ msgid "DivisionAll"
+#~ msgstr ""
+
+#~ msgid "NoOption"
+#~ msgstr ""
+
+#~ msgid "TextureCoordinate"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "generateTorus(self: cnoid.Util.MeshGenerator, arg0: "
+#~ "float, arg1: float) -> cnoid.Util.SgMesh"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "generateTorus(self: cnoid.Util.MeshGenerator, arg0: "
+#~ "float, arg1: float, arg2: float, arg3:"
+#~ " float) -> cnoid.Util.SgMesh"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "getProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: bool) -> bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "getProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: int) -> int"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "getProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: float) -> float"
+#~ msgstr ""
+
+#~ msgid "setCurrentCamera(self: cnoid.Util.SceneRenderer, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setCurrentCamera(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "cnoid.Util.SgCamera) -> bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: bool) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: int) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setProperty(self: cnoid.Util.SceneRenderer, arg0: "
+#~ "str, arg1: float) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.ScopedConnection) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.ScopedConnection, arg0: "
+#~ "cnoid.Util.Connection) -> None"
+#~ msgstr ""
+
+#~ msgid "reset(self: cnoid.Util.ScopedConnection) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "reset(self: cnoid.Util.ScopedConnection, arg0: "
+#~ "cnoid.Util.Connection) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgGroup) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgGroup, arg0: cnoid.Util.SgGroup) -> None"
+#~ msgstr ""
+
+#~ msgid "ExtraDivisionPreferred"
+#~ msgstr ""
+
+#~ msgid "ExtraDivisionX"
+#~ msgstr ""
+
+#~ msgid "ExtraDivisionY"
+#~ msgstr ""
+
+#~ msgid "ExtraDivisionZ"
+#~ msgstr ""
+
+#~ msgid "ExtraDivisionAll"
+#~ msgstr ""
+
+#~ msgid "MeshType"
+#~ msgstr ""
+
+#~ msgid "BoxType"
+#~ msgstr ""
+
+#~ msgid "SphereType"
+#~ msgstr ""
+
+#~ msgid "CylinderType"
+#~ msgstr ""
+
+#~ msgid "ConeType"
+#~ msgstr ""
+
+#~ msgid "CapsuleType"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgNode) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgNode, arg0: cnoid.Util.SgNode) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "notifyUpdate(self: cnoid.Util.SgObject, arg0: "
+#~ "cnoid.Util.SgUpdate) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "notifyUpdate(self: cnoid.Util.SgObject, action: int"
+#~ " = <Action.Modified: 12>) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgPosTransform) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.SgPosTransform, arg0: "
+#~ "numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous])"
+#~ " -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.SgPosTransform, arg0: "
+#~ "cnoid.Util.SgPosTransform) -> None"
+#~ msgstr ""
+
+#~ msgid "None"
+#~ msgstr ""
+
+#~ msgid "Added"
+#~ msgstr ""
+
+#~ msgid "Removed"
+#~ msgstr ""
+
+#~ msgid "Modified"
+#~ msgstr ""
+
+#~ msgid "NONE"
+#~ msgstr ""
+
+#~ msgid "ADDED"
+#~ msgstr ""
+
+#~ msgid "REMOVED"
+#~ msgstr ""
+
+#~ msgid "BBOX_UPDATED"
+#~ msgstr ""
+
+#~ msgid "MODIFIED"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgUpdate) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgUpdate, arg0: int) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgUpdateRef) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.SgUpdateRef, arg0: "
+#~ "cnoid.Util.SgUpdate) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.SgUpdateRef, arg0: "
+#~ "cnoid.Util.SgUpdateRef) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.SgUpdateRef, arg0: bool) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.Task) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.Task, arg0: str, arg1: str) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.Task, arg0: "
+#~ "cnoid.Util.Task, arg1: bool) -> None"
+#~ msgstr ""
+
+#~ msgid "addCommand(self: cnoid.Util.Task) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid "addCommand(self: cnoid.Util.Task, arg0: str) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addPhase(self: cnoid.Util.Task, arg0: "
+#~ "cnoid.Util.TaskPhase) -> cnoid.Util.TaskPhase"
+#~ msgstr ""
+
+#~ msgid "addPhase(self: cnoid.Util.Task, arg0: str) -> cnoid.Util.TaskPhase"
+#~ msgstr ""
+
+#~ msgid "addToggleCommand(self: cnoid.Util.Task) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addToggleCommand(self: cnoid.Util.Task, arg0: str)"
+#~ " -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setPreCommand(self: cnoid.Util.Task, arg0: "
+#~ "Callable[[cnoid.Util.TaskProc], None]) -> None"
+#~ msgstr ""
+
+#~ msgid "setPreCommand(self: cnoid.Util.Task, arg0: object) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.TaskCommand) -> None"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.TaskCommand, arg0: str) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setFunction(self: cnoid.Util.TaskCommand, arg0: "
+#~ "Callable[[cnoid.Util.TaskProc], None]) -> "
+#~ "cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setFunction(self: cnoid.Util.TaskCommand, arg0: "
+#~ "function) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid "__init__(self: cnoid.Util.TaskPhase, arg0: str) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.TaskPhase, arg0: "
+#~ "cnoid.Util.TaskPhase) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "__init__(self: cnoid.Util.TaskPhase, arg0: "
+#~ "cnoid.Util.TaskPhase, arg1: bool) -> None"
+#~ msgstr ""
+
+#~ msgid "addCommand(self: cnoid.Util.TaskPhase) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addCommand(self: cnoid.Util.TaskPhase, arg0: str)"
+#~ " -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid "addToggleCommand(self: cnoid.Util.TaskPhase) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addToggleCommand(self: cnoid.Util.TaskPhase, arg0: "
+#~ "str) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "setPreCommand(self: cnoid.Util.TaskPhase, arg0: "
+#~ "Callable[[cnoid.Util.TaskProc], None]) -> None"
+#~ msgstr ""
+
+#~ msgid "setPreCommand(self: cnoid.Util.TaskPhase, arg0: function) -> None"
+#~ msgstr ""
+
+#~ msgid "addCommand(self: cnoid.Util.TaskPhaseProxy) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addCommand(self: cnoid.Util.TaskPhaseProxy, arg0: "
+#~ "str) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addToggleCommand(self: cnoid.Util.TaskPhaseProxy) -> "
+#~ "cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "addToggleCommand(self: cnoid.Util.TaskPhaseProxy, arg0:"
+#~ " str) -> cnoid.Util.TaskCommand"
+#~ msgstr ""
+
+#~ msgid "notifyCommandFinish(self: cnoid.Util.TaskProc, arg0: bool) -> None"
+#~ msgstr ""
+
+#~ msgid "notifyCommandFinish(self: cnoid.Util.TaskProc) -> None"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "waitForBooleanSignal(self: cnoid.Util.TaskProc, arg0: "
+#~ "cnoid.Util.BoolSignalProxy, arg1: float) -> "
+#~ "bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "waitForBooleanSignal(self: cnoid.Util.TaskProc, arg0: "
+#~ "cnoid.Util.BoolSignalProxy) -> bool"
+#~ msgstr ""
+
+#~ msgid "waitForCommandToFinish(self: cnoid.Util.TaskProc, arg0: float) -> bool"
+#~ msgstr ""
+
+#~ msgid "waitForCommandToFinish(self: cnoid.Util.TaskProc) -> bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "waitForCommandToFinish(self: cnoid.Util.TaskProc, arg0:"
+#~ " cnoid.Util.Connection, arg1: float) -> "
+#~ "bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "waitForSignal(self: cnoid.Util.TaskProc, arg0: "
+#~ "cnoid.Util.VoidSignalProxy, arg1: float) -> "
+#~ "bool"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "waitForSignal(self: cnoid.Util.TaskProc, arg0: "
+#~ "cnoid.Util.VoidSignalProxy) -> bool"
+#~ msgstr ""
+
+#~ msgid "docstring??AssimpSceneLoader"
+#~ msgstr ""
+
+#~ msgid "cnoid.AssimpPlugin"
+#~ msgstr ""
+
+#~ msgid "Choreonoid Assimp Utility module"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "AssimpSceneLoader : loading mesh file as"
+#~ " a scene for Util/SceneGraph in "
+#~ "choreonoid using Assimp ( "
+#~ "https://github.com/assimp/assimp )"
+#~ msgstr ""
+
+#~ msgid "Loading a mesh file using Assimp ( https://github.com/assimp/assimp )"
+#~ msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "Filename to be loaded"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "Root object of loaded mesh"
+#~ msgstr ""
+
+#~ msgid "Return type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Setting MessageSkin to stderr. It is "
+#~ "required to read error messages in "
+#~ "console"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "AssimpSceneWriter : Saving a scene for"
+#~ " Util/SceneGraph in choreonoid as a "
+#~ "mesh file using Assimp ( "
+#~ "https://github.com/assimp/assimp )"
+#~ msgstr ""
+
+#~ msgid "Setting for generating meshes for primitives"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If True, this scene writer generates "
+#~ "a mesh file including meshes converted"
+#~ " from primitive type"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Setting output type of saving mesh. "
+#~ "If not set, output type is "
+#~ "determined from filename. For saving "
+#~ "mesh as 'stl', you shoud set "
+#~ "outputType = 'stlb', if you want a"
+#~ " stl binary file."
+#~ msgstr ""
+
+#~ msgid "output type to be set"
+#~ msgstr ""
+
+#~ msgid "str : Current output type"
+#~ msgstr ""
+
+#~ msgid "Setting debug message level"
+#~ msgstr ""
+
+#~ msgid "Set debug message level"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Writing scene as a mesh file using"
+#~ " Assimp ( https://github.com/assimp/assimp )"
+#~ msgstr ""
+
+#~ msgid "Filename to be saved"
+#~ msgstr ""
+
+#~ msgid "An object of SceneGraph to be saved"
+#~ msgstr ""
+
+#~ msgid "If the process succeeds, True is returned."
+#~ msgstr ""
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 17:46+0900\n"
+"POT-Creation-Date: 2023-08-03 19:55+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
@@ -125,6 +125,12 @@ msgstr ""
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
+#: irsl_choreonoid_ros.RobotInterface.JointInterface:1
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
@@ -235,7 +241,7 @@ msgstr ""
 msgid "Sending angles of self.robot to the actual robot"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:5
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:5
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:5
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:3 of
 msgid "Moving duration in second"
@@ -257,11 +263,11 @@ msgstr ""
 msgid "Vector of angles"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:1 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:1 of
 msgid "Sending angles to the actual robot. angles is set to self.robot"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleDict:3 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:3 of
 msgid "Dictionary, whose key is joint-name, and value is joint-angle"
 msgstr ""
 
@@ -364,6 +370,13 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:1 of
 msgid "Getting list of data, waiting until subscribing new data"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
+msgid ""
+"Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.JointInterface`, "
+":py:class:`~irsl_choreonoid_ros.RobotInterface.DeviceInterface`, "
+":py:class:`~irsl_choreonoid_ros.RobotInterface.MobileBaseInterface`"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
