@@ -137,7 +137,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.robot"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.robot</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setMode"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setMode()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.linkList"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.linkList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.linkNames"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.linkNames</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.jointList"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.jointList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.jointNames"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.jointNames</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.deviceList"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.deviceList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.deviceNames</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.angleVector"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.angleVector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.jointAngle()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.setAngleMap()</span></code></a></li>
@@ -1504,6 +1508,7 @@ list[float] : weight of joints</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">RobotModelWrapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
 <p>RobotModel for programming Inteactively</p>
+<p>RobotModel is displayed as cnoid.Base.RobotItem</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.__init__" title="Permalink to this definition"></a></dt>
@@ -1706,14 +1711,42 @@ cnoid.Body.Body : Instance of robot model currently using</p>
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.linkList">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linkList</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.linkList" title="Permalink to this definition"></a></dt>
 <dd><p>Returns:
-list [cnoid.Body.Link] : List of links</p>
+list [cnoid.Body.Link] : List of link</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.linkNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">linkNames</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.linkNames" title="Permalink to this definition"></a></dt>
+<dd><p>Returns:
+list [str] : List of link’s name</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.jointList">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointList</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.jointList" title="Permalink to this definition"></a></dt>
 <dd><p>Returns:
-list [cnoid.Body.Link] : List of joints</p>
+list [cnoid.Body.Link] : List of joint</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.jointNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointNames</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.jointNames" title="Permalink to this definition"></a></dt>
+<dd><p>Returns:
+list [cnoid.Body.Link] : List of joint’s name</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.deviceList">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">deviceList</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.deviceList" title="Permalink to this definition"></a></dt>
+<dd><p>Returns:
+list [cnoid.Body.Device] : List of device</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">deviceNames</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames" title="Permalink to this definition"></a></dt>
+<dd><p>Returns:
+list [cnoid.Body.Device] : List of device’s name</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2354,9 +2387,9 @@ cnoid.DrawInterface.DrawInterface : actual instance to draw lines</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.irsl_draw_object.</span></span><span class="sig-name descname"><span class="pre">coordsWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordinates</span></code></a></p>
 <p>class coordsWrapper(cnoid.IRSLCoords.coordinates)</p>
-<p>This class to wrap a cnoid Object which have position (SgPosTransform, Link, etc.)</p>
+<p>This class aims to wrap a cnoid Object which have position (SgPosTransform, Link, etc.)</p>
 <p>You can access to this object with methods in cnoid.IRSLCoords.coordinates,</p>
-<p>Some mthods (newcoords, translate, rotate, transform) to update itself are overrided to call callback_function.</p>
+<p>Some mthods (newcoords, translate, rotate, transform) to update itself are overrided to add calling callback_function.</p>
 <p>Then, you can run some process when the position of the target is updated.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__">

@@ -57,6 +57,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-robotinterface">irsl_choreonoid_ros.RobotInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.mobile_initialized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.mobile_connected</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.waitFinishMoving()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.stop()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.move_velocity()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.currentMapCoords</span></code></a></li>
@@ -67,19 +70,26 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface"><code class="docutils literal notranslate"><span class="pre">JointInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.__init__"><code class="docutils literal notranslate"><span class="pre">JointInterface.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.groupList"><code class="docutils literal notranslate"><span class="pre">JointInterface.groupList</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList"><code class="docutils literal notranslate"><span class="pre">JointInterface.groupNameList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized"><code class="docutils literal notranslate"><span class="pre">JointInterface.joint_initialized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected"><code class="docutils literal notranslate"><span class="pre">JointInterface.joint_connected</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList"><code class="docutils literal notranslate"><span class="pre">JointInterface.jointGroupList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames"><code class="docutils literal notranslate"><span class="pre">JointInterface.jointGroupNames</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup"><code class="docutils literal notranslate"><span class="pre">JointInterface.getJointGroup()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngles()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngleVector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap"><code class="docutils literal notranslate"><span class="pre">JointInterface.sendAngleMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished"><code class="docutils literal notranslate"><span class="pre">JointInterface.isFinished()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish"><code class="docutils literal notranslate"><span class="pre">JointInterface.waitUntilFinish()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface"><code class="docutils literal notranslate"><span class="pre">DeviceInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.device_initialized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.device_connected</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.deviceList</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.deviceNames</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.getDevice()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.getDevicesByClass()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.data"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.data()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.waitData()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData"><code class="docutils literal notranslate"><span class="pre">DeviceInterface.waitNextData()</span></code></a></li>
@@ -90,29 +100,45 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface"><code class="docutils literal notranslate"><span class="pre">RobotInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__"><code class="docutils literal notranslate"><span class="pre">RobotInterface.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel"><code class="docutils literal notranslate"><span class="pre">RobotInterface.copyRobotModel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getRobotModel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.copyRobot()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.effortVector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.velocityVector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.actualAngleVector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.referenceAngleVector</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.robot</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords"><code class="docutils literal notranslate"><span class="pre">RobotInterface.currentMapCoords</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.data"><code class="docutils literal notranslate"><span class="pre">RobotInterface.data()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.dataArray"><code class="docutils literal notranslate"><span class="pre">RobotInterface.dataArray()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList"><code class="docutils literal notranslate"><span class="pre">RobotInterface.deviceList</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames"><code class="docutils literal notranslate"><span class="pre">RobotInterface.deviceNames</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected"><code class="docutils literal notranslate"><span class="pre">RobotInterface.device_connected</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized"><code class="docutils literal notranslate"><span class="pre">RobotInterface.device_initialized</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevice"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getDevice()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList"><code class="docutils literal notranslate"><span class="pre">RobotInterface.groupList</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList"><code class="docutils literal notranslate"><span class="pre">RobotInterface.groupNameList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevicesByClass"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getDevicesByClass()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getJointGroup"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getJointGroup()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.isFinished"><code class="docutils literal notranslate"><span class="pre">RobotInterface.isFinished()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList"><code class="docutils literal notranslate"><span class="pre">RobotInterface.jointGroupList</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames"><code class="docutils literal notranslate"><span class="pre">RobotInterface.jointGroupNames</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.jointRobot</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected"><code class="docutils literal notranslate"><span class="pre">RobotInterface.joint_connected</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized"><code class="docutils literal notranslate"><span class="pre">RobotInterface.joint_initialized</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected"><code class="docutils literal notranslate"><span class="pre">RobotInterface.mobile_connected</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized"><code class="docutils literal notranslate"><span class="pre">RobotInterface.mobile_initialized</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_on_map"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_on_map()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_position"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_position()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_trajectory"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_trajectory()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.move_velocity"><code class="docutils literal notranslate"><span class="pre">RobotInterface.move_velocity()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.robot</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleMap"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngleMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngleVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngleVector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.sendAngles"><code class="docutils literal notranslate"><span class="pre">RobotInterface.sendAngles()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.stop"><code class="docutils literal notranslate"><span class="pre">RobotInterface.stop()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitData"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitData()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitDataArray"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitDataArray()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitFinishMoving"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitFinishMoving()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextData"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitNextData()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextDataArray"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitNextDataArray()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitUntilFinish"><code class="docutils literal notranslate"><span class="pre">RobotInterface.waitUntilFinish()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -215,6 +241,51 @@
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__" title="この定義へのパーマリンク"></a></dt>
 <dd></dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if MobileBase instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if MobileBase instance has been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving">
+<span class="sig-name descname"><span class="pre">waitFinishMoving</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Wait to finish moving of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>timeout</strong> (<em>float</em><em>, </em><em>default=1.0</em>) -- </p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>False returns, if timeout.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop">
 <span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop" title="この定義へのパーマリンク"></a></dt>
@@ -303,8 +374,36 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 <dd></dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.groupList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">groupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.groupList" title="この定義へのパーマリンク"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of JointInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if JointInterface instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of JointInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if JointInterface instance has been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Getting list of instance of joint-group</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -317,8 +416,8 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">groupNameList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList" title="この定義へのパーマリンク"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Getting list of name of joint-groups</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -326,6 +425,23 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd>
 <dt class="field-even">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-even"><p>list [ str ]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup">
+<span class="sig-name descname"><span class="pre">getJointGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting a instance of joint-group</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- Name of joint-group</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Instance of joint-group</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JointGroupTopic</p>
 </dd>
 </dl>
 </dd></dl>
@@ -390,6 +506,26 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish">
+<span class="sig-name descname"><span class="pre">waitUntilFinish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Waiting until finishing joint moving</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timeout</strong> (<em>float</em><em>, </em><em>optional</em>) -- Time for timeout</p></li>
+<li><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>False returns, if timeout.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -401,6 +537,34 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__" title="この定義へのパーマリンク"></a></dt>
 <dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of DeviceInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if DeviceInterface instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of DeviceInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if all devices in this instance have been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList">
@@ -439,10 +603,27 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 <dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- Name of the device</p>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
-<dd class="field-even"><p>The instance for gathering data</p>
+<dd class="field-even"><p>The instance witch has the same name as given name</p>
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p>RosDeviceBase</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass">
+<span class="sig-name descname"><span class="pre">getDevicesByClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting the list of device which is a typical class</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<em>Class</em>) -- Class of the device</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of the instance whose class is subclass of cls</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list [obj]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -575,28 +756,46 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">RobotInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface" title="この定義へのパーマリンク"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">RobotInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface" title="この定義へのパーマリンク"></a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface" title="irsl_choreonoid_ros.RobotInterface.JointInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">JointInterface</span></code></a>, <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface" title="irsl_choreonoid_ros.RobotInterface.DeviceInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeviceInterface</span></code></a>, <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface" title="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">MobileBaseInterface</span></code></a></p>
 <p>Interface for controllring robot (inheriting classes JointInterface, DeviceInterface and MobileBaseInterface)</p>
 <p>At a instance of this interface, all methods in JointInterface, DeviceInterface and MobileBaseInterface can be used.</p>
 <p>Then, please refer methods of these classes.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__" title="この定義へのパーマリンク"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>file_name</strong> (<em>str</em>) -- Name of setting file</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) -- Name of setting.yaml file</p></li>
 <li><p><strong>node_name</strong> (<em>str</em>) -- Name of node</p></li>
 <li><p><strong>anonymous</strong> (<em>boolean</em><em>, </em><em>default = False</em>) -- If True, ROS node will start with this node-name.</p></li>
+<li><p><strong>connection_wait</strong> (<em>float</em><em>, </em><em>default=3.0</em>) -- </p></li>
 </ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel">
-<span class="sig-name descname"><span class="pre">copyRobotModel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel" title="この定義へのパーマリンク"></a></dt>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel">
+<span class="sig-name descname"><span class="pre">getRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped)</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>asItem</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, model is generated as cnoid.BodyPlugin.BodyItem</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Newly generated instance</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped" title="irsl_choreonoid.robot_util.RobotModelWrapped">irsl_choreonoid.robot_util.RobotModelWrapped</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot">
+<span class="sig-name descname"><span class="pre">copyRobot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Return other instance of the robot model</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -607,6 +806,72 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body">cnoid.Body.Body</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">effortVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return vector of effort of actual robot (sensing value)
+This method requires JointState class in devices</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Returns:</dt><dd><p>numpy.array : 1 x N vector ( N is len(jointList) )</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">velocityVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return vector of velocity of actual robot (sensing value)
+This method requires JointState class in devices</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Returns:</dt><dd><p>numpy.array : 1 x N vector ( N is len(jointList) )</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">actualAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return angle-vector of actual robot (sensing value)
+This method requires JointState class in devices</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Returns:</dt><dd><p>numpy.array : 1 x N vector ( N is len(jointList) )</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">referenceAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return reference angle-vector (value of past command)
+This method requires JointTrajectoryState class in devices</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Returns:</dt><dd><p>numpy.array : 1 x N vector ( N is len(jointList) )</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.robot">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">robot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return instance of the robot model (applying sensor values)</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Instance of the robot model using in this instance</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body">cnoid.Body.Body</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -692,6 +957,34 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dl>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of DeviceInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if all devices in this instance have been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of DeviceInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if DeviceInterface instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevice">
 <span class="sig-name descname"><span class="pre">getDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevice" title="この定義へのパーマリンク"></a></dt>
@@ -701,7 +994,7 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 <dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- Name of the device</p>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
-<dd class="field-even"><p>The instance for gathering data</p>
+<dd class="field-even"><p>The instance witch has the same name as given name</p>
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p>RosDeviceBase</p>
@@ -709,30 +1002,36 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dl>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">groupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Getting list of instance of joint-group</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevicesByClass">
+<span class="sig-name descname"><span class="pre">getDevicesByClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getDevicesByClass" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting the list of device which is a typical class</p>
 <dl class="field-list simple">
-<dt class="field-odd">戻り値<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List of instance of joint-groups</p>
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>cls</strong> (<em>Class</em>) -- Class of the device</p>
 </dd>
-<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
-<dd class="field-even"><p>list [ JointGroup ]</p>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>List of the instance whose class is subclass of cls</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list [obj]</p>
 </dd>
 </dl>
 </dd></dl>
 
-<dl class="py property">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">groupNameList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Getting list of name of joint-groups</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getJointGroup">
+<span class="sig-name descname"><span class="pre">getJointGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getJointGroup" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting a instance of joint-group</p>
 <dl class="field-list simple">
-<dt class="field-odd">戻り値<span class="colon">:</span></dt>
-<dd class="field-odd"><p>List of name of joint-groups</p>
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- Name of joint-group</p>
 </dd>
-<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
-<dd class="field-even"><p>list [ str ]</p>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Instance of joint-group</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JointGroupTopic</p>
 </dd>
 </dl>
 </dd></dl>
@@ -750,6 +1049,104 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting list of instance of joint-group</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of instance of joint-groups</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>list [ JointGroup ]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Getting list of name of joint-groups</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of name of joint-groups</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>list [ str ]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointRobot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return instance of the robot model (using for sending command)</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Instance of the robot model using in this instance</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body">cnoid.Body.Body</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of JointInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if JointInterface instance has been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of JointInterface</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if JointInterface instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Connection check of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if MobileBase instance has been connected</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Initialized check of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>True returns, if MobileBase instance has been initialized</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>boolean</p>
 </dd>
 </dl>
 </dd></dl>
@@ -801,20 +1198,6 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 <li><p><strong>vel_y</strong> (<em>float</em>) -- Velocity of y-axis [ m/sec ]</p></li>
 <li><p><strong>vel_th</strong> (<em>float</em>) -- Angular velocity of yaw [ radian/sec ]</p></li>
 </ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.robot">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">robot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Return instance of the robot model</p>
-<dl class="field-list simple">
-<dt class="field-odd">戻り値<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Instance of the robot model using in this instance</p>
-</dd>
-<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body">cnoid.Body.Body</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -916,6 +1299,23 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.waitFinishMoving">
+<span class="sig-name descname"><span class="pre">waitFinishMoving</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitFinishMoving" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Wait to finish moving of MobileBase</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>timeout</strong> (<em>float</em><em>, </em><em>default=1.0</em>) -- </p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>False returns, if timeout.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextData">
 <span class="sig-name descname"><span class="pre">waitNextData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitNextData" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Getting data, waiting until subscribing new data</p>
@@ -953,6 +1353,26 @@ relative (boolean, default = False) : If True, trajectory is considered it is re
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ANY</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.waitUntilFinish">
+<span class="sig-name descname"><span class="pre">waitUntilFinish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.waitUntilFinish" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Waiting until finishing joint moving</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timeout</strong> (<em>float</em><em>, </em><em>optional</em>) -- Time for timeout</p></li>
+<li><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>False returns, if timeout.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>boolean</p>
 </dd>
 </dl>
 </dd></dl>
