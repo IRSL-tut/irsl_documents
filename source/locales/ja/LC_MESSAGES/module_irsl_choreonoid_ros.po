@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-03 19:55+0900\n"
+"POT-Creation-Date: 2023-09-01 17:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,20 +43,25 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Parameters"
 msgstr ""
@@ -69,19 +74,37 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Returns"
@@ -95,19 +118,37 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceList
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.deviceNames
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Return type"
@@ -135,6 +176,35 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
 msgid "Interface for controlling locomotion of the robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized:1 of
+msgid "Initialized check of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_initialized:3 of
+msgid "True returns, if MobileBase instance has been initialized"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected:1 of
+msgid "Connection check of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.mobile_connected:3 of
+msgid "True returns, if MobileBase instance has been connected"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:1 of
+msgid "Wait to finish moving of MobileBase"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:8
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:6 of
+msgid "False returns, if timeout."
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop:1 of
@@ -169,7 +239,11 @@ msgid "Not implemented yet [TODO]"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:5
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:5 of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:4
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.currentMapCoords:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:4
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:4
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:4 of
 msgid "Returns:"
 msgstr ""
 
@@ -217,24 +291,56 @@ msgstr ""
 msgid "Interface for controlling joints of the robot"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList:1
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList:1 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized:1 of
+msgid "Initialized check of JointInterface"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_initialized:3 of
+msgid "True returns, if JointInterface instance has been initialized"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected:1 of
+msgid "Connection check of JointInterface"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.joint_connected:3 of
+msgid "True returns, if JointInterface instance has been connected"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList:1 of
 msgid "Getting list of instance of joint-group"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupList:3
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupList:3 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupList:3 of
 msgid "List of instance of joint-groups"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList:1
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList:1 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames:1 of
 msgid "Getting list of name of joint-groups"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.groupNameList:3
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.groupNameList:3 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointGroupNames:3 of
 msgid "List of name of joint-groups"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:1 of
+msgid "Getting a instance of joint-group"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:3 of
+msgid "Name of joint-group"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:6 of
+msgid "Instance of joint-group"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:1 of
@@ -249,7 +355,8 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:3
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:7
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:5 of
 msgid "Name of group to be used"
 msgstr ""
 
@@ -279,8 +386,36 @@ msgstr ""
 msgid "If True, the robot is not moving"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:1 of
+msgid "Waiting until finishing joint moving"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:3 of
+msgid "Time for timeout"
+msgstr ""
+
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1 of
 msgid "Interface for receiving data from sensors on the robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized:1 of
+msgid "Initialized check of DeviceInterface"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_initialized:3 of
+msgid "True returns, if DeviceInterface instance has been initialized"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected:1 of
+msgid "Connection check of DeviceInterface"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.device_connected:3 of
+msgid "True returns, if all devices in this instance have been connected"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:1
@@ -318,7 +453,19 @@ msgid "Name of the device"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:6 of
-msgid "The instance for gathering data"
+msgid "The instance witch has the same name as given name"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:1 of
+msgid "Getting the list of device which is a typical class"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:3 of
+msgid "Class of the device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:6 of
+msgid "List of the instance whose class is subclass of cls"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:1 of
@@ -396,7 +543,7 @@ msgid "Then, please refer methods of these classes."
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:1 of
-msgid "Name of setting file"
+msgid "Name of setting.yaml file"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:3 of
@@ -407,20 +554,70 @@ msgstr ""
 msgid "If True, ROS node will start with this node-name."
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel:1 of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:1 of
+msgid ""
+"Return an instance of RobotModel "
+"(irsl_choreonoid.robot_util.RobotModelWrapped)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:3 of
+msgid "If True, model is generated as cnoid.BodyPlugin.BodyItem"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:6 of
+msgid "Newly generated instance"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:1 of
 msgid "Return other instance of the robot model"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobotModel:5 of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:5 of
 msgid "Copy of self.robot (this is not identical to self.robot)"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1 of
-msgid "Return instance of the robot model"
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:1 of
+msgid ""
+"Return vector of effort of actual robot (sensing value) This method "
+"requires JointState class in devices"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:5 of
+msgid "numpy.array : 1 x N vector ( N is len(jointList) )"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:1 of
+msgid ""
+"Return vector of velocity of actual robot (sensing value) This method "
+"requires JointState class in devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:1 of
+msgid ""
+"Return angle-vector of actual robot (sensing value) This method requires "
+"JointState class in devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:1 of
+msgid ""
+"Return reference angle-vector (value of past command) This method "
+"requires JointTrajectoryState class in devices"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1 of
+msgid "Return instance of the robot model (applying sensor values)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:3
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:3 of
 msgid "Instance of the robot model using in this instance"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:1 of
+msgid "Return instance of the robot model (using for sending command)"
 msgstr ""
 
 #~ msgid "irsl_choreonoid_ros module"
@@ -460,5 +657,14 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Get data array from devices"
+#~ msgstr ""
+
+#~ msgid "The instance for gathering data"
+#~ msgstr ""
+
+#~ msgid "Name of setting file"
+#~ msgstr ""
+
+#~ msgid "Return instance of the robot model"
 #~ msgstr ""
 

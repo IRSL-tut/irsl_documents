@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-09 10:52+0900\n"
+"POT-Creation-Date: 2023-09-01 17:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1201,6 +1201,10 @@ msgstr ""
 msgid "RobotModel for programming Inteactively"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.RobotModelWrapped:3 of
+msgid "RobotModel is displayed as cnoid.Base.RobotItem"
+msgstr ""
+
 #: irsl_choreonoid.robot_util.RobotModelWrapped.__init__:1 of
 msgid "robot model using this class"
 msgstr ""
@@ -1366,11 +1370,27 @@ msgid "Current mode (0\\: kinematics mode, 1\\: rendering mode)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.linkList:1 of
-msgid "Returns: list [cnoid.Body.Link] : List of links"
+msgid "Returns: list [cnoid.Body.Link] : List of link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.linkNames:1 of
+msgid "Returns: list [str] : List of link's name"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointList:1 of
-msgid "Returns: list [cnoid.Body.Link] : List of joints"
+msgid "Returns: list [cnoid.Body.Link] : List of joint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.jointNames:1 of
+msgid "Returns: list [cnoid.Body.Link] : List of joint's name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList:1 of
+msgid "Returns: list [cnoid.Body.Device] : List of device"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames:1 of
+msgid "Returns: list [cnoid.Body.Device] : List of device's name"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector:1 of
@@ -1811,8 +1831,8 @@ msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:3 of
 msgid ""
-"This class to wrap a cnoid Object which have position (SgPosTransform, "
-"Link, etc.)"
+"This class aims to wrap a cnoid Object which have position "
+"(SgPosTransform, Link, etc.)"
 msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:5 of
@@ -1824,7 +1844,7 @@ msgstr ""
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:7 of
 msgid ""
 "Some mthods (newcoords, translate, rotate, transform) to update itself "
-"are overrided to call callback_function."
+"are overrided to add calling callback_function."
 msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:9 of
@@ -2283,5 +2303,23 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "__init__(self, \\*\\*kwargs):"
+#~ msgstr ""
+
+#~ msgid "Returns: list [cnoid.Body.Link] : List of links"
+#~ msgstr ""
+
+#~ msgid "Returns: list [cnoid.Body.Link] : List of joints"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This class to wrap a cnoid Object"
+#~ " which have position (SgPosTransform, Link,"
+#~ " etc.)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some mthods (newcoords, translate, rotate, "
+#~ "transform) to update itself are "
+#~ "overrided to call callback_function."
 #~ msgstr ""
 
