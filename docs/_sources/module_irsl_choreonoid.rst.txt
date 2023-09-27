@@ -60,10 +60,14 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/dra
 
     .. property:: SgPosTransform
 
-       Generating instance of cnoid.Util.SgPosTransform, which represents the root position of this instance
+        Generating instance of cnoid.Util.SgPosTransform, which represents the root position of this instance
 
-       Returns:
-           cnoid.Util.SgPosTransform : Root of drawn objects in this instance at SceneGraph
+
+        Returns:
+            Root of drawn objects in this instance at SceneGraph
+
+        Return Type:
+            cnoid.Util.SgPosTransform
 
 
 ^^^^^^^^^^^^^^^^^^^
@@ -76,5 +80,15 @@ Inherited by class DrawCoordsListWrapped and class GeneralDrawInterfaceWrapped.
 https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py
 
 .. autoclass:: irsl_choreonoid.irsl_draw_object.coordsWrapper
+    :members:
+    :no-undoc-members:
+
+***********************************
+module irsl_choreonoid.RobotBuilder
+***********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py
+
+.. autoclass:: irsl_choreonoid.RobotBuilder.RobotBuilder
     :members:
     :no-undoc-members:
