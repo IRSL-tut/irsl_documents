@@ -28,4 +28,5 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ro
 .. autoclass:: irsl_choreonoid_ros.RobotInterface.RobotInterface
     :members:
     :no-undoc-members:
-    :inherited-members:
+
+..    :inherited-members:
