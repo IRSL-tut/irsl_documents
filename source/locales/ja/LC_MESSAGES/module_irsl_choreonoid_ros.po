@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-26 19:14+0900\n"
+"POT-Creation-Date: 2023-11-21 09:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../module_irsl_choreonoid_ros.rst:3
 msgid "Modules in irsl_choreonoid_ros"
@@ -62,6 +62,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
 msgid "Parameters"
@@ -97,6 +98,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
@@ -136,6 +138,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
@@ -150,10 +153,20 @@ msgid "Examples"
 msgstr ""
 
 #: ../../module_irsl_choreonoid_ros.rst:19
-msgid "irsl_choreonoid_ros.RobotInterface"
+msgid "irsl_choreonoid_ros.setup_cnoid"
 msgstr ""
 
 #: ../../module_irsl_choreonoid_ros.rst:21
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:29
+msgid "irsl_choreonoid_ros.RobotInterface"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:31
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
@@ -317,10 +330,11 @@ msgid "Moving duration in second"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:3
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:7
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:7
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:5 of
-msgid "Name of group to be used"
+msgid "Name(s) of group to be used"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:1 of
@@ -523,12 +537,24 @@ msgid ""
 "(irsl_choreonoid.robot_util.RobotModelWrapped)"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:3
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:3 of
 msgid "If True, model is generated as cnoid.BodyPlugin.BodyItem"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:6 of
 msgid "Newly generated instance"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:1 of
+msgid ""
+"Return an instance of RobotModel "
+"(irsl_choreonoid.robot_util.RobotModelWrapped) with RobotInterface "
+"internal robot-model"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:6 of
+msgid "RobotModel created from RobotInterface internal robot-model"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:1 of
@@ -691,5 +717,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "numpy.array : 1 x N vector ( N is len(jointList) )"
+#~ msgstr ""
+
+#~ msgid "Name of group to be used"
 #~ msgstr ""
 

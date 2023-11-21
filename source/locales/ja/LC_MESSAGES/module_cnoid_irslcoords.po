@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-26 19:14+0900\n"
+"POT-Creation-Date: 2023-11-21 09:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../module_cnoid_irslcoords.rst:3
 msgid "Coordinates Module"
@@ -101,10 +101,11 @@ msgstr ""
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:1
 #: cnoid.IRSLCoords.PyCapsule.angleVector:1
 #: cnoid.IRSLCoords.PyCapsule.cnoidPosition:1
-#: cnoid.IRSLCoords.PyCapsule.eps_eq:1 cnoid.IRSLCoords.PyCapsule.locate:1
-#: cnoid.IRSLCoords.PyCapsule.move_to:1
+#: cnoid.IRSLCoords.PyCapsule.eps_eq:1
+#: cnoid.IRSLCoords.PyCapsule.get_transformed:1
+#: cnoid.IRSLCoords.PyCapsule.locate:1 cnoid.IRSLCoords.PyCapsule.move_to:1
 #: cnoid.IRSLCoords.PyCapsule.normalizeVector:1
-#: cnoid.IRSLCoords.PyCapsule.orient:1
+#: cnoid.IRSLCoords.PyCapsule.normalized:1 cnoid.IRSLCoords.PyCapsule.orient:1
 #: cnoid.IRSLCoords.PyCapsule.orient_with_matrix:1
 #: cnoid.IRSLCoords.PyCapsule.rotate:1
 #: cnoid.IRSLCoords.PyCapsule.rotate_with_matrix:1
@@ -185,6 +186,20 @@ msgstr ""
 msgid "copy of this instance (created new instance)"
 msgstr ""
 
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.get_transformed:3 of
+msgid ""
+"get_transformed(self: cnoid.IRSLCoords.coordinates, coords: "
+"cnoid.IRSLCoords.coordinates, wrt: cnoid.IRSLCoords.coordinates.wrt = "
+"<wrt.local: 1>) -> cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.get_transformed:5 of
+msgid ""
+"get_transformed(self: cnoid.IRSLCoords.coordinates, arg0: "
+"cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -> "
+"cnoid.IRSLCoords.coordinates"
+msgstr ""
+
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.inverse:1 of
 msgid "Updating self transformation as an inverse transformation"
 msgstr ""
@@ -253,6 +268,30 @@ msgid ""
 "move_to(self: cnoid.IRSLCoords.coordinates, arg0: "
 "cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -> "
 "cnoid.IRSLCoords.coordinates"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalizeVector:3 of
+msgid ""
+"normalizeVector(arg0: numpy.ndarray[numpy.float64[3, 1], "
+"flags.writeable]) -> numpy.ndarray[numpy.float64[3, 1], flags.writeable]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalizeVector:5 of
+msgid ""
+"normalizeVector(arg0: numpy.ndarray[numpy.float64[4, 1], "
+"flags.writeable]) -> numpy.ndarray[numpy.float64[4, 1], flags.writeable]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalized:3 of
+msgid ""
+"normalized(arg0: numpy.ndarray[numpy.float64[3, 1]]) -> "
+"numpy.ndarray[numpy.float64[3, 1]]"
+msgstr ""
+
+#: ../../docstring cnoid.IRSLCoords.PyCapsule.normalized:5 of
+msgid ""
+"normalized(arg0: numpy.ndarray[numpy.float64[4, 1]]) -> "
+"numpy.ndarray[numpy.float64[4, 1]]"
 msgstr ""
 
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.orient:3 of
