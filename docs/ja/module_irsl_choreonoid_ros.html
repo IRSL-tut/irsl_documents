@@ -11,13 +11,12 @@
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-        <script src="_static/translations.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2aa0fae8"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+        <script src="_static/translations.js?v=4dbe4bdc"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
@@ -54,6 +53,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.cnoid_ros_util.parseURLROS"><code class="docutils literal notranslate"><span class="pre">parseURLROS()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-setup-cnoid">irsl_choreonoid_ros.setup_cnoid</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-robotinterface">irsl_choreonoid_ros.RobotInterface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__"><code class="docutils literal notranslate"><span class="pre">MobileBaseInterface.__init__()</span></code></a></li>
@@ -101,6 +101,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface"><code class="docutils literal notranslate"><span class="pre">RobotInterface</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__"><code class="docutils literal notranslate"><span class="pre">RobotInterface.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getRobotModel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel"><code class="docutils literal notranslate"><span class="pre">RobotInterface.getActualRobotModel()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot"><code class="docutils literal notranslate"><span class="pre">RobotInterface.copyRobot()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.effortVector</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector"><code class="docutils literal notranslate"><span class="pre">RobotInterface.velocityVector</span></code></a></li>
@@ -144,31 +145,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="modules-in-irsl-choreonoid-ros">
+  <section id="modules-in-irsl-choreonoid-ros">
 <h1>Modules in irsl_choreonoid_ros<a class="headerlink" href="#modules-in-irsl-choreonoid-ros" title="この見出しへのパーマリンク"></a></h1>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros">https://github.com/IRSL-tut/irsl_choreonoid_ros</a></p>
 <section id="irsl-choreonoid-ros-cnoid-ros-util">
@@ -197,6 +174,10 @@
 </dd></dl>
 
 </section>
+<section id="irsl-choreonoid-ros-setup-cnoid">
+<h2>irsl_choreonoid_ros.setup_cnoid<a class="headerlink" href="#irsl-choreonoid-ros-setup-cnoid" title="この見出しへのパーマリンク"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py</a></p>
+<span class="target" id="module-irsl_choreonoid_ros.setup_cnoid"></span></section>
 <section id="irsl-choreonoid-ros-robotinterface">
 <h2>irsl_choreonoid_ros.RobotInterface<a class="headerlink" href="#irsl-choreonoid-ros-robotinterface" title="この見出しへのパーマリンク"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py</a></p>
@@ -426,7 +407,7 @@
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>tm</strong> (<em>float</em>) -- Moving duration in second</p></li>
-<li><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p></li>
+<li><p><strong>group</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) -- Name(s) of group to be used</p></li>
 </ul>
 </dd>
 </dl>
@@ -441,7 +422,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>angle_vector</strong> (<em>numpy.array</em>) -- Vector of angles</p></li>
 <li><p><strong>tm</strong> (<em>float</em>) -- Moving duration in second</p></li>
-<li><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p></li>
+<li><p><strong>group</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) -- Name(s) of group to be used</p></li>
 </ul>
 </dd>
 </dl>
@@ -449,13 +430,14 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap">
-<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Sending angles to the actual robot. angles is set to self.robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>angle_map</strong> (<em>dict</em><em>[</em><em>name</em><em>, </em><em>float</em><em>]</em>) -- Dictionary, whose key is joint-name, and value is joint-angle</p></li>
 <li><p><strong>tm</strong> (<em>float</em>) -- Moving duration in second</p></li>
+<li><p><strong>group</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) -- Name(s) of group to be used</p></li>
 </ul>
 </dd>
 </dl>
@@ -467,7 +449,7 @@
 <dd><p>Checking method for finishing to send angles</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p>
+<dd class="field-odd"><p><strong>group</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) -- Name(s) of group to be used</p>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>If True, the robot is not moving</p>
@@ -486,7 +468,7 @@
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>timeout</strong> (<em>float</em><em>, </em><em>optional</em>) -- Time for timeout</p></li>
-<li><p><strong>group</strong> (<em>str</em><em>, </em><em>optional</em>) -- Name of group to be used</p></li>
+<li><p><strong>group</strong> (<em>str</em><em> or </em><em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) -- Name(s) of group to be used</p></li>
 </ul>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
@@ -759,6 +741,23 @@
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>Newly generated instance</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped" title="irsl_choreonoid.robot_util.RobotModelWrapped">irsl_choreonoid.robot_util.RobotModelWrapped</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel">
+<span class="sig-name descname"><span class="pre">getActualRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped) with RobotInterface internal robot-model</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>asItem</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, model is generated as cnoid.BodyPlugin.BodyItem</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>RobotModel created from RobotInterface internal robot-model</p>
 </dd>
 <dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.robot_util.RobotModelWrapped" title="irsl_choreonoid.robot_util.RobotModelWrapped">irsl_choreonoid.robot_util.RobotModelWrapped</a></p>

@@ -14,6 +14,16 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ro
     :members:
     :no-undoc-members:
 
+*******************************
+irsl_choreonoid_ros.setup_cnoid
+*******************************
+
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py
+
+.. automodule:: irsl_choreonoid_ros.setup_cnoid
+    :members:
+    :no-undoc-members:
+
 **********************************
 irsl_choreonoid_ros.RobotInterface
 **********************************
