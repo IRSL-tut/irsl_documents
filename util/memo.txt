@@ -12,6 +12,7 @@ virtualenv --python=python3 sphinx
 python3 -m pip install -r requirements.txt
 
 ### update documents
+source utils/sphinx/bin/activate
 cd source
 DO_COPY=yes scripts/build.sh
 
