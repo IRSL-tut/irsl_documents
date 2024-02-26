@@ -11,6 +11,13 @@ virtualenv --python=python3 sphinx
 
 python3 -m pip install -r requirements.txt
 
+### update documents
+cd source
+DO_COPY=yes scripts/build.sh
+
+git commit ../docs -m 'commit message'
+# git push gh-pages origin or your_fork
+
 ### build document(first step)
 
 . util/sphinx/bin/activate
