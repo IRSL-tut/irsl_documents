@@ -11,7 +11,7 @@ virtualenv --python=python3 sphinx
 
 python3 -m pip install -r requirements.txt
 
-### build document
+### build document(first step)
 
 . util/sphinx/bin/activate
 cd source
@@ -19,6 +19,6 @@ make html
 
   cp -r _build/html/. ../docs
 
-### configure sphinx
+### configure sphinx(first step)
 
 sphinx-quickstart 
