@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../module_cnoid_irslcoords.rst:3
 msgid "Coordinates Module"
-msgstr ""
+msgstr "座標 モジュール"
 
 #: ../../module_cnoid_irslcoords.rst:5
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../module_cnoid_irslcoords.rst:11
 msgid "class cnoid.IRSLCoords.coordinates"
-msgstr ""
+msgstr "cnoid.IRSLCoords.coordinates クラス"
 
 #: ../../docstring cnoid.IRSLCoords.coordinates:1
 #: cnoid.IRSLCoords.coordinates.wrt:1 of
@@ -48,16 +48,19 @@ msgid ""
 "coordinates for choreonoid Referring to "
 "https://github.com/euslisp/EusLisp/blob/master/doc/jlatex/jmanual.pdf"
 msgstr ""
+"choreonoidの座標は以下のURLを参照 "
+"https://github.com/euslisp/EusLisp/blob/master/doc/jlatex/jmanual.pdf"
 
 #: ../../module_cnoid_irslcoords.rst:19
 msgid "Usage and description, see :doc:`coordinates`"
-msgstr ""
+msgstr "使用法と説明は :doc:`coordinates` を参照"
 
 #: ../../docstring cnoid.IRSLCoords.coordinates.RPY:1 of
 msgid ""
 "Rotation part of transformation ( RPY angle, real vector with 3 elements,"
 " roll [radian], pitch [radian], yaw [radian] )"
 msgstr ""
+"変換の回転要素 ( RPY角度, 3要素の実数ベクトル, ロール[rad], ピッチ[rad], ヨー[rad])"
 
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.PositionInverse
 #: cnoid.IRSLCoords.PyCapsule.Position_quaternion
@@ -113,7 +116,7 @@ msgstr ""
 #: cnoid.IRSLCoords.PyCapsule.transformation:1
 #: cnoid.IRSLCoords.PyCapsule.translate:1 of
 msgid "Overloaded function."
-msgstr ""
+msgstr "オーバーロード関数"
 
 #: ../../docstring cnoid.IRSLCoords.PyCapsule.__init__:3 of
 msgid "__init__(self: cnoid.IRSLCoords.coordinates) -> None"
@@ -162,6 +165,7 @@ msgid ""
 "Rotation part of transformation ( Angle axis, real vector with 4 "
 "elements, ax, ay, az, rotation-angle [radian] )"
 msgstr ""
+"変換の回転部分 (回転軸, 4要素の実数ベクトル, ax, ay, az, rotation-angle[rad])"
 
 #: ../../docstring cnoid.IRSLCoords.coordinates.angleAxis:3
 #: cnoid.IRSLCoords.coordinates.quaternion:3 of
@@ -173,6 +177,7 @@ msgid ""
 "Transformation matrix ( 4x4 homogeneous transformation matrix, using in "
 "Choreonoid )"
 msgstr ""
+"変換行列(Choreonoidを使用するときの4x4の同時変換行列)"
 
 #: ../../docstring cnoid.IRSLCoords.coordinates.cnoidPosition:3 of
 msgid "4x4 matrix"
@@ -343,6 +348,7 @@ msgid ""
 "Translation part ( real vector with 3 elements, x, y, z ) of "
 "transformation matrix"
 msgstr ""
+"変換行列の並進部分 ( x, y, zの3要素を持つ実数ベクトル)"
 
 #: ../../docstring cnoid.IRSLCoords.coordinates.quaternion:1 of
 msgid ""
@@ -510,7 +516,7 @@ msgstr ""
 
 #: ../../module_cnoid_irslcoords.rst:23
 msgid "module cnoid.IRSLCoords"
-msgstr ""
+msgstr "cnoid.IRSLCoords モジュール"
 
 #: ../../docstring cnoid.IRSLCoords:1 of
 msgid "Functions for manipulating 4x4 matrix as homogeneous transformation matrix"

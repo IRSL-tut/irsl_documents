@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../module_cnoid_body.rst:3
 msgid "Choreonoid Python Module (Body)"
-msgstr ""
+msgstr "Choreonoid Python モジュール(Body)"
 
 #: ../../module_cnoid_body.rst:7
 msgid "cnoid.Body"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../docstring cnoid.Body:1 of
 msgid "Choreonoid Body module"
-msgstr ""
+msgstr "Choreonoid Body モジュール"
 
 #: ../../module_cnoid_body.rst:15
 msgid "cnoid.Body.Body"

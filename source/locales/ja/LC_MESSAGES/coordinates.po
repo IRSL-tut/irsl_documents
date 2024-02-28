@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../coordinates.rst:3
 msgid "Coordinates"
-msgstr ""
+msgstr "座標"
 
 #: ../../coordinates.rst:7
 msgid "Coordinate Transformations"
-msgstr ""
+msgstr "座標変換"
 
 #: ../../coordinates.rst:11
 msgid "3D Position"
-msgstr ""
+msgstr "3次元座標"
 
 #: ../../coordinates.rst:13
 msgid ""
@@ -212,7 +212,7 @@ msgstr ""
 
 #: ../../coordinates.rst:126
 msgid "Relation between system of coordinates and coordinates class"
-msgstr ""
+msgstr "座標系と座標クラスの関係"
 
 #: ../../coordinates.rst:128
 msgid ""
@@ -453,7 +453,7 @@ msgstr ""
 
 #: ../../coordinates.rst:409
 msgid "Reference book"
-msgstr ""
+msgstr "参考文献"
 
 #: ../../coordinates.rst:411
 msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"

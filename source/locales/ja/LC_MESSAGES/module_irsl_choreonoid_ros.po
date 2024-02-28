@@ -9,18 +9,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 09:38+0900\n"
+"POT-Creation-Date: 2024-02-28 09:32+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../module_irsl_choreonoid_ros.rst:3
 msgid "Modules in irsl_choreonoid_ros"
-msgstr ""
+msgstr "irsl_choreonoid_ros モジュール"
 
 #: ../../module_irsl_choreonoid_ros.rst:5
 msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros"
@@ -52,6 +52,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
@@ -64,7 +65,16 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
-#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator of
 msgid "Parameters"
 msgstr ""
 
@@ -104,7 +114,9 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
-#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml of
 msgid "Returns"
 msgstr ""
 
@@ -144,7 +156,9 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
-#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS of
+#: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml of
 msgid "Return type"
 msgstr ""
 
@@ -162,6 +176,115 @@ msgid ""
 "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
+#: irsl_choreonoid_ros.RobotInterface.JointInterface:1
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1 of
+msgid "Utility class for setting .cnoid file from python script"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:1 of
+msgid "If set, it is used as root for creating environment"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:3 of
+msgid "If set, it is used as a worldItem"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:1 of
+msgid "Building environment (setting objects) under the WorldItem"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:3 of
+msgid "value] ) : Dictionary for representing objects on environment"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:4 of
+msgid "Name of WorldItem, added objects under this item"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:6 of
+msgid "If True, creating new WorldItem"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:8 of
+msgid "If True, set camera position"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:10 of
+msgid "Offset of objects"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:1 of
+msgid "Creating project from parameters"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:3 of
+msgid "value] ) : Dictionary for representing the project"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:4 of
+msgid "If True, adding new SimulatorItem if there is no instruction in info_dict"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:6 of
+msgid "If True, adding new WorldItem if there is no instruction in info_dict"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:8 of
+msgid "If True, not adding environment(objects). Use buildEnvironment method."
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:1 of
+msgid "Building environment from yaml-file"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:3
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:3
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:3
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:3 of
+msgid "File name to load"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:5
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:5 of
+msgid "Keyword to pass to setup_cnoid.buildEnvironment"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:1 of
+msgid "Creating project from yaml-file"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:5
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:5 of
+msgid "Keyword to pass to setup_cnoid.createCnoid"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:1 of
+msgid "Setup environment from yaml-file (classmethod of buildEnvironmentFromYaml)"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:8
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:8 of
+msgid "Instance of setup_cnoid"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:1 of
+msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:1 of
+msgid "Starting simulation"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:3 of
+msgid "If True, simulator will run with realtime sync mode"
+msgstr ""
+
 #: ../../module_irsl_choreonoid_ros.rst:29
 msgid "irsl_choreonoid_ros.RobotInterface"
 msgstr ""
@@ -170,12 +293,6 @@ msgstr ""
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
-msgstr ""
-
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
-#: irsl_choreonoid_ros.RobotInterface.JointInterface:1
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
-msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
@@ -332,6 +449,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:3
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:7
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:7
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:5
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:5 of
 msgid "Name(s) of group to be used"
@@ -344,7 +462,32 @@ msgid ""
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:3 of
-msgid "Vector of angles"
+msgid "Vector of angles of whole body"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:9 of
+msgid "Wait until finishing moveving"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:11
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:9
+#: of
+msgid "Pass to waitUntilFinish"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:1
+#: of
+msgid "List of vectors of angles"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:3
+#: of
+msgid "List of moving durations in second"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:7
+#: of
+msgid "wait until finishing move"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:1 of
@@ -565,6 +708,20 @@ msgstr ""
 msgid "Copy of self.robot (this is not identical to self.robot)"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:1 of
+msgid "Checking this interface working with a real robot"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:5 of
+msgid "Retuns:"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:6 of
+msgid ""
+"boolean : If True, this interface connected to a real robot, otherwise "
+"connected to simulator"
+msgstr ""
+
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:1 of
 msgid "Return vector of effort of actual robot \\(sensing value\\)"
 msgstr ""
@@ -720,5 +877,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Name of group to be used"
+#~ msgstr ""
+
+#~ msgid "Vector of angles"
 #~ msgstr ""
 
