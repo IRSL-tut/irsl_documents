@@ -9,18 +9,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 09:49+0900\n"
+"POT-Creation-Date: 2024-02-28 09:32+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../module_irsl_choreonoid.rst:3
 msgid "Modules in irsl_choreonoid"
-msgstr ""
+msgstr "irsl_choreonoid モジュール"
 
 #: ../../module_irsl_choreonoid.rst:5
 msgid "https://github.com/IRSL-tut/irsl_choreonoid"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:9
 msgid "module irsl_choreonoid.cnoid_util"
-msgstr ""
+msgstr "irsl_choreonoid.cnoid_util"
 
 #: ../../module_irsl_choreonoid.rst:11
 msgid ""
@@ -42,6 +42,7 @@ msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.__init__
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.addShape
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.createJointShape
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.createLink
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape
@@ -66,6 +67,7 @@ msgstr ""
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.newRobot
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes
 #: irsl_choreonoid.cnoid_base.addSimulator
 #: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
 #: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
@@ -94,8 +96,11 @@ msgstr ""
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
+#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile
 #: irsl_choreonoid.cnoid_util.dictToMapping
-#: irsl_choreonoid.cnoid_util.exportBody irsl_choreonoid.cnoid_util.exportURDF
+#: irsl_choreonoid.cnoid_util.exportBody
+#: irsl_choreonoid.cnoid_util.exportBodyAsMesh
+#: irsl_choreonoid.cnoid_util.exportURDF irsl_choreonoid.cnoid_util.fv
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
 #: irsl_choreonoid.cnoid_util.listToListing
 #: irsl_choreonoid.cnoid_util.listingToList
@@ -166,10 +171,14 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
 #: irsl_choreonoid.robot_util.RobotModelWrapped.__init__
 #: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
 #: irsl_choreonoid.robot_util.RobotModelWrapped.device
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
@@ -178,6 +187,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.joint
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
 #: irsl_choreonoid.robot_util.RobotModelWrapped.link
 #: irsl_choreonoid.robot_util.RobotModelWrapped.linkCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector
@@ -187,7 +197,8 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
 #: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map of
+#: irsl_choreonoid.robot_util.make_coords_map
+#: irsl_choreonoid.robot_util.make_translation_rotation of
 msgid "Parameters"
 msgstr ""
 
@@ -247,7 +258,7 @@ msgstr ""
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.dictToMapping
+#: irsl_choreonoid.cnoid_util.dictToMapping irsl_choreonoid.cnoid_util.fv
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
 #: irsl_choreonoid.cnoid_util.listToListing
 #: irsl_choreonoid.cnoid_util.listingToList
@@ -309,11 +320,15 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
 #: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.arm
 #: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
 #: irsl_choreonoid.robot_util.RobotModelWrapped.device
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
@@ -328,6 +343,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointList
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointNames
+#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
 #: irsl_choreonoid.robot_util.RobotModelWrapped.larm
 #: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.link
@@ -347,7 +363,8 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torso
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map of
+#: irsl_choreonoid.robot_util.make_coords_map
+#: irsl_choreonoid.robot_util.make_translation_rotation of
 msgid "Returns"
 msgstr ""
 
@@ -399,7 +416,7 @@ msgstr ""
 #: irsl_choreonoid.cnoid_util.cnoidPosition
 #: irsl_choreonoid.cnoid_util.cnoidRotation
 #: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.dictToMapping
+#: irsl_choreonoid.cnoid_util.dictToMapping irsl_choreonoid.cnoid_util.fv
 #: irsl_choreonoid.cnoid_util.isInChoreonoid
 #: irsl_choreonoid.cnoid_util.listToListing
 #: irsl_choreonoid.cnoid_util.listingToList
@@ -461,11 +478,15 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
 #: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.arm
 #: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
 #: irsl_choreonoid.robot_util.RobotModelWrapped.device
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
@@ -480,6 +501,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointList
 #: irsl_choreonoid.robot_util.RobotModelWrapped.jointNames
+#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
 #: irsl_choreonoid.robot_util.RobotModelWrapped.larm
 #: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.link
@@ -499,7 +521,8 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torso
 #: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map of
+#: irsl_choreonoid.robot_util.make_coords_map
+#: irsl_choreonoid.robot_util.make_translation_rotation of
 msgid "Return type"
 msgstr ""
 
@@ -514,7 +537,7 @@ msgstr ""
 msgid "Unknown scheme or netloc is passed"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL:12
+#: irsl_choreonoid.cnoid_util.fv:14 irsl_choreonoid.cnoid_util.parseURL:12
 #: irsl_choreonoid.robot_util.make_coordinates:12
 #: irsl_choreonoid.robot_util.make_coords_map:10 of
 msgid "Examples"
@@ -540,24 +563,61 @@ msgstr ""
 msgid "instance of cnoid.Body.Body"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.exportBody:5 of
+#: irsl_choreonoid.cnoid_util.exportBody:1 of
+msgid "Exporting .body file from an instance of cnoid.Body.Body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportBody:7 of
 msgid ""
 "0; EmbedModels, 1; LinkToOriginalModelFiles, 2; ReplaceWithStdSceneFiles,"
 " 3; ReplaceWithObjModelFiles"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.exportBody:7 of
+#: irsl_choreonoid.cnoid_util.exportBody:9 of
 msgid "Add URI for exporting mesh files"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.exportBody:9 of
+#: irsl_choreonoid.cnoid_util.exportBody:11 of
 msgid "Using with fileUri, if True, all shapes will be exported as a file."
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.exportBody:11 of
+#: irsl_choreonoid.cnoid_util.exportBody:13 of
 msgid ""
 "If True, links with mass==1.0 and inertia is identity is set small mass-"
 "parameter (they may loaded without mass parameter)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportURDF:1 of
+msgid "Exporting .urdf file from an instance of cnoid.Body.Body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportBodyAsMesh:1 of
+msgid "Exporting a mesh file converted from an instance of cnoid.Body.Body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:3
+#: irsl_choreonoid.cnoid_util.exportBodyAsMesh:3 of
+msgid "Name of output file"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportBodyAsMesh:5 of
+msgid "Robot model to be exported"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportBodyAsMesh:13 of
+msgid "Passing to irsl_choreonoid.makeshapes.exportMesh"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:1 of
+msgid "Converting a mesh file to a body file"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:5 of
+msgid "Name of input file"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:7 of
+msgid "exportBodyAsMesh"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.castValueNode:1 of
@@ -651,13 +711,43 @@ msgstr ""
 msgid "1x3 vector ( translation part of cPosition )"
 msgstr ""
 
+#: irsl_choreonoid.cnoid_util.fv:1 of
+msgid "Simple function for making numpy.array"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:3 of
+msgid "List will be passed to numpy.array"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:5 of
+msgid "Keyword arguments will be passed to numpy.array"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:8 of
+msgid "vector or matrix"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:11 of
+msgid "This function just return numpy.array(args, **kwargs)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:15 of
+msgid "fv(0.1, 0.2, 0.3) => array([0, 1, 2])"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.fv:17 of
+msgid ""
+"Just reducing the number of typing numpy.array([0.1, 0.2, 0.3]) => "
+"fv(0.1, 0.2, 0.3)"
+msgstr ""
+
 #: irsl_choreonoid.cnoid_util.isInChoreonoid:3 of
 msgid "True if this script running on python-console of Choreonoid"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:19
 msgid "module irsl_choreonoid.cnoid_base"
-msgstr ""
+msgstr "irsl_choreonoid.cnoid_base"
 
 #: ../../module_irsl_choreonoid.rst:21
 msgid ""
@@ -995,7 +1085,7 @@ msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:29
 msgid "module irsl_choreonoid.make_shapes"
-msgstr ""
+msgstr "irsl_choreonoid.make_shapes"
 
 #: ../../module_irsl_choreonoid.rst:31
 msgid ""
@@ -1409,11 +1499,11 @@ msgstr ""
 msgid "Exporting SgNode as .scen file"
 msgstr ""
 
-#: irsl_choreonoid.make_shapes.exportScene:7 of
+#: irsl_choreonoid.make_shapes.exportScene:9 of
 msgid "Exporting mesh instead of primitive type"
 msgstr ""
 
-#: irsl_choreonoid.make_shapes.exportScene:9 of
+#: irsl_choreonoid.make_shapes.exportScene:11 of
 msgid ""
 "Extra keyword arguments for using to execute ''StdSceneWriter.<keyword> ="
 " <value>''"
@@ -1437,7 +1527,7 @@ msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:39
 msgid "module irsl_choreonoid.robot_util"
-msgstr ""
+msgstr "irsl_choreonoid.robot_util"
 
 #: ../../module_irsl_choreonoid.rst:41
 msgid ""
@@ -1465,12 +1555,31 @@ msgstr ""
 msgid "Generating dictonary describing transformation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coords_map:3 of
+#: irsl_choreonoid.robot_util.make_coords_map:3
+#: irsl_choreonoid.robot_util.make_translation_rotation:3 of
 msgid "Transformation"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.make_coords_map:6 of
 msgid "Dictonary can be used by make_coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_translation_rotation:1 of
+msgid ""
+"Generating dictonary describing transformation (using translation, "
+"rotation)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_translation_rotation:5 of
+msgid "Unit of length. 'm', 'mm', 'cm', or 'inch'"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_translation_rotation:7 of
+msgid "Unit of angle. If True, use degree, otherwise use radian"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_translation_rotation:10 of
+msgid "Dictonary can be used in .body"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder:1
@@ -1619,6 +1728,9 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:26
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:8
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:10
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:10
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:12
 #: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:10 of
 msgid "IK was success or not, and total count of calculation"
 msgstr ""
@@ -1862,8 +1974,51 @@ msgid "Coordinate of the target"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:5
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:7
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:7
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:9
 #: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics:7 of
 msgid "Just passing to IKWrapper"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:1 of
+msgid "Relative moving end-effector linearly by translation vector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:3 of
+msgid "Translation vector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:5 of
+msgid "Just passing to cnoid.IRSLCoords.coordinates.translate"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:1 of
+msgid "Relative moving end-effector angularly by angle-axis"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:3 of
+msgid "Rotation angle"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:5 of
+msgid "Rotation axis"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate:7 of
+msgid "Just passing to cnoid.IRSLCoords.coordinates.rotate"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:1 of
+msgid "Relative moving end-effector by transformation of coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:3 of
+msgid "Relative coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:5 of
+msgid "Just passing to cnoid.IRSLCoords.coordinates.transform"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle:1 of
@@ -2233,9 +2388,43 @@ msgstr ""
 msgid "Name of the limb"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit:1 of
+msgid "Setting mode to keep joint limits"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit:6 of
+msgid "Returns current settings"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.trimJointAngles:1 of
+msgid "Force setting joint angles inside the range of limits"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration:1 of
+msgid "Calculating duration for the fastest movement depend on a joint limit"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration:3 of
+msgid "AngleVector to be moved to"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration:5 of
+msgid ""
+"AngleVector to be moved from. If this argument is not given, current "
+"angles will be used."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration:7 of
+msgid "Result will be multipled by this value"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration:10 of
+msgid "Duration [ second ]"
+msgstr ""
+
 #: ../../module_irsl_choreonoid.rst:49
 msgid "module irsl_choreonoid.draw_coords"
-msgstr ""
+msgstr "irsl_choreonoid.draw_coords"
 
 #: ../../module_irsl_choreonoid.rst:51
 msgid ""
@@ -2660,7 +2849,7 @@ msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:88
 msgid "module irsl_choreonoid.RobotBuilder"
-msgstr ""
+msgstr "irsl_choreonoid.RobotBuilder"
 
 #: ../../module_irsl_choreonoid.rst:90
 msgid ""
@@ -2726,6 +2915,14 @@ msgstr ""
 msgid "Shape to be added"
 msgstr ""
 
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes:1 of
+msgid "Adding a shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes:3 of
+msgid "Shapes to be added"
+msgstr ""
+
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape:1 of
 msgid "Removing a shape"
 msgstr ""
@@ -2734,11 +2931,19 @@ msgstr ""
 msgid "Shape to be removed"
 msgstr ""
 
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes:1 of
+msgid "Removing a shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes:3 of
+msgid "Shapes to be removed"
+msgstr ""
+
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:1 of
 msgid "Creating link from drawn shapes and appending to the other link"
 msgstr ""
 
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:19 of
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:21 of
 msgid "Created link"
 msgstr ""
 

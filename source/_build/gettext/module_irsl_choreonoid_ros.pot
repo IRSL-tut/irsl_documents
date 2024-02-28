@@ -1,0 +1,733 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 11:50+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../module_irsl_choreonoid_ros.rst:3
+msgid "Modules in irsl_choreonoid_ros"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:5
+msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:9
+msgid "irsl_choreonoid_ros.cnoid_ros_util"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:11
+msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/cnoid_ros_util.py"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:1
+msgid "Refere parseURL in irsl_choreonoid.cnoid_util"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:3
+msgid "url"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:6
+msgid "Absolute path"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:0
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/cnoid_ros_util.py:docstring of irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:10
+msgid "Examples"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:19
+msgid "irsl_choreonoid_ros.setup_cnoid"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:21
+msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface:1
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1
+msgid "Utility class for setting .cnoid file from python script"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:1
+msgid "If set, it is used as root for creating environment"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:3
+msgid "If set, it is used as a worldItem"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:1
+msgid "Building environment (setting objects) under the WorldItem"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:3
+msgid "value] ) : Dictionary for representing objects on environment"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:4
+msgid "Name of WorldItem, added objects under this item"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:6
+msgid "If True, creating new WorldItem"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:8
+msgid "If True, set camera position"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:10
+msgid "Offset of objects"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:1
+msgid "Creating project from parameters"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:3
+msgid "value] ) : Dictionary for representing the project"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:4
+msgid "If True, adding new SimulatorItem if there is no instruction in info_dict"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:6
+msgid "If True, adding new WorldItem if there is no instruction in info_dict"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:8
+msgid "If True, not adding environment(objects). Use buildEnvironment method."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:1
+msgid "Building environment from yaml-file"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:3
+msgid "File name to load"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:5
+msgid "Keyword to pass to setup_cnoid.buildEnvironment"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:1
+msgid "Creating project from yaml-file"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:5
+msgid "Keyword to pass to setup_cnoid.createCnoid"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:1
+msgid "Setup environment from yaml-file (classmethod of buildEnvironmentFromYaml)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:8
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:8
+msgid "Instance of setup_cnoid"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:1
+msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:1
+msgid "Starting simulation"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/setup_cnoid.py:docstring of irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:3
+msgid "If True, simulator will run with realtime sync mode"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:29
+msgid "irsl_choreonoid_ros.RobotInterface"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:31
+msgid "https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1
+msgid "Interface for controlling locomotion of the robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:1
+msgid "Initialized check of MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized:3
+msgid "True returns, if MobileBase instance has been initialized"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:1
+msgid "Connection check of MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected:3
+msgid "True returns, if MobileBase instance has been connected"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:1
+msgid "Wait to finish moving of MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:8
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving:6
+msgid "False returns, if timeout."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop:1
+msgid "Stop moving of MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:1
+msgid "Set moving velocity of MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:3
+msgid "Velocity of x-axis [ m/sec ]"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:5
+msgid "Velocity of y-axis [ m/sec ]"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity:7
+msgid "Angular velocity of yaw [ radian/sec ]"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:1
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:5
+msgid "Current robot's coordinate on the map"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:3
+msgid "**Not implemented yet**"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:1
+msgid "Set target position for MobileBase, target is reletive to current robot's coordinates"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:3
+msgid "Target coordinates for moving (reletive to current robot's coordinates)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:1
+msgid "Set target position on map for MobileBase, target is relative to map coordinates"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:3
+msgid "Target coordinates for moving (map coordinates)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:1
+msgid "Set target trajectory for MobileBase"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:5
+msgid "List of pair of coordinates and time"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:7
+msgid "If True, trajectory is considered it is relative to robot's coordinates."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface:1
+msgid "Interface for controlling joints of the robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:1
+msgid "Initialized check of JointInterface"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized:3
+msgid "True returns, if JointInterface instance has been initialized"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:1
+msgid "Connection check of JointInterface"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected:3
+msgid "True returns, if JointInterface instance has been connected"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:1
+msgid "Getting list of instance of joint-group"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList:3
+msgid "List of instance of joint-groups"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:1
+msgid "Getting list of name of joint-groups"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames:3
+msgid "List of name of joint-groups"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:1
+msgid "Getting a instance of joint-group"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:3
+msgid "Name of joint-group"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup:6
+msgid "Instance of joint-group"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:1
+msgid "Sending angles of self.robot to the actual robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:3
+msgid "Moving duration in second"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:7
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:7
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:5
+msgid "Name(s) of group to be used"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:1
+msgid "Sending angle-vector to the actual robot. angle_vector is set to self.robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:3
+msgid "Vector of angles of whole body"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:9
+msgid "Wait until finishing moveving"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector:11
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:9
+msgid "Pass to waitUntilFinish"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:1
+msgid "List of vectors of angles"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:3
+msgid "List of moving durations in second"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence:7
+msgid "wait until finishing move"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:1
+msgid "Sending angles to the actual robot. angles is set to self.robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap:3
+msgid "Dictionary, whose key is joint-name, and value is joint-angle"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:1
+msgid "Checking method for finishing to send angles"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished:6
+msgid "If True, the robot is not moving"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:1
+msgid "Waiting until finishing joint moving"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:3
+msgid "Time for timeout"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
+msgid "Interface for receiving data from sensors on the robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:1
+msgid "Initialized check of DeviceInterface"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized:3
+msgid "True returns, if DeviceInterface instance has been initialized"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:1
+msgid "Connection check of DeviceInterface"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected:3
+msgid "True returns, if all devices in this instance have been connected"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:1
+msgid "Getting list of the instances for gathering data from the device"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList:3
+msgid "List of the instances for gathering data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:1
+msgid "Getting list of name of the devices"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames:3
+msgid "List of name of the devices"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:1
+msgid "Getting the instance for gathering data from the device"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:3
+msgid "Name of the device"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice:6
+msgid "The instance witch has the same name as given name"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:1
+msgid "Getting the list of device which is a typical class"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:3
+msgid "Class of the device"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass:6
+msgid "List of the instance whose class is subclass of cls"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:1
+msgid "Getting data from the device"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:7
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:7
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:7
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:7
+msgid "Clear current-data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.data:8
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:8
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:10
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:10
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:10
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:10
+msgid "Data from the device. Type of a return value depends on type of the devide."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:1
+msgid "Getting data, waiting if there is no current data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:5
+msgid "Time out in second"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData:1
+msgid "Getting data, waiting until subscribing new data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray:1
+msgid "Getting list of data from devices"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray:1
+msgid "Getting list of data, waiting if there is no current data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray:1
+msgid "Getting list of data, waiting until subscribing new data"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface:1
+msgid "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.JointInterface`, :py:class:`~irsl_choreonoid_ros.RobotInterface.DeviceInterface`, :py:class:`~irsl_choreonoid_ros.RobotInterface.MobileBaseInterface`"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface:1
+msgid "Interface for controllring robot (inheriting classes JointInterface, DeviceInterface and MobileBaseInterface)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface:3
+msgid "At a instance of this interface, all methods in JointInterface, DeviceInterface and MobileBaseInterface can be used."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface:5
+msgid "Then, please refer methods of these classes."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:1
+msgid "Name of setting.yaml file"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:3
+msgid "Name of node"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:5
+msgid "If True, ROS node will start with this node-name."
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:7
+msgid "Wait until ROS connection has established"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:9
+msgid "If false, create instace without ROS connection"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:1
+msgid "Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:3
+msgid "If True, model is generated as cnoid.BodyPlugin.BodyItem"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:6
+msgid "Newly generated instance"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:1
+msgid "Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped) with RobotInterface internal robot-model"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel:6
+msgid "RobotModel created from RobotInterface internal robot-model"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:1
+msgid "Return other instance of the robot model"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot:5
+msgid "Copy of self.robot (this is not identical to self.robot)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:1
+msgid "Checking this interface working with a real robot"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:5
+msgid "Retuns:"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot:6
+msgid "boolean : If True, this interface connected to a real robot, otherwise connected to simulator"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:1
+msgid "Return vector of effort of actual robot \\(sensing value\\)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:3
+msgid "This method requires JointState class in devices"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:5
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:5
+msgid "1 x N vector ( N is len(jointList) )"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector:1
+msgid "Return vector of velocity of actual robot \\(sensing value\\)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector:1
+msgid "Return angle-vector of actual robot \\(sensing value\\)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:1
+msgid "Return reference angle-vector \\(value of past command\\)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector:3
+msgid "This method requires JointTrajectoryState class in devices"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:1
+msgid "Return instance of the robot model (applying sensor values)"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:3
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.robot:3
+msgid "Instance of the robot model using in this instance"
+msgstr ""
+
+#: ../../../../../choreonoid_ws/install/lib/python3/dist-packages/irsl_choreonoid_ros/RobotInterface.py:docstring of irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:1
+msgid "Return instance of the robot model (using for sending command)"
+msgstr ""

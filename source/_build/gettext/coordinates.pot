@@ -1,0 +1,431 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 11:50+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../coordinates.rst:3
+msgid "Coordinates"
+msgstr ""
+
+#: ../../coordinates.rst:7
+msgid "Coordinate Transformations"
+msgstr ""
+
+#: ../../coordinates.rst:11
+msgid "3D Position"
+msgstr ""
+
+#: ../../coordinates.rst:13
+msgid "The 3D position is a vector of three real numbers, represented using lower-case boldface letters."
+msgstr ""
+
+#: ../../coordinates.rst:15
+msgid "The three elements represent positions on the x-, y-, and z-axis, respectively."
+msgstr ""
+
+#: ../../coordinates.rst:17
+msgid "It is often denoted as a vertical vector."
+msgstr ""
+
+#: ../../coordinates.rst:19
+msgid "3D position :math:`\\mathbf{p}` is denoted below."
+msgstr ""
+
+#: ../../coordinates.rst:21
+msgid "\\mathbf{p} = [ \\; x, \\; y, \\; z \\;]^{T}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:29
+msgid "3D Rotation"
+msgstr ""
+
+#: ../../coordinates.rst:31
+msgid "Rotations in 3D can be represented using a rotation matrix."
+msgstr ""
+
+#: ../../coordinates.rst:33
+msgid "The rotation matrix is a 3x3 matrix. It is the x-, y-, and z-axis of the rotated coordinate series aligned in columns, as referenced from the original coordinate system."
+msgstr ""
+
+#: ../../coordinates.rst:37
+msgid "Rotation matrix :math:`\\mathbf{R}` is denoted below."
+msgstr ""
+
+#: ../../coordinates.rst:39
+msgid "\\mathbf{R} = [ \\; \\mathbf{x} \\quad \\mathbf{y} \\quad \\mathbf{z} \\; ]\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:45
+msgid "Rotation matrix is an orthogonal matrix, which means that the transpose and inverse of the matrix are equival"
+msgstr ""
+
+#: ../../coordinates.rst:47
+msgid "Inverse of a rotation matrix is denoted below."
+msgstr ""
+
+#: ../../coordinates.rst:49
+msgid "\\mathbf{R}^{-1} = \\mathbf{R}^{T}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:53
+msgid "Other ways to represent 3D rotations are Roll-Pitch-Yaw angle (RPY), Quaternion, AngleAxis, etc."
+msgstr ""
+
+#: ../../coordinates.rst:56
+msgid "Although the degree of freedom (DOF) of rotation is 3, a rotation matrix that is easy to use in calculations, and a quaternion that has no singular points and is easy to interpolate are used."
+msgstr ""
+
+#: ../../coordinates.rst:60
+msgid "Please refer to the reference book."
+msgstr ""
+
+#: ../../coordinates.rst:64
+msgid "AngleAxis representation"
+msgstr ""
+
+#: ../../coordinates.rst:70
+msgid "Homogeneous transformation matrix"
+msgstr ""
+
+#: ../../coordinates.rst:72
+msgid "6DOF-Position in 3D can be represented using 3D position and 3D rotation, with 3 DOF for position and 3 DOF for rotation, for a total of 6 DOF."
+msgstr ""
+
+#: ../../coordinates.rst:76
+msgid "The homogeneous transformation matrix is used to represent 6DOF-Position in 3D."
+msgstr ""
+
+#: ../../coordinates.rst:79
+msgid "The homogeneous transformation matrix T is represented as a 4x4 matrix using a 3D position vector :math:`\\mathbf{p}` and a 3D rotation matrix :math:`\\mathbf{R}` as follows."
+msgstr ""
+
+#: ../../coordinates.rst:83
+#: ../../coordinates.rst:165
+msgid "T = \\begin{pmatrix}\n"
+"\\mathbf{R}  & \\mathbf{p} \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:92
+msgid "The inverse matrix of T is as follows."
+msgstr ""
+
+#: ../../coordinates.rst:94
+#: ../../coordinates.rst:312
+msgid "T^{-1} = \\begin{pmatrix}\n"
+"\\mathbf{R}^{-1}  & - \\mathbf{R}^{-1}\\mathbf{p} \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:100
+msgid "The multiplication of :math:`\\mathbf{T}_{a}` and :math:`\\mathbf{T}_{b}` is as follows."
+msgstr ""
+
+#: ../../coordinates.rst:103
+msgid "T_a \\times T_b = \\begin{pmatrix}\n"
+"\\mathbf{R}_a\\mathbf{R}_b  & \\mathbf{R}_a\\mathbf{p}_b  + \\mathbf{p}_a \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:109
+msgid "where :math:`\\mathbf{T}_{a}` and :math:`\\mathbf{T}_{b}` are as follows."
+msgstr ""
+
+#: ../../coordinates.rst:111
+msgid "T_a = \\begin{pmatrix}\n"
+"\\mathbf{R}_a  & \\mathbf{p}_a \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:117
+msgid "T_b = \\begin{pmatrix}\n"
+"\\mathbf{R}_b  & \\mathbf{p}_b \\\\\n"
+"\\mathbf{0}  & 1\n"
+"\\end{pmatrix}\n"
+"\n"
+""
+msgstr ""
+
+#: ../../coordinates.rst:125
+msgid "System of coordinates"
+msgstr ""
+
+#: ../../coordinates.rst:131
+msgid "Coordinate system of rigid body link"
+msgstr ""
+
+#: ../../coordinates.rst:144
+msgid "Relation between system of coordinates and coordinates class"
+msgstr ""
+
+#: ../../coordinates.rst:146
+msgid "coordinates class (cnoid.IRSLCoords.coordinates) is a class for manipulating homogeneous transformation matrices."
+msgstr ""
+
+#: ../../coordinates.rst:149
+msgid "An instance of the coordinates class has 3D position vector :math:`\\mathbf{p}` and 3D rotation matrix :math:`\\mathbf{R}` ."
+msgstr ""
+
+#: ../../coordinates.rst:156
+msgid "Initializing and accessing to a position and a rotation matrix"
+msgstr ""
+
+#: ../../coordinates.rst:158
+msgid ":math:`\\mathbf{p}` and :math:`\\mathbf{R}` can be retrieved by accessing to properties of coordinates class."
+msgstr ""
+
+#: ../../coordinates.rst:161
+msgid "In the following, T is an instance of the coordinates class."
+msgstr ""
+
+#: ../../coordinates.rst:163
+msgid "Mathmatical representaion of T is following."
+msgstr ""
+
+#: ../../coordinates.rst:184
+msgid "Initalizing coordinates"
+msgstr ""
+
+#: ../../coordinates.rst:191
+msgid "Getting and setting 3D position (access attribute pos)"
+msgstr ""
+
+#: ../../coordinates.rst:200
+msgid "Getting and setting Rotation matrix (access attribute rot)"
+msgstr ""
+
+#: ../../coordinates.rst:207
+msgid "Getting and setting quaternion (access attribute quaternion)"
+msgstr ""
+
+#: ../../coordinates.rst:214
+msgid "Getting and setting roll-pitch-yaw angle (access attribute RPY)"
+msgstr ""
+
+#: ../../coordinates.rst:221
+msgid "Getting and setting angle-axis (access attribute angleAxis)"
+msgstr ""
+
+#: ../../coordinates.rst:231
+msgid "Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)"
+msgstr ""
+
+#: ../../coordinates.rst:236
+msgid "Methods to convert a vector"
+msgstr ""
+
+#: ../../coordinates.rst:238
+msgid "In the following, :math:`\\mathbf{v}` is 3D position vector (numpy.array). Folowing 4 functions do not change the input value."
+msgstr ""
+
+#: ../../coordinates.rst:248
+#: ../../coordinates.rst:256
+#: ../../coordinates.rst:267
+#: ../../coordinates.rst:278
+msgid "Mathmatical representation of a return value is"
+msgstr ""
+
+#: ../../coordinates.rst:250
+msgid ":math:`\\mathbf{R} \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:258
+msgid ":math:`\\mathbf{v}^T \\mathbf{R}`"
+msgstr ""
+
+#: ../../coordinates.rst:264
+msgid "Converts a vector represented in a local coordinate system T to a vector represented in the world coordinate system."
+msgstr ""
+
+#: ../../coordinates.rst:269
+msgid ":math:`\\mathbf{R}\\mathbf{v} + \\mathbf{p}`"
+msgstr ""
+
+#: ../../coordinates.rst:275
+msgid "Converts a vector represented in the world coordinate system. to a vector represented in a local coordinate system T."
+msgstr ""
+
+#: ../../coordinates.rst:280
+msgid ":math:`\\mathbf{R}^{-1}\\left( \\mathbf{v} - \\mathbf{p} \\right)`"
+msgstr ""
+
+#: ../../coordinates.rst:284
+msgid "Methods to convert a vector(change input value)"
+msgstr ""
+
+#: ../../coordinates.rst:286
+msgid "There are functions which change the input value."
+msgstr ""
+
+#: ../../coordinates.rst:288
+msgid "Input value v will be changed as the same of return value."
+msgstr ""
+
+#: ../../coordinates.rst:300
+msgid "Methods to return a coordinate (without modifying itself)"
+msgstr ""
+
+#: ../../coordinates.rst:302
+msgid "In the following, A is an instance of the coordinates class."
+msgstr ""
+
+#: ../../coordinates.rst:308
+msgid "Returns inverse transformation."
+msgstr ""
+
+#: ../../coordinates.rst:310
+msgid "Mathmatical representation of a return value is following."
+msgstr ""
+
+#: ../../coordinates.rst:322
+msgid "*wrt* is an optional value and defult value is 'local'"
+msgstr ""
+
+#: ../../coordinates.rst:324
+#: ../../coordinates.rst:355
+#: ../../coordinates.rst:372
+#: ../../coordinates.rst:390
+#: ../../coordinates.rst:408
+msgid "If *wrt* = coordinates.wrt.local"
+msgstr ""
+
+#: ../../coordinates.rst:326
+msgid ":math:`T^{-1}A` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:328
+#: ../../coordinates.rst:359
+#: ../../coordinates.rst:376
+#: ../../coordinates.rst:394
+#: ../../coordinates.rst:412
+msgid "If *wrt* = coordinates.wrt.world"
+msgstr ""
+
+#: ../../coordinates.rst:330
+msgid ":math:`AT^{-1}` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:332
+#: ../../coordinates.rst:363
+#: ../../coordinates.rst:380
+#: ../../coordinates.rst:398
+#: ../../coordinates.rst:416
+msgid "If *wrt* = W (coordinates class)"
+msgstr ""
+
+#: ../../coordinates.rst:334
+msgid ":math:`W^{-1}AT^{-1}W` is returned"
+msgstr ""
+
+#: ../../coordinates.rst:339
+msgid "Methods to modify itself"
+msgstr ""
+
+#: ../../coordinates.rst:341
+msgid "In the following, :math:`\\leftarrow` represents substitution."
+msgstr ""
+
+#: ../../coordinates.rst:347
+msgid "Attributes pos and rot is substituted"
+msgstr ""
+
+#: ../../coordinates.rst:349
+#: ../../coordinates.rst:361
+msgid ":math:`T \\leftarrow A`"
+msgstr ""
+
+#: ../../coordinates.rst:357
+#: ../../coordinates.rst:410
+msgid ":math:`T \\leftarrow TA`"
+msgstr ""
+
+#: ../../coordinates.rst:365
+msgid ":math:`T \\leftarrow WA`"
+msgstr ""
+
+#: ../../coordinates.rst:374
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}\\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:378
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p}+ \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:382
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}_{W}\\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:384
+msgid ":math:`\\mathbf{R}_{W}` is rotation matrix of W"
+msgstr ""
+
+#: ../../coordinates.rst:392
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R} \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:396
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:400
+msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p}_{W} + \\mathbf{R}_{W} \\mathbf{v}`"
+msgstr ""
+
+#: ../../coordinates.rst:402
+msgid ":math:`\\mathbf{R}_{W}` is rotation matrix of W, and :math:`\\mathbf{p}_{W}` is 3D position of W."
+msgstr ""
+
+#: ../../coordinates.rst:414
+msgid ":math:`T \\leftarrow AT`"
+msgstr ""
+
+#: ../../coordinates.rst:418
+msgid ":math:`T \\leftarrow$ $\\left( W A W^{-1} \\right) T`"
+msgstr ""
+
+#: ../../coordinates.rst:423
+msgid "Examples"
+msgstr ""
+
+#: ../../coordinates.rst:427
+msgid "Reference book"
+msgstr ""
+
+#: ../../coordinates.rst:429
+msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"
+msgstr ""
+
+#: ../../coordinates.rst:431
+msgid "第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる"
+msgstr ""

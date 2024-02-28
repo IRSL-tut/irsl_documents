@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../module_cnoid_robotassembler.rst:3
 msgid "RobotAssembler Modules"
-msgstr ""
+msgstr "RobotAssembler モジュール"
 
 #: ../../module_cnoid_robotassembler.rst:7
 msgid "module cnoid.RobotAssembler"
-msgstr ""
+msgstr "cnoid.RobotAssembler"
 
 #: ../../docstring cnoid.RobotAssembler.RoboasmUtil:1
 #: cnoid.RobotAssembler.RobotAssemblerConnectingPoint:1

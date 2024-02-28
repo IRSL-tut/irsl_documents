@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../module_cnoid_irslutil.rst:3
 msgid "Choreonoid Utility(binding)"
-msgstr ""
+msgstr "Choreonoid ユーティリティ（バインディング）"
 
 #: ../../module_cnoid_irslutil.rst:6
 msgid "cnoid.IRSLUtil"

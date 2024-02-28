@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../index.rst:15
 msgid "Contents:"
-msgstr ""
+msgstr "コンテンツ"
 
 #: ../../index.rst:8
 msgid "Welcome to irsl_choreonoid's python documentation!"
-msgstr ""
+msgstr "irsl_choreonoidのPythonドキュメントへようこそ"
 
 #: ../../index.rst:10
 msgid "Japanese version: japanese_doc_"
@@ -32,7 +32,7 @@ msgstr "English version: english_doc_"
 
 #: ../../index.rst:28
 msgid "Indices and tables"
-msgstr ""
+msgstr "索引とモジュール索引"
 
 #: ../../index.rst:30
 msgid ":ref:`genindex`"

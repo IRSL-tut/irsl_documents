@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, IRSL-tut
+# This file is distributed under the same license as the IRSL python modules package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IRSL python modules \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 11:50+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../module_cnoid_assimp.rst:3
+msgid "Choreonoid Python Module (AssimpPlugin)"
+msgstr ""
+
+#: ../../module_cnoid_assimp.rst:7
+msgid "cnoid.AssimpPlugin"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin:1
+msgid "Choreonoid Assimp Utility module"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneLoader:1
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter:1
+msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneLoader:1
+msgid "AssimpSceneLoader : loading mesh file as a scene for Util/SceneGraph in choreonoid using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:1
+msgid "Loading a mesh file using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter.outputType:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.ignoreURDFPrimitive:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setCreaseAngle:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setExpandVertices:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setVerbose:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:3
+msgid "Filename to be loaded"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter.outputType:7
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:0
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:6
+msgid "Root object of loaded mesh"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.load:0
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:0
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setCreaseAngle:1
+msgid "Setting creaseAngle"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setCreaseAngle:3
+msgid "Set creaseAngle"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals:1
+msgid "Setting flag for generating normals, even if the original mesh has normals"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals:3
+msgid "If True, forcing to generate normals"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr:1
+msgid "Setting MessageSkin to stderr. It is required to read error messages in console"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter:1
+msgid "AssimpSceneWriter : Saving a scene for Util/SceneGraph in choreonoid as a mesh file using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh:1
+msgid "Setting for generating meshes for primitives"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh:3
+msgid "If True, this scene writer generates a mesh file including meshes converted from primitive type"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.ignoreURDFPrimitive:1
+msgid "Setting for ignoring primitives used in URDF"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.ignoreURDFPrimitive:3
+msgid "If True, this scene writer ignore primitive type in URDF(Box, Cylinder, Sphere)"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter.outputType:1
+msgid "Setting output type of saving mesh. If not set, output type is determined from filename. For saving mesh as 'stl', you shoud set outputType = 'stlb', if you want a stl binary file."
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter.outputType:4
+msgid "output type to be set"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.AssimpSceneWriter.outputType:8
+msgid "str : Current output type"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setExpandVertices:1
+msgid "Expanding vertices to represent that each vertices has a normal"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setExpandVertices:3
+msgid "If True, expanding vertices"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setVerbose:1
+msgid "Setting debug message level"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.setVerbose:3
+msgid "Set debug message level"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:1
+msgid "Writing scene as a mesh file using Assimp ( https://github.com/assimp/assimp )"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:3
+msgid "Filename to be saved"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:5
+msgid "An object of SceneGraph to be saved"
+msgstr ""
+
+#: ../../docstring of cnoid.AssimpPlugin.PyCapsule.writeScene:8
+msgid "If the process succeeds, True is returned."
+msgstr ""
