@@ -1,8 +1,12 @@
 ### install sphinx
 
+(apt update)
 sudo apt install pandoc
 
-cd utils
+git clone https://github.com/IRSL-tut/irsl_documents.git
+cd irsl_documents
+
+cd util
 
 python3 -m pip install virtualenv
 virtualenv --python=python3 sphinx
@@ -11,13 +15,20 @@ virtualenv --python=python3 sphinx
 
 python3 -m pip install -r requirements.txt
 
-### update documents
-source utils/sphinx/bin/activate
-cd source
-DO_COPY=yes scripts/build.sh
 
-git commit ../docs -m 'commit message'
+### update documents
+
+( source util/sphinx/bin/activate )
+
+cd source
+DO_COPY=yes USER_NAME=your_name USER_EMAIL=your@email scripts/build.sh
+
 # git push gh-pages origin or your_fork
+( you can check html on source/_build/html and source/ja_build/html )
+
+
+
+#### memo for initial building sphinx environment
 
 ### build document(first step)
 
