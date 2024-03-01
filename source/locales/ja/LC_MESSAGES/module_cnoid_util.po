@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../module_cnoid_util.rst:3
 msgid "Choreonoid Python Module (Util)"
-msgstr ""
+msgstr "Choreonoid Python モジュール(Util)"
 
 #: ../../module_cnoid_util.rst:7
 msgid "cnoid.Util"

@@ -9,18 +9,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 09:38+0900\n"
+"POT-Creation-Date: 2024-02-28 09:32+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: ../../module_cnoid_assimp.rst:3
 msgid "Choreonoid Python Module (AssimpPlugin)"
-msgstr ""
+msgstr "Choreonoid Python モジュール(AssimpPlugin)"
 
 #: ../../module_cnoid_assimp.rst:7
 msgid "cnoid.AssimpPlugin"
@@ -49,6 +49,9 @@ msgstr ""
 #: cnoid.AssimpPlugin.PyCapsule.generatePrimitiveMesh
 #: cnoid.AssimpPlugin.PyCapsule.ignoreURDFPrimitive
 #: cnoid.AssimpPlugin.PyCapsule.load
+#: cnoid.AssimpPlugin.PyCapsule.setCreaseAngle
+#: cnoid.AssimpPlugin.PyCapsule.setExpandVertices
+#: cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals
 #: cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr
 #: cnoid.AssimpPlugin.PyCapsule.setVerbose
 #: cnoid.AssimpPlugin.PyCapsule.writeScene of
@@ -71,6 +74,22 @@ msgstr ""
 #: ../../docstring cnoid.AssimpPlugin.PyCapsule.load
 #: cnoid.AssimpPlugin.PyCapsule.writeScene of
 msgid "Return type"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setCreaseAngle:1 of
+msgid "Setting creaseAngle"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setCreaseAngle:3 of
+msgid "Set creaseAngle"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals:1 of
+msgid "Setting flag for generating normals, even if the original mesh has normals"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setForceGenerateNormals:3 of
+msgid "If True, forcing to generate normals"
 msgstr ""
 
 #: ../../docstring cnoid.AssimpPlugin.PyCapsule.setMessageSinkStdErr:1 of
@@ -118,6 +137,14 @@ msgstr ""
 
 #: ../../docstring cnoid.AssimpPlugin.AssimpSceneWriter.outputType:8 of
 msgid "str : Current output type"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setExpandVertices:1 of
+msgid "Expanding vertices to represent that each vertices has a normal"
+msgstr ""
+
+#: ../../docstring cnoid.AssimpPlugin.PyCapsule.setExpandVertices:3 of
+msgid "If True, expanding vertices"
 msgstr ""
 
 #: ../../docstring cnoid.AssimpPlugin.PyCapsule.setVerbose:1 of
