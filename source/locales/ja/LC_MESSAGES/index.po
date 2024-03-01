@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../index.rst:15
 msgid "Contents:"
-msgstr "コンテンツ"
+msgstr "コンテンツ:"
 
 #: ../../index.rst:8
 msgid "Welcome to irsl_choreonoid's python documentation!"

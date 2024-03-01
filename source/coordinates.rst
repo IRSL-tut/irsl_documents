@@ -168,6 +168,8 @@ Mathmatical representaion of T is following.
    \mathbf{0}  & 1
    \end{pmatrix}
 
+- Initalizing coordinates
+
 .. code-block:: python
 
     >>> p = numpy.array([1, 2, 3])
@@ -181,14 +183,14 @@ Mathmatical representaion of T is following.
     >>> coordinates(v, numpy.array([0, 0, 0, 1])) ### set pos and rot by quaternion
     >>> coordinates(numpy.array([[0, -1, 0, 0],[1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) ### 4x4 homogeneous transformation matrix
 
-- Initalizing coordinates
+- Getting and setting 3D position (access attribute pos)
 
 .. code-block:: python
 
     >>> T.pos
     array([1., 2., 3.])
 
-- Getting and setting 3D position (access attribute pos)
+- Getting and setting Rotation matrix (access attribute rot)
 
 .. code-block:: python
 
@@ -197,28 +199,28 @@ Mathmatical representaion of T is following.
            [ 1.,  0.,  0.],
            [ 0.,  0.,  1.]])
 
-- Getting and setting Rotation matrix (access attribute rot)
+- Getting and setting quaternion (access attribute quaternion)
 
 .. code-block:: python
 
     >>> T.quaternion
     array([0.        , 0.        , 0.70710678, 0.70710678])
 
-- Getting and setting quaternion (access attribute quaternion)
+- Getting and setting roll-pitch-yaw angle (access attribute RPY)
 
 .. code-block:: python
 
     >>> T.RPY
     array([ 0.        , -0.        ,  1.57079633])
 
-- Getting and setting roll-pitch-yaw angle (access attribute RPY)
+- Getting and setting angle-axis (access attribute angleAxis)
 
 .. code-block:: python
 
     >>> T.angleAxis
     array([0.        , 0.        , 1.        , 1.57079633])
 
-- Getting and setting angle-axis (access attribute angleAxis)
+- Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
 
 .. code-block:: python
 
@@ -227,8 +229,6 @@ Mathmatical representaion of T is following.
            [ 1.,  0.,  0.,  2.],
            [ 0.,  0.,  1.,  3.],
            [ 0.,  0.,  0.,  1.]])
-
-- Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -239,43 +239,51 @@ In the following,
 :math:`\mathbf{v}` is 3D position vector (numpy.array).
 Folowing 4 functions do not change the input value.
 
+- Rotating vector
+
 .. code-block:: python
 
     >>> v = numpy.array([0.1, 0.2, 0.3])
     >>> T.rotate_vector(v)
     array([-0.2,  0.1,  0.3])
 
-- Mathmatical representation of a return value is
+Mathmatical representation of a return value is
 
 :math:`\mathbf{R} \mathbf{v}`
+
+- Rotating vector (inverse-rotation)
 
 .. code-block:: python
 
     >>> T.inverse_rotate_vector(v)
 
-- Mathmatical representation of a return value is
+Mathmatical representation of a return value is
 
 :math:`\mathbf{v}^T \mathbf{R}`
+
+- Transforming vector
+
+Converts a vector represented in a local coordinate system T
+to a vector represented in the world coordinate system.
 
 .. code-block:: python
 
     >>> T.transform_vector(v)
 
-Converts a vector represented in a local coordinate system T
-to a vector represented in the world coordinate system.
-
-- Mathmatical representation of a return value is
+Mathmatical representation of a return value is
 
 :math:`\mathbf{R}\mathbf{v} + \mathbf{p}`
+
+- Transforming vector(inverse-transformation)
+
+Converts a vector represented in the world coordinate system.
+to a vector represented in a local coordinate system T.
 
 .. code-block:: python
 
     >>> T.inverse_transform_vector(v)
 
-Converts a vector represented in the world coordinate system.
-to a vector represented in a local coordinate system T.
-
-- Mathmatical representation of a return value is
+Mathmatical representation of a return value is
 
 :math:`\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)`
 
@@ -301,19 +309,23 @@ Methods to return a coordinate (without modifying itself)
 
 In the following, A is an instance of the coordinates class.
 
+- Getting inverse-transformation
+
 .. code-block:: python
 
     >>> T.inverse_transformation()
 
 Returns inverse transformation.
 
-- Mathmatical representation of a return value is following.
+Mathmatical representation of a return value is following.
 
 .. math::
    T^{-1} = \begin{pmatrix}
    \mathbf{R}^{-1}  & - \mathbf{R}^{-1}\mathbf{p} \\
    \mathbf{0}  & 1
    \end{pmatrix}
+
+- Getting transformation between coordinates
 
 .. code-block:: python
 
@@ -340,13 +352,17 @@ Methods to modify itself
 
 In the following, :math:`\leftarrow` represents substitution.
 
+- Setting new coordinates
+
 .. code-block:: python
 
     >>> T.newcoords(A)
 
-- Attributes pos and rot is substituted
+Attributes pos and rot is substituted
 
 :math:`T \leftarrow A`
+
+- Moving to new coordinates
 
 .. code-block:: python
 
@@ -364,6 +380,7 @@ In the following, :math:`\leftarrow` represents substitution.
 
 :math:`T \leftarrow WA`
 
+- Translating
 
 .. code-block:: python
 
@@ -383,6 +400,8 @@ In the following, :math:`\leftarrow` represents substitution.
 
 :math:`\mathbf{R}_{W}` is rotation matrix of W
 
+- Locating
+
 .. code-block:: python
 
     >>> T.locate(v, wrt)
@@ -401,6 +420,8 @@ In the following, :math:`\leftarrow` represents substitution.
 
 :math:`\mathbf{R}_{W}` is rotation matrix of W, and :math:`\mathbf{p}_{W}` is 3D position of W.
 
+- Transforming
+
 .. code-block:: python
 
     >>> T.transform(A, wrt)
@@ -415,7 +436,7 @@ In the following, :math:`\leftarrow` represents substitution.
 
 - If *wrt* = W (coordinates class)
 
-:math:`T \leftarrow$ $\left( W A W^{-1} \right) T`
+:math:`T \leftarrow \left( W A W^{-1} \right) T`
 
 
 ^^^^^^^^

@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../choreonoid.rst:23
 msgid "Contents:"
-msgstr "コンテンツ"
+msgstr "コンテンツ:"
 
 #: ../../choreonoid.rst:3
 msgid "Choreonoid"
@@ -37,7 +37,7 @@ msgstr ""
 #: ../../choreonoid.rst:9
 #, fuzzy
 msgid "Choreonod_ros:"
-msgstr "Choreonoid マニュアル"
+msgstr ""
 
 #: ../../choreonoid.rst:11
 msgid "https://github.com/choreonoid/choreonoid_ros"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../choreonoid.rst:14
 msgid "Choreonoid Manual:"
-msgstr "Choreonoid マニュアル"
+msgstr "Choreonoid マニュアル:"
 
 #: ../../choreonoid.rst:16
 msgid "https://choreonoid.org/en/manuals/latest/index.html"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../choreonoid.rst:21
 msgid "Modules in Choreonoid"
-msgstr "Choreonoid モジュール"
+msgstr "Choreonoid にあるモジュール群"
 
 #~ msgid "Choreonoid_ros:"
 #~ msgstr ""
