@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 09:32+0900\n"
+"POT-Creation-Date: 2024-03-01 18:18+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../module_irsl_choreonoid.rst:3
 msgid "Modules in irsl_choreonoid"
@@ -3595,5 +3595,35 @@ msgstr ""
 #~ "wrt (cnoid.IRSLCoords.coordinates.wrt or "
 #~ "cnoid.IRSLCoords.coordinates, optional) : Reference"
 #~ " coordinates applying this method"
+#~ msgstr ""
+
+#~ msgid "Relative moving end-effector linearly by translation vector"
+#~ msgstr ""
+
+#~ msgid "Translation vector"
+#~ msgstr ""
+
+#~ msgid "Just passing to cnoid.IRSLCoords.coordinates.translate"
+#~ msgstr ""
+
+#~ msgid "Relative moving end-effector angularly by angle-axis"
+#~ msgstr ""
+
+#~ msgid "Rotation angle"
+#~ msgstr ""
+
+#~ msgid "Rotation axis"
+#~ msgstr ""
+
+#~ msgid "Just passing to cnoid.IRSLCoords.coordinates.rotate"
+#~ msgstr ""
+
+#~ msgid "Relative moving end-effector by transformation of coordinates"
+#~ msgstr ""
+
+#~ msgid "Relative coordinates"
+#~ msgstr ""
+
+#~ msgid "Just passing to cnoid.IRSLCoords.coordinates.transform"
 #~ msgstr ""
 

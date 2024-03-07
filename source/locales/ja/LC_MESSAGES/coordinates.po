@@ -9,18 +9,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-31 17:54+0900\n"
+"POT-Creation-Date: 2024-03-01 19:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../coordinates.rst:3
 msgid "Coordinates"
-msgstr "座標"
+msgstr "座標系の説明"
 
 #: ../../coordinates.rst:7
 msgid "Coordinate Transformations"
@@ -28,27 +28,27 @@ msgstr "座標変換"
 
 #: ../../coordinates.rst:11
 msgid "3D Position"
-msgstr "3次元座標"
+msgstr "3次元の位置"
 
 #: ../../coordinates.rst:13
 msgid ""
 "The 3D position is a vector of three real numbers, represented using "
 "lower-case boldface letters."
-msgstr ""
+msgstr "3次元の位置は小文字の太字を用いて表される、実数3つのベクトルである。"
 
 #: ../../coordinates.rst:15
 msgid ""
 "The three elements represent positions on the x-, y-, and z-axis, "
 "respectively."
-msgstr ""
+msgstr "3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。"
 
 #: ../../coordinates.rst:17
 msgid "It is often denoted as a vertical vector."
-msgstr ""
+msgstr "縦ベクトルとして表すことが多い。"
 
 #: ../../coordinates.rst:19
 msgid "3D position :math:`\\mathbf{p}` is denoted below."
-msgstr ""
+msgstr "3次元の位置 :math:`\\mathbf{p}` は以下のように定義されている。"
 
 #: ../../coordinates.rst:21
 msgid ""
@@ -56,93 +56,97 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:26
+#: ../../coordinates.rst:29
 msgid "3D Rotation"
-msgstr ""
+msgstr "3次元の回転"
 
-#: ../../coordinates.rst:28
+#: ../../coordinates.rst:31
 msgid "Rotations in 3D can be represented using a rotation matrix."
-msgstr ""
+msgstr "3次元の回転は、回転行列を用いて表すことができる。"
 
-#: ../../coordinates.rst:30
+#: ../../coordinates.rst:33
 msgid ""
 "The rotation matrix is a 3x3 matrix. It is the x-, y-, and z-axis of the "
 "rotated coordinate series aligned in columns, as referenced from the "
 "original coordinate system."
-msgstr ""
+msgstr "回転行列は3x3の行列で、基準座標系から見た回転された座標系列の x軸、y軸、z軸を列方向に並べたものである。"
 
-#: ../../coordinates.rst:34
+#: ../../coordinates.rst:37
 msgid "Rotation matrix :math:`\\mathbf{R}` is denoted below."
-msgstr ""
+msgstr "回転行列 :math:`\\mathbf{R}` は以下のように定義されている。"
 
-#: ../../coordinates.rst:36
+#: ../../coordinates.rst:39
 msgid ""
 "\\mathbf{R} = [ \\; \\mathbf{x} \\quad \\mathbf{y} \\quad \\mathbf{z} \\;"
 " ]\n"
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:39
+#: ../../coordinates.rst:45
 msgid ""
 "Rotation matrix is an orthogonal matrix, which means that the transpose "
 "and inverse of the matrix are equival"
-msgstr ""
+msgstr "この行列は直交行列となっており、以下の行列の転置 と 逆行列 が同値となる。"
 
-#: ../../coordinates.rst:41
+#: ../../coordinates.rst:47
 msgid "Inverse of a rotation matrix is denoted below."
-msgstr ""
+msgstr "回転行列の逆行列は以下のように定義される。"
 
-#: ../../coordinates.rst:43
+#: ../../coordinates.rst:49
 msgid ""
 "\\mathbf{R}^{-1} = \\mathbf{R}^{T}\n"
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:47
+#: ../../coordinates.rst:53
 msgid ""
 "Other ways to represent 3D rotations are Roll-Pitch-Yaw angle (RPY), "
 "Quaternion, AngleAxis, etc."
 msgstr ""
+"3次元の回転の表し方としては、他に、 "
+"ロール・ピッチ・ヨー角(RPY)、単位クォータニオン(quaternion)、軸回り回転(AngleAxis)、等がある。"
 
-#: ../../coordinates.rst:50
+#: ../../coordinates.rst:56
 msgid ""
 "Although the degree of freedom (DOF) of rotation is 3, a rotation matrix "
 "that is easy to use in calculations, and a quaternion that has no "
 "singular points and is easy to interpolate are used."
-msgstr ""
+msgstr "情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。"
 
-#: ../../coordinates.rst:54
+#: ../../coordinates.rst:60
 msgid "Please refer to the reference book."
-msgstr ""
-
-#: ../../coordinates.rst:58
-msgid "AngleAxis representation"
-msgstr ""
+msgstr "参考書を参照いただきたい。"
 
 #: ../../coordinates.rst:64
-msgid "Homogeneous transformation matrix"
-msgstr ""
+msgid "AngleAxis representation"
+msgstr "軸回り回転(AngleAxis)"
 
-#: ../../coordinates.rst:66
+#: ../../coordinates.rst:70
+msgid "Homogeneous transformation matrix"
+msgstr "同時変換行列"
+
+#: ../../coordinates.rst:72
 msgid ""
 "6DOF-Position in 3D can be represented using 3D position and 3D rotation,"
 " with 3 DOF for position and 3 DOF for rotation, for a total of 6 DOF."
-msgstr ""
+msgstr "3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、 位置の3自由度と回転の3自由度で6自由度となっている。"
 
-#: ../../coordinates.rst:70
+#: ../../coordinates.rst:76
 msgid ""
 "The homogeneous transformation matrix is used to represent 6DOF-Position "
 "in 3D."
-msgstr ""
+msgstr "3次元での6自由度を表現するために同時変換行列を用いる。"
 
-#: ../../coordinates.rst:73
+#: ../../coordinates.rst:79
 msgid ""
 "The homogeneous transformation matrix T is represented as a 4x4 matrix "
 "using a 3D position vector :math:`\\mathbf{p}` and a 3D rotation matrix "
 ":math:`\\mathbf{R}` as follows."
 msgstr ""
+"3次元での姿勢を表すのに、同次変換行列 T を用いる。 T は 3次元位置ベクトル :math:`\\mathbf{p}` と 3次元回転行列 "
+"::math:`\\mathbf{R}` を用いて、以下のように4x4行列として表される。"
 
-#: ../../coordinates.rst:77 ../../coordinates.rst:147
+#: ../../coordinates.rst:83 ../../coordinates.rst:165
 msgid ""
 "T = \\begin{pmatrix}\n"
 "\\mathbf{R}  & \\mathbf{p} \\\\\n"
@@ -151,11 +155,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:83
+#: ../../coordinates.rst:92
 msgid "The inverse matrix of T is as follows."
-msgstr ""
+msgstr "T の逆行列は以下のようになる。"
 
-#: ../../coordinates.rst:85 ../../coordinates.rst:294
+#: ../../coordinates.rst:94 ../../coordinates.rst:322
 msgid ""
 "T^{-1} = \\begin{pmatrix}\n"
 "\\mathbf{R}^{-1}  & - \\mathbf{R}^{-1}\\mathbf{p} \\\\\n"
@@ -164,13 +168,13 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:91
+#: ../../coordinates.rst:100
 msgid ""
 "The multiplication of :math:`\\mathbf{T}_{a}` and :math:`\\mathbf{T}_{b}`"
 " is as follows."
-msgstr ""
+msgstr "T の掛け算は、:math:`\\mathbf{T}_{a}` と :math:`\\mathbf{T}_{b}` を添え字として以下のようになる。"
 
-#: ../../coordinates.rst:94
+#: ../../coordinates.rst:103
 msgid ""
 "T_a \\times T_b = \\begin{pmatrix}\n"
 "\\mathbf{R}_a\\mathbf{R}_b  & \\mathbf{R}_a\\mathbf{p}_b  + \\mathbf{p}_a"
@@ -180,11 +184,11 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:100
+#: ../../coordinates.rst:109
 msgid "where :math:`\\mathbf{T}_{a}` and :math:`\\mathbf{T}_{b}` are as follows."
-msgstr ""
+msgstr ":math:`\\mathbf{T}_{a}` と :math:`\\mathbf{T}_{b}` は、以下のように表される。"
 
-#: ../../coordinates.rst:102
+#: ../../coordinates.rst:111
 msgid ""
 "T_a = \\begin{pmatrix}\n"
 "\\mathbf{R}_a  & \\mathbf{p}_a \\\\\n"
@@ -193,7 +197,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:108
+#: ../../coordinates.rst:117
 msgid ""
 "T_b = \\begin{pmatrix}\n"
 "\\mathbf{R}_b  & \\mathbf{p}_b \\\\\n"
@@ -202,264 +206,314 @@ msgid ""
 "\n"
 msgstr ""
 
-#: ../../coordinates.rst:116
+#: ../../coordinates.rst:125
 msgid "System of coordinates"
-msgstr ""
+msgstr "座標系"
 
-#: ../../coordinates.rst:121
+#: ../../coordinates.rst:131
 msgid "Coordinate system of rigid body link"
-msgstr ""
+msgstr "剛体リンクの座標系"
 
-#: ../../coordinates.rst:126
+#: ../../coordinates.rst:144
 msgid "Relation between system of coordinates and coordinates class"
-msgstr "座標系と座標クラスの関係"
+msgstr "座標系とcoordinatesクラスの関係"
 
-#: ../../coordinates.rst:128
+#: ../../coordinates.rst:146
 msgid ""
 "coordinates class (cnoid.IRSLCoords.coordinates) is a class for "
 "manipulating homogeneous transformation matrices."
-msgstr ""
+msgstr "coordinatesクラス (cnoid.IRSLCoords.coordinates) は、 同次変換行列の操作を行うためのクラスである。"
 
-#: ../../coordinates.rst:131
+#: ../../coordinates.rst:149
 msgid ""
 "An instance of the coordinates class has 3D position vector "
 ":math:`\\mathbf{p}` and 3D rotation matrix :math:`\\mathbf{R}` ."
 msgstr ""
+"coordinatesクラスのインスタンスは、 3次元位置ベクトル :math:`\\mathbf{p}` と 3次元回転行列 "
+":math:`\\mathbf{R}` を持つ。"
 
-#: ../../coordinates.rst:138
+#: ../../coordinates.rst:156
 msgid "Initializing and accessing to a position and a rotation matrix"
-msgstr ""
+msgstr "初期化と回転行列と３次元位置の取り出し"
 
-#: ../../coordinates.rst:140
+#: ../../coordinates.rst:158
 msgid ""
 ":math:`\\mathbf{p}` and :math:`\\mathbf{R}` can be retrieved by accessing"
 " to properties of coordinates class."
 msgstr ""
+"coordinates のプロパティとして、 以下のように :math:`\\mathbf{p}` と :math:`\\mathbf{R}` "
+"を取り出せる。"
 
-#: ../../coordinates.rst:143
+#: ../../coordinates.rst:161
 msgid "In the following, T is an instance of the coordinates class."
-msgstr ""
+msgstr "以下、Tはcoordinateクラスのインスタンスである。"
 
-#: ../../coordinates.rst:145
+#: ../../coordinates.rst:163
 msgid "Mathmatical representaion of T is following."
-msgstr ""
+msgstr "Tの数学的な表現は以下の通り。"
 
-#: ../../coordinates.rst:166
+#: ../../coordinates.rst:171
 msgid "Initalizing coordinates"
-msgstr ""
+msgstr "coordinatesクラスの初期化"
 
-#: ../../coordinates.rst:173
+#: ../../coordinates.rst:186
 msgid "Getting and setting 3D position (access attribute pos)"
-msgstr ""
+msgstr "3次元位置のゲットとセット(attribute pos へのアクセス)"
 
-#: ../../coordinates.rst:182
+#: ../../coordinates.rst:193
 msgid "Getting and setting Rotation matrix (access attribute rot)"
-msgstr ""
+msgstr "回転行列のゲットとセット(attribute rot へのアクセス)"
 
-#: ../../coordinates.rst:189
+#: ../../coordinates.rst:202
 msgid "Getting and setting quaternion (access attribute quaternion)"
-msgstr ""
+msgstr "クオータニオンのゲットとセット"
 
-#: ../../coordinates.rst:196
+#: ../../coordinates.rst:209
 msgid "Getting and setting roll-pitch-yaw angle (access attribute RPY)"
-msgstr ""
+msgstr "RPY角度のゲットとセット"
 
-#: ../../coordinates.rst:203
+#: ../../coordinates.rst:216
 msgid "Getting and setting angle-axis (access attribute angleAxis)"
-msgstr ""
+msgstr "軸回り回転(AngleAxis)のゲットとセット"
 
-#: ../../coordinates.rst:213
+#: ../../coordinates.rst:223
 msgid ""
 "Getting and setting 4x4 homogeneous transformation matrix (access "
 "attribute cnoidPosition)"
-msgstr ""
+msgstr "4x4同時変換行列のゲットとセット"
 
-#: ../../coordinates.rst:218
+#: ../../coordinates.rst:236
 msgid "Methods to convert a vector"
-msgstr ""
+msgstr "ベクトルを変換するメソッド"
 
-#: ../../coordinates.rst:220
+#: ../../coordinates.rst:238
 msgid ""
 "In the following, :math:`\\mathbf{v}` is 3D position vector "
 "(numpy.array). Folowing 4 functions do not change the input value."
 msgstr ""
+"以下、 :math:`\\mathbf{v}` は3次元ベクトル (numpy.array) "
+"である。以下の4つの関数は入力オブジェクトの値を変更しない。"
 
-#: ../../coordinates.rst:230 ../../coordinates.rst:238
-#: ../../coordinates.rst:249 ../../coordinates.rst:260
+#: ../../coordinates.rst:242
+msgid "Rotating vector"
+msgstr "ベクトルを回転させる"
+
+#: ../../coordinates.rst:250 ../../coordinates.rst:260
+#: ../../coordinates.rst:273 ../../coordinates.rst:286
 msgid "Mathmatical representation of a return value is"
-msgstr ""
+msgstr "返り値の数学的表現は"
 
-#: ../../coordinates.rst:232
+#: ../../coordinates.rst:252
 msgid ":math:`\\mathbf{R} \\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:240
+#: ../../coordinates.rst:254
+msgid "Rotating vector (inverse-rotation)"
+msgstr "ベクトルを回転させる（逆回転）"
+
+#: ../../coordinates.rst:262
 msgid ":math:`\\mathbf{v}^T \\mathbf{R}`"
 msgstr ""
 
-#: ../../coordinates.rst:246
+#: ../../coordinates.rst:264
+msgid "Transforming vector"
+msgstr "ベクトルを変換する"
+
+#: ../../coordinates.rst:266
 msgid ""
 "Converts a vector represented in a local coordinate system T to a vector "
 "represented in the world coordinate system."
-msgstr ""
+msgstr "ローカル座標系Tで表現されたベクトルのワールド座標系への変換"
 
-#: ../../coordinates.rst:251
+#: ../../coordinates.rst:275
 msgid ":math:`\\mathbf{R}\\mathbf{v} + \\mathbf{p}`"
 msgstr ""
 
-#: ../../coordinates.rst:257
+#: ../../coordinates.rst:277
+msgid "Transforming vector(inverse-transformation)"
+msgstr "ベクトルを変換する（逆変換）"
+
+#: ../../coordinates.rst:279
 msgid ""
 "Converts a vector represented in the world coordinate system. to a vector"
 " represented in a local coordinate system T."
-msgstr ""
+msgstr "ワールド座標系で表現されたベクトルのローカル座標系Tへの変換"
 
-#: ../../coordinates.rst:262
+#: ../../coordinates.rst:288
 msgid ":math:`\\mathbf{R}^{-1}\\left( \\mathbf{v} - \\mathbf{p} \\right)`"
 msgstr ""
 
-#: ../../coordinates.rst:266
-msgid "Methods to convert a vector(change input value)"
-msgstr ""
-
-#: ../../coordinates.rst:268
-msgid "There are functions which change the input value."
-msgstr ""
-
-#: ../../coordinates.rst:270
-msgid "Input value v will be changed as the same of return value."
-msgstr ""
-
-#: ../../coordinates.rst:282
-msgid "Methods to return a coordinate (without modifying itself)"
-msgstr ""
-
-#: ../../coordinates.rst:284
-msgid "In the following, A is an instance of the coordinates class."
-msgstr ""
-
-#: ../../coordinates.rst:290
-msgid "Returns inverse transformation."
-msgstr ""
-
 #: ../../coordinates.rst:292
-msgid "Mathmatical representation of a return value is following."
-msgstr ""
+msgid "Methods to convert a vector(change input value)"
+msgstr "ベクトルを変換するメソッド（入力オブジェクトの値を変える）"
 
-#: ../../coordinates.rst:304
-msgid "*wrt* is an optional value and defult value is 'local'"
-msgstr ""
+#: ../../coordinates.rst:294
+msgid "There are functions which change the input value."
+msgstr "これらの関数は入力オブジェクトの値を変更する。"
 
-#: ../../coordinates.rst:306 ../../coordinates.rst:337
-#: ../../coordinates.rst:354 ../../coordinates.rst:372
-#: ../../coordinates.rst:390
-msgid "If *wrt* = coordinates.wrt.local"
-msgstr ""
+#: ../../coordinates.rst:296
+msgid "Input value v will be changed as the same of return value."
+msgstr "入力オブジェクトの値は返り値と同じ値になる。"
 
 #: ../../coordinates.rst:308
-msgid ":math:`T^{-1}A` is returned"
-msgstr ""
+msgid "Methods to return a coordinate (without modifying itself)"
+msgstr "座標系を変更するメソッド"
 
-#: ../../coordinates.rst:310 ../../coordinates.rst:341
-#: ../../coordinates.rst:358 ../../coordinates.rst:376
-#: ../../coordinates.rst:394
-msgid "If *wrt* = coordinates.wrt.world"
-msgstr ""
+#: ../../coordinates.rst:310
+msgid "In the following, A is an instance of the coordinates class."
+msgstr "以下で、A は、coordinatesクラスのインスタンスである。"
 
 #: ../../coordinates.rst:312
+msgid "Getting inverse-transformation"
+msgstr "逆変換を表す変換を得る"
+
+#: ../../coordinates.rst:318
+msgid "Returns inverse transformation."
+msgstr "逆変換を返す"
+
+#: ../../coordinates.rst:320
+msgid "Mathmatical representation of a return value is following."
+msgstr "返り値の数学的表現は以下の通り。"
+
+#: ../../coordinates.rst:328
+msgid "Getting transformation between coordinates"
+msgstr "2つの座標間の変換を得る"
+
+#: ../../coordinates.rst:334
+msgid "*wrt* is an optional value and defult value is 'local'"
+msgstr "*wrt* は座標系を表す引数である。デフォルト値は 'local' である。"
+
+#: ../../coordinates.rst:336 ../../coordinates.rst:371
+#: ../../coordinates.rst:389 ../../coordinates.rst:409
+#: ../../coordinates.rst:429
+msgid "If *wrt* = coordinates.wrt.local"
+msgstr "*wrt* が coordinates.wrt.local の時は"
+
+#: ../../coordinates.rst:338
+msgid ":math:`T^{-1}A` is returned"
+msgstr ":math:`T^{-1}A` が返る。"
+
+#: ../../coordinates.rst:340 ../../coordinates.rst:375
+#: ../../coordinates.rst:393 ../../coordinates.rst:413
+#: ../../coordinates.rst:433
+msgid "If *wrt* = coordinates.wrt.world"
+msgstr "*wrt* が coordinates.wrt.world の時は"
+
+#: ../../coordinates.rst:342
 msgid ":math:`AT^{-1}` is returned"
-msgstr ""
+msgstr ":math:`AT^{-1}` が返る。"
 
-#: ../../coordinates.rst:314 ../../coordinates.rst:345
-#: ../../coordinates.rst:362 ../../coordinates.rst:380
-#: ../../coordinates.rst:398
+#: ../../coordinates.rst:344 ../../coordinates.rst:379
+#: ../../coordinates.rst:397 ../../coordinates.rst:417
+#: ../../coordinates.rst:437
 msgid "If *wrt* = W (coordinates class)"
-msgstr ""
+msgstr "*wrt* が W (coordinates class) の時は"
 
-#: ../../coordinates.rst:316
+#: ../../coordinates.rst:346
 msgid ":math:`W^{-1}AT^{-1}W` is returned"
-msgstr ""
+msgstr ":math:`W^{-1}AT^{-1}W` が返る。"
 
-#: ../../coordinates.rst:321
+#: ../../coordinates.rst:351
 msgid "Methods to modify itself"
-msgstr ""
+msgstr "自身のインスタンスの値を変更するメソッド"
 
-#: ../../coordinates.rst:323
+#: ../../coordinates.rst:353
 msgid "In the following, :math:`\\leftarrow` represents substitution."
-msgstr ""
+msgstr "以下で、 :math:`\\leftarrow` は代入を表す。"
 
-#: ../../coordinates.rst:329
+#: ../../coordinates.rst:355
+msgid "Setting new coordinates"
+msgstr "新しい変換の代入"
+
+#: ../../coordinates.rst:361
 msgid "Attributes pos and rot is substituted"
-msgstr ""
+msgstr "attributes pos と rot に値が代入される。"
 
-#: ../../coordinates.rst:331 ../../coordinates.rst:343
+#: ../../coordinates.rst:363 ../../coordinates.rst:377
 msgid ":math:`T \\leftarrow A`"
 msgstr ""
 
-#: ../../coordinates.rst:339 ../../coordinates.rst:392
+#: ../../coordinates.rst:365
+msgid "Moving to new coordinates"
+msgstr "座標系への移動"
+
+#: ../../coordinates.rst:373 ../../coordinates.rst:431
 msgid ":math:`T \\leftarrow TA`"
 msgstr ""
 
-#: ../../coordinates.rst:347
+#: ../../coordinates.rst:381
 msgid ":math:`T \\leftarrow WA`"
 msgstr ""
 
-#: ../../coordinates.rst:356
+#: ../../coordinates.rst:383
+msgid "Translating"
+msgstr "平行移動"
+
+#: ../../coordinates.rst:391
 msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}\\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:360
+#: ../../coordinates.rst:395
 msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p}+ \\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:364
+#: ../../coordinates.rst:399
 msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R}_{W}\\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:366
+#: ../../coordinates.rst:401
 msgid ":math:`\\mathbf{R}_{W}` is rotation matrix of W"
-msgstr ""
+msgstr ":math:`\\mathbf{R}_{W}` は W の回転行列"
 
-#: ../../coordinates.rst:374
+#: ../../coordinates.rst:403
+msgid "Locating"
+msgstr "3次元位置への配置"
+
+#: ../../coordinates.rst:411
 msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{p} + \\mathbf{R} \\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:378
+#: ../../coordinates.rst:415
 msgid ":math:`\\mathbf{p} \\leftarrow \\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:382
+#: ../../coordinates.rst:419
 msgid ""
 ":math:`\\mathbf{p} \\leftarrow \\mathbf{p}_{W} + \\mathbf{R}_{W} "
 "\\mathbf{v}`"
 msgstr ""
 
-#: ../../coordinates.rst:384
+#: ../../coordinates.rst:421
 msgid ""
 ":math:`\\mathbf{R}_{W}` is rotation matrix of W, and "
 ":math:`\\mathbf{p}_{W}` is 3D position of W."
-msgstr ""
+msgstr ":math:`\\mathbf{R}_{W}` は Wの回転行列、:math:`\\mathbf{p}_{W}` は Wの3次元位置。"
 
-#: ../../coordinates.rst:396
+#: ../../coordinates.rst:423
+msgid "Transforming"
+msgstr "変換を適用する"
+
+#: ../../coordinates.rst:435
 msgid ":math:`T \\leftarrow AT`"
 msgstr ""
 
-#: ../../coordinates.rst:400
-msgid ":math:`T \\leftarrow$ $\\left( W A W^{-1} \\right) T`"
+#: ../../coordinates.rst:439
+msgid ":math:`T \\leftarrow \\left( W A W^{-1} \\right) T`"
 msgstr ""
 
-#: ../../coordinates.rst:405
+#: ../../coordinates.rst:444
 msgid "Examples"
 msgstr ""
 
-#: ../../coordinates.rst:409
+#: ../../coordinates.rst:448
 msgid "Reference book"
 msgstr "参考文献"
 
-#: ../../coordinates.rst:411
+#: ../../coordinates.rst:450
 msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"
 msgstr ""
 
-#: ../../coordinates.rst:413
+#: ../../coordinates.rst:452
 msgid "第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる"
 msgstr ""
 
@@ -607,5 +661,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "If wrt = W (coordinates class)"
+#~ msgstr ""
+
+#~ msgid ":math:`T \\leftarrow$ $\\left( W A W^{-1} \\right) T`"
 #~ msgstr ""
 
