@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choreonoid Python Module (AssimpPlugin) &mdash; IRSL python modules  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -123,6 +125,28 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cnoid.AssimpPlugin.AssimpSceneLoader.setCreaseAngle">
+<span class="sig-name descname"><span class="pre">setCreaseAngle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.AssimpPlugin.AssimpSceneLoader" title="cnoid.AssimpPlugin.AssimpSceneLoader"><span class="pre">cnoid.AssimpPlugin.AssimpSceneLoader</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.AssimpPlugin.AssimpSceneLoader.setCreaseAngle" title="Permalink to this definition"></a></dt>
+<dd><p>Setting creaseAngle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle</strong> (<em>float</em>) – Set creaseAngle</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.AssimpPlugin.AssimpSceneLoader.setForceGenerateNormals">
+<span class="sig-name descname"><span class="pre">setForceGenerateNormals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.AssimpPlugin.AssimpSceneLoader" title="cnoid.AssimpPlugin.AssimpSceneLoader"><span class="pre">cnoid.AssimpPlugin.AssimpSceneLoader</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.AssimpPlugin.AssimpSceneLoader.setForceGenerateNormals" title="Permalink to this definition"></a></dt>
+<dd><p>Setting flag for generating normals, even if the original mesh has normals</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>on</strong> (<em>boolean</em>) – If True, forcing to generate normals</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.AssimpPlugin.AssimpSceneLoader.setMessageSinkStdErr">
 <span class="sig-name descname"><span class="pre">setMessageSinkStdErr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.AssimpPlugin.AssimpSceneLoader" title="cnoid.AssimpPlugin.AssimpSceneLoader"><span class="pre">cnoid.AssimpPlugin.AssimpSceneLoader</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.AssimpPlugin.AssimpSceneLoader.setMessageSinkStdErr" title="Permalink to this definition"></a></dt>
 <dd><p>Setting MessageSkin to stderr. It is required to read error messages in console</p>
@@ -179,6 +203,17 @@ For saving mesh as ‘stl’, you shoud set outputType = ‘stlb’, if you want
 </dl>
 <dl class="simple">
 <dt>Returns</dt><dd><p>str : Current output type</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.AssimpPlugin.AssimpSceneWriter.setExpandVertices">
+<span class="sig-name descname"><span class="pre">setExpandVertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.AssimpPlugin.AssimpSceneWriter" title="cnoid.AssimpPlugin.AssimpSceneWriter"><span class="pre">cnoid.AssimpPlugin.AssimpSceneWriter</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.AssimpPlugin.AssimpSceneWriter.setExpandVertices" title="Permalink to this definition"></a></dt>
+<dd><p>Expanding vertices to represent that each vertices has a normal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>on</strong> (<em>boolean</em>) – If True, expanding vertices</p>
 </dd>
 </dl>
 </dd></dl>

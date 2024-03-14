@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja" >
+<html class="writer-html5" lang="ja">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Choreonoid Python Module (Util) &mdash; IRSL python modules  ドキュメント</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Choreonoid Python モジュール(Util) &mdash; IRSL python modules  ドキュメント</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -21,8 +23,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="Choreonoid Python Module (AssimpPlugin)" href="module_cnoid_assimp.html" />
-    <link rel="prev" title="Choreonoid Python Module (Body)" href="module_cnoid_body.html" /> 
+    <link rel="next" title="Choreonoid Python モジュール(AssimpPlugin)" href="module_cnoid_assimp.html" />
+    <link rel="prev" title="Choreonoid Python モジュール(Body)" href="module_cnoid_body.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,26 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">コンテンツ:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">Modules in irsl_choreonoid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">Modules in irsl_choreonoid_ros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid Utility(binding)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslcoords.html">Coordinates モジュール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid.html">irsl_choreonoid モジュール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_irsl_choreonoid_ros.html">irsl_choreonoid_ros モジュール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_irslutil.html">Choreonoid ユーティリティ（バインディング）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module_cnoid_robotassembler.html">RobotAssembler モジュール</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="choreonoid.html">Choreonoid</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="choreonoid.html#modules-in-choreonoid">Modules in Choreonoid</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="module_cnoid_body.html">Choreonoid Python Module (Body)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Choreonoid Python Module (Util)</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="choreonoid.html#modules-in-choreonoid">Choreonoid にあるモジュール群</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="module_cnoid_body.html">Choreonoid Python モジュール(Body)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Choreonoid Python モジュール(Util)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#module-cnoid.Util">cnoid.Util</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="module_cnoid_assimp.html">Choreonoid Python Module (AssimpPlugin)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="module_cnoid_assimp.html">Choreonoid Python モジュール(AssimpPlugin)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="coordinates.html">Coordinates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="coordinates.html">座標系の説明</a></li>
 </ul>
 
         </div>
@@ -81,7 +83,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="choreonoid.html">Choreonoid</a></li>
-      <li class="breadcrumb-item active">Choreonoid Python Module (Util)</li>
+      <li class="breadcrumb-item active">Choreonoid Python モジュール(Util)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/module_cnoid_util.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -92,7 +94,7 @@
            <div itemprop="articleBody">
              
   <section id="choreonoid-python-module-util">
-<h1>Choreonoid Python Module (Util)<a class="headerlink" href="#choreonoid-python-module-util" title="この見出しへのパーマリンク"></a></h1>
+<h1>Choreonoid Python モジュール(Util)<a class="headerlink" href="#choreonoid-python-module-util" title="この見出しへのパーマリンク"></a></h1>
 <section id="module-cnoid.Util">
 <span id="cnoid-util"></span><h2>cnoid.Util<a class="headerlink" href="#module-cnoid.Util" title="この見出しへのパーマリンク"></a></h2>
 <p>Choreonoid Util module</p>
@@ -235,8 +237,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="module_cnoid_body.html" class="btn btn-neutral float-left" title="Choreonoid Python Module (Body)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="module_cnoid_assimp.html" class="btn btn-neutral float-right" title="Choreonoid Python Module (AssimpPlugin)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="module_cnoid_body.html" class="btn btn-neutral float-left" title="Choreonoid Python モジュール(Body)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="module_cnoid_assimp.html" class="btn btn-neutral float-right" title="Choreonoid Python モジュール(AssimpPlugin)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

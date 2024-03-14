@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Modules in irsl_choreonoid &mdash; IRSL python modules  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -53,6 +55,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.loadRobot"><code class="docutils literal notranslate"><span class="pre">loadRobot()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.exportBody"><code class="docutils literal notranslate"><span class="pre">exportBody()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.exportURDF"><code class="docutils literal notranslate"><span class="pre">exportURDF()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.exportBodyAsMesh"><code class="docutils literal notranslate"><span class="pre">exportBodyAsMesh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile"><code class="docutils literal notranslate"><span class="pre">convertBodyFileToMeshFile()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.castValueNode"><code class="docutils literal notranslate"><span class="pre">castValueNode()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.mappingToDict"><code class="docutils literal notranslate"><span class="pre">mappingToDict()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.listingToList"><code class="docutils literal notranslate"><span class="pre">listingToList()</span></code></a></li>
@@ -61,6 +65,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.cnoidPosition"><code class="docutils literal notranslate"><span class="pre">cnoidPosition()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.cnoidRotation"><code class="docutils literal notranslate"><span class="pre">cnoidRotation()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.cnoidTranslation"><code class="docutils literal notranslate"><span class="pre">cnoidTranslation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.fv"><code class="docutils literal notranslate"><span class="pre">fv()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.cnoid_util.isInChoreonoid"><code class="docutils literal notranslate"><span class="pre">isInChoreonoid()</span></code></a></li>
 </ul>
 </li>
@@ -129,6 +134,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#module-irsl-choreonoid-robot-util">module irsl_choreonoid.robot_util</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coordinates"><code class="docutils literal notranslate"><span class="pre">make_coordinates()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_coords_map"><code class="docutils literal notranslate"><span class="pre">make_coords_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.make_translation_rotation"><code class="docutils literal notranslate"><span class="pre">make_translation_rotation()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper"><code class="docutils literal notranslate"><span class="pre">IKWrapper</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper.__init__"><code class="docutils literal notranslate"><span class="pre">IKWrapper.__init__()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.IKWrapper.flush"><code class="docutils literal notranslate"><span class="pre">IKWrapper.flush()</span></code></a></li>
@@ -196,6 +202,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.headEndEffector</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.torsoEndEffector</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.inverseKinematics()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.footMidCoords()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.fixLegToCoords()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.keepJointLimit()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.trimJointAngles"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.trimJointAngles()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.calcMinimumDuration()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -252,7 +263,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.clear"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.clear()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.objects"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.objects()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.addShape"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.addShape()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.addShapes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.removeShape()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.removeShapes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.createLinkFromShape()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.viewInfo"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.viewInfo()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.notifyUpdate"><code class="docutils literal notranslate"><span class="pre">RobotBuilder.notifyUpdate()</span></code></a></li>
@@ -395,7 +408,8 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.exportBody">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">exportBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extModelFileMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileUri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allInOne</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixMassParam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.exportBody" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>Exporting .body file from an instance of cnoid.Body.Body</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fname</strong> (<em>str</em>) – </p></li>
@@ -412,12 +426,46 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.exportURDF">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">exportURDF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.exportURDF" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dd><p>Exporting .urdf file from an instance of cnoid.Body.Body</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fname</strong> (<em>str</em>) – </p></li>
 <li><p><strong>body</strong> (<a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body"><em>cnoid.Body.Body</em></a>) – </p></li>
 <li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.exportBodyAsMesh">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">exportBodyAsMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_body</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCollision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.exportBodyAsMesh" title="Permalink to this definition"></a></dt>
+<dd><p>Exporting a mesh file converted from an instance of cnoid.Body.Body</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fname</strong> (<em>str</em>) – Name of output file</p></li>
+<li><p><strong>input_body</strong> (<a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body"><em>cnoid.Body.Body</em></a>) – Robot model to be exported</p></li>
+<li><p><strong>meshScale</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>offset</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>useCollision</strong> (<em>boolean</em><em>, </em><em>defalt=False</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Passing to irsl_choreonoid.makeshapes.exportMesh</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">convertBodyFileToMeshFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mesh_file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body_file_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile" title="Permalink to this definition"></a></dt>
+<dd><p>Converting a mesh file to a body file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mesh_file_name</strong> (<em>str</em>) – Name of output file</p></li>
+<li><p><strong>body_file_name</strong> (<em>str</em>) – Name of input file</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – exportBodyAsMesh</p></li>
 </ul>
 </dd>
 </dl>
@@ -560,6 +608,36 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dd class="field-odd"><p>numpy.array</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.fv">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">fv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.fv" title="Permalink to this definition"></a></dt>
+<dd><p>Simple function for making numpy.array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> (<em>list</em><em>[</em><em>float</em><em>]</em>) – List will be passed to numpy.array</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Keyword arguments will be passed to numpy.array</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>vector or matrix</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>numpy.array</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function just return numpy.array(args, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs)</p>
+</div>
+<p class="rubric">Examples</p>
+<p>fv(0.1, 0.2, 0.3) =&gt; array([0, 1, 2])</p>
+<blockquote>
+<div><p>Just reducing the number of typing
+numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
+</div></blockquote>
 </dd></dl>
 
 <dl class="py function">
@@ -1104,7 +1182,7 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.loadScene">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileUri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadScene" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileUri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadScene" title="Permalink to this definition"></a></dt>
 <dd><p>Loading scene(wrl, scene, …) file using cnoid.Util.SceneLoader</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1128,7 +1206,7 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.loadMesh">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileUri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadMesh" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">loadMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileUri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forceGenerateNormals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">creaseAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5235987755982988</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.loadMesh" title="Permalink to this definition"></a></dt>
 <dd><p>Loading mesh file using cnoid.AssimpPlugin module</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1638,13 +1716,14 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.exportMesh">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">exportMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sg_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generatePrimitiveMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoreURDFPrimitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.exportMesh" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">exportMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sg_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">generatePrimitiveMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignoreURDFPrimitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expandVertices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.exportMesh" title="Permalink to this definition"></a></dt>
 <dd><p>Exporting SgNode as a mesh file (using Assimp)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fname</strong> (<em>str</em>) – File name to be saved</p></li>
 <li><p><strong>sg_node</strong> (<em>cnoid.Util.SgNode</em>) – Root node of scene to be saved</p></li>
+<li><p><strong>meshScale</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
 <li><p><strong>verbose</strong> (<em>boolean</em><em>, </em><em>default=False</em>) – </p></li>
 <li><p><strong>generatePrimitiveMesh</strong> (<em>boolean</em><em>, </em><em>default=True</em>) – </p></li>
 <li><p><strong>ignoreURDFPrimitive</strong> (<em>boolean</em><em>, </em><em>default=False</em>) – </p></li>
@@ -1656,13 +1735,14 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.exportScene">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">exportScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sg_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exportMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.exportScene" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">exportScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sg_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshScale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exportMesh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.exportScene" title="Permalink to this definition"></a></dt>
 <dd><p>Exporting SgNode as .scen file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fname</strong> (<em>str</em>) – File name to be saved</p></li>
 <li><p><strong>sg_node</strong> (<em>cnoid.Util.SgNode</em>) – Root node of scene to be saved</p></li>
+<li><p><strong>meshScale</strong> (<em>float</em><em>, </em><em>optional</em>) – </p></li>
 <li><p><strong>exportMesh</strong> (<em>boolean</em><em>, </em><em>default=False</em>) – Exporting mesh instead of primitive type</p></li>
 <li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) – Extra keyword arguments for using to execute ‘’StdSceneWriter.&lt;keyword&gt; = &lt;value&gt;’’</p></li>
 </ul>
@@ -1708,7 +1788,7 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <dd class="field-odd"><p><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates">cnoid.IRSLCoords.coordinates</a></p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Exeption</strong> – If there is not valid keyword</p>
+<dd class="field-even"><p><strong>Exception</strong> – If there is not valid keyword</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
@@ -1736,7 +1816,7 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coords_map">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_map" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_map" title="Permalink to this definition"></a></dt>
 <dd><p>Generating dictonary describing transformation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1754,6 +1834,27 @@ URL is like ‘scheme://netloc/xxx/yyy/zzz’</p>
 <span class="go">{&#39;pos&#39;: [1.0, 2.0, 3.0], &#39;aa&#39;: [1.0, 0.0, 0.0, 0.0]}</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_translation_rotation">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_translation_rotation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_translation_rotation" title="Permalink to this definition"></a></dt>
+<dd><p>Generating dictonary describing transformation (using translation, rotation)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) – Transformation</p></li>
+<li><p><strong>unit</strong> (<em>str</em><em>, </em><em>default='mm'</em>) – Unit of length. ‘m’, ‘mm’, ‘cm’, or ‘inch’</p></li>
+<li><p><strong>degree</strong> (<em>boolean</em><em>, </em><em>default=True</em>) – Unit of angle. If True, use degree, otherwise use radian</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictonary can be used in .body</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[str, list[float]]</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py class">
@@ -2179,6 +2280,23 @@ base_type : [1,1,1, 1,1,1]</p>
 </dl>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint">
+<span class="sig-name descname"><span class="pre">joint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint" title="Permalink to this definition"></a></dt>
+<dd><p>Getting joint in this limb by name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>jname</strong> (<em>str</em>) – name or nick-name of a joint</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Instance of the joint</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Link" title="cnoid.Body.Link">cnoid.Body.Link</a></p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">endEffector</span></span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector" title="Permalink to this definition"></a></dt>
@@ -2230,6 +2348,70 @@ base_type : [1,1,1, 1,1,1]</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) – Coordinate of the target</p></li>
 <li><p><strong>**kwargs</strong> (<em>dict</em>) – Just passing to IKWrapper</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IK was success or not, and total count of calculation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move">
+<span class="sig-name descname"><span class="pre">move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move" title="Permalink to this definition"></a></dt>
+<dd><p>Relative moving end-effector linearly by translation vector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vec</strong> (<em>numpy.array</em>) – Translation vector</p></li>
+<li><p><strong>wrt</strong> (<em>default = cnoid.IRSLCoords.coordinates.wrt.local</em>) – Just passing to cnoid.IRSLCoords.coordinates.translate</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Just passing to IKWrapper</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IK was success or not, and total count of calculation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate">
+<span class="sig-name descname"><span class="pre">rotate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate" title="Permalink to this definition"></a></dt>
+<dd><p>Relative moving end-effector angularly by angle-axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>angle</strong> (<em>float</em>) – Rotation angle</p></li>
+<li><p><strong>axis</strong> (<em>numpy.array</em>) – Rotation axis</p></li>
+<li><p><strong>wrt</strong> (<em>default = cnoid.IRSLCoords.coordinates.wrt.local</em>) – Just passing to cnoid.IRSLCoords.coordinates.rotate</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Just passing to IKWrapper</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>IK was success or not, and total count of calculation</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords">
+<span class="sig-name descname"><span class="pre">moveCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords" title="Permalink to this definition"></a></dt>
+<dd><p>Relative moving end-effector by transformation of coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) – Relative coordinates</p></li>
+<li><p><strong>wrt</strong> (<em>default = cnoid.IRSLCoords.coordinates.wrt.local</em>) – Just passing to cnoid.IRSLCoords.coordinates.transform</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – Just passing to IKWrapper</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -2623,7 +2805,7 @@ base_type : [1,1,1, 1,1,1]</p>
 <dd class="field-odd"><p><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector" title="irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector">irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector</a></p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Exeption</strong> – If wrong limb name is passed</p>
+<dd class="field-even"><p><strong>Exception</strong> – If wrong limb name is passed</p>
 </dd>
 </dl>
 </dd></dl>
@@ -2858,6 +3040,89 @@ base_type : [1,1,1, 1,1,1]</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>(boolean, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords">
+<span class="sig-name descname"><span class="pre">footMidCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords" title="Permalink to this definition"></a></dt>
+<dd><p>Getting coordinates representing mid-point of leg’s end-effector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>p</strong> (<em>float</em><em>, </em><em>default=0.5</em>) – Parameter of mid-point. (0.5, 0.0, 1.0 represents the center, rleg, lleg, respectively)</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Coordinates indicating the mid-point of legs</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates">cnoid.IRSLCoords.coordinates</a></p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method requires settings of limbs( ‘rleg’ and ‘lleg’ )</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords">
+<span class="sig-name descname"><span class="pre">fixLegToCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords" title="Permalink to this definition"></a></dt>
+<dd><p>Locating the robot by fixing the legs to designated coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) – Target coordinates ( footMidCoords of this robot will be the same as this coordinates )</p></li>
+<li><p><strong>p</strong> (<em>float</em><em>, </em><em>default=0.5</em>) – Parameter of mid-point. (0.5, 0.0, 1.0 represents the center, rleg, lleg, respectively)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method requires settings of limbs( ‘rleg’ and ‘lleg’ )</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit">
+<span class="sig-name descname"><span class="pre">keepJointLimit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">on_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit" title="Permalink to this definition"></a></dt>
+<dd><p>Setting mode to keep joint limits</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>on</strong> (<em>boolean</em><em>, </em><em>default=True</em>) – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns current settings</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(boolean)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.trimJointAngles">
+<span class="sig-name descname"><span class="pre">trimJointAngles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.trimJointAngles" title="Permalink to this definition"></a></dt>
+<dd><p>Force setting joint angles inside the range of limits</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration">
+<span class="sig-name descname"><span class="pre">calcMinimumDuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_angle_vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original_angle_vector</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration" title="Permalink to this definition"></a></dt>
+<dd><p>Calculating duration for the fastest movement depend on a joint limit</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_angle_vector</strong> (<em>numpy.array</em>) – AngleVector to be moved to</p></li>
+<li><p><strong>original_angle_vector</strong> (<em>numpy.array</em><em>, </em><em>optional</em>) – AngleVector to be moved from. If this argument is not given, current angles will be used.</p></li>
+<li><p><strong>ratio</strong> (<em>float</em>) – Result will be multipled by this value</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Duration [ second ]</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
 </dd>
 </dl>
 </dd></dl>
@@ -3579,6 +3844,17 @@ object is a utility slot for handling a child of the target (Shape, etc…)</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes">
+<span class="sig-name descname"><span class="pre">addShapes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shapes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes" title="Permalink to this definition"></a></dt>
+<dd><p>Adding a shapes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shapes</strong> (<em>list</em><em>[</em><em>cnoid.Util.SgNode</em><em>]</em>) – Shapes to be added</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape">
 <span class="sig-name descname"><span class="pre">removeShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape" title="Permalink to this definition"></a></dt>
 <dd><p>Removing a shape</p>
@@ -3590,8 +3866,19 @@ object is a utility slot for handling a child of the target (Shape, etc…)</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes">
+<span class="sig-name descname"><span class="pre">removeShapes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shapes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes" title="Permalink to this definition"></a></dt>
+<dd><p>Removing a shapes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>shapes</strong> (<em>list</em><em>[</em><em>cnoid.Util.SgNode</em><em>]</em>) – Shapes to be removed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape">
-<span class="sig-name descname"><span class="pre">createLinkFromShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parentLink</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">createLinkFromShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parentLink</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCollisionForMassparam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape" title="Permalink to this definition"></a></dt>
 <dd><p>Creating link from drawn shapes and appending to the other link</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -3603,6 +3890,7 @@ object is a utility slot for handling a child of the target (Shape, etc…)</p>
 <li><p><strong>root</strong> (<em>boolean</em><em>, </em><em>default=False</em>) – </p></li>
 <li><p><strong>clear</strong> (<em>boolean</em><em>, </em><em>default=True</em>) – </p></li>
 <li><p><strong>collision</strong> (<em>cnoid.Util.SgNode</em><em>, </em><em>optional</em>) – </p></li>
+<li><p><strong>useCollisionForMassparam</strong> (<em>boolean</em><em>, </em><em>default=False</em>) – </p></li>
 <li><p><strong>**kwargs</strong> – </p></li>
 </ul>
 </dd>
@@ -3742,6 +4030,7 @@ object is a utility slot for handling a child of the target (Shape, etc…)</p>
 <li><p><strong>fname</strong> (<em>str</em>) – Name of file</p></li>
 <li><p><strong>modelName</strong> (<em>str</em><em>, </em><em>optional</em>) – </p></li>
 <li><p><strong>mode</strong> (<em>int</em><em>, </em><em>default=0</em>) – 0:EmbedModels, 1:LinkToOriginalModelFiles, 2:ReplaceWithStdSceneFiles, 3:ReplaceWithObjModelFiles</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – </p></li>
 </ul>
 </dd>
 </dl>
@@ -3755,7 +4044,7 @@ object is a utility slot for handling a child of the target (Shape, etc…)</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fname</strong> (<em>str</em>) – Name of file</p></li>
-<li><p><strong>mode</strong> (<em>int</em><em>, </em><em>default=0</em>) – </p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – </p></li>
 </ul>
 </dd>
 </dl>

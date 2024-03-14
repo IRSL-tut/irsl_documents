@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coordinates &mdash; IRSL python modules  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -210,6 +212,9 @@ by accessing to properties of coordinates class.</p>
 \mathbf{R}  &amp; \mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Initalizing coordinates</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">R</span><span class="p">)</span>
@@ -223,14 +228,14 @@ by accessing to properties of coordinates class.</p>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Initalizing coordinates</p></li>
+<li><p>Getting and setting 3D position (access attribute pos)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span>
 <span class="go">array([1., 2., 3.])</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Getting and setting 3D position (access attribute pos)</p></li>
+<li><p>Getting and setting Rotation matrix (access attribute rot)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span>
 <span class="go">array([[ 0., -1.,  0.],</span>
@@ -239,28 +244,28 @@ by accessing to properties of coordinates class.</p>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Getting and setting Rotation matrix (access attribute rot)</p></li>
+<li><p>Getting and setting quaternion (access attribute quaternion)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span>
 <span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Getting and setting quaternion (access attribute quaternion)</p></li>
+<li><p>Getting and setting roll-pitch-yaw angle (access attribute RPY)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span>
 <span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Getting and setting roll-pitch-yaw angle (access attribute RPY)</p></li>
+<li><p>Getting and setting angle-axis (access attribute angleAxis)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span>
 <span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Getting and setting angle-axis (access attribute angleAxis)</p></li>
+<li><p>Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span>
 <span class="go">array([[ 0., -1.,  0.,  1.],</span>
@@ -269,48 +274,49 @@ by accessing to properties of coordinates class.</p>
 <span class="go">       [ 0.,  0.,  0.,  1.]])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)</p></li>
-</ul>
 </section>
 <section id="methods-to-convert-a-vector">
 <h3>Methods to convert a vector<a class="headerlink" href="#methods-to-convert-a-vector" title="Permalink to this heading"></a></h3>
 <p>In the following,
 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> is 3D position vector (numpy.array).
 Folowing 4 functions do not change the input value.</p>
+<ul class="simple">
+<li><p>Rotating vector</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 <span class="go">array([-0.2,  0.1,  0.3])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Mathmatical representation of a return value is</p></li>
-</ul>
+<p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R} \mathbf{v}\)</span></p>
+<ul class="simple">
+<li><p>Rotating vector (inverse-rotation)</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Mathmatical representation of a return value is</p></li>
-</ul>
+<p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{v}^T \mathbf{R}\)</span></p>
+<ul class="simple">
+<li><p>Transforming vector</p></li>
+</ul>
+<p>Converts a vector represented in a local coordinate system T
+to a vector represented in the world coordinate system.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Converts a vector represented in a local coordinate system T
-to a vector represented in the world coordinate system.</p>
-<ul class="simple">
-<li><p>Mathmatical representation of a return value is</p></li>
-</ul>
+<p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}\mathbf{v} + \mathbf{p}\)</span></p>
+<ul class="simple">
+<li><p>Transforming vector(inverse-transformation)</p></li>
+</ul>
+<p>Converts a vector represented in the world coordinate system.
+to a vector represented in a local coordinate system T.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Converts a vector represented in the world coordinate system.
-to a vector represented in a local coordinate system T.</p>
-<ul class="simple">
-<li><p>Mathmatical representation of a return value is</p></li>
-</ul>
+<p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)\)</span></p>
 </section>
 <section id="methods-to-convert-a-vector-change-input-value">
@@ -328,18 +334,22 @@ to a vector represented in a local coordinate system T.</p>
 <section id="methods-to-return-a-coordinate-without-modifying-itself">
 <h3>Methods to return a coordinate (without modifying itself)<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Permalink to this heading"></a></h3>
 <p>In the following, A is an instance of the coordinates class.</p>
+<ul class="simple">
+<li><p>Getting inverse-transformation</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Returns inverse transformation.</p>
-<ul class="simple">
-<li><p>Mathmatical representation of a return value is following.</p></li>
-</ul>
+<p>Mathmatical representation of a return value is following.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T^{-1} = \begin{pmatrix}
 \mathbf{R}^{-1}  &amp; - \mathbf{R}^{-1}\mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Getting transformation between coordinates</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -360,13 +370,17 @@ to a vector represented in a local coordinate system T.</p>
 <section id="methods-to-modify-itself">
 <h3>Methods to modify itself<a class="headerlink" href="#methods-to-modify-itself" title="Permalink to this heading"></a></h3>
 <p>In the following, <span class="math notranslate nohighlight">\(\leftarrow\)</span> represents substitution.</p>
+<ul class="simple">
+<li><p>Setting new coordinates</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Attributes pos and rot is substituted</p></li>
-</ul>
+<p>Attributes pos and rot is substituted</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
+<ul class="simple">
+<li><p>Moving to new coordinates</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -382,6 +396,9 @@ to a vector represented in a local coordinate system T.</p>
 <li><p>If <em>wrt</em> = W (coordinates class)</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\(T \leftarrow WA\)</span></p>
+<ul class="simple">
+<li><p>Translating</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -398,6 +415,9 @@ to a vector represented in a local coordinate system T.</p>
 </ul>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W</p>
+<ul class="simple">
+<li><p>Locating</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -414,6 +434,9 @@ to a vector represented in a local coordinate system T.</p>
 </ul>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W, and <span class="math notranslate nohighlight">\(\mathbf{p}_{W}\)</span> is 3D position of W.</p>
+<ul class="simple">
+<li><p>Transforming</p></li>
+</ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -428,7 +451,7 @@ to a vector represented in a local coordinate system T.</p>
 <ul class="simple">
 <li><p>If <em>wrt</em> = W (coordinates class)</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow$ $\left( W A W^{-1} \right) T\)</span></p>
+<p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
 </section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="Permalink to this heading"></a></h3>
