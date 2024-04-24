@@ -51,7 +51,7 @@ virtualenv --python=python3 sphinx
 python3 -m pip install -r requirements.txt
 
 cd ../source ## irsl_documents/source
-DO_COPY=yes USER_NAME=your_name USER_EMAIL=your@email scripts/build.sh
+DO_COPY=yes USER_NAME=YoheiKakiuchi USER_EMAIL=kakiuchi.yohei.sw@tut.jp scripts/build.sh
 
  * git push gh-pages origin or your_fork
 

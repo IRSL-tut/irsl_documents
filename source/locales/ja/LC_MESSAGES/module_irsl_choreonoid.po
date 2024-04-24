@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 18:18+0900\n"
+"POT-Creation-Date: 2024-08-24 22:17+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "irsl_choreonoid.cnoid_util"
 #: ../../module_irsl_choreonoid.rst:11
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_util.py"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.load_script:1 of
@@ -144,7 +144,7 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
 #: irsl_choreonoid.make_shapes.make3DAxis
 #: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeBox
+#: irsl_choreonoid.make_shapes.makeBasket irsl_choreonoid.make_shapes.makeBox
 #: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
 #: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
 #: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
@@ -152,8 +152,12 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeElevationGrid
 #: irsl_choreonoid.make_shapes.makeExtrusion
 #: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall
 #: irsl_choreonoid.make_shapes.makeLines irsl_choreonoid.make_shapes.makePoints
+#: irsl_choreonoid.make_shapes.makeRoundTable
 #: irsl_choreonoid.make_shapes.makeSphere
+#: irsl_choreonoid.make_shapes.makeTable4Legs
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg
 #: irsl_choreonoid.make_shapes.makeTetrahedron
 #: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.__init__
@@ -170,6 +174,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.IKWrapper.updateDefault
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
@@ -181,6 +186,8 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
 #: irsl_choreonoid.robot_util.RobotModelWrapped.device
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
 #: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
@@ -288,15 +295,20 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
 #: irsl_choreonoid.make_shapes.make3DAxis
 #: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeBox irsl_choreonoid.make_shapes.makeCapsule
-#: irsl_choreonoid.make_shapes.makeCone irsl_choreonoid.make_shapes.makeCoords
-#: irsl_choreonoid.make_shapes.makeCross
+#: irsl_choreonoid.make_shapes.makeBasket irsl_choreonoid.make_shapes.makeBox
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
+#: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
+#: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
 #: irsl_choreonoid.make_shapes.makeCylinder
 #: irsl_choreonoid.make_shapes.makeElevationGrid
 #: irsl_choreonoid.make_shapes.makeExtrusion
 #: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall
 #: irsl_choreonoid.make_shapes.makeLines irsl_choreonoid.make_shapes.makePoints
+#: irsl_choreonoid.make_shapes.makeRoundTable
 #: irsl_choreonoid.make_shapes.makeSphere
+#: irsl_choreonoid.make_shapes.makeTable4Legs
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg
 #: irsl_choreonoid.make_shapes.makeTetrahedron
 #: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
@@ -319,6 +331,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
@@ -333,6 +346,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
 #: irsl_choreonoid.robot_util.RobotModelWrapped.head
@@ -446,15 +460,20 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
 #: irsl_choreonoid.make_shapes.make3DAxis
 #: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeBox irsl_choreonoid.make_shapes.makeCapsule
-#: irsl_choreonoid.make_shapes.makeCone irsl_choreonoid.make_shapes.makeCoords
-#: irsl_choreonoid.make_shapes.makeCross
+#: irsl_choreonoid.make_shapes.makeBasket irsl_choreonoid.make_shapes.makeBox
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
+#: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
+#: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
 #: irsl_choreonoid.make_shapes.makeCylinder
 #: irsl_choreonoid.make_shapes.makeElevationGrid
 #: irsl_choreonoid.make_shapes.makeExtrusion
 #: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall
 #: irsl_choreonoid.make_shapes.makeLines irsl_choreonoid.make_shapes.makePoints
+#: irsl_choreonoid.make_shapes.makeRoundTable
 #: irsl_choreonoid.make_shapes.makeSphere
+#: irsl_choreonoid.make_shapes.makeTable4Legs
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg
 #: irsl_choreonoid.make_shapes.makeTetrahedron
 #: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
 #: irsl_choreonoid.robot_util.IKWrapper.angleVector
@@ -477,6 +496,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
@@ -491,6 +511,7 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
 #: irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
 #: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
 #: irsl_choreonoid.robot_util.RobotModelWrapped.head
@@ -538,8 +559,9 @@ msgid "Unknown scheme or netloc is passed"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.fv:14 irsl_choreonoid.cnoid_util.parseURL:12
-#: irsl_choreonoid.robot_util.make_coordinates:12
-#: irsl_choreonoid.robot_util.make_coords_map:10 of
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:15
+#: irsl_choreonoid.robot_util.make_coordinates:14
+#: irsl_choreonoid.robot_util.make_coords_map:12 of
 msgid "Examples"
 msgstr ""
 
@@ -605,8 +627,11 @@ msgid "Robot model to be exported"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.exportBodyAsMesh:13 of
-msgid "Passing to irsl_choreonoid.makeshapes.exportMesh"
-msgstr ""
+#, fuzzy
+msgid ""
+"Passing to `irsl_choreonoid.make_shapes.exportMesh "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.exportMesh>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:1 of
 msgid "Converting a mesh file to a body file"
@@ -617,8 +642,11 @@ msgid "Name of input file"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile:7 of
-msgid "exportBodyAsMesh"
-msgstr ""
+#, fuzzy
+msgid ""
+"Passing to `irsl_choreonoid.cnoid_util.exportBodyAsMesh "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.exportBodyAsMesh>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.cnoid_util.castValueNode:1 of
 msgid "Casting cnoid.Util.ValueNode type to python primitive type"
@@ -728,7 +756,7 @@ msgid "vector or matrix"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.fv:11 of
-msgid "This function just return numpy.array(args, **kwargs)"
+msgid "This function just return numpy.array(args, \\*\\*kwargs)"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.fv:15 of
@@ -752,7 +780,7 @@ msgstr "irsl_choreonoid.cnoid_base"
 #: ../../module_irsl_choreonoid.rst:21
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_base.py"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_base.loadProject:1 of
@@ -1090,7 +1118,7 @@ msgstr "irsl_choreonoid.make_shapes"
 #: ../../module_irsl_choreonoid.rst:31
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/make_shapes.py"
 msgstr ""
 
 #: irsl_choreonoid.make_shapes.extractShapes:1 of
@@ -1186,7 +1214,7 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeCoords:19
 #: irsl_choreonoid.make_shapes.makeCross:19
 #: irsl_choreonoid.make_shapes.makeCylinder:15
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape:15
+#: irsl_choreonoid.make_shapes.makeLineAlignedShape:13
 #: irsl_choreonoid.make_shapes.makeLines:19
 #: irsl_choreonoid.make_shapes.makePoints:17
 #: irsl_choreonoid.make_shapes.makeSphere:13
@@ -1234,7 +1262,9 @@ msgstr ""
 
 #: irsl_choreonoid.make_shapes.make3DAxis:30
 #: irsl_choreonoid.make_shapes.make3DAxisBox:24
+#: irsl_choreonoid.make_shapes.makeBasket:20
 #: irsl_choreonoid.make_shapes.makeBox:20
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:14
 #: irsl_choreonoid.make_shapes.makeCapsule:16
 #: irsl_choreonoid.make_shapes.makeCone:18
 #: irsl_choreonoid.make_shapes.makeCoords:22
@@ -1242,10 +1272,14 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeCylinder:18
 #: irsl_choreonoid.make_shapes.makeElevationGrid:28
 #: irsl_choreonoid.make_shapes.makeExtrusion:28
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape:18
+#: irsl_choreonoid.make_shapes.makeLineAlignedShape:16
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:11
 #: irsl_choreonoid.make_shapes.makeLines:22
 #: irsl_choreonoid.make_shapes.makePoints:20
+#: irsl_choreonoid.make_shapes.makeRoundTable:24
 #: irsl_choreonoid.make_shapes.makeSphere:16
+#: irsl_choreonoid.make_shapes.makeTable4Legs:20
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:26
 #: irsl_choreonoid.make_shapes.makeTetrahedron:24
 #: irsl_choreonoid.make_shapes.makeText:18
 #: irsl_choreonoid.make_shapes.makeTorus:20 of
@@ -1463,21 +1497,132 @@ msgstr ""
 msgid "Type of Shape, 'box', 'cylinder', 'capsule', 'cone'"
 msgstr ""
 
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape:13 of
+#: irsl_choreonoid.make_shapes.makeLineAlignedShape:11 of
 msgid "If True, printing debug message"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:1 of
+msgid "Making basket shape"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:3 of
+msgid "width of bottom plate (x-axis)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:5 of
+msgid "height of bottom plate (y-axis)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:7 of
+msgid "tall of basket"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:9 of
+msgid "thickness of walls"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:11
+#: irsl_choreonoid.make_shapes.makeRoundTable:9
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:11 of
+msgid "thickness of bottom plate"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:13
+#: irsl_choreonoid.make_shapes.makeBasket:15
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:7
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:9
+#: irsl_choreonoid.make_shapes.makeRoundTable:17
+#: irsl_choreonoid.make_shapes.makeRoundTable:19
+#: irsl_choreonoid.make_shapes.makeTable4Legs:13
+#: irsl_choreonoid.make_shapes.makeTable4Legs:15
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:19
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:21 of
+msgid "Just passing to makeBox"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeBasket:17
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:11
+#: irsl_choreonoid.make_shapes.makeRoundTable:21
+#: irsl_choreonoid.make_shapes.makeTable4Legs:17
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:23 of
+msgid "Extra keyword arguments passing to makeBox"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:1 of
+msgid "Making table with single leg"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:3
+#: irsl_choreonoid.make_shapes.makeTable4Legs:3
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:3 of
+msgid "width of top plate (x-axis)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTable4Legs:5
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:5 of
+msgid "height of top plate (y-axis)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:5
+#: irsl_choreonoid.make_shapes.makeTable4Legs:7
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:7 of
+msgid "tall of table"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:7
+#: irsl_choreonoid.make_shapes.makeTable4Legs:9
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:9 of
+msgid "thickness of top plate"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:11
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:13 of
+msgid "width of bottom plate"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:13
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:15 of
+msgid "height of bottom plate"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:15
+#: irsl_choreonoid.make_shapes.makeTable4Legs:11
+#: irsl_choreonoid.make_shapes.makeTableSingleLeg:17 of
+msgid "leg size"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTable4Legs:1 of
+msgid "Making table with 4 legs"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeRoundTable:1 of
+msgid "Making round table with single leg"
 msgstr ""
 
 #: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:1 of
 msgid "Making box with the same size and position passed bounding-box"
 msgstr ""
 
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:5
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:7 of
-msgid "Just passing to makeBox"
+#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:5 of
+msgid "If True, BoundingBox is shown with line"
 msgstr ""
 
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox:9 of
-msgid "Extra keyword arguments passing to makeBox"
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:1 of
+msgid ""
+"Making a wall which is aligned with a multi-segment line points on XY "
+"plane, extrude them by Z-axis(height)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:4 of
+msgid "List of 2D point, representing a line on XY-plane"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:6 of
+msgid "Height of the wall"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAlignedWall:8 of
+msgid "Thickness of the wall"
 msgstr ""
 
 #: irsl_choreonoid.make_shapes.exportMesh:1 of
@@ -1532,7 +1677,7 @@ msgstr "irsl_choreonoid.robot_util"
 #: ../../module_irsl_choreonoid.rst:41
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/robot_util.py"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.make_coordinates:1 of
@@ -1543,11 +1688,15 @@ msgstr ""
 msgid "dictionary of describing transformation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coordinates:6 of
+#: irsl_choreonoid.robot_util.make_coordinates:5 of
+msgid "Scaling for making coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coordinates:8 of
 msgid "generated coordinates"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coordinates:9 of
+#: irsl_choreonoid.robot_util.make_coordinates:11 of
 msgid "If there is not valid keyword"
 msgstr ""
 
@@ -1560,7 +1709,11 @@ msgstr ""
 msgid "Transformation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.make_coords_map:6 of
+#: irsl_choreonoid.robot_util.make_coords_map:5 of
+msgid "Scaling for making dictionary"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.make_coords_map:8 of
 msgid "Dictonary can be used by make_coordinates"
 msgstr ""
 
@@ -1863,7 +2016,7 @@ msgid "Bases: :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
-msgid "RobotModel for programming Inteactively"
+msgid "RobotModel for programming Interactively"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped:3 of
@@ -1935,6 +2088,19 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename:6 of
 msgid "actual name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint:1 of
+msgid "Getting joint in this limb by name"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint:3 of
+msgid "name or nick-name of a joint"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint:6
+#: irsl_choreonoid.robot_util.RobotModelWrapped.joint:1 of
+msgid "Instance of the joint"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector:1 of
@@ -2134,10 +2300,6 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.link:6 of
 msgid "instance of the link"
-msgstr ""
-
-#: irsl_choreonoid.robot_util.RobotModelWrapped.joint:1 of
-msgid "Instance of the joint"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.joint:3
@@ -2388,6 +2550,36 @@ msgstr ""
 msgid "Name of the limb"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords:1 of
+msgid "Getting coordinates representing mid-point of leg's end-effector"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords:5
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords:3 of
+msgid ""
+"Parameter of mid-point. (0.5, 0.0, 1.0 represents the center, rleg, lleg,"
+" respectively)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords:6 of
+msgid "Coordinates indicating the mid-point of legs"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords:8
+#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords:9 of
+msgid "This method requires settings of limbs( 'rleg' and 'lleg' )"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords:1 of
+msgid "Locating the robot by fixing the legs to designated coordinates"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords:3 of
+msgid ""
+"Target coordinates ( footMidCoords of this robot will be the same as this"
+" coordinates )"
+msgstr ""
+
 #: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit:1 of
 msgid "Setting mode to keep joint limits"
 msgstr ""
@@ -2429,7 +2621,7 @@ msgstr "irsl_choreonoid.draw_coords"
 #: ../../module_irsl_choreonoid.rst:51
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/draw_coords.py"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.DrawCoordsList:1 of
@@ -2679,7 +2871,7 @@ msgstr ""
 #: ../../module_irsl_choreonoid.rst:80
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_object.py"
 msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
@@ -2854,7 +3046,7 @@ msgstr "irsl_choreonoid.RobotBuilder"
 #: ../../module_irsl_choreonoid.rst:90
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/RobotBuilder.py"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder:1 of
@@ -2943,7 +3135,11 @@ msgstr ""
 msgid "Creating link from drawn shapes and appending to the other link"
 msgstr ""
 
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:21 of
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:19 of
+msgid "'mass', 'COM', 'inertia'"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape:23 of
 msgid "Created link"
 msgstr ""
 
@@ -3019,74 +3215,114 @@ msgid "Exporting created robot-model to file as .urdf file"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene:1 of
-msgid "Loading scene as a shape, see irsl_choreonoid.make_shapes.loadScene"
-msgstr ""
+#, fuzzy
+msgid ""
+"Loading scene as a shape, see `irsl_choreonoid.make_shapes.loadScene "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.loadScene>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh:1 of
-msgid "Loading mesh as a shape, see irsl_choreonoid.make_shapes.loadMesh"
-msgstr ""
+#, fuzzy
+msgid ""
+"Loading mesh as a shape, see `irsl_choreonoid.make_shapes.loadMesh "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.loadMesh>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox:1 of
-msgid "Making box shape, see irsl_choreonoid.make_shapes.makeBox"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making box shape, see `irsl_choreonoid.make_shapes.makeBox "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder:1 of
-msgid "Making cylinder shape, see irsl_choreonoid.make_shapes.makeCylinder"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making cylinder shape, see `irsl_choreonoid.make_shapes.makeCylinder "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCylinder>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere:1 of
-msgid "Making sphere shape, see irsl_choreonoid.make_shapes.makeSphere"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making sphere shape, see `irsl_choreonoid.make_shapes.makeSphere "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeSphere>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone:1 of
-msgid "Making cone shape, see irsl_choreonoid.make_shapes.makeCone"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making cone shape, see `irsl_choreonoid.make_shapes.makeCone "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCone>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule:1 of
-msgid "Making capsule shape, see irsl_choreonoid.make_shapes.makeCapsule"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making capsule shape, see `irsl_choreonoid.make_shapes.makeCapsule "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCapsule>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus:1 of
-msgid "Making torus shape, see irsl_choreonoid.make_shapes.makeTorus"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making torus shape, see `irsl_choreonoid.make_shapes.makeTorus "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeTorus>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion:1 of
-msgid "Making extrusion shape, see irsl_choreonoid.make_shapes.makeExtrusion"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making extrusion shape, see `irsl_choreonoid.make_shapes.makeExtrusion "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeExtrusion>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid:1 of
+#, fuzzy
 msgid ""
 "Making elevation-grid shape, see "
-"irsl_choreonoid.make_shapes.makeElevationGrid"
-msgstr ""
+"`irsl_choreonoid.make_shapes.makeElevationGrid "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeElevationGrid>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis:1 of
-msgid "Making 3D-axis shape, see irsl_choreonoid.make_shapes.make3DAxis"
-msgstr ""
+#, fuzzy
+msgid ""
+"Making 3D-axis shape, see `irsl_choreonoid.make_shapes.make3DAxis "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.make3DAxis>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox:1 of
+#, fuzzy
 msgid ""
 "Making 3D-axis shape (type: box), see "
-"irsl_choreonoid.make_shapes.make3DAxisBox"
-msgstr ""
+"`irsl_choreonoid.make_shapes.make3DAxisBox "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.make3DAxisBox>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords:1 of
+#, fuzzy
 msgid ""
 "Making 3D-axis shape (type: line), see "
-"irsl_choreonoid.make_shapes.makeCoords"
-msgstr ""
+"`irsl_choreonoid.make_shapes.makeCoords "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCoords>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross:1 of
+#, fuzzy
 msgid ""
 "Making 3D-axis shape (type: crossing-line), see "
-"irsl_choreonoid.make_shapes.makeCross"
-msgstr ""
+"`irsl_choreonoid.make_shapes.makeCross "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCross>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape:1 of
+#, fuzzy
 msgid ""
 "Making shape which is aligned to designated line, see "
-"irsl_choreonoid.make_shapes.makeLineAlignedShape"
-msgstr ""
+"`irsl_choreonoid.make_shapes.makeLineAlignedShape "
+"<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeLineAlignedShape>`_"
+msgstr "irsl_choreonoid.make_shapes"
 
 #~ msgid "irsl_choreonoid module"
 #~ msgstr ""
@@ -3625,5 +3861,161 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Just passing to cnoid.IRSLCoords.coordinates.transform"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py"
+#~ msgstr ""
+
+#~ msgid "Making box shape, see irsl_choreonoid.make_shapes.makeBox"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making box shape, see "
+#~ "irsl_choreonoid.make_shapes.makeBox<#irsl_choreonoid.make_shapes.makeBox>"
+#~ msgstr ""
+
+#~ msgid "`irsl_choreonoid.make_shapes.makeBox<#irsl_choreonoid.make_shapes.makeBox>`"
+#~ msgstr ""
+
+#~ msgid "Passing to irsl_choreonoid.makeshapes.exportMesh"
+#~ msgstr ""
+
+#~ msgid "exportBodyAsMesh"
+#~ msgstr ""
+
+#~ msgid "This function just return numpy.array(args, **kwargs)"
+#~ msgstr ""
+
+#~ msgid "Loading scene as a shape, see irsl_choreonoid.make_shapes.loadScene"
+#~ msgstr ""
+
+#~ msgid "Loading mesh as a shape, see irsl_choreonoid.make_shapes.loadMesh"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`irsl_choreonoid.make_shapes.makeBox "
+#~ "<#irsl_choreonoid.make_shapes.makeBox>`_"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid "#irsl_choreonoid.make_shapes.makeBox"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid ""
+#~ "https://irsl-"
+#~ "tut.github.io/irsl_documents/module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox"
+#~ msgstr ""
+
+#~ msgid "./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid "hoge<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox>"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid ""
+#~ "`MOGE "
+#~ "<./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox>`_"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid "`FUGA <#irsl_choreonoid.make_shapes.makeBox>`_"
+#~ msgstr "irsl_choreonoid.make_shapes"
+
+#~ msgid "add (boolean, default=True) :"
+#~ msgstr ""
+
+#~ msgid "Shape : Created shape"
+#~ msgstr ""
+
+#~ msgid "Making cylinder shape, see irsl_choreonoid.make_shapes.makeCylinder"
+#~ msgstr ""
+
+#~ msgid "Making sphere shape, see irsl_choreonoid.make_shapes.makeSphere"
+#~ msgstr ""
+
+#~ msgid "Making cone shape, see irsl_choreonoid.make_shapes.makeCone"
+#~ msgstr ""
+
+#~ msgid "Making capsule shape, see irsl_choreonoid.make_shapes.makeCapsule"
+#~ msgstr ""
+
+#~ msgid "Making torus shape, see irsl_choreonoid.make_shapes.makeTorus"
+#~ msgstr ""
+
+#~ msgid "Making extrusion shape, see irsl_choreonoid.make_shapes.makeExtrusion"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making elevation-grid shape, see "
+#~ "irsl_choreonoid.make_shapes.makeElevationGrid"
+#~ msgstr ""
+
+#~ msgid "Making 3D-axis shape, see irsl_choreonoid.make_shapes.make3DAxis"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making 3D-axis shape (type: box), "
+#~ "see irsl_choreonoid.make_shapes.make3DAxisBox"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making 3D-axis shape (type: line), "
+#~ "see irsl_choreonoid.make_shapes.makeCoords"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making 3D-axis shape (type: crossing-"
+#~ "line), see irsl_choreonoid.make_shapes.makeCross"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Making shape which is aligned to "
+#~ "designated line, see "
+#~ "irsl_choreonoid.make_shapes.makeLineAlignedShape"
+#~ msgstr ""
+
+#~ msgid "If True,"
+#~ msgstr ""
+
+#~ msgid "points=[] NN = 36 for idx in range(NN+1):"
+#~ msgstr ""
+
+#~ msgid "xx = 2*PI/NN*idx ss = math.sin(xx) points.append(fv(xx, ss))"
+#~ msgstr ""
+
+#~ msgid "sp = mkshapes.makeLineAlignedWall(points)"
+#~ msgstr ""
+
+#~ msgid "RobotModel for programming Inteactively"
 #~ msgstr ""
 

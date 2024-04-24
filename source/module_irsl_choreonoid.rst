@@ -8,7 +8,7 @@ https://github.com/IRSL-tut/irsl_choreonoid
 module irsl_choreonoid.cnoid_util
 *********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_util.py
 
 .. automodule:: irsl_choreonoid.cnoid_util
     :members:
@@ -18,7 +18,7 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cno
 module irsl_choreonoid.cnoid_base
 *********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_base.py
 
 .. automodule:: irsl_choreonoid.cnoid_base
     :members:
@@ -28,7 +28,7 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cno
 module irsl_choreonoid.make_shapes
 **********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/make_shapes.py
 
 .. automodule:: irsl_choreonoid.make_shapes
     :members:
@@ -38,7 +38,7 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/mak
 module irsl_choreonoid.robot_util
 *********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/robot_util.py
 
 .. automodule:: irsl_choreonoid.robot_util
     :members:
@@ -48,7 +48,7 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/rob
 module irsl_choreonoid.draw_coords
 **********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/draw_coords.py
 
 .. automodule:: irsl_choreonoid.draw_coords
     :members:
@@ -77,7 +77,7 @@ Base class for using coordinates interactively.
 
 Inherited by class DrawCoordsListWrapped and class GeneralDrawInterfaceWrapped.
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_object.py
 
 .. autoclass:: irsl_choreonoid.irsl_draw_object.coordsWrapper
     :members:
@@ -87,7 +87,7 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irs
 module irsl_choreonoid.RobotBuilder
 ***********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/RobotBuilder.py
 
 .. autoclass:: irsl_choreonoid.RobotBuilder.RobotBuilder
     :members:

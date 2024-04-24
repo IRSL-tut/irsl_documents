@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 09:32+0900\n"
+"POT-Creation-Date: 2024-08-23 23:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../module_irsl_choreonoid_ros.rst:3
 msgid "Modules in irsl_choreonoid_ros"
@@ -33,17 +33,19 @@ msgstr ""
 #: ../../module_irsl_choreonoid_ros.rst:11
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/cnoid_ros_util.py"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/cnoid_ros_util.py"
 msgstr ""
 
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:1 of
 msgid "Refere parseURL in irsl_choreonoid.cnoid_util"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
@@ -61,11 +63,14 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment
@@ -82,6 +87,7 @@ msgstr ""
 msgid "url"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:8
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
@@ -90,6 +96,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
@@ -101,16 +108,19 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
@@ -132,6 +142,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
@@ -143,16 +154,19 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
@@ -162,6 +176,8 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:12
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:14
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:10 of
 msgid "Examples"
 msgstr ""
@@ -173,7 +189,7 @@ msgstr ""
 #: ../../module_irsl_choreonoid_ros.rst:21
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
@@ -292,7 +308,7 @@ msgstr ""
 #: ../../module_irsl_choreonoid_ros.rst:31
 msgid ""
 "https://github.com/IRSL-"
-"tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/RobotInterface.py"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1 of
@@ -346,12 +362,13 @@ msgstr ""
 msgid "Angular velocity of yaw [ radian/sec ]"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:1
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:5 of
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:1
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:5
+#: of
 msgid "Current robot's coordinate on the map"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentMapCoords:3
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:3
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:3 of
 msgid "**Not implemented yet**"
 msgstr ""
@@ -631,6 +648,79 @@ msgstr ""
 msgid "Getting list of data, waiting until subscribing new data"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:1 of
+msgid "Adding device to"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:3 of
+msgid "Instance of device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:5 of
+msgid "If True, overwrite when duplicate"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:9 of
+msgid "boolean : Returns True if device was added successfully"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice:1 of
+msgid "Removing device from"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:5 of
+msgid "Name of device"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice:5 of
+msgid "If True, destruct device object"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice:8 of
+msgid "Returns True if device was removed successfully"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1 of
+msgid "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.RosDeviceBase`"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1 of
+msgid "Subscribe just N messages"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.__init__:1 of
+msgid ""
+"\" :param topic: Name of Topic :type topic: str :param msg: Class "
+"instance of message to subscribe :type msg: class :param size: Size of "
+"messages to be subscribed :type size: int, default = 1"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:1 of
+msgid "\"Waiting N results"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:1
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:3 of
+msgid "Name of Topic"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:5
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:3
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:5 of
+msgid "Class instance of message to subscribe"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:7
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:7 of
+msgid "Size of messages to be subscribed"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:10 of
+msgid "Subscribed messages. If timeout occurs, None is returned."
+msgstr ""
+
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
 msgid ""
 "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.JointInterface`, "
@@ -672,6 +762,18 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:9 of
 msgid "If false, create instace without ROS connection"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:11 of
+msgid "Set environment variable, ROS_MASTER_URI"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:13 of
+msgid "Set environment variable, ROS_IP"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:15 of
+msgid "Set environment variable, ROS_HOSTNAME"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel:1 of
@@ -766,6 +868,30 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot:1 of
 msgid "Return instance of the robot model (using for sending command)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:1 of
+msgid "Return instance of OneShotSubscriber"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:10 of
+msgid "Instance of OneShotSubscriber"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:15 of
+msgid ""
+"one = ri.oneShotSubscriber('topicname', sensor_msgs.msg.Image) res = "
+"one.waitResults(5)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:8 of
+msgid "Instance of RosDevice"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:13 of
+msgid ""
+"dev = ri.getRosDeivce('topicname', sensor_msgs.msg.Image, name='Camera0')"
+" res = dev.getNextData(5)"
 msgstr ""
 
 #~ msgid "irsl_choreonoid_ros module"
@@ -880,5 +1006,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Vector of angles"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/cnoid_ros_util.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "https://github.com/IRSL-"
+#~ "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
 #~ msgstr ""
 
