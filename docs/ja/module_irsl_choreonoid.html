@@ -126,7 +126,12 @@
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeCoords"><code class="docutils literal notranslate"><span class="pre">makeCoords()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeCross"><code class="docutils literal notranslate"><span class="pre">makeCross()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeLineAlignedShape"><code class="docutils literal notranslate"><span class="pre">makeLineAlignedShape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeBasket"><code class="docutils literal notranslate"><span class="pre">makeBasket()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeTableSingleLeg"><code class="docutils literal notranslate"><span class="pre">makeTableSingleLeg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeTable4Legs"><code class="docutils literal notranslate"><span class="pre">makeTable4Legs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeRoundTable"><code class="docutils literal notranslate"><span class="pre">makeRoundTable()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeBoxFromBoundingBox"><code class="docutils literal notranslate"><span class="pre">makeBoxFromBoundingBox()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.makeLineAlignedWall"><code class="docutils literal notranslate"><span class="pre">makeLineAlignedWall()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.exportMesh"><code class="docutils literal notranslate"><span class="pre">exportMesh()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.exportScene"><code class="docutils literal notranslate"><span class="pre">exportScene()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.make_shapes.addUriToShape"><code class="docutils literal notranslate"><span class="pre">addUriToShape()</span></code></a></li>
@@ -333,7 +338,7 @@
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid">https://github.com/IRSL-tut/irsl_choreonoid</a></p>
 <section id="module-irsl-choreonoid-cnoid-util">
 <h2>irsl_choreonoid.cnoid_util<a class="headerlink" href="#module-irsl-choreonoid-cnoid-util" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_util.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_util.py</a></p>
 <span class="target" id="module-irsl_choreonoid.cnoid_util"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.cnoid_util.load_script">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_util.</span></span><span class="sig-name descname"><span class="pre">load_script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_util.load_script" title="この定義へのパーマリンク"></a></dt>
@@ -451,7 +456,7 @@ URL is like 'scheme://netloc/xxx/yyy/zzz'</p>
 <li><p><strong>meshScale</strong> (<em>float</em><em>, </em><em>optional</em>) -- </p></li>
 <li><p><strong>offset</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a><em>, </em><em>optional</em>) -- </p></li>
 <li><p><strong>useCollision</strong> (<em>boolean</em><em>, </em><em>defalt=False</em>) -- </p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- Passing to irsl_choreonoid.makeshapes.exportMesh</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) -- Passing to <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.exportMesh">irsl_choreonoid.make_shapes.exportMesh</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -466,7 +471,7 @@ URL is like 'scheme://netloc/xxx/yyy/zzz'</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mesh_file_name</strong> (<em>str</em>) -- Name of output file</p></li>
 <li><p><strong>body_file_name</strong> (<em>str</em>) -- Name of input file</p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- exportBodyAsMesh</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) -- Passing to <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.cnoid_util.exportBodyAsMesh">irsl_choreonoid.cnoid_util.exportBodyAsMesh</a></p></li>
 </ul>
 </dd>
 </dl>
@@ -631,7 +636,7 @@ URL is like 'scheme://netloc/xxx/yyy/zzz'</p>
 </dl>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>This function just return numpy.array(args, <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs)</p>
+<p>This function just return numpy.array(args, **kwargs)</p>
 </div>
 <p class="rubric">サンプル</p>
 <p>fv(0.1, 0.2, 0.3) =&gt; array([0, 1, 2])</p>
@@ -660,7 +665,7 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 </section>
 <section id="module-irsl-choreonoid-cnoid-base">
 <h2>irsl_choreonoid.cnoid_base<a class="headerlink" href="#module-irsl-choreonoid-cnoid-base" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/cnoid_base.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_base.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/cnoid_base.py</a></p>
 <span class="target" id="module-irsl_choreonoid.cnoid_base"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.cnoid_base.loadProject">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.cnoid_base.</span></span><span class="sig-name descname"><span class="pre">loadProject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.cnoid_base.loadProject" title="この定義へのパーマリンク"></a></dt>
@@ -1120,7 +1125,7 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 </section>
 <section id="module-irsl-choreonoid-make-shapes">
 <h2>irsl_choreonoid.make_shapes<a class="headerlink" href="#module-irsl-choreonoid-make-shapes" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/make_shapes.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/make_shapes.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/make_shapes.py</a></p>
 <span class="target" id="module-irsl_choreonoid.make_shapes"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.extractShapes">
 <span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">extractShapes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sg_node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currentCoords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.extractShapes" title="この定義へのパーマリンク"></a></dt>
@@ -1508,7 +1513,7 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeLines">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_indices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorIndices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeLines" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineWidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorIndices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeLines" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Makeing Lines</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1685,7 +1690,6 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 <li><p><strong>end</strong> (<em>numpy.ndarray</em>) -- 3D vector representing end-point of a line</p></li>
 <li><p><strong>size</strong> (<em>float</em>) -- Size of generated object (radius or edge length)</p></li>
 <li><p><strong>shape</strong> (<em>str</em>) -- Type of Shape, 'box', 'cylinder', 'capsule', 'cone'</p></li>
-<li><p><strong>module</strong> (<em>object</em><em>, </em><em>default=mkshapes</em>) -- </p></li>
 <li><p><strong>verbose</strong> (<em>bool</em><em>, </em><em>default=False</em>) -- If True, printing debug message</p></li>
 <li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Keywords for generating material and mesh</p></li>
 </ul>
@@ -1700,19 +1704,167 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeBoxFromBoundingBox">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeBoxFromBoundingBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeBoxFromBoundingBox" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making box with the same size and position passed bounding-box</p>
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeBasket">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeBasket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tall</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeBasket" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making basket shape</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>bbox</strong> (<em>cnoid.Util.BoundingBox</em><em> or </em><em>object has 'boundingBox' method</em>) -- </p></li>
+<li><p><strong>width</strong> (<em>float</em>) -- width of bottom plate (x-axis)</p></li>
+<li><p><strong>height</strong> (<em>float</em>) -- height of bottom plate (y-axis)</p></li>
+<li><p><strong>tall</strong> (<em>float</em>) -- tall of basket</p></li>
+<li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>default = 0.1</em>) -- thickness of walls</p></li>
+<li><p><strong>bottom_thickness</strong> (<em>float</em><em>, </em><em>default = 0.1</em>) -- thickness of bottom plate</p></li>
 <li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- Just passing to makeBox</p></li>
 <li><p><strong>rawShape</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- Just passing to makeBox</p></li>
 <li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Extra keyword arguments passing to makeBox</p></li>
 </ul>
 </dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeTableSingleLeg">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeTableSingleLeg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tall</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.04</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leg_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeTableSingleLeg" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making table with single leg</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>float</em>) -- width of top plate (x-axis)</p></li>
+<li><p><strong>height</strong> (<em>float</em>) -- height of top plate (y-axis)</p></li>
+<li><p><strong>tall</strong> (<em>float</em>) -- tall of table</p></li>
+<li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>default = 0.05</em>) -- thickness of top plate</p></li>
+<li><p><strong>bottom_thickness</strong> (<em>float</em><em>, </em><em>default = 0.04</em>) -- thickness of bottom plate</p></li>
+<li><p><strong>bottom_width</strong> (<em>float</em><em>, </em><em>default = 0.4</em>) -- width of bottom plate</p></li>
+<li><p><strong>bottom_height</strong> (<em>float</em><em>, </em><em>default = 0.4</em>) -- height of bottom plate</p></li>
+<li><p><strong>leg_size</strong> (<em>float</em><em>, </em><em>default = 0.1</em>) -- leg size</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>rawShape</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Extra keyword arguments passing to makeBox</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeTable4Legs">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeTable4Legs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tall</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leg_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeTable4Legs" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making table with 4 legs</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>float</em>) -- width of top plate (x-axis)</p></li>
+<li><p><strong>height</strong> (<em>float</em>) -- height of top plate (y-axis)</p></li>
+<li><p><strong>tall</strong> (<em>float</em>) -- tall of table</p></li>
+<li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>default = 0.05</em>) -- thickness of top plate</p></li>
+<li><p><strong>leg_size</strong> (<em>float</em><em>, </em><em>default = 0.1</em>) -- leg size</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>rawShape</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Extra keyword arguments passing to makeBox</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeRoundTable">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeRoundTable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tall</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.04</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottom_height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leg_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeRoundTable" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making round table with single leg</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>radius</strong> (<em>float</em>) -- width of top plate (x-axis)</p></li>
+<li><p><strong>tall</strong> (<em>float</em>) -- tall of table</p></li>
+<li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>default = 0.05</em>) -- thickness of top plate</p></li>
+<li><p><strong>bottom_thickness</strong> (<em>float</em><em>, </em><em>default = 0.04</em>) -- thickness of bottom plate</p></li>
+<li><p><strong>bottom_width</strong> (<em>float</em><em>, </em><em>default = 0.4</em>) -- width of bottom plate</p></li>
+<li><p><strong>bottom_height</strong> (<em>float</em><em>, </em><em>default = 0.4</em>) -- height of bottom plate</p></li>
+<li><p><strong>leg_size</strong> (<em>float</em><em>, </em><em>default = 0.1</em>) -- leg size</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>rawShape</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Extra keyword arguments passing to makeBox</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeBoxFromBoundingBox">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeBoxFromBoundingBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bbox</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawShape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeBoxFromBoundingBox" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making box with the same size and position passed bounding-box</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bbox</strong> (<em>cnoid.Util.BoundingBox</em><em> or </em><em>object has 'boundingBox' method</em>) -- </p></li>
+<li><p><strong>line</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, BoundingBox is shown with line</p></li>
+<li><p><strong>wrapped</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>rawShape</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- Just passing to makeBox</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>param</em><em>]</em>) -- Extra keyword arguments passing to makeBox</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid.make_shapes.makeLineAlignedWall">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.make_shapes.</span></span><span class="sig-name descname"><span class="pre">makeLineAlignedWall</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.make_shapes.makeLineAlignedWall" title="この定義へのパーマリンク"></a></dt>
+<dd><p>Making a wall which is aligned with a multi-segment line
+points on XY plane, extrude them by Z-axis(height)</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>list</em><em>[</em><em>numpy.array</em><em>]</em>) -- List of 2D point, representing a line on XY-plane</p></li>
+<li><p><strong>height</strong> (<em>float</em><em>, </em><em>default=1.0</em>) -- Height of the wall</p></li>
+<li><p><strong>thickness</strong> (<em>float</em><em>, </em><em>default=0.1</em>) -- Thickness of the wall</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>Created object as a node of SceneGraph or wrapped class for interactive programming</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cnoid.Util.SgPosTransform or <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper">irsl_choreonoid.irsl_draw_object.coordsWrapper</a></p>
+</dd>
+</dl>
+<p class="rubric">サンプル</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">points</span><span class="o">=</span><span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">NN</span> <span class="o">=</span> <span class="mi">36</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NN</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">xx</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">PI</span><span class="o">/</span><span class="n">NN</span><span class="o">*</span><span class="n">idx</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ss</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">points</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fv</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">ss</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sp</span> <span class="o">=</span> <span class="n">mkshapes</span><span class="o">.</span><span class="n">makeLineAlignedWall</span><span class="p">(</span><span class="n">points</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py function">
@@ -1773,14 +1925,17 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 </section>
 <section id="module-irsl-choreonoid-robot-util">
 <h2>irsl_choreonoid.robot_util<a class="headerlink" href="#module-irsl-choreonoid-robot-util" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/robot_util.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/robot_util.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/robot_util.py</a></p>
 <span class="target" id="module-irsl_choreonoid.robot_util"></span><dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coordinates">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords_map</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coordinates" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coordinates" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Generating coordinates(cnoid.IRSLCoords.coordinates) from dictionary</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>coords_map</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em>) -- dictionary of describing transformation</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords_map</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>list</em><em>[</em><em>float</em><em>]</em><em>]</em>) -- dictionary of describing transformation</p></li>
+<li><p><strong>scale</strong> (<em>float</em><em>, </em><em>default = 1.0</em>) -- Scaling for making coordinates</p></li>
+</ul>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>generated coordinates</p>
@@ -1817,11 +1972,14 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.make_coords_map">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_map" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">make_coords_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.make_coords_map" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Generating dictonary describing transformation</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Transformation</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Transformation</p></li>
+<li><p><strong>scale</strong> (<em>float</em><em>, </em><em>default = 1.0</em>) -- Scaling for making dictionary</p></li>
+</ul>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>Dictonary can be used by make_coordinates</p>
@@ -1833,6 +1991,8 @@ numpy.array([0.1, 0.2, 0.3]) =&gt; fv(0.1, 0.2, 0.3)</p>
 <p class="rubric">サンプル</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">make_coords_map</span><span class="p">(</span> <span class="n">make_coordinates</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;position&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]}</span> <span class="p">)</span> <span class="p">)</span>
 <span class="go">{&#39;pos&#39;: [1.0, 2.0, 3.0], &#39;aa&#39;: [1.0, 0.0, 0.0, 0.0]}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">make_coords_map</span><span class="p">(</span><span class="n">make_coordinates</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;pos&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">]}</span> <span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;translation&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">1000.0</span><span class="p">)</span>
+<span class="go">{&#39;translation&#39;: [10.0, 20.0, 30.0], &#39;rotation&#39;: [1.0, 0.0, 0.0, 0.0]}</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2209,7 +2369,7 @@ base_type : [1,1,1, 1,1,1]</p>
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.robot_util.</span></span><span class="sig-name descname"><span class="pre">RobotModelWrapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped" title="この定義へのパーマリンク"></a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
-<p>RobotModel for programming Inteactively</p>
+<p>RobotModel for programming Interactively</p>
 <p>RobotModel is displayed as cnoid.Base.RobotItem</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.__init__">
@@ -3133,7 +3293,7 @@ base_type : [1,1,1, 1,1,1]</p>
 </section>
 <section id="module-irsl-choreonoid-draw-coords">
 <h2>irsl_choreonoid.draw_coords<a class="headerlink" href="#module-irsl-choreonoid-draw-coords" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/draw_coords.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/draw_coords.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/draw_coords.py</a></p>
 <span class="target" id="module-irsl_choreonoid.draw_coords"></span><dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.draw_coords.DrawCoordsList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.draw_coords.</span></span><span class="sig-name descname"><span class="pre">DrawCoordsList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([1,</span> <span class="pre">0,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">0])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">0,</span> <span class="pre">1])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.draw_coords.DrawCoordsList" title="この定義へのパーマリンク"></a></dt>
@@ -3463,7 +3623,7 @@ base_type : [1,1,1, 1,1,1]</p>
 <h3>class coordsWrapper<a class="headerlink" href="#class-coordswrapper" title="この見出しへのパーマリンク"></a></h3>
 <p>Base class for using coordinates interactively.</p>
 <p>Inherited by class DrawCoordsListWrapped and class GeneralDrawInterfaceWrapped.</p>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/irsl_draw_object.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_object.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_object.py</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.irsl_draw_object.coordsWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.irsl_draw_object.</span></span><span class="sig-name descname"><span class="pre">coordsWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">init_coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_callback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original_object</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="この定義へのパーマリンク"></a></dt>
@@ -3727,7 +3887,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 </section>
 <section id="module-irsl-choreonoid-robotbuilder">
 <h2>irsl_choreonoid.RobotBuilder<a class="headerlink" href="#module-irsl-choreonoid-robotbuilder" title="この見出しへのパーマリンク"></a></h2>
-<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/python/irsl_choreonoid/RobotBuilder.py</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/RobotBuilder.py">https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/RobotBuilder.py</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid.RobotBuilder.</span></span><span class="sig-name descname"><span class="pre">RobotBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gui</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder" title="この定義へのパーマリンク"></a></dt>
@@ -3879,7 +4039,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape">
-<span class="sig-name descname"><span class="pre">createLinkFromShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parentLink</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCollisionForMassparam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">createLinkFromShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">density</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parentLink</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useCollisionForMassparam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overwriteMassparam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape" title="この定義へのパーマリンク"></a></dt>
 <dd><p>Creating link from drawn shapes and appending to the other link</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -3892,6 +4052,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <li><p><strong>clear</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p></li>
 <li><p><strong>collision</strong> (<em>cnoid.Util.SgNode</em><em>, </em><em>optional</em>) -- </p></li>
 <li><p><strong>useCollisionForMassparam</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- </p></li>
+<li><p><strong>overwriteMassparam</strong> (<em>dict</em><em>, </em><em>optional</em>) -- 'mass', 'COM', 'inertia'</p></li>
 <li><p><strong>**kwargs</strong> -- </p></li>
 </ul>
 </dd>
@@ -4054,7 +4215,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene">
 <span class="sig-name descname"><span class="pre">loadScene</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Loading scene as a shape, see irsl_choreonoid.make_shapes.loadScene</p>
+<dd><p>Loading scene as a shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.loadScene">irsl_choreonoid.make_shapes.loadScene</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4071,7 +4232,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh">
 <span class="sig-name descname"><span class="pre">loadMesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Loading mesh as a shape, see irsl_choreonoid.make_shapes.loadMesh</p>
+<dd><p>Loading mesh as a shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.loadMesh">irsl_choreonoid.make_shapes.loadMesh</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4088,7 +4249,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox">
 <span class="sig-name descname"><span class="pre">makeBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making box shape, see irsl_choreonoid.make_shapes.makeBox</p>
+<dd><p>Making box shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeBox">irsl_choreonoid.make_shapes.makeBox</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4105,7 +4266,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder">
 <span class="sig-name descname"><span class="pre">makeCylinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making cylinder shape, see irsl_choreonoid.make_shapes.makeCylinder</p>
+<dd><p>Making cylinder shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCylinder">irsl_choreonoid.make_shapes.makeCylinder</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4122,7 +4283,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere">
 <span class="sig-name descname"><span class="pre">makeSphere</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making sphere shape, see irsl_choreonoid.make_shapes.makeSphere</p>
+<dd><p>Making sphere shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeSphere">irsl_choreonoid.make_shapes.makeSphere</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4139,7 +4300,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone">
 <span class="sig-name descname"><span class="pre">makeCone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making cone shape, see irsl_choreonoid.make_shapes.makeCone</p>
+<dd><p>Making cone shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCone">irsl_choreonoid.make_shapes.makeCone</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4156,7 +4317,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule">
 <span class="sig-name descname"><span class="pre">makeCapsule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making capsule shape, see irsl_choreonoid.make_shapes.makeCapsule</p>
+<dd><p>Making capsule shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCapsule">irsl_choreonoid.make_shapes.makeCapsule</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4173,7 +4334,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus">
 <span class="sig-name descname"><span class="pre">makeTorus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corssSectionRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">beginAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making torus shape, see irsl_choreonoid.make_shapes.makeTorus</p>
+<dd><p>Making torus shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeTorus">irsl_choreonoid.make_shapes.makeTorus</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4190,7 +4351,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion">
 <span class="sig-name descname"><span class="pre">makeExtrusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crossSection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making extrusion shape, see irsl_choreonoid.make_shapes.makeExtrusion</p>
+<dd><p>Making extrusion shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeExtrusion">irsl_choreonoid.make_shapes.makeExtrusion</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4207,7 +4368,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid">
 <span class="sig-name descname"><span class="pre">makeElevationGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zDimension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xSpacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zSpacing</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrapped</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making elevation-grid shape, see irsl_choreonoid.make_shapes.makeElevationGrid</p>
+<dd><p>Making elevation-grid shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeElevationGrid">irsl_choreonoid.make_shapes.makeElevationGrid</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4224,7 +4385,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis">
 <span class="sig-name descname"><span class="pre">make3DAxis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making 3D-axis shape, see irsl_choreonoid.make_shapes.make3DAxis</p>
+<dd><p>Making 3D-axis shape, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.make3DAxis">irsl_choreonoid.make_shapes.make3DAxis</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4241,7 +4402,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox">
 <span class="sig-name descname"><span class="pre">make3DAxisBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making 3D-axis shape (type: box), see irsl_choreonoid.make_shapes.make3DAxisBox</p>
+<dd><p>Making 3D-axis shape (type: box), see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.make3DAxisBox">irsl_choreonoid.make_shapes.make3DAxisBox</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4258,7 +4419,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords">
 <span class="sig-name descname"><span class="pre">makeCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making 3D-axis shape (type: line), see irsl_choreonoid.make_shapes.makeCoords</p>
+<dd><p>Making 3D-axis shape (type: line), see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCoords">irsl_choreonoid.make_shapes.makeCoords</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4275,7 +4436,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross">
 <span class="sig-name descname"><span class="pre">makeCross</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making 3D-axis shape (type: crossing-line), see irsl_choreonoid.make_shapes.makeCross</p>
+<dd><p>Making 3D-axis shape (type: crossing-line), see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeCross">irsl_choreonoid.make_shapes.makeCross</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>
@@ -4292,7 +4453,7 @@ object is a utility slot for handling a child of the target (Shape, etc...)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape">
 <span class="sig-name descname"><span class="pre">makeLineAlignedShape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Making shape which is aligned to designated line, see irsl_choreonoid.make_shapes.makeLineAlignedShape</p>
+<dd><p>Making shape which is aligned to designated line, see <a class="reference external" href="./module_irsl_choreonoid.html#irsl_choreonoid.make_shapes.makeLineAlignedShape">irsl_choreonoid.make_shapes.makeLineAlignedShape</a></p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>add</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- </p>

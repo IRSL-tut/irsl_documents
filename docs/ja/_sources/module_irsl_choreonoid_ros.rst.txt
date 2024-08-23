@@ -8,7 +8,7 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros
 irsl_choreonoid_ros.cnoid_ros_util
 **********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/cnoid_ros_util.py
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/cnoid_ros_util.py
 
 .. automodule:: irsl_choreonoid_ros.cnoid_ros_util
     :members:
@@ -18,7 +18,7 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ro
 irsl_choreonoid_ros.setup_cnoid
 *******************************
 
-https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/setup_cnoid.py
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py
 
 .. automodule:: irsl_choreonoid_ros.setup_cnoid
     :members:
@@ -28,7 +28,7 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ro
 irsl_choreonoid_ros.RobotInterface
 **********************************
 
-https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/RobotInterface.py
 
 .. automodule:: irsl_choreonoid_ros.RobotInterface
     :members:
