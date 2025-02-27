@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 23:08+0900\n"
+"POT-Creation-Date: 2025-02-27 17:21+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,13 +57,19 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory
 #: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
@@ -79,6 +85,8 @@ msgstr ""
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator of
 msgid "Parameters"
 msgstr ""
@@ -108,11 +116,15 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
 #: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
@@ -121,6 +133,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
@@ -154,7 +167,10 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
 #: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
@@ -167,6 +183,7 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
@@ -178,6 +195,7 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice:12
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:14
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber:17
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS:10 of
 msgid "Examples"
 msgstr ""
@@ -215,23 +233,28 @@ msgstr ""
 msgid "Building environment (setting objects) under the WorldItem"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:3 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:3
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:3 of
 msgid "value] ) : Dictionary for representing objects on environment"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:4 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:4
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:4 of
 msgid "Name of WorldItem, added objects under this item"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:6 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:6
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:6 of
 msgid "If True, creating new WorldItem"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:8 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:8
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:8 of
 msgid "If True, set camera position"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:10 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:10
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:10 of
 msgid "Offset of objects"
 msgstr ""
 
@@ -239,19 +262,23 @@ msgstr ""
 msgid "Creating project from parameters"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:3 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:3
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:3 of
 msgid "value] ) : Dictionary for representing the project"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:4 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:4
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:4 of
 msgid "If True, adding new SimulatorItem if there is no instruction in info_dict"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:6 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:6
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:6 of
 msgid "If True, adding new WorldItem if there is no instruction in info_dict"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:8 of
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:8
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:8 of
 msgid "If True, not adding environment(objects). Use buildEnvironment method."
 msgstr ""
 
@@ -291,6 +318,14 @@ msgstr ""
 
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:1 of
 msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:1 of
+msgid "Building environment (setting objects) under the WorldItem (class method)"
+msgstr ""
+
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:1 of
+msgid "Creating project from parameters (class method)"
 msgstr ""
 
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:1 of
@@ -362,15 +397,33 @@ msgstr ""
 msgid "Angular velocity of yaw [ radian/sec ]"
 msgstr ""
 
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap:1
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:1
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:5
+#: of
+msgid "Current robot's coordinate on the map frame"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap:6
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:3
 #: of
 msgid "Current robot's coordinate on the map"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap:3
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:3 of
-msgid "**Not implemented yet**"
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom:1
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom:1
+#: of
+msgid "Current robot's coordinate on the odom frame"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom:6
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom:3
+#: of
+msgid "Current robot's coordinate on the odom"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap:3
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom:3 of
+msgid "Time using to solve TF"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position:1 of
@@ -393,16 +446,50 @@ msgstr ""
 msgid "Target coordinates for moving (map coordinates)"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:1 of
-msgid "Set target trajectory for MobileBase"
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:5
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:5
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map:5
+#: of
+msgid "If True, trajectory is considered it is relative to robot's coordinates."
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:5 of
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map:7
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:7
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map:7
+#: of
+msgid "If relative is True, use this time to solve tf"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map:1 of
+msgid "Wait until move_on_map method finished"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map:3
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory:3
+#: of
+msgid "If set, maximum waiting time is set"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map:1
+#: of
+msgid ""
+"Set target trajectory (based on tf of map) for MobileBase (odometry "
+"relative move)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:3
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map:3
+#: of
 msgid "List of pair of coordinates and time"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:7 of
-msgid "If True, trajectory is considered it is relative to robot's coordinates."
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory:1 of
+msgid "Set target trajectory for MobileBase (odometry relative move)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory:1
+#: of
+msgid "Wait until move_trajectory method finished"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.JointInterface:1 of
@@ -527,7 +614,8 @@ msgstr ""
 msgid "Waiting until finishing joint moving"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:3 of
+#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish:3
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults:3 of
 msgid "Time for timeout"
 msgstr ""
 
@@ -681,7 +769,8 @@ msgstr ""
 msgid "Returns True if device was removed successfully"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1 of
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber:1 of
 msgid "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.RosDeviceBase`"
 msgstr ""
 
@@ -696,7 +785,8 @@ msgid ""
 "messages to be subscribed :type size: int, default = 1"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:1 of
+#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:1
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults:1 of
 msgid "\"Waiting N results"
 msgstr ""
 
@@ -719,6 +809,25 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults:10 of
 msgid "Subscribed messages. If timeout occurs, None is returned."
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber:1 of
+msgid "Subscribe just N sync messages"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.__init__:1 of
+msgid ""
+"\" :param topics: Name of Topic :type topics: list of str :param msgs: "
+"Class instance of message to subscribe :type msgs: list of class :param "
+"size: Size of messages to be subscribed :type size: int, default = 1 "
+":param sync_message_queue_size: Size of message queue :type "
+"sync_message_queue_size: int, default = 100 :param sync_slop: Delay with "
+"which messages can be synchronized in seconds). :type sync_slop: float, "
+"default = 0.02"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults:6 of
+msgid "None"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
@@ -765,14 +874,19 @@ msgid "If false, create instace without ROS connection"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:11 of
-msgid "Set environment variable, ROS_MASTER_URI"
+msgid "Set environment variable, ROS_MASTER_URI if MASTER is not set"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:13 of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:13
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:15 of
+msgid "Set environment variable, ROS_MASTER_URI = http://MASTER:MASTER_PORT"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:17 of
 msgid "Set environment variable, ROS_IP"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:15 of
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:19 of
 msgid "Set environment variable, ROS_HOSTNAME"
 msgstr ""
 
@@ -881,6 +995,30 @@ msgstr ""
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber:15 of
 msgid ""
 "one = ri.oneShotSubscriber('topicname', sensor_msgs.msg.Image) res = "
+"one.waitResults(5)"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber:1 of
+msgid ""
+"\" :param topic: Name of Topic :type topic: list of str :param msg: Class"
+" instance of message to subscribe :type msg: list of class :param size: "
+"Size of messages to be subscribed :type size: int, default = 1 :param "
+"sync_message_queue_size: Size of message queue :type "
+"sync_message_queue_size: int, default = 100 :param sync_slop: Delay with "
+"which messages can be synchronized in seconds) :type sync_slop: float, "
+"default = 0.02"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber:13
+#: of
+msgid "Instance of OneShotSyncSubscriber"
+msgstr ""
+
+#: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber:18
+#: of
+msgid ""
+"one = ri.oneShotSyncSubscriber(['topicname1', 'topicname2'], "
+"[sensor_msgs.msg.Image, sensor_msgs.msg.CameraInfo]) res = "
 "one.waitResults(5)"
 msgstr ""
 
@@ -1021,5 +1159,14 @@ msgstr ""
 #~ msgid ""
 #~ "https://github.com/IRSL-"
 #~ "tut/irsl_choreonoid_ros/blob/main/src/irsl_choreonoid_ros/RobotInterface.py"
+#~ msgstr ""
+
+#~ msgid "**Not implemented yet**"
+#~ msgstr ""
+
+#~ msgid "Set target trajectory for MobileBase"
+#~ msgstr ""
+
+#~ msgid "Set environment variable, ROS_MASTER_URI"
 #~ msgstr ""
 

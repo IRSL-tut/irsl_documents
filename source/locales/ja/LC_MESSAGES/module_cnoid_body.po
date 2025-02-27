@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-03 19:55+0900\n"
+"POT-Creation-Date: 2025-02-27 17:21+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.13.1\n"
 
 #: ../../module_cnoid_body.rst:3
 msgid "Choreonoid Python Module (Body)"
@@ -39,9 +39,12 @@ msgid "Bases: :py:class:`~cnoid.Util.Referenced`"
 msgstr ""
 
 #: ../../docstring cnoid.Body.PyCapsule.__init__:1
+#: cnoid.Body.PyCapsule.getAccelerations:1 cnoid.Body.PyCapsule.getAngles:1
 #: cnoid.Body.PyCapsule.getInfo:1 cnoid.Body.PyCapsule.getLink:1
-#: cnoid.Body.PyCapsule.joint:1 cnoid.Body.PyCapsule.link:1
-#: cnoid.Body.PyCapsule.resetJointSpecificName:1
+#: cnoid.Body.PyCapsule.getTargetAngles:1
+#: cnoid.Body.PyCapsule.getTargetVelocities:1 cnoid.Body.PyCapsule.getTorques:1
+#: cnoid.Body.PyCapsule.getVelocities:1 cnoid.Body.PyCapsule.joint:1
+#: cnoid.Body.PyCapsule.link:1 cnoid.Body.PyCapsule.resetJointSpecificName:1
 #: cnoid.Body.PyCapsule.setMaterial:1 cnoid.Body.PyCapsule.setOffsetRotation:1
 #: cnoid.Body.PyCapsule.setRotation:1 of
 msgid "Overloaded function."
@@ -55,12 +58,72 @@ msgstr ""
 msgid "__init__(self: cnoid.Body.Body, arg0: str) -> None"
 msgstr ""
 
+#: ../../docstring cnoid.Body.PyCapsule.getAccelerations:3 of
+msgid "getAccelerations(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getAccelerations:5 of
+msgid ""
+"getAccelerations(self: cnoid.Body.Body, arg0: "
+"numpy.ndarray[numpy.float64]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getAngles:3 of
+msgid "getAngles(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getAngles:5 of
+msgid ""
+"getAngles(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -> "
+"None"
+msgstr ""
+
 #: ../../docstring cnoid.Body.PyCapsule.getLink:3 of
 msgid "getLink(self: cnoid.Body.Body, arg0: int) -> cnoid::Link"
 msgstr ""
 
 #: ../../docstring cnoid.Body.PyCapsule.getLink:5 of
 msgid "getLink(self: cnoid.Body.Body, arg0: str) -> cnoid::Link"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTargetAngles:3 of
+msgid "getTargetAngles(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTargetAngles:5 of
+msgid ""
+"getTargetAngles(self: cnoid.Body.Body, arg0: "
+"numpy.ndarray[numpy.float64]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTargetVelocities:3 of
+msgid "getTargetVelocities(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTargetVelocities:5 of
+msgid ""
+"getTargetVelocities(self: cnoid.Body.Body, arg0: "
+"numpy.ndarray[numpy.float64]) -> None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTorques:3 of
+msgid "getTorques(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getTorques:5 of
+msgid ""
+"getTorques(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -> "
+"None"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getVelocities:3 of
+msgid "getVelocities(self: cnoid.Body.Body) -> numpy.ndarray[numpy.float64]"
+msgstr ""
+
+#: ../../docstring cnoid.Body.PyCapsule.getVelocities:5 of
+msgid ""
+"getVelocities(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) "
+"-> None"
 msgstr ""
 
 #: ../../docstring cnoid.Body.PyCapsule.joint:3 of
