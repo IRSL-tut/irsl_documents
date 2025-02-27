@@ -153,6 +153,11 @@
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.calcInverseDynamics">
+<span class="sig-name descname"><span class="pre">calcInverseDynamics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">[</span></span><span class="m"><span class="pre">6</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#cnoid.Body.Body.calcInverseDynamics" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Body.calcTotalMomentum">
 <span class="sig-name descname"><span class="pre">calcTotalMomentum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span></span></span><a class="headerlink" href="#cnoid.Body.Body.calcTotalMomentum" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -196,6 +201,26 @@
 <dt class="sig sig-object py" id="cnoid.Body.Body.findUniqueEndLink">
 <span class="sig-name descname"><span class="pre">findUniqueEndLink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">cnoid::Link</span></span></span><a class="headerlink" href="#cnoid.Body.Body.findUniqueEndLink" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getAccelerations">
+<span class="sig-name descname"><span class="pre">getAccelerations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getAccelerations" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getAccelerations(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getAccelerations(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getAngles">
+<span class="sig-name descname"><span class="pre">getAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getAngles" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getAngles(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getAngles(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Body.getCenterOfMass">
@@ -281,6 +306,46 @@
 <dt class="sig sig-object py" id="cnoid.Body.Body.getRootLink">
 <span class="sig-name descname"><span class="pre">getRootLink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">cnoid::Link</span></span></span><a class="headerlink" href="#cnoid.Body.Body.getRootLink" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getTargetAngles">
+<span class="sig-name descname"><span class="pre">getTargetAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getTargetAngles" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getTargetAngles(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getTargetAngles(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getTargetVelocities">
+<span class="sig-name descname"><span class="pre">getTargetVelocities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getTargetVelocities" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getTargetVelocities(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getTargetVelocities(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getTorques">
+<span class="sig-name descname"><span class="pre">getTorques</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getTorques" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getTorques(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getTorques(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.getVelocities">
+<span class="sig-name descname"><span class="pre">getVelocities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cnoid.Body.Body.getVelocities" title="Permalink to this definition"></a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>getVelocities(self: cnoid.Body.Body) -&gt; numpy.ndarray[numpy.float64]</p></li>
+<li><p>getVelocities(self: cnoid.Body.Body, arg0: numpy.ndarray[numpy.float64]) -&gt; None</p></li>
+</ol>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Body.hasVirtualJointForces">
@@ -373,6 +438,16 @@
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setAccelerations">
+<span class="sig-name descname"><span class="pre">setAccelerations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setAccelerations" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setAngles">
+<span class="sig-name descname"><span class="pre">setAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setAngles" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Body.setModelName">
 <span class="sig-name descname"><span class="pre">setModelName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setModelName" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -395,6 +470,26 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Body.setRootLinkFixed">
 <span class="sig-name descname"><span class="pre">setRootLinkFixed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setRootLinkFixed" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setTargetAngles">
+<span class="sig-name descname"><span class="pre">setTargetAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setTargetAngles" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setTargetVelocities">
+<span class="sig-name descname"><span class="pre">setTargetVelocities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setTargetVelocities" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setTorques">
+<span class="sig-name descname"><span class="pre">setTorques</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setTorques" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Body.setVelocities">
+<span class="sig-name descname"><span class="pre">setVelocities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Body" title="cnoid.Body.Body"><span class="pre">cnoid.Body.Body</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.float64</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Body.setVelocities" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -682,6 +777,11 @@
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Link.initializeState">
+<span class="sig-name descname"><span class="pre">initializeState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Link" title="cnoid.Body.Link"><span class="pre">cnoid.Body.Link</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Link.initializeState" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Link.isEndLink">
 <span class="sig-name descname"><span class="pre">isEndLink</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Link" title="cnoid.Body.Link"><span class="pre">cnoid.Body.Link</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#cnoid.Body.Link.isEndLink" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -784,6 +884,11 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.Body.Link.setEquivalentRotorInertia">
 <span class="sig-name descname"><span class="pre">setEquivalentRotorInertia</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Link" title="cnoid.Body.Link"><span class="pre">cnoid.Body.Link</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Link.setEquivalentRotorInertia" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.Body.Link.setGravityAsExt">
+<span class="sig-name descname"><span class="pre">setGravityAsExt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#cnoid.Body.Link" title="cnoid.Body.Link"><span class="pre">cnoid.Body.Link</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#cnoid.Body.Link.setGravityAsExt" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">

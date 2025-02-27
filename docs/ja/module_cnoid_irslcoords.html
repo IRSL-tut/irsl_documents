@@ -62,6 +62,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.getRPY"><code class="docutils literal notranslate"><span class="pre">coordinates.getRPY()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.getRotationAngle"><code class="docutils literal notranslate"><span class="pre">coordinates.getRotationAngle()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.get_transformed"><code class="docutils literal notranslate"><span class="pre">coordinates.get_transformed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.init2D"><code class="docutils literal notranslate"><span class="pre">coordinates.init2D()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.inverse"><code class="docutils literal notranslate"><span class="pre">coordinates.inverse()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.inverseRotateVector"><code class="docutils literal notranslate"><span class="pre">coordinates.inverseRotateVector()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.inverseTransformVector"><code class="docutils literal notranslate"><span class="pre">coordinates.inverseTransformVector()</span></code></a></li>
@@ -194,6 +195,7 @@
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</p></li>
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[3, 3], flags.c_contiguous]) -&gt; None</p></li>
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[4, 1]]) -&gt; None</p></li>
+<li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[3, 1]]) -&gt; None</p></li>
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[3, 1]], arg1: numpy.ndarray[numpy.float64[4, 1]]) -&gt; None</p></li>
 <li><p>__init__(self: cnoid.IRSLCoords.coordinates, arg0: numpy.ndarray[numpy.float64[4, 4], flags.c_contiguous]) -&gt; None</p></li>
 </ol>
@@ -275,6 +277,11 @@
 <li><p>get_transformed(self: cnoid.IRSLCoords.coordinates, arg0: cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -&gt; cnoid.IRSLCoords.coordinates</p></li>
 </ol>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.init2D">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">init2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><span class="pre">cnoid.IRSLCoords.coordinates</span></a></span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.init2D" title="この定義へのパーマリンク"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.inverse">
