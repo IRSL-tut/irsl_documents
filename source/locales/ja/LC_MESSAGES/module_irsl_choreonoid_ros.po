@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-27 17:21+0900\n"
+"POT-Creation-Date: 2026-04-13 23:25+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../module_irsl_choreonoid_ros.rst:3
 msgid "Modules in irsl_choreonoid_ros"
@@ -40,54 +40,12 @@ msgstr ""
 msgid "Refere parseURL in irsl_choreonoid.cnoid_util"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
-#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: ../../module_irsl_choreonoid_ros.rst
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator of
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__ of
 msgid "Parameters"
 msgstr ""
 
@@ -95,51 +53,13 @@ msgstr ""
 msgid "url"
 msgstr ""
 
+#: ../../module_irsl_choreonoid_ros.rst
 #: irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice:8
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
-#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml of
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg of
 msgid "Returns"
 msgstr ""
 
@@ -147,49 +67,12 @@ msgstr ""
 msgid "Absolute path"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.data
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized
-#: irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel
+#: ../../module_irsl_choreonoid_ros.rst
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.robot
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector
 #: irsl_choreonoid_ros.cnoid_ros_util.parseURLROS
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml of
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg of
 msgid "Return type"
 msgstr ""
 
@@ -201,24 +84,482 @@ msgid "Examples"
 msgstr ""
 
 #: ../../module_irsl_choreonoid_ros.rst:19
-msgid "irsl_choreonoid_ros.setup_cnoid"
-msgstr ""
+#, fuzzy
+msgid "irsl_choreonoid_ros.camera_utils"
+msgstr "irsl_choreonoid_ros モジュール"
 
 #: ../../module_irsl_choreonoid_ros.rst:21
 msgid ""
 "https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/camera_utils.py"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel:1 of
+msgid ""
+"Examples: >>> msg = sensor_msgs.msg.CameraInfo() >>> cm = "
+"PinhoneCameraModel(msg)"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:1 of
+msgid ""
+"Generates 3D points and corresponding colors from a depth image using a "
+"pinhole camera model."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:3 of
+msgid "Depth image in CV format, where depth values are in millimeters."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:5 of
+msgid ""
+"Transformation object to apply to the generated 3D points. Defaults to "
+"None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:7 of
+msgid ""
+"Color image in CV format, used to extract color information for points. "
+"Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:9 of
+msgid ""
+"Minimum depth value to consider. Points with depth below this value are "
+"ignored. Defaults to 0.1."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:11 of
+msgid ""
+"Region of Interest (ROI) object specifying the area of the image to "
+"process. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:14 of
+msgid ""
+"A tuple containing:     - points (list of numpy.ndarray): List of 3D "
+"points in the camera coordinate system.     - colors (list of "
+"numpy.ndarray): List of color values corresponding to the 3D points. "
+"Empty if `colorImageCv` is None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:16
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:18
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:16 of
+msgid "A tuple containing:"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:17 of
+msgid ""
+"points (list of numpy.ndarray): List of 3D points in the camera "
+"coordinate system."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw:18 of
+msgid ""
+"colors (list of numpy.ndarray): List of color values corresponding to the"
+" 3D points. Empty if `colorImageCv` is None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:1 of
+msgid ""
+"Generates SceneNode of 3D points from a depth image and optionally "
+"associates colors with the points."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:3 of
+msgid "The depth image in OpenCV format."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:5 of
+msgid "A transformation matrix to apply to the points. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:7 of
+msgid ""
+"The color image in OpenCV format to associate colors with the points. "
+"Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:9 of
+msgid "The depth threshold to filter points. Defaults to 0.1."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:11 of
+msgid "A region of interest specified as (x, y, width, height). Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:13 of
+msgid ""
+"Additional keyword arguments to pass to the `mkshapes.makePoints` "
+"function."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints:15 of
+msgid ""
+"A points object created by `mkshapes.makePoints`, containing the "
+"generated 3D points and optionally their associated colors."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo:1 of
+msgid "Generate Camera-model from a CameraInfo message"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo:3 of
+msgid "The CameraInfo message"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo:6 of
+msgid ""
+"An instance of PinholeCameraModel initialized with     the parameters "
+"from the provided CameraInfo message."
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo:8 of
+msgid "An instance of PinholeCameraModel initialized with"
+msgstr ""
+
+#: irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo:9 of
+msgid "the parameters from the provided CameraInfo message."
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:29
+#, fuzzy
+msgid "irsl_choreonoid_ros.point_utils"
+msgstr "irsl_choreonoid_ros モジュール"
+
+#: ../../module_irsl_choreonoid_ros.rst:31
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/point_utils.py"
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:1 of
+msgid ""
+"Converts a PointCloud2 ROS message into raw points and optionally "
+"extracts colors."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:3
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:3 of
+msgid "The PointCloud2 message to be converted."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:5
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:5 of
+msgid "If True, skips points with NaN values. Defaults to True."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:7 of
+msgid "Value to replace NaNs with if `skip_nans` is False. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:9 of
+msgid ""
+"Region of interest specified as (x, y, width, height). If provided, only "
+"points within this ROI are processed. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:11 of
+msgid ""
+"If True, extracts RGB color information from the point cloud if "
+"available. Defaults to True."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:14 of
+msgid ""
+"A tuple containing:     - points (list of numpy.ndarray): A list of 3D "
+"points as numpy arrays [x, y, z].     - colors (list of numpy.ndarray): A"
+" list of RGB colors as numpy arrays [r, g, b]. Empty if `addColor` is "
+"False or no color information is available."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:17 of
+msgid ""
+"points (list of numpy.ndarray): A list of 3D points as numpy arrays [x, "
+"y, z]."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:18 of
+msgid ""
+"colors (list of numpy.ndarray): A list of RGB colors as numpy arrays [r, "
+"g, b]. Empty if `addColor` is False or no color information is available."
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg of
+msgid "Raises"
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw:21 of
+msgid "If the ROI is invalid or out of bounds."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:1 of
+msgid "Converts a PointCloud2 ROS message to SgPoint"
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:7 of
+msgid "Value to replace NaNs with, if `skip_nans` is False. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:9 of
+msgid ""
+"Region of Interest specified as a tuple (xmin, xmax, ymin, ymax, zmin, "
+"zmax). If provided, only points within this region are included. Defaults"
+" to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:12 of
+msgid ""
+"If True, extracts color information from the PointCloud2 message. "
+"Defaults to True."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:14 of
+msgid "Additional keyword arguments passed to the `mkshapes.makePoints` function."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints:16 of
+msgid "A point cloud shape created using the processed points and colors."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:1 of
+msgid ""
+"Converts a LaserScan ROS message into a list of 2D points and optionally "
+"their corresponding colors."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:3 of
+msgid "The LaserScan message containing range and intensity data."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:5 of
+msgid "Whether to use intensity values to compute colors. Defaults to False."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:7 of
+msgid "The maximum intensity value for normalization. Defaults to 1.0."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:9 of
+msgid ""
+"The RGB color corresponding to maximum intensity. Defaults to [0., 1., "
+"0.] (green)."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:11 of
+msgid ""
+"The RGB color corresponding to minimum intensity. Defaults to [1., 0., "
+"0.] (red)."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:13
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:13 of
+msgid "Whether to skip points with infinite range values. Defaults to True."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:16 of
+msgid ""
+"A tuple containing:     - points (list of numpy.ndarray): A list of 2D "
+"points in the form [x, y, z=0].     - colors (list of numpy.ndarray): A "
+"list of RGB colors corresponding to the points (empty if `useIntensities`"
+" is False)."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:19 of
+msgid ""
+"points (list of numpy.ndarray): A list of 2D points in the form [x, y, "
+"z=0]."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw:20 of
+msgid ""
+"colors (list of numpy.ndarray): A list of RGB colors corresponding to the"
+" points (empty if `useIntensities` is False)."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:1 of
+msgid "Converts a LaserScan ROS message to SgPoint"
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:3 of
+msgid "The LaserScan message to be converted."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:5 of
+msgid ""
+"Whether to use intensity values for coloring the points. Defaults to "
+"False."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:7 of
+msgid "The maximum intensity value for scaling colors. Defaults to 1.0."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:9 of
+msgid "The RGB color corresponding to the maximum intensity. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:11 of
+msgid "The RGB color corresponding to the minimum intensity. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:15 of
+msgid ""
+"Additional keyword arguments to be passed to the `mkshapes.makePoints` "
+"function."
+msgstr ""
+
+#: irsl_choreonoid_ros.point_utils.convertLaserScanToPoints:17 of
+msgid ""
+"A points object created by `mkshapes.makePoints`, containing the 3D "
+"points and optional colors."
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:39
+#, fuzzy
+msgid "irsl_choreonoid_ros.tf_utils"
+msgstr "irsl_choreonoid_ros モジュール"
+
+#: ../../module_irsl_choreonoid_ros.rst:41
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/tf_utils.py"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener:1 of
+msgid ""
+"A custom TransformListener class that extends tf.TransformListener to "
+"provide additional utility methods for working with coordinate(IRSL)"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__:1
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__:1 of
+msgid "Initializes the TransformListener instance."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__:3 of
+msgid "Variable length argument list passed to tf.TransformListener class."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__:4 of
+msgid "Arbitrary keyword arguments passed to tf.TransformListener class."
+msgstr ""
+
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:12
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__:7 of
+msgid "Notes"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.__init__:8 of
+msgid ""
+"interpolate (bool, default=True) : cache_time (float, optional) : time of"
+" cache"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords:1 of
+msgid ""
+"Looks up the transformation between two frames and returns it as "
+"coordinates."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords:3
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:5
+#: irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords:5 of
+msgid "The name of the target frame."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords:5 of
+msgid "The name of the source frame."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords:7 of
+msgid "The time at which to perform the lookup."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords:10 of
+msgid "A coordinates object containing the translation and rotation."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords:1 of
+msgid ""
+"Waits for a transformation between two frames to become available. (Raise"
+" exception if failed)"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:3
+#: irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords:3 of
+msgid "The name of the origin frame."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:7
+#: irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords:7 of
+msgid "The time at which to wait for the transformation."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:9
+#: irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords:9 of
+msgid "The timeout duration in seconds. Defaults to 1.0."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:1 of
+msgid ""
+"Attempts to wait for a transformation between two frames to become "
+"available. (Return True if the transformation was found)"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting:12 of
+msgid "True if the transformation becomes available, False otherwise."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster:1 of
+msgid ""
+"A custom TransformBroadcaster class that extends tf.TransformBroadcaster "
+"to provide additional utility methods for working with coordinate(IRSL)"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__:3 of
+msgid "Variable length argument list passed to tf.TransformBroadcaster class."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__:4 of
+msgid "Arbitrary keyword arguments passed to tf.TransformBroadcaster class."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:1 of
+msgid "Sends the coordinates as TF"
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:3 of
+msgid ""
+"An object containing `pos` (position as a list of 3 floats) and "
+"`quaternion` (rotation as a list of 4 floats)."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:6 of
+msgid "The timestamp for the transform."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:8 of
+msgid "The child frame ID."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:10 of
+msgid "The parent frame ID."
+msgstr ""
+
+#: irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords:13 of
+msgid "True if the transform was successfully sent, False otherwise."
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:49
+msgid "irsl_choreonoid_ros.setup_cnoid"
+msgstr ""
+
+#: ../../module_irsl_choreonoid_ros.rst:51
+msgid ""
+"https://github.com/IRSL-"
 "tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py"
-msgstr ""
-
-#: irsl_choreonoid_ros.RobotInterface.DeviceInterface:1
-#: irsl_choreonoid_ros.RobotInterface.JointInterface:1
-#: irsl_choreonoid_ros.RobotInterface.MobileBaseInterface:1
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1 of
-msgid "Bases: :py:class:`object`"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid:1 of
-msgid "Utility class for setting .cnoid file from python script"
 msgstr ""
 
 #: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__:1 of
@@ -229,118 +570,79 @@ msgstr ""
 msgid "If set, it is used as a worldItem"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:1 of
-msgid "Building environment (setting objects) under the WorldItem"
+#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.addExtraWorld:1 of
+msgid "abstract method"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:3
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:3 of
-msgid "value] ) : Dictionary for representing objects on environment"
+#: ../../module_irsl_choreonoid_ros.rst:59
+#, fuzzy
+msgid "irsl_choreonoid_ros.convert_msgs"
+msgstr "irsl_choreonoid_ros モジュール"
+
+#: ../../module_irsl_choreonoid_ros.rst:61
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/convert_msgs.py"
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:4
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:4 of
-msgid "Name of WorldItem, added objects under this item"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:1 of
+msgid "Converts a Python expression to a ROS message of the specified type."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:6
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:6 of
-msgid "If True, creating new WorldItem"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:3 of
+msgid "The Python expression to be converted."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:8
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:8 of
-msgid "If True, set camera position"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:4 of
+msgid "The ROS message class to which the Python expression should be converted."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment:10
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:10 of
-msgid "Offset of objects"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:5 of
+msgid "Additional keyword arguments to be passed to the conversion function."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:1 of
-msgid "Creating project from parameters"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:7 of
+msgid "The converted ROS message."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:3
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:3 of
-msgid "value] ) : Dictionary for representing the project"
+#: irsl_choreonoid_ros.convert_msgs.convertToROSMsg:9 of
+msgid "If the ROS message class is not found in the conversion function map."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:4
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:4 of
-msgid "If True, adding new SimulatorItem if there is no instruction in info_dict"
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:1 of
+msgid ""
+"Converts a ROS message to a corresponding format using a predefined "
+"mapping."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:6
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:6 of
-msgid "If True, adding new WorldItem if there is no instruction in info_dict"
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:3 of
+msgid "The ROS message to be converted."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid:8
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:8 of
-msgid "If True, not adding environment(objects). Use buildEnvironment method."
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:6 of
+msgid ""
+"The converted message using the corresponding function from "
+"`__from_function_map__`."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:1 of
-msgid "Building environment from yaml-file"
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:9 of
+msgid ""
+"If the ROS message's class MD5 checksum is not found in "
+"`__from_function_map__`."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:3
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:3
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:3
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:3 of
-msgid "File name to load"
+#: irsl_choreonoid_ros.convert_msgs.convertFromROSMsg:13 of
+msgid ""
+"This function checks if the ROS message's class MD5 checksum exists in "
+"the `__from_function_map__` dictionary. If a matching function is found, "
+"it is used to convert the ROS message. Otherwise, an exception is raised."
 msgstr ""
 
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:5
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:5 of
-msgid "Keyword to pass to setup_cnoid.buildEnvironment"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:1 of
-msgid "Creating project from yaml-file"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml:5
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:5 of
-msgid "Keyword to pass to setup_cnoid.createCnoid"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:1 of
-msgid "Setup environment from yaml-file (classmethod of buildEnvironmentFromYaml)"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:8
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:8 of
-msgid "Instance of setup_cnoid"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml:1 of
-msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment:1 of
-msgid "Building environment (setting objects) under the WorldItem (class method)"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid:1 of
-msgid "Creating project from parameters (class method)"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:1 of
-msgid "Starting simulation"
-msgstr ""
-
-#: irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator:3 of
-msgid "If True, simulator will run with realtime sync mode"
-msgstr ""
-
-#: ../../module_irsl_choreonoid_ros.rst:29
+#: ../../module_irsl_choreonoid_ros.rst:69
 msgid "irsl_choreonoid_ros.RobotInterface"
 msgstr ""
 
-#: ../../module_irsl_choreonoid_ros.rst:31
+#: ../../module_irsl_choreonoid_ros.rst:71
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/RobotInterface.py"
@@ -769,11 +1071,6 @@ msgstr ""
 msgid "Returns True if device was removed successfully"
 msgstr ""
 
-#: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1
-#: irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber:1 of
-msgid "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.RosDeviceBase`"
-msgstr ""
-
 #: irsl_choreonoid_ros.RobotInterface.OneShotSubscriber:1 of
 msgid "Subscribe just N messages"
 msgstr ""
@@ -832,13 +1129,6 @@ msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
 msgid ""
-"Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.JointInterface`, "
-":py:class:`~irsl_choreonoid_ros.RobotInterface.DeviceInterface`, "
-":py:class:`~irsl_choreonoid_ros.RobotInterface.MobileBaseInterface`"
-msgstr ""
-
-#: irsl_choreonoid_ros.RobotInterface.RobotInterface:1 of
-msgid ""
 "Interface for controllring robot (inheriting classes JointInterface, "
 "DeviceInterface and MobileBaseInterface)"
 msgstr ""
@@ -870,7 +1160,7 @@ msgid "Wait until ROS connection has established"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:9 of
-msgid "If false, create instace without ROS connection"
+msgid "If false, create instance without ROS connection"
 msgstr ""
 
 #: irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__:11 of
@@ -1168,5 +1458,99 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Set environment variable, ROS_MASTER_URI"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "Utility class for setting .cnoid file from python script"
+#~ msgstr ""
+
+#~ msgid "Building environment (setting objects) under the WorldItem"
+#~ msgstr ""
+
+#~ msgid "value] ) : Dictionary for representing objects on environment"
+#~ msgstr ""
+
+#~ msgid "Name of WorldItem, added objects under this item"
+#~ msgstr ""
+
+#~ msgid "If True, creating new WorldItem"
+#~ msgstr ""
+
+#~ msgid "If True, set camera position"
+#~ msgstr ""
+
+#~ msgid "Offset of objects"
+#~ msgstr ""
+
+#~ msgid "Creating project from parameters"
+#~ msgstr ""
+
+#~ msgid "value] ) : Dictionary for representing the project"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If True, adding new SimulatorItem if "
+#~ "there is no instruction in info_dict"
+#~ msgstr ""
+
+#~ msgid "If True, adding new WorldItem if there is no instruction in info_dict"
+#~ msgstr ""
+
+#~ msgid "If True, not adding environment(objects). Use buildEnvironment method."
+#~ msgstr ""
+
+#~ msgid "Building environment from yaml-file"
+#~ msgstr ""
+
+#~ msgid "File name to load"
+#~ msgstr ""
+
+#~ msgid "Keyword to pass to setup_cnoid.buildEnvironment"
+#~ msgstr ""
+
+#~ msgid "Creating project from yaml-file"
+#~ msgstr ""
+
+#~ msgid "Keyword to pass to setup_cnoid.createCnoid"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Setup environment from yaml-file "
+#~ "(classmethod of buildEnvironmentFromYaml)"
+#~ msgstr ""
+
+#~ msgid "Instance of setup_cnoid"
+#~ msgstr ""
+
+#~ msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Building environment (setting objects) under"
+#~ " the WorldItem (class method)"
+#~ msgstr ""
+
+#~ msgid "Creating project from parameters (class method)"
+#~ msgstr ""
+
+#~ msgid "Starting simulation"
+#~ msgstr ""
+
+#~ msgid "If True, simulator will run with realtime sync mode"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~irsl_choreonoid_ros.RobotInterface.RosDeviceBase`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: "
+#~ ":py:class:`~irsl_choreonoid_ros.RobotInterface.JointInterface`, "
+#~ ":py:class:`~irsl_choreonoid_ros.RobotInterface.DeviceInterface`, "
+#~ ":py:class:`~irsl_choreonoid_ros.RobotInterface.MobileBaseInterface`"
+#~ msgstr ""
+
+#~ msgid "If false, create instace without ROS connection"
 #~ msgstr ""
 

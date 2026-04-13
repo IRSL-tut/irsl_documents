@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-27 17:21+0900\n"
+"POT-Creation-Date: 2026-04-13 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../module_cnoid_body.rst:3
 msgid "Choreonoid Python Module (Body)"
@@ -32,10 +32,6 @@ msgstr "Choreonoid Body モジュール"
 
 #: ../../module_cnoid_body.rst:15
 msgid "cnoid.Body.Body"
-msgstr ""
-
-#: ../../docstring cnoid.Body.Body:1 cnoid.Body.Device:1 cnoid.Body.Link:1 of
-msgid "Bases: :py:class:`~cnoid.Util.Referenced`"
 msgstr ""
 
 #: ../../docstring cnoid.Body.PyCapsule.__init__:1
@@ -154,10 +150,6 @@ msgstr ""
 
 #: ../../module_cnoid_body.rst:23
 msgid "cnoid.Body.Link"
-msgstr ""
-
-#: ../../docstring cnoid.Body.Link.JointType:1 cnoid.Body.Link.StateFlag:1 of
-msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
 msgstr ""
 
 #: ../../docstring cnoid.Body.Link.JointType:1 cnoid.Body.Link.StateFlag:1 of
@@ -289,4 +281,10 @@ msgstr ""
 #: ../../module_cnoid_body.rst:31
 msgid "cnoid.Body.Device"
 msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.Util.Referenced`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
+#~ msgstr ""
 

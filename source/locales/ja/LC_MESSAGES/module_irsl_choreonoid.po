@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-27 17:21+0900\n"
+"POT-Creation-Date: 2026-04-13 23:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../module_irsl_choreonoid.rst:3
 msgid "Modules in irsl_choreonoid"
@@ -40,190 +40,17 @@ msgstr ""
 msgid "Loading a script file"
 msgstr ""
 
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.__init__
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.addShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.addShapes
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createJointShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createRootLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.exportBody
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.exportURDF
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.newRobot
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.removeShapes
-#: irsl_choreonoid.cnoid_base.addSimulator
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
-#: irsl_choreonoid.cnoid_base.currentSceneView
-#: irsl_choreonoid.cnoid_base.currentSceneWidget
-#: irsl_choreonoid.cnoid_base.disableGrid irsl_choreonoid.cnoid_base.enableGrid
-#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
-#: irsl_choreonoid.cnoid_base.findItems
-#: irsl_choreonoid.cnoid_base.findItemsByClass
-#: irsl_choreonoid.cnoid_base.findItemsByClassExact
-#: irsl_choreonoid.cnoid_base.findItemsByName
-#: irsl_choreonoid.cnoid_base.findItemsByQuery
-#: irsl_choreonoid.cnoid_base.getCameraCoords
-#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
-#: irsl_choreonoid.cnoid_base.getOrAddWorld
-#: irsl_choreonoid.cnoid_base.loadProject
-#: irsl_choreonoid.cnoid_base.loadRobotItem
-#: irsl_choreonoid.cnoid_base.projectPoints
-#: irsl_choreonoid.cnoid_base.removeItem
-#: irsl_choreonoid.cnoid_base.saveImageOfScene
-#: irsl_choreonoid.cnoid_base.setBackgroundColor
-#: irsl_choreonoid.cnoid_base.setCameraCoords
-#: irsl_choreonoid.cnoid_base.setCameraCoordsParam
-#: irsl_choreonoid.cnoid_base.setCameraMatrix
-#: irsl_choreonoid.cnoid_base.setCoordinateAxes
-#: irsl_choreonoid.cnoid_base.setViewSize
-#: irsl_choreonoid.cnoid_base.unprojectPoints
-#: irsl_choreonoid.cnoid_util.castValueNode
-#: irsl_choreonoid.cnoid_util.cnoidPosition
-#: irsl_choreonoid.cnoid_util.cnoidRotation
-#: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.convertBodyFileToMeshFile
-#: irsl_choreonoid.cnoid_util.dictToMapping
-#: irsl_choreonoid.cnoid_util.exportBody
-#: irsl_choreonoid.cnoid_util.exportBodyAsMesh
-#: irsl_choreonoid.cnoid_util.exportURDF irsl_choreonoid.cnoid_util.fv
-#: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.listToListing
-#: irsl_choreonoid.cnoid_util.listingToList
-#: irsl_choreonoid.cnoid_util.loadRobot irsl_choreonoid.cnoid_util.load_script
-#: irsl_choreonoid.cnoid_util.mappingToDict irsl_choreonoid.cnoid_util.parseURL
-#: irsl_choreonoid.draw_coords.DrawCoordsList.__init__
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
-#: irsl_choreonoid.draw_coords.DrawCoordsList.clear
-#: irsl_choreonoid.draw_coords.DrawCoordsList.flush
-#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
-#: irsl_choreonoid.draw_coords.DrawCoordsList.setLineWidth
-#: irsl_choreonoid.draw_coords.DrawCoordsList.setOrigin
-#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped.__init__
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.__init__
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObjects
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.clear
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.flush
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObjects
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removePyObject
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.__init__
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.assoc
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.dissoc
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.locate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.move_to
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setKinematicsCallback
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setScale
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setTurnedOn
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.setUpdateCallback
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.updateTarget
-#: irsl_choreonoid.make_shapes.addUriToShape
-#: irsl_choreonoid.make_shapes.exportMesh
-#: irsl_choreonoid.make_shapes.exportScene
-#: irsl_choreonoid.make_shapes.extractDrawables
-#: irsl_choreonoid.make_shapes.extractPlots
-#: irsl_choreonoid.make_shapes.extractShapes
-#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
-#: irsl_choreonoid.make_shapes.make3DAxis
-#: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeAxis irsl_choreonoid.make_shapes.makeBasket
-#: irsl_choreonoid.make_shapes.makeBox
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
-#: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
-#: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
-#: irsl_choreonoid.make_shapes.makeCylinder
-#: irsl_choreonoid.make_shapes.makeElevationGrid
-#: irsl_choreonoid.make_shapes.makeExtrusion
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: ../../module_irsl_choreonoid.rst
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem
+#: irsl_choreonoid.cnoid_util.fv irsl_choreonoid.cnoid_util.parseURL
+#: irsl_choreonoid.make_shapes.addCollisionShape
+#: irsl_choreonoid.make_shapes.addVisualShape
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall
-#: irsl_choreonoid.make_shapes.makeLines
-#: irsl_choreonoid.make_shapes.makeParallelogram
-#: irsl_choreonoid.make_shapes.makePoints
-#: irsl_choreonoid.make_shapes.makeRoundTable
-#: irsl_choreonoid.make_shapes.makeSphere
-#: irsl_choreonoid.make_shapes.makeTable4Legs
-#: irsl_choreonoid.make_shapes.makeTableSingleLeg
-#: irsl_choreonoid.make_shapes.makeTetrahedron
-#: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
-#: irsl_choreonoid.make_shapes.makeWireframeCone
-#: irsl_choreonoid.robot_util.IKWrapper.__init__
-#: irsl_choreonoid.robot_util.IKWrapper.addNoise
-#: irsl_choreonoid.robot_util.IKWrapper.angleVector
-#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
-#: irsl_choreonoid.robot_util.IKWrapper.flush
-#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
-#: irsl_choreonoid.robot_util.IKWrapper.resetJointWeights
-#: irsl_choreonoid.robot_util.IKWrapper.resetPose
-#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
-#: irsl_choreonoid.robot_util.IKWrapper.setJoints
-#: irsl_choreonoid.robot_util.IKWrapper.updateDefault
-#: irsl_choreonoid.robot_util.ImportedRobotModel.__init__
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.__init__
-#: irsl_choreonoid.robot_util.RobotModelWrapped.addLink
-#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
-#: irsl_choreonoid.robot_util.RobotModelWrapped.device
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.fixLegToCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.fullBodyIK
-#: irsl_choreonoid.robot_util.RobotModelWrapped.generateCurrentVisual
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
-#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.registerEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setFrame
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setNamedPose
+#: irsl_choreonoid.make_shapes.removeCollisionInLink
+#: irsl_choreonoid.make_shapes.removeVisualInLink
 #: irsl_choreonoid.robot_util.axisAlignedCoords
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map
-#: irsl_choreonoid.robot_util.make_translation_rotation of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Parameters"
 msgstr ""
 
@@ -239,172 +66,13 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.body
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.bodyItem
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createJointShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createRootLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.draw
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.viewInfo
-#: irsl_choreonoid.cnoid_base.addSimulator
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
-#: irsl_choreonoid.cnoid_base.currentSceneView
-#: irsl_choreonoid.cnoid_base.currentSceneWidget
-#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
-#: irsl_choreonoid.cnoid_base.findItems
-#: irsl_choreonoid.cnoid_base.findItemsByClass
-#: irsl_choreonoid.cnoid_base.findItemsByClassExact
-#: irsl_choreonoid.cnoid_base.findItemsByName
-#: irsl_choreonoid.cnoid_base.findItemsByQuery
-#: irsl_choreonoid.cnoid_base.getAllBoundingBox
-#: irsl_choreonoid.cnoid_base.getCameraCoords
-#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
-#: irsl_choreonoid.cnoid_base.getOrAddWorld
-#: irsl_choreonoid.cnoid_base.loadRobotItem
-#: irsl_choreonoid.cnoid_base.projectPoints
-#: irsl_choreonoid.cnoid_base.unprojectPoints
-#: irsl_choreonoid.cnoid_util.castValueNode
-#: irsl_choreonoid.cnoid_util.cnoidPosition
-#: irsl_choreonoid.cnoid_util.cnoidRotation
-#: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.dictToMapping irsl_choreonoid.cnoid_util.fv
-#: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.listToListing
-#: irsl_choreonoid.cnoid_util.listingToList
-#: irsl_choreonoid.cnoid_util.loadRobot
-#: irsl_choreonoid.cnoid_util.mappingToDict irsl_choreonoid.cnoid_util.parseURL
-#: irsl_choreonoid.draw_coords.DrawCoordsList.T
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
-#: irsl_choreonoid.draw_coords.DrawCoordsList.count
-#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
-#: irsl_choreonoid.draw_coords.DrawCoordsList.interface
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.locate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.move_to
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.object
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
-#: irsl_choreonoid.make_shapes.extractDrawables
-#: irsl_choreonoid.make_shapes.extractPlots
-#: irsl_choreonoid.make_shapes.extractShapes
-#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
-#: irsl_choreonoid.make_shapes.make3DAxis
-#: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeAxis irsl_choreonoid.make_shapes.makeBasket
-#: irsl_choreonoid.make_shapes.makeBox
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
-#: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
-#: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
-#: irsl_choreonoid.make_shapes.makeCylinder
-#: irsl_choreonoid.make_shapes.makeElevationGrid
-#: irsl_choreonoid.make_shapes.makeExtrusion
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: ../../module_irsl_choreonoid.rst
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem
+#: irsl_choreonoid.cnoid_util.fv irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall
-#: irsl_choreonoid.make_shapes.makeLines irsl_choreonoid.make_shapes.makePoints
-#: irsl_choreonoid.make_shapes.makeRoundTable
-#: irsl_choreonoid.make_shapes.makeSphere
-#: irsl_choreonoid.make_shapes.makeTable4Legs
-#: irsl_choreonoid.make_shapes.makeTableSingleLeg
-#: irsl_choreonoid.make_shapes.makeTetrahedron
-#: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
-#: irsl_choreonoid.make_shapes.makeWireframeCone
-#: irsl_choreonoid.robot_util.IKWrapper.angleVector
-#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
-#: irsl_choreonoid.robot_util.IKWrapper.current_joints
-#: irsl_choreonoid.robot_util.IKWrapper.default_coords
-#: irsl_choreonoid.robot_util.IKWrapper.default_joints
-#: irsl_choreonoid.robot_util.IKWrapper.default_pose
-#: irsl_choreonoid.robot_util.IKWrapper.endEffector
-#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
-#: irsl_choreonoid.robot_util.IKWrapper.joint_weights
-#: irsl_choreonoid.robot_util.IKWrapper.resetPose
-#: irsl_choreonoid.robot_util.IKWrapper.robot
-#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
-#: irsl_choreonoid.robot_util.IKWrapper.tip_link
-#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.arm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
-#: irsl_choreonoid.robot_util.RobotModelWrapped.device
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.fullBodyIK
-#: irsl_choreonoid.robot_util.RobotModelWrapped.generateCurrentVisual
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
-#: irsl_choreonoid.robot_util.RobotModelWrapped.head
-#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.item
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
-#: irsl_choreonoid.robot_util.RobotModelWrapped.larm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg
-#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.robot
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
-#: irsl_choreonoid.robot_util.RobotModelWrapped.torso
-#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.axisAlignedCoords
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map
-#: irsl_choreonoid.robot_util.make_translation_rotation of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Returns"
 msgstr ""
 
@@ -412,178 +80,17 @@ msgstr ""
 msgid "Absolute path"
 msgstr ""
 
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.body
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.bodyItem
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createJointShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createLinkFromShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createRootLink
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.draw
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxisBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeBox
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCapsule
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCone
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCoords
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCross
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeCylinder
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeElevationGrid
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeExtrusion
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeLineAlignedShape
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeSphere
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.makeTorus
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.viewInfo
-#: irsl_choreonoid.cnoid_base.addSimulator
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingAt
-#: irsl_choreonoid.cnoid_base.cameraPositionLookingFor
-#: irsl_choreonoid.cnoid_base.currentSceneView
-#: irsl_choreonoid.cnoid_base.currentSceneWidget
-#: irsl_choreonoid.cnoid_base.findBodyItem irsl_choreonoid.cnoid_base.findItem
-#: irsl_choreonoid.cnoid_base.findItems
-#: irsl_choreonoid.cnoid_base.findItemsByClass
-#: irsl_choreonoid.cnoid_base.findItemsByClassExact
-#: irsl_choreonoid.cnoid_base.findItemsByName
-#: irsl_choreonoid.cnoid_base.findItemsByQuery
-#: irsl_choreonoid.cnoid_base.getAllBoundingBox
-#: irsl_choreonoid.cnoid_base.getCameraCoords
-#: irsl_choreonoid.cnoid_base.getCameraCoordsParam
-#: irsl_choreonoid.cnoid_base.getOrAddWorld
-#: irsl_choreonoid.cnoid_base.loadRobotItem
-#: irsl_choreonoid.cnoid_base.projectPoints
-#: irsl_choreonoid.cnoid_base.unprojectPoints
-#: irsl_choreonoid.cnoid_util.castValueNode
-#: irsl_choreonoid.cnoid_util.cnoidPosition
-#: irsl_choreonoid.cnoid_util.cnoidRotation
-#: irsl_choreonoid.cnoid_util.cnoidTranslation
-#: irsl_choreonoid.cnoid_util.dictToMapping irsl_choreonoid.cnoid_util.fv
-#: irsl_choreonoid.cnoid_util.isInChoreonoid
-#: irsl_choreonoid.cnoid_util.listToListing
-#: irsl_choreonoid.cnoid_util.listingToList
-#: irsl_choreonoid.cnoid_util.loadRobot
-#: irsl_choreonoid.cnoid_util.mappingToDict irsl_choreonoid.cnoid_util.parseURL
-#: irsl_choreonoid.draw_coords.DrawCoordsList.T
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addCross
-#: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint
-#: irsl_choreonoid.draw_coords.DrawCoordsList.count
-#: irsl_choreonoid.draw_coords.DrawCoordsList.getOrigin
-#: irsl_choreonoid.draw_coords.DrawCoordsList.interface
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.locate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.move_to
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.newcoords
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.object
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.orient_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.rotate_with_matrix
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.target
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.transform
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper.translate
-#: irsl_choreonoid.make_shapes.extractDrawables
-#: irsl_choreonoid.make_shapes.extractPlots
-#: irsl_choreonoid.make_shapes.extractShapes
-#: irsl_choreonoid.make_shapes.loadMesh irsl_choreonoid.make_shapes.loadScene
-#: irsl_choreonoid.make_shapes.make3DAxis
-#: irsl_choreonoid.make_shapes.make3DAxisBox
-#: irsl_choreonoid.make_shapes.makeAxis irsl_choreonoid.make_shapes.makeBasket
-#: irsl_choreonoid.make_shapes.makeBox
-#: irsl_choreonoid.make_shapes.makeBoxFromBoundingBox
-#: irsl_choreonoid.make_shapes.makeCapsule irsl_choreonoid.make_shapes.makeCone
-#: irsl_choreonoid.make_shapes.makeCoords irsl_choreonoid.make_shapes.makeCross
-#: irsl_choreonoid.make_shapes.makeCylinder
-#: irsl_choreonoid.make_shapes.makeElevationGrid
-#: irsl_choreonoid.make_shapes.makeExtrusion
-#: irsl_choreonoid.make_shapes.makeLineAlignedShape
+#: ../../module_irsl_choreonoid.rst
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem
+#: irsl_choreonoid.cnoid_util.fv irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall
-#: irsl_choreonoid.make_shapes.makeLines irsl_choreonoid.make_shapes.makePoints
-#: irsl_choreonoid.make_shapes.makeRoundTable
-#: irsl_choreonoid.make_shapes.makeSphere
-#: irsl_choreonoid.make_shapes.makeTable4Legs
-#: irsl_choreonoid.make_shapes.makeTableSingleLeg
-#: irsl_choreonoid.make_shapes.makeTetrahedron
-#: irsl_choreonoid.make_shapes.makeText irsl_choreonoid.make_shapes.makeTorus
-#: irsl_choreonoid.make_shapes.makeWireframeCone
-#: irsl_choreonoid.robot_util.IKWrapper.angleVector
-#: irsl_choreonoid.robot_util.IKWrapper.currentAngleVector
-#: irsl_choreonoid.robot_util.IKWrapper.current_joints
-#: irsl_choreonoid.robot_util.IKWrapper.default_coords
-#: irsl_choreonoid.robot_util.IKWrapper.default_joints
-#: irsl_choreonoid.robot_util.IKWrapper.default_pose
-#: irsl_choreonoid.robot_util.IKWrapper.endEffector
-#: irsl_choreonoid.robot_util.IKWrapper.getEndEffector
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics
-#: irsl_choreonoid.robot_util.IKWrapper.joint_weights
-#: irsl_choreonoid.robot_util.IKWrapper.resetPose
-#: irsl_choreonoid.robot_util.IKWrapper.robot
-#: irsl_choreonoid.robot_util.IKWrapper.rootCoords
-#: irsl_choreonoid.robot_util.IKWrapper.tip_link
-#: irsl_choreonoid.robot_util.IKWrapper.tip_to_eef
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.IK
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.endEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.joint
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rename
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.rotate
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.angleVector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.arm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.armEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.calcMinimumDuration
-#: irsl_choreonoid.robot_util.RobotModelWrapped.device
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.deviceNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.footMidCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.fullBodyIK
-#: irsl_choreonoid.robot_util.RobotModelWrapped.generateCurrentVisual
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
-#: irsl_choreonoid.robot_util.RobotModelWrapped.head
-#: irsl_choreonoid.robot_util.RobotModelWrapped.headEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.inverseKinematics
-#: irsl_choreonoid.robot_util.RobotModelWrapped.item
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointAngle
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.jointNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.keepJointLimit
-#: irsl_choreonoid.robot_util.RobotModelWrapped.larm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.larmEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkList
-#: irsl_choreonoid.robot_util.RobotModelWrapped.linkNames
-#: irsl_choreonoid.robot_util.RobotModelWrapped.lleg
-#: irsl_choreonoid.robot_util.RobotModelWrapped.llegEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rarm
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rarmEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rleg
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rlegEndEffector
-#: irsl_choreonoid.robot_util.RobotModelWrapped.robot
-#: irsl_choreonoid.robot_util.RobotModelWrapped.rootCoords
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setAngleMap
-#: irsl_choreonoid.robot_util.RobotModelWrapped.setMode
-#: irsl_choreonoid.robot_util.RobotModelWrapped.torso
-#: irsl_choreonoid.robot_util.RobotModelWrapped.torsoEndEffector
 #: irsl_choreonoid.robot_util.axisAlignedCoords
 #: irsl_choreonoid.robot_util.make_coordinates
-#: irsl_choreonoid.robot_util.make_coords_map
-#: irsl_choreonoid.robot_util.make_translation_rotation of
+#: irsl_choreonoid.robot_util.make_coords_map of
 msgid "Return type"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.parseURL
-#: irsl_choreonoid.robot_util.IKWrapper.setJoints
-#: irsl_choreonoid.robot_util.RobotModelWrapped.getLimb
+#: ../../module_irsl_choreonoid.rst irsl_choreonoid.cnoid_util.parseURL
 #: irsl_choreonoid.robot_util.make_coordinates of
 msgid "Raises"
 msgstr ""
@@ -592,6 +99,8 @@ msgstr ""
 msgid "Unknown scheme or netloc is passed"
 msgstr ""
 
+#: irsl_choreonoid.RobotBuilder.RobotBuilder:4
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem:11
 #: irsl_choreonoid.cnoid_util.fv:14 irsl_choreonoid.cnoid_util.parseURL:12
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall:15
 #: irsl_choreonoid.robot_util.ImportedRobotModel:7
@@ -617,7 +126,11 @@ msgstr ""
 msgid "filename of robot-model"
 msgstr ""
 
-#: irsl_choreonoid.cnoid_util.loadRobot:6 of
+#: irsl_choreonoid.cnoid_util.loadRobot:5 of
+msgid "name of loaded instance"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.loadRobot:8 of
 msgid "instance of cnoid.Body.Body"
 msgstr ""
 
@@ -625,10 +138,11 @@ msgstr ""
 msgid "Exporting .body file from an instance of cnoid.Body.Body"
 msgstr ""
 
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.exportBody:7
 #: irsl_choreonoid.cnoid_util.exportBody:7 of
 msgid ""
-"0; EmbedModels, 1; LinkToOriginalModelFiles, 2; ReplaceWithStdSceneFiles,"
-" 3; ReplaceWithObjModelFiles"
+"0; EmbedModels, 1; LinkToOriginalModelFiles, 2; CopyModelFiles, 3; "
+"ReplaceWithStdSceneFiles, 4; ReplaceWithObjModelFiles"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.exportBody:9 of
@@ -643,6 +157,10 @@ msgstr ""
 msgid ""
 "If True, links with mass==1.0 and inertia is identity is set small mass-"
 "parameter (they may loaded without mass parameter)"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_util.exportBody:15 of
+msgid "add empty material if shape does not has material"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_util.exportURDF:1 of
@@ -885,6 +403,22 @@ msgstr ""
 
 #: irsl_choreonoid.cnoid_base.addSimulator:8 of
 msgid "Added SimulatorItem"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem:1 of
+msgid "name of body"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem:3 of
+msgid "name of sensor"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem:5 of
+msgid "optional settings"
+msgstr ""
+
+#: irsl_choreonoid.cnoid_base.createGLVisionSimulatorItem:7 of
+msgid "Creating a item for simulating camera"
 msgstr ""
 
 #: irsl_choreonoid.cnoid_base.loadRobotItem:1 of
@@ -1251,6 +785,148 @@ msgstr ""
 msgid "Extracting drawables (SgShape, SgPlot, SgText) from SceneGraph"
 msgstr ""
 
+#: irsl_choreonoid.make_shapes.removeCollisionInLink:1 of
+msgid ""
+"Remove collision shapes from a specific link while preserving its visual "
+"shapes."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addCollisionShape:3
+#: irsl_choreonoid.make_shapes.addVisualShape:3
+#: irsl_choreonoid.make_shapes.removeCollisionInLink:3
+#: irsl_choreonoid.make_shapes.removeVisualInLink:3
+#: irsl_choreonoid.make_shapes.replaceCollision:6
+#: irsl_choreonoid.make_shapes.replaceVisual:6 of
+msgid "Link object"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addCollisionShape:9
+#: irsl_choreonoid.make_shapes.addVisualShape:9
+#: irsl_choreonoid.make_shapes.removeCollisionInLink:7
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:13
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:13
+#: irsl_choreonoid.make_shapes.removeVisualInLink:7 of
+msgid "Notes"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeCollisionInLink:8
+#: irsl_choreonoid.make_shapes.removeVisualInLink:8 of
+msgid ""
+"The operation mutates `inlink` in place. Any collision geometry "
+"originally attached to the link will be removed."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeVisualInLink:1 of
+msgid "Remove visual geometry from a link, preserving only its collision shapes."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addCollisionShape:1 of
+msgid ""
+"Add a collision shape node to a target link with the correct relative "
+"transform."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addCollisionShape:5
+#: irsl_choreonoid.make_shapes.addVisualShape:5 of
+msgid "A shape wrapper (e.g., from mkshapes)"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addCollisionShape:10
+#: irsl_choreonoid.make_shapes.addVisualShape:10 of
+msgid ""
+"This function computes the relative transform between the target link's "
+"frame and the provided shape, wraps the shape's scene graph node in an "
+"SgPosTransform with that pose, and registers it as a collision shape on "
+"the link."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.addVisualShape:1 of
+msgid ""
+"Add a visual shape node to a target link with the correct relative "
+"transform."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.replaceCollision:1 of
+msgid "Replace the collision geometry attached to a link."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.replaceCollision:3 of
+msgid ""
+"Removes all existing collision shapes from the given link and, if a new "
+"shape is provided, attaches it as the current collision geometry."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.replaceCollision:8
+#: irsl_choreonoid.make_shapes.replaceVisual:8 of
+msgid "A shape wrapper (e.g., from mkshapes) to be added"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.replaceVisual:1 of
+msgid "Replace the visual geometry attached to a link."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.replaceVisual:3 of
+msgid ""
+"Removes all existing visual shapes from the given link and, if a new "
+"shape is provided, attaches it as the current visual geometry."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeNodes:1 of
+msgid "Recursively remove specified nodes from a scene-graph subtree."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeNodes:3 of
+msgid ""
+"Traverses the children of the given scene-graph node depth-first and "
+"removes any child that appears in the provided target_nodes collection. "
+"Traversal only descends into nodes identified as group nodes by "
+"isGroupNode(). Non-group nodes are not traversed. This function mutates "
+"the scene graph in place."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeNodes:8 of
+msgid "The root node of the subtree to process."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removeNodes:10 of
+msgid "A collection of nodes to remove from the scene graph."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:1
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:1 of
+msgid "Remove shape nodes with specified primitive types from a scene graph node."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:3
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:3 of
+msgid ""
+"This function traverses the given scene graph node, collects shape nodes "
+"via `extractShapes`, and removes those whose `mesh.primitiveType` matches"
+" any of the values in `type_list`. If `type_list` is None, all extracted "
+"shape nodes are removed."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:7
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:7 of
+msgid "The root or parent scene graph node to process."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:9
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:9 of
+msgid ""
+"Optional iterable of primitive type identifiers to match against each "
+"shape's `mesh.primitiveType`. If None, all shapes are targeted for "
+"removal."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeNodes:14
+#: irsl_choreonoid.make_shapes.removePrimitiveTypeTrees:14 of
+msgid ""
+"Condidates of type_list : [ SgMesh.MeshType, SgMesh.BoxType, "
+"SgMesh.SphereType, SgMesh.CylinderType, SgMesh.ConeType, "
+"SgMesh.CapsuleType ]"
+msgstr ""
+
 #: irsl_choreonoid.make_shapes.loadScene:1 of
 msgid "Loading scene(wrl, scene, ...) file using cnoid.Util.SceneLoader"
 msgstr ""
@@ -1283,7 +959,8 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeSphere:5
 #: irsl_choreonoid.make_shapes.makeTetrahedron:15
 #: irsl_choreonoid.make_shapes.makeText:9
-#: irsl_choreonoid.make_shapes.makeTorus:11 of
+#: irsl_choreonoid.make_shapes.makeTorus:11
+#: irsl_choreonoid.make_shapes.makeTriangles:7 of
 msgid ""
 "If True, the loaded scene is wrapped by "
 "irsl_choreonoid.irsl_draw_object.coordsWrapper"
@@ -1299,7 +976,8 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeExtrusion:19
 #: irsl_choreonoid.make_shapes.makeSphere:7
 #: irsl_choreonoid.make_shapes.makeTetrahedron:17
-#: irsl_choreonoid.make_shapes.makeTorus:13 of
+#: irsl_choreonoid.make_shapes.makeTorus:13
+#: irsl_choreonoid.make_shapes.makeTriangles:9 of
 msgid "If True, instance of cnoid.Util.SgShape will be returned (ignore wrapped)"
 msgstr ""
 
@@ -1320,7 +998,8 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeSphere:13
 #: irsl_choreonoid.make_shapes.makeTetrahedron:21
 #: irsl_choreonoid.make_shapes.makeText:15
-#: irsl_choreonoid.make_shapes.makeTorus:17 of
+#: irsl_choreonoid.make_shapes.makeTorus:17
+#: irsl_choreonoid.make_shapes.makeTriangles:13 of
 msgid "Keywords for generating material and mesh"
 msgstr ""
 
@@ -1375,6 +1054,7 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeExtrusion:28
 #: irsl_choreonoid.make_shapes.makeLineAlignedShape:16
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall:11
+#: irsl_choreonoid.make_shapes.makeLineAxis:14
 #: irsl_choreonoid.make_shapes.makeLines:22
 #: irsl_choreonoid.make_shapes.makePoints:20
 #: irsl_choreonoid.make_shapes.makeRoundTable:24
@@ -1384,6 +1064,7 @@ msgstr ""
 #: irsl_choreonoid.make_shapes.makeTetrahedron:24
 #: irsl_choreonoid.make_shapes.makeText:18
 #: irsl_choreonoid.make_shapes.makeTorus:20
+#: irsl_choreonoid.make_shapes.makeTriangles:16
 #: irsl_choreonoid.make_shapes.makeWireframeCone:10 of
 msgid ""
 "Created object as a node of SceneGraph or wrapped class for interactive "
@@ -1561,6 +1242,18 @@ msgstr ""
 
 #: irsl_choreonoid.make_shapes.makeTetrahedron:1 of
 msgid "Making 'Tetrahedron' shape"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTriangles:1 of
+msgid "Making 'Raw Triangle Mesh' shape"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTriangles:3 of
+msgid "N x 3 matrix (N is number of vertices) or list[numpy.array]"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTriangles:5 of
+msgid "size of this list should be M x 3 (M is number of faces)"
 msgstr ""
 
 #: irsl_choreonoid.make_shapes.makeAxis:1 of
@@ -1782,6 +1475,68 @@ msgstr ""
 msgid "Thickness of the wall"
 msgstr ""
 
+#: irsl_choreonoid.make_shapes.makeLineAxis:1 of
+msgid "Making simple line and axis"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAxis:3 of
+msgid "Start of the line"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAxis:5 of
+msgid "End of the line, axis tip will indicate at this point"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAxis:7 of
+msgid "Length of the axis tip arrows"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeLineAxis:9 of
+msgid "Angle of axis tip"
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:1 of
+msgid "Creates a textured plate with the given image array."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:3 of
+msgid "Image array with shape (height, width, channels)."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:5 of
+msgid "Pose coordinates for the plate."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:7 of
+msgid "Width of the plate in meters."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:9 of
+msgid ""
+"Height of the plate in meters. If None, calculated from width and "
+"aspectRatio. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:11 of
+msgid ""
+"Aspect ratio (height/width) of the plate. If None, calculated from the "
+"image array dimensions. Defaults to None."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:14 of
+msgid "Thickness of the plate in meters."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:17 of
+msgid ""
+"A box object with the texture applied and positioned according to the "
+"given coordinates."
+msgstr ""
+
+#: irsl_choreonoid.make_shapes.makeTexturedPlate:20 of
+msgid "The coords parameter is expected to be in OpenCV camera coordinates."
+msgstr ""
+
 #: irsl_choreonoid.make_shapes.exportMesh:1 of
 msgid "Exporting SgNode as a mesh file (using Assimp)"
 msgstr ""
@@ -1824,6 +1579,7 @@ msgid "Base uri to be add"
 msgstr ""
 
 #: irsl_choreonoid.make_shapes.addUriToShape:10 of
+#, python-brace-format
 msgid "uri : {base_uri}/{base_name}_{counter}"
 msgstr ""
 
@@ -1909,13 +1665,6 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.axisAlignedCoords:7 of
 msgid "Target axis to be alined"
-msgstr ""
-
-#: irsl_choreonoid.RobotBuilder.RobotBuilder:1
-#: irsl_choreonoid.draw_coords.DrawCoordsList:1
-#: irsl_choreonoid.robot_util.IKWrapper:1
-#: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector:1 of
-msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper:1 of
@@ -2038,26 +1787,40 @@ msgid "'2D', 'planer', 'position', 'rotation'"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:15 of
-msgid "weight of base movement"
+msgid "weight of base movement (evaluation phase)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:17 of
-msgid "number of iteration"
+msgid "weight of velocity of base movement"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:19 of
-msgid "threshold for checking convergence"
+msgid ""
+"weight of velocity of joints (list length should be the same as num of "
+"joints)"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:21 of
-msgid "if True or number, adding noise to angle of joint before solving IK"
+msgid "number of iteration"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:23 of
+msgid "threshold for checking convergence"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:25 of
+msgid "precision of position. [prec_x, prec_y, prec_z, prec_R, prec_P, prec_Y]"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:27 of
+msgid "if True or number, adding noise to angle of joint before solving IK"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:29 of
 msgid "if True, printing debug message"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:26
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:32
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.inverseKinematics:8
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.move:10
 #: irsl_choreonoid.robot_util.RobotModelWrapped.EndEffector.moveCoords:10
@@ -2067,7 +1830,7 @@ msgstr ""
 msgid "IK was success or not, and total count of calculation"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:31
+#: irsl_choreonoid.robot_util.IKWrapper.inverseKinematics:37
 #: irsl_choreonoid.robot_util.RobotModelWrapped.fullBodyIK:23 of
 msgid "constraint : [1,1,1, 1,1,1] base_type : [1,1,1, 1,1,1]"
 msgstr ""
@@ -2191,8 +1954,32 @@ msgstr ""
 msgid "RootCoords stored while initialization"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
-msgid "Bases: :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfAllDescendants:1 of
+msgid "Merge mass-property of all descendants of parent link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfAllDescendants:3 of
+msgid "parent link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfAllDescendants:6 of
+msgid ""
+"(mass, center of mass[at parent link coordinates], inertia tensor[around "
+"center of mass])"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfList:1 of
+msgid "Merge mass-property of list of link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfList:3 of
+msgid "List of link, the first element is treated as the parent link"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.mergedMassPropertyOfList:6 of
+msgid ""
+"(base_coordinate, mass, center of mass[at base_coordinates], inertia "
+"tensor[around center of mass])"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped:1 of
@@ -2837,6 +2624,20 @@ msgid ""
 "irsl_choreonoid.robot_util.RobotModelWrapped.fullBodyIKRaw)"
 msgstr ""
 
+#: irsl_choreonoid.robot_util.RobotModelWrapped.moveCentroidOnFoot:1 of
+msgid "Move projected centroid to the center of feet"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.moveCentroidOnFoot:3 of
+msgid ""
+"Parameter of center position (p == 0.5 means center, p == 0.0 means "
+"right-foot, p == 1.0 means left-foot)"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.moveCentroidOnFoot:5 of
+msgid "Set target of height of CenterOfMass"
+msgstr ""
+
 #: irsl_choreonoid.robot_util.RobotModelWrapped.addLink:1 of
 msgid "Adding new link"
 msgstr ""
@@ -2880,8 +2681,38 @@ msgstr ""
 msgid "Wrapped SceneGrap (can visualize with DrawInterface)"
 msgstr ""
 
-#: irsl_choreonoid.robot_util.ImportedRobotModel:1 of
-msgid "Bases: :py:class:`~irsl_choreonoid.robot_util.RobotModelWrapped`"
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getDeviceMap:1 of
+msgid "Generates a list of device information dictionaries for all devices"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.getDeviceMap:3
+#: irsl_choreonoid.robot_util.getDeviceMap:6 of
+msgid ""
+"A list where each element is a dictionary containing the device's "
+"coordinates map, type, name, id, and associated link name."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap:1
+#: irsl_choreonoid.robot_util.addDeviceFromMap:1 of
+msgid "Adds devices to a robot body from a device map."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap:3
+#: irsl_choreonoid.robot_util.addDeviceFromMap:3 of
+msgid "The robot body or RobotModel instance to which devices will be added."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap:5
+#: irsl_choreonoid.robot_util.addDeviceFromMap:5 of
+msgid ""
+"A list of dictionaries, each specifying a device to add. Each dictionary "
+"should contain at least the 'type' and 'link' keys, and may optionally "
+"include 'name', 'id', and other configuration parameters."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap:10
+#: irsl_choreonoid.robot_util.addDeviceFromMap:10 of
+msgid "The style of dev_map is the same as the returns from getDeviceMap"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.ImportedRobotModel:1 of
@@ -2902,6 +2733,34 @@ msgstr ""
 
 #: irsl_choreonoid.robot_util.ImportedRobotModel.__init__:5 of
 msgid "If true, BodyItem will be loaded under WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.ImportedRobotModel.__init__:7 of
+msgid "name of loaded model"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.getDeviceMap:1 of
+msgid ""
+"Generates a list of device information dictionaries for all devices in "
+"the given robot body."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.getDeviceMap:3 of
+msgid ""
+"The robot body object. If it is an instance of `RobotModel`, devices are "
+"accessed via `inBody.robot.devices`, otherwise via `inBody.devices`."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.replaceCamera:1 of
+msgid "Replace oldcam to newcam"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.replaceCamera:8 of
+msgid "replaced Camera"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.replaceCamera:11 of
+msgid "This is used to change device,Camera to device,DepthCamera"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:49
@@ -3010,6 +2869,7 @@ msgstr ""
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCoords:5
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addCross:5
 #: irsl_choreonoid.draw_coords.DrawCoordsList.addPoint:5
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addAll:5
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addObjects:5
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addPyObject:5
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.removeObjects:5
@@ -3036,12 +2896,6 @@ msgid "1x3 vector, point to be drawn"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:1 of
-msgid ""
-"Bases: :py:class:`~irsl_choreonoid.draw_coords.DrawCoordsList`, "
-":py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
-msgstr ""
-
-#: irsl_choreonoid.draw_coords.DrawCoordsListWrapped:1 of
 msgid "Wrapped version of irsl_choreonoid.DrawCoordsList"
 msgstr ""
 
@@ -3054,12 +2908,6 @@ msgstr ""
 msgid ""
 "this is passing to irsl_choreonoid.robot_util.make_coordinates for making"
 " initial_coords of coordsWrapper"
-msgstr ""
-
-#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:1 of
-msgid ""
-"Bases: :py:class:`~cnoid.DrawInterface.GeneralDrawInterface`, "
-":py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
 msgstr ""
 
 #: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped:1 of
@@ -3076,7 +2924,7 @@ msgid ""
 "root position of this instance"
 msgstr ""
 
-#: ../../module_irsl_choreonoid.rst:67
+#: ../../module_irsl_choreonoid.rst:66
 msgid "Returns:"
 msgstr ""
 
@@ -3144,6 +2992,14 @@ msgstr ""
 msgid "object to be removed"
 msgstr ""
 
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addAll:1 of
+msgid "Add all objects contained in the arguments"
+msgstr ""
+
+#: irsl_choreonoid.draw_coords.GeneralDrawInterfaceWrapped.addAll:3 of
+msgid "objects to be drawn"
+msgstr ""
+
 #: ../../module_irsl_choreonoid.rst:75
 msgid "class coordsWrapper"
 msgstr ""
@@ -3162,10 +3018,6 @@ msgstr ""
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_object.py"
-msgstr ""
-
-#: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
-msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
 msgstr ""
 
 #: irsl_choreonoid.irsl_draw_object.coordsWrapper:1 of
@@ -3423,10 +3275,198 @@ msgid "Switch to draw this object"
 msgstr ""
 
 #: ../../module_irsl_choreonoid.rst:88
+#, fuzzy
+msgid "module irsl_choreonoid.control_utils"
+msgstr "irsl_choreonoid.cnoid_util"
+
+#: ../../module_irsl_choreonoid.rst:90
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/control_utils.py"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.interpolateCoords:1 of
+msgid "not implemented yet"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer:1 of
+msgid "Sequencer to set target-angles every cycle with interpolatin"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setNoInterpolation:1 of
+msgid "Set angle-vectors without interpolation"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setNoInterpolation:3 of
+msgid "List of angle-vector"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setNoInterpolation:5 of
+msgid "Target angle is updated every step-times of cycle"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setWithSteps:1 of
+msgid "Set single angle-vector with linear interpolation"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setWithSteps:3 of
+msgid "Target angle-vector"
+msgstr ""
+
+#: irsl_choreonoid.control_utils.Sequencer.setWithSteps:5 of
+msgid "After step cycle, target-angles equals to angle_vector"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:98
+#, fuzzy
+msgid "module irsl_choreonoid.simulation_utils"
+msgstr "irsl_choreonoid.robot_util"
+
+#: ../../module_irsl_choreonoid.rst:100
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/simulation_utils.py"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:108
+#, fuzzy
+msgid "module irsl_choreonoid.setup_cnoid"
+msgstr "irsl_choreonoid.cnoid_util"
+
+#: ../../module_irsl_choreonoid.rst:110
+msgid ""
+"https://github.com/IRSL-"
+"tut/irsl_choreonoid/blob/main/irsl_choreonoid/setup_cnoid.py"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid:1 of
+msgid "Utility class for setting .cnoid file from python script"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.__init__:1 of
+msgid "If set, it is used as root for creating environment"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.__init__:3 of
+msgid "If set, it is used as a worldItem"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:1 of
+msgid "Building environment (setting objects) under the WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:3
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:3 of
+msgid "value] ) : Dictionary for representing objects on environment"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:4
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:4 of
+msgid "Name of WorldItem, added objects under this item"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:6
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:6 of
+msgid "If True, creating new WorldItem"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:8
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:8 of
+msgid "If True, set camera position"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironment:10
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:10 of
+msgid "Offset of objects"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.addExtraWorld:1 of
+msgid "abstract method"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoid:1 of
+msgid "Creating project from parameters"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoid:3
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupCnoid:3 of
+msgid "value] ) : Dictionary for representing the project"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoid:4
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupCnoid:4 of
+msgid "If True, adding new SimulatorItem if there is no instruction in info_dict"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoid:6
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupCnoid:6 of
+msgid "If True, adding new WorldItem if there is no instruction in info_dict"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoid:8
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupCnoid:8 of
+msgid "If True, not adding environment(objects). Use buildEnvironment method."
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:1 of
+msgid "Building environment from yaml-file"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:3
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoidFromYaml:3
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setCnoidFromYaml:3
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:3 of
+msgid "File name to load"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml:5
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:5 of
+msgid "Keyword to pass to setup_cnoid.buildEnvironment"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoidFromYaml:1 of
+msgid "Creating project from yaml-file"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.createCnoidFromYaml:5
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setCnoidFromYaml:5 of
+msgid "Keyword to pass to setup_cnoid.createCnoid"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:1 of
+msgid "Setup environment from yaml-file (classmethod of buildEnvironmentFromYaml)"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setCnoidFromYaml:8
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setEnvironmentFromYaml:8 of
+msgid "Instance of setup_cnoid"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setCnoidFromYaml:1 of
+msgid "Setup project from yaml-file (classmethod of createCnoidFromYaml)"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupEnvironment:1 of
+msgid "Building environment (setting objects) under the WorldItem (class method)"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.setupCnoid:1 of
+msgid "Creating project from parameters (class method)"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.startSimulator:1 of
+msgid "Starting simulation"
+msgstr ""
+
+#: irsl_choreonoid.setup_cnoid.SetupCnoid.startSimulator:3 of
+msgid "If True, simulator will run with realtime sync mode"
+msgstr ""
+
+#: ../../module_irsl_choreonoid.rst:118
 msgid "module irsl_choreonoid.RobotBuilder"
 msgstr "irsl_choreonoid.RobotBuilder"
 
-#: ../../module_irsl_choreonoid.rst:90
+#: ../../module_irsl_choreonoid.rst:120
 msgid ""
 "https://github.com/IRSL-"
 "tut/irsl_choreonoid/blob/main/irsl_choreonoid/RobotBuilder.py"
@@ -3434,14 +3474,6 @@ msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder:1 of
 msgid "Building robot interactively"
-msgstr ""
-
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.JointType:1 of
-msgid "Bases: :py:class:`~enum.IntEnum`"
-msgstr ""
-
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.JointType:1 of
-msgid "An enumeration."
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.body:1
@@ -3538,7 +3570,8 @@ msgstr ""
 msgid ""
 "Showing information of links. (joint-type, joint-axis, mass, center-of-"
 "mass, inertia) :param autoScale: :type autoScale: boolean, default=False "
-":param \\*\\*kwargs:"
+":param \\*\\*kwargs: The other keywords will be passed to "
+"irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.viewInfo:6 of
@@ -3554,7 +3587,7 @@ msgid "Creating and showing jointShape"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.createJointShape:14
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:22
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:23
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.loadMesh:6
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.loadScene:6
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.make3DAxis:6
@@ -3586,6 +3619,50 @@ msgstr ""
 msgid "Creating a link and adding it as root-link"
 msgstr ""
 
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:1 of
+msgid "Target link to be visualized"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:3 of
+msgid "Scale factor of shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:5 of
+msgid "Returns wrapped object"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:7 of
+msgid "Add COM(Center Of Mass) shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:9 of
+msgid "Add inertia-tensor shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:11 of
+msgid "Add joint-type shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:13 of
+msgid "Add device-type shapes"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:15 of
+msgid "Add shapes directly to alink"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:17 of
+msgid "(boolean, default=False) :"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:18 of
+msgid "Use collision shape as visualized shape"
+msgstr ""
+
+#: irsl_choreonoid.RobotBuilder.RobotBuilder.createVisualizedLinkShape:20 of
+msgid "Use box shape for visualizing inertia-tensor (default: ellipsoid)"
+msgstr ""
+
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.exportBody:1 of
 msgid "Exporting created robot-model to file as .body file"
 msgstr ""
@@ -3593,12 +3670,6 @@ msgstr ""
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.exportBody:3
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.exportURDF:3 of
 msgid "Name of file"
-msgstr ""
-
-#: irsl_choreonoid.RobotBuilder.RobotBuilder.exportBody:7 of
-msgid ""
-"0:EmbedModels, 1:LinkToOriginalModelFiles, 2:ReplaceWithStdSceneFiles, "
-"3:ReplaceWithObjModelFiles"
 msgstr ""
 
 #: irsl_choreonoid.RobotBuilder.RobotBuilder.exportURDF:1 of
@@ -4426,5 +4497,55 @@ msgstr "irsl_choreonoid.make_shapes"
 #~ msgstr ""
 
 #~ msgid "Setting callback function"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "0; EmbedModels, 1; LinkToOriginalModelFiles, "
+#~ "2; ReplaceWithStdSceneFiles, 3; "
+#~ "ReplaceWithObjModelFiles"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "weight of base movement"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~irsl_choreonoid.robot_util.RobotModelWrapped`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~irsl_choreonoid.draw_coords.DrawCoordsList`,"
+#~ " :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Bases: :py:class:`~cnoid.DrawInterface.GeneralDrawInterface`,"
+#~ " :py:class:`~irsl_choreonoid.irsl_draw_object.coordsWrapper`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~enum.IntEnum`"
+#~ msgstr ""
+
+#~ msgid "An enumeration."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Showing information of links. (joint-"
+#~ "type, joint-axis, mass, center-of-"
+#~ "mass, inertia) :param autoScale: :type "
+#~ "autoScale: boolean, default=False :param "
+#~ "\\*\\*kwargs:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "0:EmbedModels, 1:LinkToOriginalModelFiles, "
+#~ "2:ReplaceWithStdSceneFiles, 3:ReplaceWithObjModelFiles"
 #~ msgstr ""
 

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-03 19:55+0900\n"
+"POT-Creation-Date: 2026-04-13 23:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.11.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../module_cnoid_robotassembler.rst:3
 msgid "RobotAssembler Modules"
@@ -25,18 +25,6 @@ msgstr "RobotAssembler モジュール"
 #: ../../module_cnoid_robotassembler.rst:7
 msgid "module cnoid.RobotAssembler"
 msgstr "cnoid.RobotAssembler"
-
-#: ../../docstring cnoid.RobotAssembler.RoboasmUtil:1
-#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint:1
-#: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:1
-#: cnoid.RobotAssembler.RobotAssemblerExtraInfo:1
-#: cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:1
-#: cnoid.RobotAssembler.RobotAssemblerGeometry:1
-#: cnoid.RobotAssembler.RobotAssemblerGeometry.Type:1
-#: cnoid.RobotAssembler.RobotAssemblerParts:1
-#: cnoid.RobotAssembler.RobotAssemblerSettings:1 of
-msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
-msgstr ""
 
 #: ../../docstring
 #: cnoid.RobotAssembler.RobotAssemblerConnectingPoint.PartsType:1
@@ -124,10 +112,6 @@ msgstr ""
 msgid "UNDEFINED"
 msgstr ""
 
-#: ../../docstring cnoid.RobotAssembler.RobotAssemblerActuator:1 of
-msgid "Bases: :py:class:`~cnoid.RobotAssembler.RobotAssemblerConnectingPoint`"
-msgstr ""
-
 #: ../../docstring cnoid.RobotAssembler.RobotAssemblerExtraInfo.Type:5 of
 msgid "IMU"
 msgstr ""
@@ -198,7 +182,8 @@ msgstr ""
 
 #: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:1
 #: cnoid.RobotAssembler.PyCapsule.getParts:1
-#: cnoid.RobotAssembler.PyCapsule.makeParts:1 of
+#: cnoid.RobotAssembler.PyCapsule.makeParts:1
+#: cnoid.RobotAssembler.PyCapsule.makeRobot:1 of
 msgid "Overloaded function."
 msgstr ""
 
@@ -212,15 +197,6 @@ msgstr ""
 msgid ""
 "getParts(self: cnoid.RobotAssembler.RobotAssemblerSettings, arg0: str) ->"
 " object"
-msgstr ""
-
-#: ../../docstring cnoid.RobotAssembler.RoboasmCoords:1 of
-msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
-msgstr ""
-
-#: ../../docstring cnoid.RobotAssembler.RoboasmConnectingPoint:1
-#: cnoid.RobotAssembler.RoboasmParts:1 cnoid.RobotAssembler.RoboasmRobot:1 of
-msgid "Bases: :py:class:`~cnoid.RobotAssembler.RoboasmCoords`"
 msgstr ""
 
 #: ../../docstring cnoid.RobotAssembler.PyCapsule.__init__:3 of
@@ -245,8 +221,16 @@ msgid ""
 "-> cnoid.RobotAssembler.RoboasmParts"
 msgstr ""
 
-#: ../../docstring cnoid.RobotAssembler.RASceneParts:1 of
-msgid "Bases: :py:class:`~cnoid.Util.SgPosTransform`"
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.makeRobot:3 of
+msgid ""
+"makeRobot(self: cnoid.RobotAssembler.RoboasmUtil, arg0: "
+"cnoid.RobotAssembler.RoboasmFile) -> cnoid.RobotAssembler.RoboasmRobot"
+msgstr ""
+
+#: ../../docstring cnoid.RobotAssembler.PyCapsule.makeRobot:5 of
+msgid ""
+"makeRobot(self: cnoid.RobotAssembler.RoboasmUtil, arg0: "
+"cnoid::robot_assembler::cnoidRAFile) -> cnoid.RobotAssembler.RoboasmRobot"
 msgstr ""
 
 #~ msgid ""
@@ -257,5 +241,20 @@ msgstr ""
 #~ msgid ""
 #~ "parts(self: cnoid.RobotAssembler.RobotAssemblerSettings, "
 #~ "arg0: str) -> object"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~pybind11_builtins.pybind11_object`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.RobotAssembler.RobotAssemblerConnectingPoint`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.IRSLCoords.coordinates`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.RobotAssembler.RoboasmCoords`"
+#~ msgstr ""
+
+#~ msgid "Bases: :py:class:`~cnoid.Util.SgPosTransform`"
 #~ msgstr ""
 
