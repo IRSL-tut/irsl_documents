@@ -34,7 +34,7 @@ msgstr "3次元の位置"
 msgid ""
 "The 3D position is a vector of three real numbers, represented using "
 "lower-case boldface letters."
-msgstr "3次元の位置は小文字の太字を用いて表される、実数3つのベクトルである。"
+msgstr "3次元の位置は小文字の太字を用いて表される、実数3つを要素とするベクトルである。"
 
 #: ../../coordinates.rst:15
 msgid ""
@@ -86,11 +86,11 @@ msgstr ""
 msgid ""
 "Rotation matrix is an orthogonal matrix, which means that the transpose "
 "and inverse of the matrix are equival"
-msgstr "この行列は直交行列となっており、以下の行列の転置 と 逆行列 が同値となる。"
+msgstr "この行列は直交行列となっており、以下のように、行列の転置 と 逆行列 が同値となる。"
 
 #: ../../coordinates.rst:47
 msgid "Inverse of a rotation matrix is denoted below."
-msgstr "回転行列の逆行列は以下のように定義される。"
+msgstr "回転行列の逆行列は以下のようになる。"
 
 #: ../../coordinates.rst:49
 msgid ""
@@ -111,7 +111,7 @@ msgid ""
 "Although the degree of freedom (DOF) of rotation is 3, a rotation matrix "
 "that is easy to use in calculations, and a quaternion that has no "
 "singular points and is easy to interpolate are used."
-msgstr "情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。"
+msgstr "情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われることが多い。"
 
 #: ../../coordinates.rst:60
 msgid "Please refer to the reference book."
@@ -144,7 +144,7 @@ msgid ""
 ":math:`\\mathbf{R}` as follows."
 msgstr ""
 "3次元での姿勢を表すのに、同次変換行列 T を用いる。 T は 3次元位置ベクトル :math:`\\mathbf{p}` と 3次元回転行列 "
-"::math:`\\mathbf{R}` を用いて、以下のように4x4行列として表される。"
+":math:`\\mathbf{R}` を用いて、以下のように4x4行列として表される。"
 
 #: ../../coordinates.rst:83 ../../coordinates.rst:165
 msgid ""
