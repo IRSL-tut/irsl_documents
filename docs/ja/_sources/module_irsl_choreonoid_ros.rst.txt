@@ -14,6 +14,36 @@ https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/cn
     :members:
     :no-undoc-members:
 
+********************************
+irsl_choreonoid_ros.camera_utils
+********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/camera_utils.py
+
+.. automodule:: irsl_choreonoid_ros.camera_utils
+    :members:
+    :no-undoc-members:
+
+*******************************
+irsl_choreonoid_ros.point_utils
+*******************************
+
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/point_utils.py
+
+.. automodule:: irsl_choreonoid_ros.point_utils
+    :members:
+    :no-undoc-members:
+
+****************************
+irsl_choreonoid_ros.tf_utils
+****************************
+
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/tf_utils.py
+
+.. automodule:: irsl_choreonoid_ros.tf_utils
+    :members:
+    :no-undoc-members:
+
 *******************************
 irsl_choreonoid_ros.setup_cnoid
 *******************************
@@ -21,6 +51,16 @@ irsl_choreonoid_ros.setup_cnoid
 https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py
 
 .. automodule:: irsl_choreonoid_ros.setup_cnoid
+    :members:
+    :no-undoc-members:
+
+********************************
+irsl_choreonoid_ros.convert_msgs
+********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/convert_msgs.py
+
+.. automodule:: irsl_choreonoid_ros.convert_msgs
     :members:
     :no-undoc-members:
 

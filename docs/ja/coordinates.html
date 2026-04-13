@@ -1,27 +1,25 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja">
+<html class="writer-html5" lang="ja" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>座標系の説明 &mdash; IRSL python modules  ドキュメント</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2aa0fae8"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
-        <script src="_static/translations.js?v=4dbe4bdc"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=c033477b"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -106,12 +104,12 @@
            <div itemprop="articleBody">
              
   <section id="coordinates">
-<h1>座標系の説明<a class="headerlink" href="#coordinates" title="この見出しへのパーマリンク"></a></h1>
+<h1>座標系の説明<a class="headerlink" href="#coordinates" title="Link to this heading"></a></h1>
 <section id="coordinate-transformations">
-<h2>座標変換<a class="headerlink" href="#coordinate-transformations" title="この見出しへのパーマリンク"></a></h2>
+<h2>座標変換<a class="headerlink" href="#coordinate-transformations" title="Link to this heading"></a></h2>
 <section id="d-position">
-<h3>3次元の位置<a class="headerlink" href="#d-position" title="この見出しへのパーマリンク"></a></h3>
-<p>3次元の位置は小文字の太字を用いて表される、実数3つのベクトルである。</p>
+<h3>3次元の位置<a class="headerlink" href="#d-position" title="Link to this heading"></a></h3>
+<p>3次元の位置は小文字の太字を用いて表される、実数3つを要素とするベクトルである。</p>
 <p>3つの要素はそれぞれ、x軸、y軸、z軸の軸上の位置を表す。</p>
 <p>縦ベクトルとして表すことが多い。</p>
 <p>3次元の位置 <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> は以下のように定義されている。</p>
@@ -120,29 +118,29 @@
 <img alt="_images/position.PNG" src="_images/position.PNG" />
 </section>
 <section id="d-rotation">
-<h3>3次元の回転<a class="headerlink" href="#d-rotation" title="この見出しへのパーマリンク"></a></h3>
+<h3>3次元の回転<a class="headerlink" href="#d-rotation" title="Link to this heading"></a></h3>
 <p>3次元の回転は、回転行列を用いて表すことができる。</p>
 <p>回転行列は3x3の行列で、基準座標系から見た回転された座標系列の x軸、y軸、z軸を列方向に並べたものである。</p>
 <p>回転行列 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> は以下のように定義されている。</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{R} = [ \; \mathbf{x} \quad \mathbf{y} \quad \mathbf{z} \; ]\]</div>
 <img alt="_images/rotation.PNG" src="_images/rotation.PNG" />
-<p>この行列は直交行列となっており、以下の行列の転置 と 逆行列 が同値となる。</p>
-<p>回転行列の逆行列は以下のように定義される。</p>
+<p>この行列は直交行列となっており、以下のように、行列の転置 と 逆行列 が同値となる。</p>
+<p>回転行列の逆行列は以下のようになる。</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{R}^{-1} = \mathbf{R}^{T}\]</div>
 <p>3次元の回転の表し方としては、他に、 ロール・ピッチ・ヨー角(RPY)、単位クォータニオン(quaternion)、軸回り回転(AngleAxis)、等がある。</p>
-<p>情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われる。</p>
+<p>情報量としては3であるが、計算に使いやすい回転行列や、特異点がなく補間が容易なクォータニオンが使われることが多い。</p>
 <p>参考書を参照いただきたい。</p>
 <section id="angleaxis-representation">
-<h4>軸回り回転(AngleAxis)<a class="headerlink" href="#angleaxis-representation" title="この見出しへのパーマリンク"></a></h4>
+<h4>軸回り回転(AngleAxis)<a class="headerlink" href="#angleaxis-representation" title="Link to this heading"></a></h4>
 </section>
 </section>
 <section id="homogeneous-transformation-matrix">
-<h3>同時変換行列<a class="headerlink" href="#homogeneous-transformation-matrix" title="この見出しへのパーマリンク"></a></h3>
+<h3>同時変換行列<a class="headerlink" href="#homogeneous-transformation-matrix" title="Link to this heading"></a></h3>
 <p>3次元での姿勢は、3次元位置と3次元回転を用いて表すことができ、 位置の3自由度と回転の3自由度で6自由度となっている。</p>
 <p>3次元での6自由度を表現するために同時変換行列を用いる。</p>
-<p>3次元での姿勢を表すのに、同次変換行列 T を用いる。 T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と 3次元回転行列 :<span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を用いて、以下のように4x4行列として表される。</p>
+<p>3次元での姿勢を表すのに、同次変換行列 T を用いる。 T は 3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と 3次元回転行列 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を用いて、以下のように4x4行列として表される。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T = \begin{pmatrix}
 \mathbf{R}  &amp; \mathbf{p} \\
@@ -174,22 +172,22 @@
 \end{pmatrix}\end{split}\]</div>
 </section>
 <section id="system-of-coordinates">
-<h3>座標系<a class="headerlink" href="#system-of-coordinates" title="この見出しへのパーマリンク"></a></h3>
+<h3>座標系<a class="headerlink" href="#system-of-coordinates" title="Link to this heading"></a></h3>
 <img alt="_images/coordinates_system.PNG" src="_images/coordinates_system.PNG" />
 </section>
 <section id="coordinate-system-of-rigid-body-link">
-<h3>剛体リンクの座標系<a class="headerlink" href="#coordinate-system-of-rigid-body-link" title="この見出しへのパーマリンク"></a></h3>
+<h3>剛体リンクの座標系<a class="headerlink" href="#coordinate-system-of-rigid-body-link" title="Link to this heading"></a></h3>
 <img alt="_images/link_original.PNG" src="_images/link_original.PNG" />
 <img alt="_images/link_transformed.PNG" src="_images/link_transformed.PNG" />
 <img alt="_images/link_joint.PNG" src="_images/link_joint.PNG" />
 </section>
 </section>
 <section id="relation-between-system-of-coordinates-and-coordinates-class">
-<h2>座標系とcoordinatesクラスの関係<a class="headerlink" href="#relation-between-system-of-coordinates-and-coordinates-class" title="この見出しへのパーマリンク"></a></h2>
+<h2>座標系とcoordinatesクラスの関係<a class="headerlink" href="#relation-between-system-of-coordinates-and-coordinates-class" title="Link to this heading"></a></h2>
 <p>coordinatesクラス (cnoid.IRSLCoords.coordinates) は、 同次変換行列の操作を行うためのクラスである。</p>
 <p>coordinatesクラスのインスタンスは、 3次元位置ベクトル <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と 3次元回転行列 <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を持つ。</p>
 <section id="initializing-and-accessing-to-a-position-and-a-rotation-matrix">
-<h3>初期化と回転行列と３次元位置の取り出し<a class="headerlink" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix" title="この見出しへのパーマリンク"></a></h3>
+<h3>初期化と回転行列と３次元位置の取り出し<a class="headerlink" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix" title="Link to this heading"></a></h3>
 <p>coordinates のプロパティとして、 以下のように <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> と <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> を取り出せる。</p>
 <p>以下、Tはcoordinateクラスのインスタンスである。</p>
 <p>Tの数学的な表現は以下の通り。</p>
@@ -262,7 +260,7 @@
 </div>
 </section>
 <section id="methods-to-convert-a-vector">
-<h3>ベクトルを変換するメソッド<a class="headerlink" href="#methods-to-convert-a-vector" title="この見出しへのパーマリンク"></a></h3>
+<h3>ベクトルを変換するメソッド<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
 <p>以下、 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> は3次元ベクトル (numpy.array) である。以下の4つの関数は入力オブジェクトの値を変更しない。</p>
 <ul class="simple">
 <li><p>ベクトルを回転させる</p></li>
@@ -302,7 +300,7 @@
 <p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)\)</span></p>
 </section>
 <section id="methods-to-convert-a-vector-change-input-value">
-<h3>ベクトルを変換するメソッド（入力オブジェクトの値を変える）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="この見出しへのパーマリンク"></a></h3>
+<h3>ベクトルを変換するメソッド（入力オブジェクトの値を変える）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
 <p>これらの関数は入力オブジェクトの値を変更する。</p>
 <p>入力オブジェクトの値は返り値と同じ値になる。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
@@ -314,7 +312,7 @@
 </div>
 </section>
 <section id="methods-to-return-a-coordinate-without-modifying-itself">
-<h3>座標系を変更するメソッド<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="この見出しへのパーマリンク"></a></h3>
+<h3>座標系を変更するメソッド<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
 <p>以下で、A は、coordinatesクラスのインスタンスである。</p>
 <ul class="simple">
 <li><p>逆変換を表す変換を得る</p></li>
@@ -350,7 +348,7 @@
 <p><span class="math notranslate nohighlight">\(W^{-1}AT^{-1}W\)</span> が返る。</p>
 </section>
 <section id="methods-to-modify-itself">
-<h3>自身のインスタンスの値を変更するメソッド<a class="headerlink" href="#methods-to-modify-itself" title="この見出しへのパーマリンク"></a></h3>
+<h3>自身のインスタンスの値を変更するメソッド<a class="headerlink" href="#methods-to-modify-itself" title="Link to this heading"></a></h3>
 <p>以下で、 <span class="math notranslate nohighlight">\(\leftarrow\)</span> は代入を表す。</p>
 <ul class="simple">
 <li><p>新しい変換の代入</p></li>
@@ -436,11 +434,11 @@
 <p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
 </section>
 <section id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="この見出しへのパーマリンク"></a></h3>
+<h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
 </section>
 </section>
 <section id="reference-book">
-<h2>参考文献<a class="headerlink" href="#reference-book" title="この見出しへのパーマリンク"></a></h2>
+<h2>参考文献<a class="headerlink" href="#reference-book" title="Link to this heading"></a></h2>
 <p>実践ロボット制御 <a class="reference external" href="https://www.ohmsha.co.jp/book/9784274224300/">https://www.ohmsha.co.jp/book/9784274224300/</a></p>
 <p>第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる</p>
 </section>

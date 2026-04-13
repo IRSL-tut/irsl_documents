@@ -83,6 +83,36 @@ https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/irsl_draw_
     :members:
     :no-undoc-members:
 
+************************************
+module irsl_choreonoid.control_utils
+************************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/control_utils.py
+
+.. automodule:: irsl_choreonoid.control_utils
+    :members:
+    :no-undoc-members:
+
+***************************************
+module irsl_choreonoid.simulation_utils
+***************************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/simulation_utils.py
+
+.. automodule:: irsl_choreonoid.simulation_utils
+    :members:
+    :no-undoc-members:
+
+**********************************
+module irsl_choreonoid.setup_cnoid
+**********************************
+
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/irsl_choreonoid/setup_cnoid.py
+
+.. automodule:: irsl_choreonoid.setup_cnoid
+    :members:
+    :no-undoc-members:
+
 ***********************************
 module irsl_choreonoid.RobotBuilder
 ***********************************

@@ -1,25 +1,23 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="ja">
+<html class="writer-html5" lang="ja" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>irsl_choreonoid_ros モジュール &mdash; IRSL python modules  ドキュメント</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2aa0fae8"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
-        <script src="_static/translations.js?v=4dbe4bdc"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=c033477b"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=4755f45a"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -53,22 +51,52 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">irsl_choreonoid_ros モジュール</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-cnoid-ros-util">irsl_choreonoid_ros.cnoid_ros_util</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.cnoid_ros_util.parseURLROS"><code class="docutils literal notranslate"><span class="pre">parseURLROS()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.cnoid_ros_util.initializeROS"><code class="docutils literal notranslate"><span class="pre">initializeROS()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-camera-utils">irsl_choreonoid_ros.camera_utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel"><code class="docutils literal notranslate"><span class="pre">PinholeCameraModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.__init__"><code class="docutils literal notranslate"><span class="pre">PinholeCameraModel.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw"><code class="docutils literal notranslate"><span class="pre">PinholeCameraModel.generatePointsRaw()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints"><code class="docutils literal notranslate"><span class="pre">PinholeCameraModel.generatePoints()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo"><code class="docutils literal notranslate"><span class="pre">cameraModelFromCameraInfo()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-point-utils">irsl_choreonoid_ros.point_utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw"><code class="docutils literal notranslate"><span class="pre">convertPointCloud2ToPointsRaw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints"><code class="docutils literal notranslate"><span class="pre">convertPointCloud2ToPoints()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw"><code class="docutils literal notranslate"><span class="pre">convertLaserScanToPointsRaw()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.point_utils.convertLaserScanToPoints"><code class="docutils literal notranslate"><span class="pre">convertLaserScanToPoints()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-tf-utils">irsl_choreonoid_ros.tf_utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformListener"><code class="docutils literal notranslate"><span class="pre">TransformListener</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformListener.__init__"><code class="docutils literal notranslate"><span class="pre">TransformListener.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords"><code class="docutils literal notranslate"><span class="pre">TransformListener.lookupCoords()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords"><code class="docutils literal notranslate"><span class="pre">TransformListener.waitForCoords()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting"><code class="docutils literal notranslate"><span class="pre">TransformListener.tryWaiting()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster"><code class="docutils literal notranslate"><span class="pre">TransformBroadcaster</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__"><code class="docutils literal notranslate"><span class="pre">TransformBroadcaster.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords"><code class="docutils literal notranslate"><span class="pre">TransformBroadcaster.sendCoords()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-setup-cnoid">irsl_choreonoid_ros.setup_cnoid</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid"><code class="docutils literal notranslate"><span class="pre">SetupCnoid</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.__init__()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.buildEnvironment()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.createCnoid()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.buildEnvironmentFromYaml()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.createCnoidFromYaml()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.setEnvironmentFromYaml()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.setCnoidFromYaml()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.setupEnvironment()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.setupCnoid()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.startSimulator()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.addExtraWorld"><code class="docutils literal notranslate"><span class="pre">SetupCnoid.addExtraWorld()</span></code></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-convert-msgs">irsl_choreonoid_ros.convert_msgs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.convert_msgs.convertToROSMsg"><code class="docutils literal notranslate"><span class="pre">convertToROSMsg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid_ros.convert_msgs.convertFromROSMsg"><code class="docutils literal notranslate"><span class="pre">convertFromROSMsg()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#irsl-choreonoid-ros-robotinterface">irsl_choreonoid_ros.RobotInterface</a><ul>
@@ -186,14 +214,14 @@
            <div itemprop="articleBody">
              
   <section id="modules-in-irsl-choreonoid-ros">
-<h1>irsl_choreonoid_ros モジュール<a class="headerlink" href="#modules-in-irsl-choreonoid-ros" title="この見出しへのパーマリンク"></a></h1>
+<h1>irsl_choreonoid_ros モジュール<a class="headerlink" href="#modules-in-irsl-choreonoid-ros" title="Link to this heading"></a></h1>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros">https://github.com/IRSL-tut/irsl_choreonoid_ros</a></p>
 <section id="irsl-choreonoid-ros-cnoid-ros-util">
-<h2>irsl_choreonoid_ros.cnoid_ros_util<a class="headerlink" href="#irsl-choreonoid-ros-cnoid-ros-util" title="この見出しへのパーマリンク"></a></h2>
+<h2>irsl_choreonoid_ros.cnoid_ros_util<a class="headerlink" href="#irsl-choreonoid-ros-cnoid-ros-util" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/cnoid_ros_util.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/cnoid_ros_util.py</a></p>
-<span class="target" id="module-irsl_choreonoid_ros.cnoid_ros_util"></span><dl class="py function">
+<dl class="py function" id="module-irsl_choreonoid_ros.cnoid_ros_util">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.cnoid_ros_util.parseURLROS">
-<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.cnoid_ros_util.</span></span><span class="sig-name descname"><span class="pre">parseURLROS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.cnoid_ros_util.parseURLROS" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.cnoid_ros_util.</span></span><span class="sig-name descname"><span class="pre">parseURLROS</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.cnoid_ros_util.parseURLROS" title="Link to this definition"></a></dt>
 <dd><p>Refere parseURL in irsl_choreonoid.cnoid_util</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -213,18 +241,366 @@
 </div>
 </dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.cnoid_ros_util.initializeROS">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.cnoid_ros_util.</span></span><span class="sig-name descname"><span class="pre">initializeROS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_URI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_PORT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11311</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HOSTNAME</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.cnoid_ros_util.initializeROS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="irsl-choreonoid-ros-camera-utils">
+<h2>irsl_choreonoid_ros.camera_utils<a class="headerlink" href="#irsl-choreonoid-ros-camera-utils" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/camera_utils.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/camera_utils.py</a></p>
+<dl class="py class" id="module-irsl_choreonoid_ros.camera_utils">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.camera_utils.PinholeCameraModel">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.camera_utils.</span></span><span class="sig-name descname"><span class="pre">PinholeCameraModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">PinholeCameraModel</span></code></p>
+<p>Examples:
+&gt;&gt;&gt; msg = sensor_msgs.msg.CameraInfo()
+&gt;&gt;&gt; cm = PinhoneCameraModel(msg)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.camera_utils.PinholeCameraModel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw">
+<span class="sig-name descname"><span class="pre">generatePointsRaw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depthImageCv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorImageCv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ROI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePointsRaw" title="Link to this definition"></a></dt>
+<dd><p>Generates 3D points and corresponding colors from a depth image using a pinhole camera model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>depthImageCv</strong> (<em>numpy.ndarray</em>) -- Depth image in CV format, where depth values are in millimeters.</p></li>
+<li><p><strong>transform</strong> (<em>optional</em>) -- Transformation object to apply to the generated 3D points. Defaults to None.</p></li>
+<li><p><strong>colorImageCv</strong> (<em>numpy.ndarray</em><em>, </em><em>optional</em>) -- Color image in CV format, used to extract color information for points. Defaults to None.</p></li>
+<li><p><strong>threshold</strong> (<em>float</em><em>, </em><em>optional</em>) -- Minimum depth value to consider. Points with depth below this value are ignored. Defaults to 0.1.</p></li>
+<li><p><strong>ROI</strong> (<em>sensor_msgs.msg.RegionOfInterest</em><em> or </em><em>tuple</em><em>, </em><em>optional</em>) -- Region of Interest (ROI) object specifying the area of the image to process. Defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>points (list of numpy.ndarray): List of 3D points in the camera coordinate system.</p></li>
+<li><p>colors (list of numpy.ndarray): List of color values corresponding to the 3D points. Empty if <cite>colorImageCv</cite> is None.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>(points, colors)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints">
+<span class="sig-name descname"><span class="pre">generatePoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depthImageCv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colorImageCv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ROI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel.generatePoints" title="Link to this definition"></a></dt>
+<dd><p>Generates SceneNode of 3D points from a depth image and optionally associates colors with the points.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>depthImageCv</strong> (<em>numpy.ndarray</em>) -- The depth image in OpenCV format.</p></li>
+<li><p><strong>transform</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>coordinates</em></a><em>, </em><em>optional</em>) -- A transformation matrix to apply to the points. Defaults to None.</p></li>
+<li><p><strong>colorImageCv</strong> (<em>numpy.ndarray</em><em>, </em><em>optional</em>) -- The color image in OpenCV format to associate colors with the points. Defaults to None.</p></li>
+<li><p><strong>threshold</strong> (<em>float</em><em>, </em><em>optional</em>) -- The depth threshold to filter points. Defaults to 0.1.</p></li>
+<li><p><strong>ROI</strong> (<em>sensor_msgs.msg.RegionOfInterest</em><em> or </em><em>tuple</em><em>, </em><em>optional</em>) -- A region of interest specified as (x, y, width, height). Defaults to None.</p></li>
+<li><p><strong>**kwargs</strong> -- Additional keyword arguments to pass to the <cite>mkshapes.makePoints</cite> function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>A points object created by <cite>mkshapes.makePoints</cite>, containing the generated 3D points and optionally their associated colors.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object">object</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.camera_utils.</span></span><span class="sig-name descname"><span class="pre">cameraModelFromCameraInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.camera_utils.cameraModelFromCameraInfo" title="Link to this definition"></a></dt>
+<dd><p>Generate Camera-model from a CameraInfo message</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>camera_info</strong> (<em>sensor_msgs.msg.CameraInfo</em>) -- The CameraInfo message</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>An instance of PinholeCameraModel initialized with</dt><dd><p>the parameters from the provided CameraInfo message.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#irsl_choreonoid_ros.camera_utils.PinholeCameraModel" title="irsl_choreonoid_ros.camera_utils.PinholeCameraModel">PinholeCameraModel</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="irsl-choreonoid-ros-point-utils">
+<h2>irsl_choreonoid_ros.point_utils<a class="headerlink" href="#irsl-choreonoid-ros-point-utils" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/point_utils.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/point_utils.py</a></p>
+<dl class="py function" id="module-irsl_choreonoid_ros.point_utils">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.point_utils.</span></span><span class="sig-name descname"><span class="pre">convertPointCloud2ToPointsRaw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pc2msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_nans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nanValue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ROI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.point_utils.convertPointCloud2ToPointsRaw" title="Link to this definition"></a></dt>
+<dd><p>Converts a PointCloud2 ROS message into raw points and optionally extracts colors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pc2msg</strong> (<em>sensor_msgs.msg.PointCloud2</em>) -- The PointCloud2 message to be converted.</p></li>
+<li><p><strong>skip_nans</strong> (<em>bool</em><em>, </em><em>optional</em>) -- If True, skips points with NaN values. Defaults to True.</p></li>
+<li><p><strong>nanValue</strong> (<em>float</em><em>, </em><em>optional</em>) -- Value to replace NaNs with if <cite>skip_nans</cite> is False. Defaults to None.</p></li>
+<li><p><strong>ROI</strong> (<em>tuple</em><em>, </em><em>optional</em>) -- Region of interest specified as (x, y, width, height). If provided, only points within this ROI are processed. Defaults to None.</p></li>
+<li><p><strong>addColor</strong> (<em>bool</em><em>, </em><em>optional</em>) -- If True, extracts RGB color information from the point cloud if available. Defaults to True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>points (list of numpy.ndarray): A list of 3D points as numpy arrays [x, y, z].</p></li>
+<li><p>colors (list of numpy.ndarray): A list of RGB colors as numpy arrays [r, g, b]. Empty if <cite>addColor</cite> is False or no color information is available.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+<dt class="field-even">例外<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> -- If the ROI is invalid or out of bounds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.point_utils.</span></span><span class="sig-name descname"><span class="pre">convertPointCloud2ToPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pc2msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_nans</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nanValue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ROI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.point_utils.convertPointCloud2ToPoints" title="Link to this definition"></a></dt>
+<dd><p>Converts a PointCloud2 ROS message to SgPoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pc2msg</strong> (<em>sensor_msgs.msg.PointCloud2</em>) -- The PointCloud2 message to be converted.</p></li>
+<li><p><strong>skip_nans</strong> (<em>bool</em><em>, </em><em>optional</em>) -- If True, skips points with NaN values. Defaults to True.</p></li>
+<li><p><strong>nanValue</strong> (<em>float</em><em>, </em><em>optional</em>) -- Value to replace NaNs with, if <cite>skip_nans</cite> is False. Defaults to None.</p></li>
+<li><p><strong>ROI</strong> (<em>tuple</em><em>, </em><em>optional</em>) -- Region of Interest specified as a tuple (xmin, xmax, ymin, ymax, zmin, zmax).
+If provided, only points within this region are included. Defaults to None.</p></li>
+<li><p><strong>addColor</strong> (<em>bool</em><em>, </em><em>optional</em>) -- If True, extracts color information from the PointCloud2 message. Defaults to True.</p></li>
+<li><p><strong>**kwargs</strong> -- Additional keyword arguments passed to the <cite>mkshapes.makePoints</cite> function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>A point cloud shape created using the processed points and colors.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object">object</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.point_utils.</span></span><span class="sig-name descname"><span class="pre">convertLaserScanToPointsRaw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lsmsg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useIntensities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIntensity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_inf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.point_utils.convertLaserScanToPointsRaw" title="Link to this definition"></a></dt>
+<dd><p>Converts a LaserScan ROS message into a list of 2D points and optionally their corresponding colors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lsmsg</strong> (<em>LaserScan</em>) -- The LaserScan message containing range and intensity data.</p></li>
+<li><p><strong>useIntensities</strong> (<em>bool</em><em>, </em><em>optional</em>) -- Whether to use intensity values to compute colors. Defaults to False.</p></li>
+<li><p><strong>maxIntensity</strong> (<em>float</em><em>, </em><em>optional</em>) -- The maximum intensity value for normalization. Defaults to 1.0.</p></li>
+<li><p><strong>maxColor</strong> (<em>numpy.ndarray</em><em>, </em><em>optional</em>) -- The RGB color corresponding to maximum intensity. Defaults to [0., 1., 0.] (green).</p></li>
+<li><p><strong>minColor</strong> (<em>numpy.ndarray</em><em>, </em><em>optional</em>) -- The RGB color corresponding to minimum intensity. Defaults to [1., 0., 0.] (red).</p></li>
+<li><p><strong>skip_inf</strong> (<em>bool</em><em>, </em><em>optional</em>) -- Whether to skip points with infinite range values. Defaults to True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing:</dt><dd><ul class="simple">
+<li><p>points (list of numpy.ndarray): A list of 2D points in the form [x, y, z=0].</p></li>
+<li><p>colors (list of numpy.ndarray): A list of RGB colors corresponding to the points (empty if <cite>useIntensities</cite> is False).</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.point_utils.convertLaserScanToPoints">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.point_utils.</span></span><span class="sig-name descname"><span class="pre">convertLaserScanToPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lsmsg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useIntensities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIntensity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minColor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_inf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.point_utils.convertLaserScanToPoints" title="Link to this definition"></a></dt>
+<dd><p>Converts a LaserScan ROS message to SgPoint</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lsmsg</strong> (<em>sensor_msgs.msg.LaserScan</em>) -- The LaserScan message to be converted.</p></li>
+<li><p><strong>useIntensities</strong> (<em>bool</em><em>, </em><em>optional</em>) -- Whether to use intensity values for coloring the points. Defaults to False.</p></li>
+<li><p><strong>maxIntensity</strong> (<em>float</em><em>, </em><em>optional</em>) -- The maximum intensity value for scaling colors. Defaults to 1.0.</p></li>
+<li><p><strong>maxColor</strong> (<em>tuple</em><em> or </em><em>list</em><em>, </em><em>optional</em>) -- The RGB color corresponding to the maximum intensity. Defaults to None.</p></li>
+<li><p><strong>minColor</strong> (<em>tuple</em><em> or </em><em>list</em><em>, </em><em>optional</em>) -- The RGB color corresponding to the minimum intensity. Defaults to None.</p></li>
+<li><p><strong>skip_inf</strong> (<em>bool</em><em>, </em><em>optional</em>) -- Whether to skip points with infinite range values. Defaults to True.</p></li>
+<li><p><strong>**kwargs</strong> -- Additional keyword arguments to be passed to the <cite>mkshapes.makePoints</cite> function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>A points object created by <cite>mkshapes.makePoints</cite>, containing the 3D points and optional colors.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object">object</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="irsl-choreonoid-ros-tf-utils">
+<h2>irsl_choreonoid_ros.tf_utils<a class="headerlink" href="#irsl-choreonoid-ros-tf-utils" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/tf_utils.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/tf_utils.py</a></p>
+<dl class="py class" id="module-irsl_choreonoid_ros.tf_utils">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformListener">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.tf_utils.</span></span><span class="sig-name descname"><span class="pre">TransformListener</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformListener" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">TransformListener</span></code></p>
+<p>A custom TransformListener class that extends tf.TransformListener to provide additional utility methods
+for working with coordinate(IRSL)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformListener.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformListener.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initializes the TransformListener instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*args</strong> -- Variable length argument list passed to tf.TransformListener class.</p></li>
+<li><p><strong>**kwargs</strong> -- Arbitrary keyword arguments passed to tf.TransformListener class.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">メモ</p>
+<p>interpolate (bool, default=True) :
+cache_time (float, optional) : time of cache</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords">
+<span class="sig-name descname"><span class="pre">lookupCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">source_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rostime</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformListener.lookupCoords" title="Link to this definition"></a></dt>
+<dd><p>Looks up the transformation between two frames and returns it as coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>target_frame</strong> (<em>str</em>) -- The name of the target frame.</p></li>
+<li><p><strong>source_frame</strong> (<em>str</em>) -- The name of the source frame.</p></li>
+<li><p><strong>rostime</strong> (<em>rospy.Time</em>) -- The time at which to perform the lookup.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>A coordinates object containing the translation and rotation.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates">coordinates</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords">
+<span class="sig-name descname"><span class="pre">waitForCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rostime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformListener.waitForCoords" title="Link to this definition"></a></dt>
+<dd><p>Waits for a transformation between two frames to become available. (Raise exception if failed)</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin_frame</strong> (<em>str</em>) -- The name of the origin frame.</p></li>
+<li><p><strong>target_frame</strong> (<em>str</em>) -- The name of the target frame.</p></li>
+<li><p><strong>rostime</strong> (<em>rospy.Time</em>) -- The time at which to wait for the transformation.</p></li>
+<li><p><strong>timeout_sec</strong> (<em>float</em><em>, </em><em>optional</em>) -- The timeout duration in seconds. Defaults to 1.0.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting">
+<span class="sig-name descname"><span class="pre">tryWaiting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">origin_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rostime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_sec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformListener.tryWaiting" title="Link to this definition"></a></dt>
+<dd><p>Attempts to wait for a transformation between two frames to become available. (Return True if the transformation was found)</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>origin_frame</strong> (<em>str</em>) -- The name of the origin frame.</p></li>
+<li><p><strong>target_frame</strong> (<em>str</em>) -- The name of the target frame.</p></li>
+<li><p><strong>rostime</strong> (<em>rospy.Time</em>) -- The time at which to wait for the transformation.</p></li>
+<li><p><strong>timeout_sec</strong> (<em>float</em><em>, </em><em>optional</em>) -- The timeout duration in seconds. Defaults to 1.0.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the transformation becomes available, False otherwise.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformBroadcaster">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.tf_utils.</span></span><span class="sig-name descname"><span class="pre">TransformBroadcaster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">TransformBroadcaster</span></code></p>
+<p>A custom TransformBroadcaster class that extends tf.TransformBroadcaster to provide additional utility methods
+for working with coordinate(IRSL)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster.__init__" title="Link to this definition"></a></dt>
+<dd><p>Initializes the TransformListener instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>*args</strong> -- Variable length argument list passed to tf.TransformBroadcaster class.</p></li>
+<li><p><strong>**kwargs</strong> -- Arbitrary keyword arguments passed to tf.TransformBroadcaster class.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords">
+<span class="sig-name descname"><span class="pre">sendCoords</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rostime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">child</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.tf_utils.TransformBroadcaster.sendCoords" title="Link to this definition"></a></dt>
+<dd><p>Sends the coordinates as TF</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coords</strong> (<a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object"><em>object</em></a>) -- An object containing <cite>pos</cite> (position as a list of 3 floats)
+and <cite>quaternion</cite> (rotation as a list of 4 floats).</p></li>
+<li><p><strong>rostime</strong> (<em>rospy.Time</em>) -- The timestamp for the transform.</p></li>
+<li><p><strong>child</strong> (<em>str</em>) -- The child frame ID.</p></li>
+<li><p><strong>parent</strong> (<em>str</em>) -- The parent frame ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the transform was successfully sent, False otherwise.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 <section id="irsl-choreonoid-ros-setup-cnoid">
-<h2>irsl_choreonoid_ros.setup_cnoid<a class="headerlink" href="#irsl-choreonoid-ros-setup-cnoid" title="この見出しへのパーマリンク"></a></h2>
+<h2>irsl_choreonoid_ros.setup_cnoid<a class="headerlink" href="#irsl-choreonoid-ros-setup-cnoid" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/setup_cnoid.py</a></p>
-<span class="target" id="module-irsl_choreonoid_ros.setup_cnoid"></span><dl class="py class">
+<dl class="py class" id="module-irsl_choreonoid_ros.setup_cnoid">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.setup_cnoid.</span></span><span class="sig-name descname"><span class="pre">SetupCnoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rootItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">worldItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid" title="この定義へのパーマリンク"></a></dt>
-<dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Utility class for setting .cnoid file from python script</p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.setup_cnoid.</span></span><span class="sig-name descname"><span class="pre">SetupCnoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rootItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">worldItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid" title="Link to this definition"></a></dt>
+<dd><p>ベースクラス: <a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.setup_cnoid.SetupCnoid" title="irsl_choreonoid.setup_cnoid.SetupCnoid"><code class="xref py py-class docutils literal notranslate"><span class="pre">SetupCnoid</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rootItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">worldItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rootItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">worldItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.__init__" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -236,169 +612,79 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment">
-<span class="sig-name descname"><span class="pre">buildEnvironment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'World'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createWorld</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setCamera</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironment" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Building environment (setting objects) under the WorldItem</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dict</strong><strong>[</strong><strong>'key'</strong> (<em>info_dict</em><em> (</em>) -- value] ) : Dictionary for representing objects on environment</p></li>
-<li><p><strong>world</strong> (<em>str</em><em>, </em><em>default='World'</em>) -- Name of WorldItem, added objects under this item</p></li>
-<li><p><strong>craeteWorld</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, creating new WorldItem</p></li>
-<li><p><strong>setCamera</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, set camera position</p></li>
-<li><p><strong>offset</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Offset of objects</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid">
-<span class="sig-name descname"><span class="pre">createCnoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addDefaultSimulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addDefaultWorld</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noEnvironment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoid" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Creating project from parameters</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dict</strong><strong>[</strong><strong>'key'</strong> (<em>info_dict</em><em> (</em>) -- value] ) : Dictionary for representing the project</p></li>
-<li><p><strong>addDefaultSimulator</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, adding new SimulatorItem if there is no instruction in info_dict</p></li>
-<li><p><strong>addDefaultWorld</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, adding new WorldItem if there is no instruction in info_dict</p></li>
-<li><p><strong>noEnvironment</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, not adding environment(objects). Use buildEnvironment method.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml">
-<span class="sig-name descname"><span class="pre">buildEnvironmentFromYaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yamlFile</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.buildEnvironmentFromYaml" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Building environment from yaml-file</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>yamlFile</strong> (<em>str</em>) -- File name to load</p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- Keyword to pass to setup_cnoid.buildEnvironment</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml">
-<span class="sig-name descname"><span class="pre">createCnoidFromYaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yamlFile</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.createCnoidFromYaml" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Creating project from yaml-file</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>yamlFile</strong> (<em>str</em>) -- File name to load</p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- Keyword to pass to setup_cnoid.createCnoid</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setEnvironmentFromYaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yamlFile</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setEnvironmentFromYaml" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Setup environment from yaml-file (classmethod of buildEnvironmentFromYaml)</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>yamlFile</strong> (<em>str</em>) -- File name to load</p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- Keyword to pass to setup_cnoid.buildEnvironment</p></li>
-</ul>
-</dd>
-<dt class="field-even">戻り値<span class="colon">:</span></dt>
-<dd class="field-even"><p>Instance of setup_cnoid</p>
-</dd>
-<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
-<dd class="field-odd"><p>irsl_choreonoid_ros.setup_cnoid</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setCnoidFromYaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yamlFile</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setCnoidFromYaml" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Setup project from yaml-file (classmethod of createCnoidFromYaml)</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>yamlFile</strong> (<em>str</em>) -- File name to load</p></li>
-<li><p><strong>kwargs</strong> (<em>dict</em>) -- Keyword to pass to setup_cnoid.createCnoid</p></li>
-</ul>
-</dd>
-<dt class="field-even">戻り値<span class="colon">:</span></dt>
-<dd class="field-even"><p>Instance of setup_cnoid</p>
-</dd>
-<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
-<dd class="field-odd"><p>irsl_choreonoid_ros.setup_cnoid</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setupEnvironment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupEnvironment" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Building environment (setting objects) under the WorldItem (class method)</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dict</strong><strong>[</strong><strong>'key'</strong> (<em>info_dict</em><em> (</em>) -- value] ) : Dictionary for representing objects on environment</p></li>
-<li><p><strong>world</strong> (<em>str</em><em>, </em><em>default='World'</em>) -- Name of WorldItem, added objects under this item</p></li>
-<li><p><strong>craeteWorld</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, creating new WorldItem</p></li>
-<li><p><strong>setCamera</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, set camera position</p></li>
-<li><p><strong>offset</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Offset of objects</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">setupCnoid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.setupCnoid" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Creating project from parameters (class method)</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dict</strong><strong>[</strong><strong>'key'</strong> (<em>info_dict</em><em> (</em>) -- value] ) : Dictionary for representing the project</p></li>
-<li><p><strong>addDefaultSimulator</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, adding new SimulatorItem if there is no instruction in info_dict</p></li>
-<li><p><strong>addDefaultWorld</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If True, adding new WorldItem if there is no instruction in info_dict</p></li>
-<li><p><strong>noEnvironment</strong> (<em>boolean</em><em>, </em><em>default=False</em>) -- If True, not adding environment(objects). Use buildEnvironment method.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator">
-<span class="sig-name descname"><span class="pre">startSimulator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">realTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.startSimulator" title="この定義へのパーマリンク"></a></dt>
-<dd><p>Starting simulation</p>
-<dl class="field-list simple">
-<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>realTime</strong> (<em>boolean</em><em>, </em><em>default=None</em>) -- If True, simulator will run with realtime sync mode</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.setup_cnoid.SetupCnoid.addExtraWorld">
+<span class="sig-name descname"><span class="pre">addExtraWorld</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">world_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.setup_cnoid.SetupCnoid.addExtraWorld" title="Link to this definition"></a></dt>
+<dd><p>abstract method</p>
 </dd></dl>
 
 </dd></dl>
 
 </section>
+<section id="irsl-choreonoid-ros-convert-msgs">
+<h2>irsl_choreonoid_ros.convert_msgs<a class="headerlink" href="#irsl-choreonoid-ros-convert-msgs" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/convert_msgs.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/convert_msgs.py</a></p>
+<dl class="py function" id="module-irsl_choreonoid_ros.convert_msgs">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.convert_msgs.convertToROSMsg">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.convert_msgs.</span></span><span class="sig-name descname"><span class="pre">convertToROSMsg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pyexpr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_rosmsg</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.convert_msgs.convertToROSMsg" title="Link to this definition"></a></dt>
+<dd><p>Converts a Python expression to a ROS message of the specified type.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pyexpr</strong> -- The Python expression to be converted.</p></li>
+<li><p><strong>class_rosmsg</strong> -- The ROS message class to which the Python expression should be converted.</p></li>
+<li><p><strong>**kwargs</strong> -- Additional keyword arguments to be passed to the conversion function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>The converted ROS message.</p>
+</dd>
+<dt class="field-odd">例外<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> -- If the ROS message class is not found in the conversion function map.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="irsl_choreonoid_ros.convert_msgs.convertFromROSMsg">
+<span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.convert_msgs.</span></span><span class="sig-name descname"><span class="pre">convertFromROSMsg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rosmsg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.convert_msgs.convertFromROSMsg" title="Link to this definition"></a></dt>
+<dd><p>Converts a ROS message to a corresponding format using a predefined mapping.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rosmsg</strong> (<a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object"><em>object</em></a>) -- The ROS message to be converted.</p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>The converted message using the corresponding function from <cite>__from_function_map__</cite>.</p>
+</dd>
+<dt class="field-odd">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="module_irsl_choreonoid.html#irsl_choreonoid.irsl_draw_object.coordsWrapper.object" title="irsl_choreonoid.irsl_draw_object.coordsWrapper.object">object</a></p>
+</dd>
+<dt class="field-even">例外<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>Exception</strong> -- If the ROS message's class MD5 checksum is not found in <cite>__from_function_map__</cite>.</p>
+</dd>
+</dl>
+<p class="rubric">メモ</p>
+<p>This function checks if the ROS message's class MD5 checksum exists in the
+<cite>__from_function_map__</cite> dictionary. If a matching function is found, it is
+used to convert the ROS message. Otherwise, an exception is raised.</p>
+</dd></dl>
+
+</section>
 <section id="irsl-choreonoid-ros-robotinterface">
-<h2>irsl_choreonoid_ros.RobotInterface<a class="headerlink" href="#irsl-choreonoid-ros-robotinterface" title="この見出しへのパーマリンク"></a></h2>
+<h2>irsl_choreonoid_ros.RobotInterface<a class="headerlink" href="#irsl-choreonoid-ros-robotinterface" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/RobotInterface.py">https://github.com/IRSL-tut/irsl_choreonoid_ros/blob/main/irsl_choreonoid_ros/RobotInterface.py</a></p>
-<span class="target" id="module-irsl_choreonoid_ros.RobotInterface"></span><dl class="py class">
+<dl class="py class" id="module-irsl_choreonoid_ros.RobotInterface">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">MobileBaseInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">MobileBaseInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Interface for controlling locomotion of the robot</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.__init__" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">mobile_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_initialized" title="Link to this definition"></a></dt>
 <dd><p>Initialized check of MobileBase</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -412,7 +698,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">mobile_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">mobile_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.mobile_connected" title="Link to this definition"></a></dt>
 <dd><p>Connection check of MobileBase</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -426,11 +712,11 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving">
-<span class="sig-name descname"><span class="pre">waitFinishMoving</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitFinishMoving</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.waitFinishMoving" title="Link to this definition"></a></dt>
 <dd><p>Wait to finish moving of MobileBase</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>timeout</strong> (<em>float</em><em>, </em><em>default=1.0</em>) -- </p>
+<dd class="field-odd"><p><strong>timeout</strong> (<em>float</em><em>, </em><em>default=1.0</em>)</p>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>False returns, if timeout.</p>
@@ -443,18 +729,18 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop">
-<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.stop" title="Link to this definition"></a></dt>
 <dd><p>Stop moving of MobileBase</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>None</strong> -- </p>
+<dd class="field-odd"><p><strong>None</strong></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity">
-<span class="sig-name descname"><span class="pre">move_velocity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vel_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel_th</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">move_velocity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vel_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel_y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel_th</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_velocity" title="Link to this definition"></a></dt>
 <dd><p>Set moving velocity of MobileBase</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -469,7 +755,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">currentCoordsOnMap</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">currentCoordsOnMap</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnMap" title="Link to this definition"></a></dt>
 <dd><p>Current robot's coordinate on the map frame</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -483,7 +769,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">currentCoordsOnOdom</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">currentCoordsOnOdom</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.currentCoordsOnOdom" title="Link to this definition"></a></dt>
 <dd><p>Current robot's coordinate on the odom frame</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -497,7 +783,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap">
-<span class="sig-name descname"><span class="pre">coordsOnMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">coordsOnMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnMap" title="Link to this definition"></a></dt>
 <dd><p>Current robot's coordinate on the map frame</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -514,7 +800,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom">
-<span class="sig-name descname"><span class="pre">coordsOnOdom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">coordsOnOdom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.coordsOnOdom" title="Link to this definition"></a></dt>
 <dd><p>Current robot's coordinate on the odom frame</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -531,7 +817,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position">
-<span class="sig-name descname"><span class="pre">move_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">move_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_position" title="Link to this definition"></a></dt>
 <dd><p>Set target position for MobileBase, target is reletive to current robot's coordinates</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -542,7 +828,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map">
-<span class="sig-name descname"><span class="pre">move_on_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">move_on_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coords</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_on_map" title="Link to this definition"></a></dt>
 <dd><p>Set target position on map for MobileBase, target is relative to map coordinates</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -550,7 +836,7 @@
 <li><p><strong>coords</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a>) -- Target coordinates for moving (map coordinates)</p></li>
 <li><p><strong>relative</strong> (<em>boolean</em><em>, </em><em>default = False</em>) -- If True, trajectory is considered it is relative to robot's coordinates.</p></li>
 <li><p><strong>time</strong> (<em>rospy.Time</em><em>, </em><em>optional</em>) -- If relative is True, use this time to solve tf</p></li>
-<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>) -- </p></li>
+<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -558,7 +844,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map">
-<span class="sig-name descname"><span class="pre">wait_move_on_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">wait_move_on_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_on_map" title="Link to this definition"></a></dt>
 <dd><p>Wait until move_on_map method finished</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -569,7 +855,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map">
-<span class="sig-name descname"><span class="pre">move_trajectory_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trajectory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">move_trajectory_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trajectory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory_map" title="Link to this definition"></a></dt>
 <dd><p>Set target trajectory (based on tf of map) for MobileBase (odometry relative move)</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -577,7 +863,7 @@
 <li><p><strong>trajectory</strong> (<em>list</em><em>[</em><em>(</em><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a><em>, </em><em>float</em><em>)</em><em>]</em>) -- List of pair of coordinates and time</p></li>
 <li><p><strong>relative</strong> (<em>boolean</em><em>, </em><em>default = False</em>) -- If True, trajectory is considered it is relative to robot's coordinates.</p></li>
 <li><p><strong>time</strong> (<em>rospy.Time</em><em>, </em><em>optional</em>) -- If relative is True, use this time to solve tf</p></li>
-<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>) -- </p></li>
+<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -585,7 +871,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory">
-<span class="sig-name descname"><span class="pre">move_trajectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trajectory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt=&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">move_trajectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trajectory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">&lt;wrt.local:</span> <span class="pre">1&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.move_trajectory" title="Link to this definition"></a></dt>
 <dd><p>Set target trajectory for MobileBase (odometry relative move)</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -593,7 +879,7 @@
 <li><p><strong>trajectory</strong> (<em>list</em><em>[</em><em>(</em><a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates" title="cnoid.IRSLCoords.coordinates"><em>cnoid.IRSLCoords.coordinates</em></a><em>, </em><em>float</em><em>)</em><em>]</em>) -- List of pair of coordinates and time</p></li>
 <li><p><strong>relative</strong> (<em>boolean</em><em>, </em><em>default = False</em>) -- If True, trajectory is considered it is relative to robot's coordinates.</p></li>
 <li><p><strong>time</strong> (<em>rospy.Time</em><em>, </em><em>optional</em>) -- If relative is True, use this time to solve tf</p></li>
-<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>) -- </p></li>
+<li><p><strong>(</strong><strong>)</strong> (<a class="reference internal" href="module_cnoid_irslcoords.html#cnoid.IRSLCoords.coordinates.wrt" title="cnoid.IRSLCoords.coordinates.wrt"><em>wrt</em></a>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -601,7 +887,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory">
-<span class="sig-name descname"><span class="pre">wait_move_trajectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">wait_move_trajectory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface.wait_move_trajectory" title="Link to this definition"></a></dt>
 <dd><p>Wait until move_trajectory method finished</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -614,17 +900,17 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">JointInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">JointInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Interface for controlling joints of the robot</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.__init__" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">joint_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_initialized" title="Link to this definition"></a></dt>
 <dd><p>Initialized check of JointInterface</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -638,7 +924,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">joint_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">joint_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.joint_connected" title="Link to this definition"></a></dt>
 <dd><p>Connection check of JointInterface</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -652,7 +938,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">jointGroupList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupList" title="Link to this definition"></a></dt>
 <dd><p>Getting list of instance of joint-group</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -666,7 +952,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointGroupNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">jointGroupNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.jointGroupNames" title="Link to this definition"></a></dt>
 <dd><p>Getting list of name of joint-groups</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -680,7 +966,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup">
-<span class="sig-name descname"><span class="pre">getJointGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getJointGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.getJointGroup" title="Link to this definition"></a></dt>
 <dd><p>Getting a instance of joint-group</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -697,7 +983,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles">
-<span class="sig-name descname"><span class="pre">sendAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">sendAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngles" title="Link to this definition"></a></dt>
 <dd><p>Sending angles of self.robot to the actual robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -711,7 +997,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector">
-<span class="sig-name descname"><span class="pre">sendAngleVector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">sendAngleVector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_vector</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVector" title="Link to this definition"></a></dt>
 <dd><p>Sending angle-vector to the actual robot. angle_vector is set to self.robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -728,7 +1014,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence">
-<span class="sig-name descname"><span class="pre">sendAngleVectorSequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_vector_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">sendAngleVectorSequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_vector_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleVectorSequence" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -744,7 +1030,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap">
-<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">sendAngleMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_map</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitTimeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.sendAngleMap" title="Link to this definition"></a></dt>
 <dd><p>Sending angles to the actual robot. angles is set to self.robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -759,7 +1045,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished">
-<span class="sig-name descname"><span class="pre">isFinished</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">isFinished</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.isFinished" title="Link to this definition"></a></dt>
 <dd><p>Checking method for finishing to send angles</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -776,7 +1062,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish">
-<span class="sig-name descname"><span class="pre">waitUntilFinish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitUntilFinish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.JointInterface.waitUntilFinish" title="Link to this definition"></a></dt>
 <dd><p>Waiting until finishing joint moving</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -798,17 +1084,17 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">DeviceInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">DeviceInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Interface for receiving data from sensors on the robot</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">robot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.__init__" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">device_initialized</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_initialized" title="Link to this definition"></a></dt>
 <dd><p>Initialized check of DeviceInterface</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -822,7 +1108,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">device_connected</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.device_connected" title="Link to this definition"></a></dt>
 <dd><p>Connection check of DeviceInterface</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -836,7 +1122,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">deviceList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">deviceList</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceList" title="Link to this definition"></a></dt>
 <dd><p>Getting list of the instances for gathering data from the device</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -850,7 +1136,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">deviceNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">deviceNames</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.deviceNames" title="Link to this definition"></a></dt>
 <dd><p>Getting list of name of the devices</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -864,7 +1150,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice">
-<span class="sig-name descname"><span class="pre">getDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevice" title="Link to this definition"></a></dt>
 <dd><p>Getting the instance for gathering data from the device</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -881,7 +1167,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass">
-<span class="sig-name descname"><span class="pre">getDevicesByClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getDevicesByClass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.getDevicesByClass" title="Link to this definition"></a></dt>
 <dd><p>Getting the list of device which is a typical class</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -898,7 +1184,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.data">
-<span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.data" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.data" title="Link to this definition"></a></dt>
 <dd><p>Getting data from the device</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -918,7 +1204,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData">
-<span class="sig-name descname"><span class="pre">waitData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitData" title="Link to this definition"></a></dt>
 <dd><p>Getting data, waiting if there is no current data</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -939,7 +1225,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData">
-<span class="sig-name descname"><span class="pre">waitNextData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitNextData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextData" title="Link to this definition"></a></dt>
 <dd><p>Getting data, waiting until subscribing new data</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -960,7 +1246,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray">
-<span class="sig-name descname"><span class="pre">dataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">dataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.dataArray" title="Link to this definition"></a></dt>
 <dd><p>Getting list of data from devices</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -980,7 +1266,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray">
-<span class="sig-name descname"><span class="pre">waitDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitDataArray" title="Link to this definition"></a></dt>
 <dd><p>Getting list of data, waiting if there is no current data</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1001,7 +1287,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray">
-<span class="sig-name descname"><span class="pre">waitNextDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitNextDataArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.waitNextDataArray" title="Link to this definition"></a></dt>
 <dd><p>Getting list of data, waiting until subscribing new data</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1022,7 +1308,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice">
-<span class="sig-name descname"><span class="pre">addDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">addDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.addDevice" title="Link to this definition"></a></dt>
 <dd><p>Adding device to</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1040,7 +1326,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice">
-<span class="sig-name descname"><span class="pre">removeDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">devname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">purge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">removeDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">devname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">purge</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface.removeDevice" title="Link to this definition"></a></dt>
 <dd><p>Removing device from</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1062,12 +1348,12 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSubscriber">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">OneShotSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">OneShotSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">RosDeviceBase</span></code></p>
 <p>Subscribe just N messages</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.__init__" title="Link to this definition"></a></dt>
 <dd><p>&quot;
 :param topic: Name of Topic
 :type topic: str
@@ -1079,7 +1365,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults">
-<span class="sig-name descname"><span class="pre">waitResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSubscriber.waitResults" title="Link to this definition"></a></dt>
 <dd><p>&quot;Waiting N results</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1102,12 +1388,12 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">OneShotSyncSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">OneShotSyncSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <code class="xref py py-class docutils literal notranslate"><span class="pre">RosDeviceBase</span></code></p>
 <p>Subscribe just N sync messages</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.__init__" title="Link to this definition"></a></dt>
 <dd><p>&quot;
 :param topics: Name of Topic
 :type topics: list of str
@@ -1123,7 +1409,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults">
-<span class="sig-name descname"><span class="pre">waitResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">waitResults</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.OneShotSyncSubscriber.waitResults" title="Link to this definition"></a></dt>
 <dd><p>&quot;Waiting N results</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1139,14 +1425,14 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">RobotInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_URI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_PORT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11311</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HOSTNAME</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">irsl_choreonoid_ros.RobotInterface.</span></span><span class="sig-name descname"><span class="pre">RobotInterface</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_URI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_PORT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11311</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HOSTNAME</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface" title="Link to this definition"></a></dt>
 <dd><p>ベースクラス: <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.JointInterface" title="irsl_choreonoid_ros.RobotInterface.JointInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">JointInterface</span></code></a>, <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.DeviceInterface" title="irsl_choreonoid_ros.RobotInterface.DeviceInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">DeviceInterface</span></code></a>, <a class="reference internal" href="#irsl_choreonoid_ros.RobotInterface.MobileBaseInterface" title="irsl_choreonoid_ros.RobotInterface.MobileBaseInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">MobileBaseInterface</span></code></a></p>
 <p>Interface for controllring robot (inheriting classes JointInterface, DeviceInterface and MobileBaseInterface)</p>
 <p>At a instance of this interface, all methods in JointInterface, DeviceInterface and MobileBaseInterface can be used.</p>
 <p>Then, please refer methods of these classes.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_URI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_PORT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11311</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HOSTNAME</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'robot_interface'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anonymous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_URI</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MASTER_PORT</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11311</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">IP</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">HOSTNAME</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.__init__" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1154,7 +1440,7 @@
 <li><p><strong>node_name</strong> (<em>str</em><em>, </em><em>default='robot_interface'</em>) -- Name of node</p></li>
 <li><p><strong>anonymous</strong> (<em>boolean</em><em>, </em><em>default = False</em>) -- If True, ROS node will start with this node-name.</p></li>
 <li><p><strong>connection_wait</strong> (<em>float</em><em>, </em><em>default=3.0</em>) -- Wait until ROS connection has established</p></li>
-<li><p><strong>connection</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If false, create instace without ROS connection</p></li>
+<li><p><strong>connection</strong> (<em>boolean</em><em>, </em><em>default=True</em>) -- If false, create instance without ROS connection</p></li>
 <li><p><strong>MASTER_URI</strong> (<em>str</em><em>, </em><em>optional</em>) -- Set environment variable, ROS_MASTER_URI if MASTER is not set</p></li>
 <li><p><strong>MASTER</strong> (<em>str</em><em>, </em><em>optional</em>) -- Set environment variable, ROS_MASTER_URI = <a class="reference external" href="http://MASTER:MASTER_PORT">http://MASTER:MASTER_PORT</a></p></li>
 <li><p><strong>MASTER_PORT</strong> (<em>int</em><em>, </em><em>default 11311</em>) -- Set environment variable, ROS_MASTER_URI = <a class="reference external" href="http://MASTER:MASTER_PORT">http://MASTER:MASTER_PORT</a></p></li>
@@ -1167,7 +1453,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel">
-<span class="sig-name descname"><span class="pre">getRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRobotModel" title="Link to this definition"></a></dt>
 <dd><p>Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped)</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1184,7 +1470,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel">
-<span class="sig-name descname"><span class="pre">getActualRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getActualRobotModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">asItem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getActualRobotModel" title="Link to this definition"></a></dt>
 <dd><p>Return an instance of RobotModel (irsl_choreonoid.robot_util.RobotModelWrapped) with RobotInterface internal robot-model</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1201,11 +1487,11 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot">
-<span class="sig-name descname"><span class="pre">copyRobot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">copyRobot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.copyRobot" title="Link to this definition"></a></dt>
 <dd><p>Return other instance of the robot model</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>None</strong> -- </p>
+<dd class="field-odd"><p><strong>None</strong></p>
 </dd>
 <dt class="field-even">戻り値<span class="colon">:</span></dt>
 <dd class="field-even"><p>Copy of self.robot (this is not identical to self.robot)</p>
@@ -1218,11 +1504,11 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot">
-<span class="sig-name descname"><span class="pre">isRealRobot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">isRealRobot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.isRealRobot" title="Link to this definition"></a></dt>
 <dd><p>Checking this interface working with a real robot</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>None</strong> -- </p>
+<dd class="field-odd"><p><strong>None</strong></p>
 </dd>
 </dl>
 <dl class="simple">
@@ -1233,7 +1519,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">effortVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">effortVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.effortVector" title="Link to this definition"></a></dt>
 <dd><p>Return vector of effort of actual robot (sensing value)</p>
 <p>This method requires JointState class in devices</p>
 <dl class="field-list simple">
@@ -1248,7 +1534,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">velocityVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">velocityVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.velocityVector" title="Link to this definition"></a></dt>
 <dd><p>Return vector of velocity of actual robot (sensing value)</p>
 <p>This method requires JointState class in devices</p>
 <dl class="field-list simple">
@@ -1263,7 +1549,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">actualAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">actualAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.actualAngleVector" title="Link to this definition"></a></dt>
 <dd><p>Return angle-vector of actual robot (sensing value)</p>
 <p>This method requires JointState class in devices</p>
 <dl class="field-list simple">
@@ -1278,7 +1564,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">referenceAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">referenceAngleVector</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.referenceAngleVector" title="Link to this definition"></a></dt>
 <dd><p>Return reference angle-vector (value of past command)</p>
 <p>This method requires JointTrajectoryState class in devices</p>
 <dl class="field-list simple">
@@ -1293,7 +1579,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.robot">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">robot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">robot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.robot" title="Link to this definition"></a></dt>
 <dd><p>Return instance of the robot model (applying sensor values)</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -1307,7 +1593,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">jointRobot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot" title="この定義へのパーマリンク"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">jointRobot</span></span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.jointRobot" title="Link to this definition"></a></dt>
 <dd><p>Return instance of the robot model (using for sending command)</p>
 <dl class="field-list simple">
 <dt class="field-odd">戻り値<span class="colon">:</span></dt>
@@ -1321,7 +1607,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber">
-<span class="sig-name descname"><span class="pre">oneShotSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">oneShotSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSubscriber" title="Link to this definition"></a></dt>
 <dd><p>Return instance of OneShotSubscriber</p>
 <dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
@@ -1345,7 +1631,7 @@ res = one.waitResults(5)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber">
-<span class="sig-name descname"><span class="pre">oneShotSyncSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">oneShotSyncSubscriber</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msgs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_message_queue_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_slop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.02</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.oneShotSyncSubscriber" title="Link to this definition"></a></dt>
 <dd><p>&quot;
 :param topic: Name of Topic
 :type topic: list of str
@@ -1372,7 +1658,7 @@ res = one.waitResults(5)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice">
-<span class="sig-name descname"><span class="pre">getRosDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice" title="この定義へのパーマリンク"></a></dt>
+<span class="sig-name descname"><span class="pre">getRosDevice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">topic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid_ros.RobotInterface.RobotInterface.getRosDevice" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">パラメータ<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
