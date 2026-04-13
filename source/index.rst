@@ -12,6 +12,9 @@ Japanese version: japanese_doc_
 .. _japanese_doc: ja/index.html
 .. _english_doc: ../index.html
 
+Import almost all IRSL related packages by
+https://github.com/IRSL-tut/irsl_choreonoid/blob/main/sample/irsl_import.py
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
