@@ -10,8 +10,8 @@ cd irsl_documents
 
 cd util
 
-python3 -m pip install virtualenv
-virtualenv --python=python3 sphinx
+python3 -m pip install --break-system-packages virtualenv
+virtualenv --python=python3 --system-site-packages sphinx
 
 . sphinx/bin/activate
 
