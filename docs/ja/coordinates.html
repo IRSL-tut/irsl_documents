@@ -263,7 +263,7 @@
 <h3>ベクトルを変換するメソッド<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
 <p>以下、 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> は3次元ベクトル (numpy.array) である。以下の4つの関数は入力オブジェクトの値を変更しない。</p>
 <ul class="simple">
-<li><p>ベクトルを回転させる</p></li>
+<li><p>method: <strong>rotate_vector</strong> / ベクトルを回転させる</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
@@ -273,7 +273,7 @@
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R} \mathbf{v}\)</span></p>
 <ul class="simple">
-<li><p>ベクトルを回転させる（逆回転）</p></li>
+<li><p>method: <strong>inverse_rotate_vector</strong> / ベクトルを回転させる（逆回転）</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
@@ -281,7 +281,7 @@
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{v}^T \mathbf{R}\)</span></p>
 <ul class="simple">
-<li><p>ベクトルを変換する</p></li>
+<li><p>method: <strong>transform_vector</strong> / ベクトルを変換する</p></li>
 </ul>
 <p>ローカル座標系Tで表現されたベクトルのワールド座標系への変換</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
@@ -290,7 +290,7 @@
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}\mathbf{v} + \mathbf{p}\)</span></p>
 <ul class="simple">
-<li><p>ベクトルを変換する（逆変換）</p></li>
+<li><p>method: <strong>inverse_transform_vector</strong> / ベクトルを変換する（逆変換）</p></li>
 </ul>
 <p>ワールド座標系で表現されたベクトルのローカル座標系Tへの変換</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
@@ -315,7 +315,7 @@
 <h3>座標系を変更するメソッド<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
 <p>以下で、A は、coordinatesクラスのインスタンスである。</p>
 <ul class="simple">
-<li><p>逆変換を表す変換を得る</p></li>
+<li><p>method: <strong>inverse_transformation</strong> / 逆変換を表す変換を得る</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 </pre></div>
@@ -328,7 +328,7 @@
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
 <ul class="simple">
-<li><p>2つの座標間の変換を得る</p></li>
+<li><p>method: <strong>transformation</strong> / 2つの座標間の変換を得る</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
@@ -346,12 +346,30 @@
 <li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
 </ul>
 <p><span class="math notranslate nohighlight">\(W^{-1}AT^{-1}W\)</span> が返る。</p>
+<ul class="simple">
+<li><p>method: <strong>get_transformed</strong> / 変換を適用した結果を得る</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">get_transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
+<ul class="simple">
+<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
+<ul class="simple">
+<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
 </section>
 <section id="methods-to-modify-itself">
 <h3>自身のインスタンスの値を変更するメソッド<a class="headerlink" href="#methods-to-modify-itself" title="Link to this heading"></a></h3>
 <p>以下で、 <span class="math notranslate nohighlight">\(\leftarrow\)</span> は代入を表す。</p>
 <ul class="simple">
-<li><p>新しい変換の代入</p></li>
+<li><p>method: <strong>newcoords</strong> / 新しい変換の代入</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
@@ -359,7 +377,7 @@
 <p>attributes pos と rot に値が代入される。</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
 <ul class="simple">
-<li><p>座標系への移動</p></li>
+<li><p>method: <strong>move_to</strong> / 座標系への移動</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
@@ -377,7 +395,7 @@
 </ul>
 <p><span class="math notranslate nohighlight">\(T \leftarrow WA\)</span></p>
 <ul class="simple">
-<li><p>平行移動</p></li>
+<li><p>method: <strong>translate</strong> / 平行移動</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
@@ -396,7 +414,7 @@
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> は W の回転行列</p>
 <ul class="simple">
-<li><p>3次元位置への配置</p></li>
+<li><p>method: <strong>locate</strong> / 3次元位置への配置</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
@@ -415,7 +433,7 @@
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> は Wの回転行列、<span class="math notranslate nohighlight">\(\mathbf{p}_{W}\)</span> は Wの3次元位置。</p>
 <ul class="simple">
-<li><p>変換を適用する</p></li>
+<li><p>method: <strong>transform</strong> / 2つの座標間の変換を得る</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
@@ -435,6 +453,9 @@
 </section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords00.ipynb">https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords00.ipynb</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords01.ipynb">https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords01.ipynb</a></p>
+<p><a class="reference external" href="https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_cascaded_coordinates.ipynb">https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_cascaded_coordinates.ipynb</a></p>
 </section>
 </section>
 <section id="reference-book">

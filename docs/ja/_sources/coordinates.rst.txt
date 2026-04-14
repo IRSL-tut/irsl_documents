@@ -239,7 +239,7 @@ In the following,
 :math:`\mathbf{v}` is 3D position vector (numpy.array).
 Folowing 4 functions do not change the input value.
 
-- Rotating vector
+- method: **rotate_vector** / Rotating vector
 
 .. code-block:: python
 
@@ -251,7 +251,7 @@ Mathmatical representation of a return value is
 
 :math:`\mathbf{R} \mathbf{v}`
 
-- Rotating vector (inverse-rotation)
+- method: **inverse_rotate_vector** / Rotating vector (inverse-rotation)
 
 .. code-block:: python
 
@@ -261,7 +261,7 @@ Mathmatical representation of a return value is
 
 :math:`\mathbf{v}^T \mathbf{R}`
 
-- Transforming vector
+- method: **transform_vector** / Transforming vector
 
 Converts a vector represented in a local coordinate system T
 to a vector represented in the world coordinate system.
@@ -274,7 +274,7 @@ Mathmatical representation of a return value is
 
 :math:`\mathbf{R}\mathbf{v} + \mathbf{p}`
 
-- Transforming vector(inverse-transformation)
+- method: **inverse_transform_vector** / Transforming vector(inverse-transformation)
 
 Converts a vector represented in the world coordinate system.
 to a vector represented in a local coordinate system T.
@@ -309,7 +309,7 @@ Methods to return a coordinate (without modifying itself)
 
 In the following, A is an instance of the coordinates class.
 
-- Getting inverse-transformation
+- method: **inverse_transformation** / Getting inverse-transformation
 
 .. code-block:: python
 
@@ -325,7 +325,7 @@ Mathmatical representation of a return value is following.
    \mathbf{0}  & 1
    \end{pmatrix}
 
-- Getting transformation between coordinates
+- method: **transformation** / Getting transformation between coordinates
 
 .. code-block:: python
 
@@ -346,13 +346,32 @@ Mathmatical representation of a return value is following.
 :math:`W^{-1}AT^{-1}W` is returned
 
 
+- method: **get_transformed** / Making transformed coordinates
+
+.. code-block:: python
+
+    >>> result = T.get_transform(A, wrt)
+
+- If *wrt* = coordinates.wrt.local
+
+:math:`T \leftarrow TA`
+
+- If *wrt* = coordinates.wrt.world
+
+:math:`T \leftarrow AT`
+
+- If *wrt* = W (coordinates class)
+
+:math:`T \leftarrow \left( W A W^{-1} \right) T`
+
+
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Methods to modify itself
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the following, :math:`\leftarrow` represents substitution.
 
-- Setting new coordinates
+- method: **newcoords** / Setting new coordinates
 
 .. code-block:: python
 
@@ -362,7 +381,7 @@ Attributes pos and rot is substituted
 
 :math:`T \leftarrow A`
 
-- Moving to new coordinates
+- method: **move_to** / Moving to new coordinates
 
 .. code-block:: python
 
@@ -380,7 +399,7 @@ Attributes pos and rot is substituted
 
 :math:`T \leftarrow WA`
 
-- Translating
+- method: **translate** / Translating
 
 .. code-block:: python
 
@@ -400,7 +419,7 @@ Attributes pos and rot is substituted
 
 :math:`\mathbf{R}_{W}` is rotation matrix of W
 
-- Locating
+- method: **locate** / Locating
 
 .. code-block:: python
 
@@ -420,7 +439,7 @@ Attributes pos and rot is substituted
 
 :math:`\mathbf{R}_{W}` is rotation matrix of W, and :math:`\mathbf{p}_{W}` is 3D position of W.
 
-- Transforming
+- method: **transform** / Transforming
 
 .. code-block:: python
 
@@ -442,6 +461,12 @@ Attributes pos and rot is substituted
 ^^^^^^^^
 Examples
 ^^^^^^^^
+
+https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords00.ipynb
+
+https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords01.ipynb
+
+https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_cascaded_coordinates.ipynb
 
 **************
 Reference book
