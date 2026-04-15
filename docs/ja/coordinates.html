@@ -67,9 +67,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#relation-between-system-of-coordinates-and-coordinates-class">座標系とcoordinatesクラスの関係</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix">初期化と回転行列と３次元位置の取り出し</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#properties">プロパティ</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">ベクトルを変換するメソッド</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">ベクトルを変換するメソッド（入力オブジェクトの値を変える）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">座標系を変更するメソッド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">座標系を返すメソッド(自身のインスタンスの値を変更しない)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">自身のインスタンスの値を変更するメソッド</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
@@ -211,6 +212,9 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coordinates</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span> <span class="c1">### 4x4 homogeneous transformation matrix</span>
 </pre></div>
 </div>
+</section>
+<section id="properties">
+<h3>プロパティ<a class="headerlink" href="#properties" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>3次元位置のゲットとセット(attribute pos へのアクセス)</p></li>
 </ul>
@@ -312,7 +316,7 @@
 </div>
 </section>
 <section id="methods-to-return-a-coordinate-without-modifying-itself">
-<h3>座標系を変更するメソッド<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
+<h3>座標系を返すメソッド(自身のインスタンスの値を変更しない)<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
 <p>以下で、A は、coordinatesクラスのインスタンスである。</p>
 <ul class="simple">
 <li><p>method: <strong>inverse_transformation</strong> / 逆変換を表す変換を得る</p></li>
