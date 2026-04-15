@@ -73,17 +73,17 @@
 <li class="toctree-l4"><a class="reference internal" href="#quaternion">quaternion</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rpy">RPY</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#angleaxis">angleAxis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cnoidposition">cnoidPosition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#homogeneoustransformation">homogeneousTransformation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">ベクトルを変換するメソッド</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">変換したベクトルを返すメソッド(元のベクトルを変更しない)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#rotate-vector-vec">rotate_vector(vec)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inverse-rotate-vector-vec">inverse_rotate_vector(vec)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#transform-vector-vec">transform_vector(vec)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inverse-transform-vector-vec">inverse_transform_vector(vec)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">ベクトルを返すメソッド（元のベクトルは変更しない）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">ベクトルを座標系を使って変換するメソッド（元のベクトルを変更する）</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">座標系を返すメソッド(自身のインスタンスの値を変更しない)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#inverse-transformation">inverse_transformation()</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#transformation-target-coords-wrt">transformation(target_coords, [ wrt ])</a></li>
@@ -283,10 +283,10 @@
 </pre></div>
 </div>
 </section>
-<section id="cnoidposition">
-<h4>cnoidPosition<a class="headerlink" href="#cnoidposition" title="Link to this heading"></a></h4>
-<p>4x4同時変換行列のゲットとセット</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span>
+<section id="homogeneoustransformation">
+<h4>homogeneousTransformation<a class="headerlink" href="#homogeneoustransformation" title="Link to this heading"></a></h4>
+<p>Getting and setting 4x4 homogeneous transformation matrix (access attribute homogeneousTransformation)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">homogeneousTransformation</span>
 <span class="go">array([[ 0., -1.,  0.,  1.],</span>
 <span class="go">       [ 1.,  0.,  0.,  2.],</span>
 <span class="go">       [ 0.,  0.,  1.,  3.],</span>
@@ -296,7 +296,7 @@
 </section>
 </section>
 <section id="methods-to-convert-a-vector">
-<h3>ベクトルを変換するメソッド<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
+<h3>変換したベクトルを返すメソッド(元のベクトルを変更しない)<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
 <p>以下、 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> は3次元ベクトル (numpy.array) である。以下の4つの関数は入力オブジェクトの値を変更しない。</p>
 <section id="rotate-vector-vec">
 <h4>rotate_vector(vec)<a class="headerlink" href="#rotate-vector-vec" title="Link to this heading"></a></h4>
@@ -352,7 +352,7 @@
 </section>
 </section>
 <section id="methods-to-convert-a-vector-change-input-value">
-<h3>ベクトルを返すメソッド（元のベクトルは変更しない）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
+<h3>ベクトルを座標系を使って変換するメソッド（元のベクトルを変更する）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
 <p>これらの関数は入力オブジェクトの値を変更する。</p>
 <p>入力オブジェクトの値は返り値と同じ値になる。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
