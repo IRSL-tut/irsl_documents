@@ -183,6 +183,10 @@ Mathmatical representaion of T is following.
     >>> coordinates(v, numpy.array([0, 0, 0, 1])) ### set pos and rot by quaternion
     >>> coordinates(numpy.array([[0, -1, 0, 0],[1, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]) ### 4x4 homogeneous transformation matrix
 
+^^^^^^^^^^
+Properties
+^^^^^^^^^^
+
 - Getting and setting 3D position (access attribute pos)
 
 .. code-block:: python
