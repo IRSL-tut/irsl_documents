@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 14:01+0900\n"
+"POT-Creation-Date: 2026-04-15 18:07+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,18 +316,20 @@ msgid "Getting and setting angle-axis (access attribute angleAxis)"
 msgstr "軸回り回転(AngleAxis)のゲットとセット"
 
 #: ../../coordinates.rst:248
-msgid "cnoidPosition"
-msgstr ""
+#, fuzzy
+msgid "homogeneousTransformation"
+msgstr "同時変換行列"
 
 #: ../../coordinates.rst:250
+#, fuzzy
 msgid ""
 "Getting and setting 4x4 homogeneous transformation matrix (access "
-"attribute cnoidPosition)"
+"attribute homogeneousTransformation)"
 msgstr "4x4同時変換行列のゲットとセット"
 
 #: ../../coordinates.rst:263
 msgid "Methods to convert a vector"
-msgstr "ベクトルを変換するメソッド"
+msgstr "変換したベクトルを返すメソッド(元のベクトルを変更しない)"
 
 #: ../../coordinates.rst:265
 #, python-brace-format
@@ -409,7 +411,7 @@ msgstr ""
 
 #: ../../coordinates.rst:339
 msgid "Methods to convert a vector(change input value)"
-msgstr "ベクトルを返すメソッド（元のベクトルは変更しない）"
+msgstr "ベクトルを座標系を使って変換するメソッド（元のベクトルを変更する）"
 
 #: ../../coordinates.rst:341
 msgid "There are functions which change the input value."
@@ -665,5 +667,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Locating"
+#~ msgstr ""
+
+#~ msgid "cnoidPosition"
 #~ msgstr ""
 

@@ -243,15 +243,15 @@ Getting and setting angle-axis (access attribute angleAxis)
     >>> T.angleAxis
     array([0.        , 0.        , 1.        , 1.57079633])
 
-.............
-cnoidPosition
-.............
+.........................
+homogeneousTransformation
+.........................
 
-Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
+Getting and setting 4x4 homogeneous transformation matrix (access attribute homogeneousTransformation)
 
 .. code-block:: python
 
-    >>> T.cnoidPosition
+    >>> T.homogeneousTransformation
     array([[ 0., -1.,  0.,  1.],
            [ 1.,  0.,  0.,  2.],
            [ 0.,  0.,  1.,  3.],
