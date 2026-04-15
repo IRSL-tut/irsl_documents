@@ -186,15 +186,22 @@ Mathmatical representaion of T is following.
 ^^^^^^^^^^
 Properties
 ^^^^^^^^^^
+...
+pos
+...
 
-- Getting and setting 3D position (access attribute pos)
+Getting and setting 3D position (access attribute pos)
 
 .. code-block:: python
 
     >>> T.pos
     array([1., 2., 3.])
 
-- Getting and setting Rotation matrix (access attribute rot)
+...
+rot
+...
+
+Getting and setting Rotation matrix (access attribute rot)
 
 .. code-block:: python
 
@@ -203,28 +210,44 @@ Properties
            [ 1.,  0.,  0.],
            [ 0.,  0.,  1.]])
 
-- Getting and setting quaternion (access attribute quaternion)
+..........
+quaternion
+..........
+
+Getting and setting quaternion (access attribute quaternion)
 
 .. code-block:: python
 
     >>> T.quaternion
     array([0.        , 0.        , 0.70710678, 0.70710678])
 
-- Getting and setting roll-pitch-yaw angle (access attribute RPY)
+...
+RPY
+...
+
+Getting and setting roll-pitch-yaw angle (access attribute RPY)
 
 .. code-block:: python
 
     >>> T.RPY
     array([ 0.        , -0.        ,  1.57079633])
 
-- Getting and setting angle-axis (access attribute angleAxis)
+.........
+angleAxis
+.........
+
+Getting and setting angle-axis (access attribute angleAxis)
 
 .. code-block:: python
 
     >>> T.angleAxis
     array([0.        , 0.        , 1.        , 1.57079633])
 
-- Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
+.............
+cnoidPosition
+.............
+
+Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)
 
 .. code-block:: python
 
@@ -243,7 +266,11 @@ In the following,
 :math:`\mathbf{v}` is 3D position vector (numpy.array).
 Folowing 4 functions do not change the input value.
 
-- method: **rotate_vector** / Rotating vector
+..................
+rotate_vector(vec)
+..................
+
+Rotating vector
 
 .. code-block:: python
 
@@ -251,21 +278,31 @@ Folowing 4 functions do not change the input value.
     >>> T.rotate_vector(v)
     array([-0.2,  0.1,  0.3])
 
-Mathmatical representation of a return value is
+.. note::
+  Mathmatical representation of a return value is
+  
+  :math:`\mathbf{R} \mathbf{v}`
 
-:math:`\mathbf{R} \mathbf{v}`
+..........................
+inverse_rotate_vector(vec)
+..........................
 
-- method: **inverse_rotate_vector** / Rotating vector (inverse-rotation)
+Rotating vector (inverse-rotation)
 
 .. code-block:: python
 
     >>> T.inverse_rotate_vector(v)
 
-Mathmatical representation of a return value is
+.. note::
+  Mathmatical representation of a return value is
+  
+  :math:`\mathbf{v}^T \mathbf{R}`
 
-:math:`\mathbf{v}^T \mathbf{R}`
+.....................
+transform_vector(vec)
+.....................
 
-- method: **transform_vector** / Transforming vector
+Transforming vector
 
 Converts a vector represented in a local coordinate system T
 to a vector represented in the world coordinate system.
@@ -274,11 +311,16 @@ to a vector represented in the world coordinate system.
 
     >>> T.transform_vector(v)
 
-Mathmatical representation of a return value is
+.. note::
+  Mathmatical representation of a return value is
+  
+  :math:`\mathbf{R}\mathbf{v} + \mathbf{p}`
 
-:math:`\mathbf{R}\mathbf{v} + \mathbf{p}`
+.............................
+inverse_transform_vector(vec)
+.............................
 
-- method: **inverse_transform_vector** / Transforming vector(inverse-transformation)
+Transforming vector(inverse-transformation)
 
 Converts a vector represented in the world coordinate system.
 to a vector represented in a local coordinate system T.
@@ -287,9 +329,10 @@ to a vector represented in a local coordinate system T.
 
     >>> T.inverse_transform_vector(v)
 
-Mathmatical representation of a return value is
-
-:math:`\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)`
+.. note::
+  Mathmatical representation of a return value is
+  
+  :math:`\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)`
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Methods to convert a vector(change input value)
@@ -313,60 +356,74 @@ Methods to return a coordinate (without modifying itself)
 
 In the following, A is an instance of the coordinates class.
 
-- method: **inverse_transformation** / Getting inverse-transformation
+........................
+inverse_transformation()
+........................
+
+Getting inverse transformation of self instance
 
 .. code-block:: python
 
     >>> T.inverse_transformation()
 
-Returns inverse transformation.
+.. note::
+  Mathmatical representation of a return value is following.
+  
+  .. math::
+     T^{-1} = \begin{pmatrix}
+     \mathbf{R}^{-1}  & - \mathbf{R}^{-1}\mathbf{p} \\
+     \mathbf{0}  & 1
+     \end{pmatrix}
 
-Mathmatical representation of a return value is following.
+......................................
+transformation(target_coords, [ wrt ])
+......................................
 
-.. math::
-   T^{-1} = \begin{pmatrix}
-   \mathbf{R}^{-1}  & - \mathbf{R}^{-1}\mathbf{p} \\
-   \mathbf{0}  & 1
-   \end{pmatrix}
-
-- method: **transformation** / Getting transformation between coordinates
+Getting transformation between coordinates
 
 .. code-block:: python
 
     >>> T.transformation(A, wrt)
 
-*wrt* is an optional value and defult value is 'local'
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`T^{-1}A` is returned
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`AT^{-1}` is returned
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`W^{-1}AT^{-1}W` is returned
 
-- If *wrt* = coordinates.wrt.local
+.......................................
+get_transformed(target_coords, [ wrt ])
+.......................................
 
-:math:`T^{-1}A` is returned
-
-- If *wrt* = coordinates.wrt.world
-
-:math:`AT^{-1}` is returned
-
-- If *wrt* = W (coordinates class)
-
-:math:`W^{-1}AT^{-1}W` is returned
-
-
-- method: **get_transformed** / Making transformed coordinates
+Getting transformed coords without changing self instance
 
 .. code-block:: python
 
     >>> result = T.get_transform(A, wrt)
 
-- If *wrt* = coordinates.wrt.local
-
-:math:`T \leftarrow TA`
-
-- If *wrt* = coordinates.wrt.world
-
-:math:`T \leftarrow AT`
-
-- If *wrt* = W (coordinates class)
-
-:math:`T \leftarrow \left( W A W^{-1} \right) T`
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`TA`
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`AT`
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`\left( W A W^{-1} \right) T`
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -375,92 +432,124 @@ Methods to modify itself
 
 In the following, :math:`\leftarrow` represents substitution.
 
-- method: **newcoords** / Setting new coordinates
+........................
+newcoords(target_coords)
+........................
+
+Setting coordinates to self
 
 .. code-block:: python
 
     >>> T.newcoords(A)
 
-Attributes pos and rot is substituted
+.. note::
+  Attributes pos and rot is substituted
+  
+  :math:`T \leftarrow A`
 
-:math:`T \leftarrow A`
+...............................
+move_to(target_coords, [ wrt ])
+...............................
 
-- method: **move_to** / Moving to new coordinates
+Moving self to target_coords
 
 .. code-block:: python
 
     >>> T.move_to(A, wrt)
 
-- If *wrt* = coordinates.wrt.local
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`T \leftarrow TA`
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`T \leftarrow A`
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`T \leftarrow WA`
 
-:math:`T \leftarrow TA`
+.......................
+translate(vec, [ wrt ])
+.......................
 
-- If *wrt* = coordinates.wrt.world
-
-:math:`T \leftarrow A`
-
-- If *wrt* = W (coordinates class)
-
-:math:`T \leftarrow WA`
-
-- method: **translate** / Translating
+Translating self by the vector
 
 .. code-block:: python
 
     >>> T.translate(v, wrt)
 
-- If *wrt* = coordinates.wrt.local
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}`
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}`
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}`
+  
+  :math:`\mathbf{R}_{W}` is rotation matrix of W
 
-:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}`
+....................
+locate(vec, [ wrt ])
+....................
 
-- If *wrt* = coordinates.wrt.world
-
-:math:`\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}`
-
-- If *wrt* = W (coordinates class)
-
-:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}`
-
-:math:`\mathbf{R}_{W}` is rotation matrix of W
-
-- method: **locate** / Locating
+Locating self to the position
 
 .. code-block:: python
 
     >>> T.locate(v, wrt)
 
-- If *wrt* = coordinates.wrt.local
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}`
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{v}`
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}`
+  
+  :math:`\mathbf{R}_{W}` is rotation matrix of W, and :math:`\mathbf{p}_{W}` is 3D position of W.
 
-:math:`\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}`
+.................................
+transform(target_coords, [ wrt ])
+.................................
 
-- If *wrt* = coordinates.wrt.world
-
-:math:`\mathbf{p} \leftarrow \mathbf{v}`
-
-- If *wrt* = W (coordinates class)
-
-:math:`\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}`
-
-:math:`\mathbf{R}_{W}` is rotation matrix of W, and :math:`\mathbf{p}_{W}` is 3D position of W.
-
-- method: **transform** / Transforming
+Transforming self by the coordinates
 
 .. code-block:: python
 
     >>> T.transform(A, wrt)
 
-- If *wrt* = coordinates.wrt.local
-
-:math:`T \leftarrow TA`
-
-- If *wrt* = coordinates.wrt.world
-
-:math:`T \leftarrow AT`
-
-- If *wrt* = W (coordinates class)
-
-:math:`T \leftarrow \left( W A W^{-1} \right) T`
-
+.. note::
+  *wrt* is an optional value and defult value is 'local'
+  
+  If *wrt* = coordinates.wrt.local
+  
+  :math:`T \leftarrow TA`
+  
+  If *wrt* = coordinates.wrt.world
+  
+  :math:`T \leftarrow AT`
+  
+  If *wrt* = W (coordinates class)
+  
+  :math:`T \leftarrow \left( W A W^{-1} \right) T`
 
 ^^^^^^^^
 Examples

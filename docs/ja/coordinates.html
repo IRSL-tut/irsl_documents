@@ -67,11 +67,37 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#relation-between-system-of-coordinates-and-coordinates-class">座標系とcoordinatesクラスの関係</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix">初期化と回転行列と３次元位置の取り出し</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#properties">プロパティ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">ベクトルを変換するメソッド</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">ベクトルを変換するメソッド（入力オブジェクトの値を変える）</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">座標系を返すメソッド(自身のインスタンスの値を変更しない)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">自身のインスタンスの値を変更するメソッド</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#properties">プロパティ</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pos">pos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rot">rot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quaternion">quaternion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rpy">RPY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#angleaxis">angleAxis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoidposition">cnoidPosition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">ベクトルを変換するメソッド</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rotate-vector-vec">rotate_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-rotate-vector-vec">inverse_rotate_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transform-vector-vec">transform_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-transform-vector-vec">inverse_transform_vector(vec)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">ベクトルを返すメソッド（元のベクトルは変更しない）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">座標系を返すメソッド(自身のインスタンスの値を変更しない)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-transformation">inverse_transformation()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transformation-target-coords-wrt">transformation(target_coords, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-transformed-target-coords-wrt">get_transformed(target_coords, [ wrt ])</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">自身のインスタンスの値を変更するメソッド</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#newcoords-target-coords">newcoords(target_coords)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#move-to-target-coords-wrt">move_to(target_coords, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#translate-vec-wrt">translate(vec, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locate-vec-wrt">locate(vec, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transform-target-coords-wrt">transform(target_coords, [ wrt ])</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
@@ -215,46 +241,51 @@
 </section>
 <section id="properties">
 <h3>プロパティ<a class="headerlink" href="#properties" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>3次元位置のゲットとセット(attribute pos へのアクセス)</p></li>
-</ul>
+<section id="pos">
+<h4>pos<a class="headerlink" href="#pos" title="Link to this heading"></a></h4>
+<p>3次元位置のゲットとセット(attribute pos へのアクセス)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span>
 <span class="go">array([1., 2., 3.])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>回転行列のゲットとセット(attribute rot へのアクセス)</p></li>
-</ul>
+</section>
+<section id="rot">
+<h4>rot<a class="headerlink" href="#rot" title="Link to this heading"></a></h4>
+<p>回転行列のゲットとセット(attribute rot へのアクセス)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span>
 <span class="go">array([[ 0., -1.,  0.],</span>
 <span class="go">       [ 1.,  0.,  0.],</span>
 <span class="go">       [ 0.,  0.,  1.]])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>クオータニオンのゲットとセット</p></li>
-</ul>
+</section>
+<section id="quaternion">
+<h4>quaternion<a class="headerlink" href="#quaternion" title="Link to this heading"></a></h4>
+<p>クオータニオンのゲットとセット</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span>
 <span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>RPY角度のゲットとセット</p></li>
-</ul>
+</section>
+<section id="rpy">
+<h4>RPY<a class="headerlink" href="#rpy" title="Link to this heading"></a></h4>
+<p>RPY角度のゲットとセット</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span>
 <span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>軸回り回転(AngleAxis)のゲットとセット</p></li>
-</ul>
+</section>
+<section id="angleaxis">
+<h4>angleAxis<a class="headerlink" href="#angleaxis" title="Link to this heading"></a></h4>
+<p>軸回り回転(AngleAxis)のゲットとセット</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span>
 <span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>4x4同時変換行列のゲットとセット</p></li>
-</ul>
+</section>
+<section id="cnoidposition">
+<h4>cnoidPosition<a class="headerlink" href="#cnoidposition" title="Link to this heading"></a></h4>
+<p>4x4同時変換行列のゲットとセット</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span>
 <span class="go">array([[ 0., -1.,  0.,  1.],</span>
 <span class="go">       [ 1.,  0.,  0.,  2.],</span>
@@ -263,48 +294,65 @@
 </pre></div>
 </div>
 </section>
+</section>
 <section id="methods-to-convert-a-vector">
 <h3>ベクトルを変換するメソッド<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
 <p>以下、 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> は3次元ベクトル (numpy.array) である。以下の4つの関数は入力オブジェクトの値を変更しない。</p>
-<ul class="simple">
-<li><p>method: <strong>rotate_vector</strong> / ベクトルを回転させる</p></li>
-</ul>
+<section id="rotate-vector-vec">
+<h4>rotate_vector(vec)<a class="headerlink" href="#rotate-vector-vec" title="Link to this heading"></a></h4>
+<p>ベクトルを回転させる</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 <span class="go">array([-0.2,  0.1,  0.3])</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R} \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>inverse_rotate_vector</strong> / ベクトルを回転させる（逆回転）</p></li>
-</ul>
+</div>
+</section>
+<section id="inverse-rotate-vector-vec">
+<h4>inverse_rotate_vector(vec)<a class="headerlink" href="#inverse-rotate-vector-vec" title="Link to this heading"></a></h4>
+<p>ベクトルを回転させる（逆回転）</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{v}^T \mathbf{R}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>transform_vector</strong> / ベクトルを変換する</p></li>
-</ul>
+</div>
+</section>
+<section id="transform-vector-vec">
+<h4>transform_vector(vec)<a class="headerlink" href="#transform-vector-vec" title="Link to this heading"></a></h4>
+<p>ベクトルを座標系を使って変換する</p>
 <p>ローカル座標系Tで表現されたベクトルのワールド座標系への変換</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}\mathbf{v} + \mathbf{p}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>inverse_transform_vector</strong> / ベクトルを変換する（逆変換）</p></li>
-</ul>
+</div>
+</section>
+<section id="inverse-transform-vector-vec">
+<h4>inverse_transform_vector(vec)<a class="headerlink" href="#inverse-transform-vector-vec" title="Link to this heading"></a></h4>
+<p>ベクトルを座標系を使って変換する（逆変換）</p>
 <p>ワールド座標系で表現されたベクトルのローカル座標系Tへの変換</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>返り値の数学的表現は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)\)</span></p>
+</div>
+</section>
 </section>
 <section id="methods-to-convert-a-vector-change-input-value">
-<h3>ベクトルを変換するメソッド（入力オブジェクトの値を変える）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
+<h3>ベクトルを返すメソッド（元のベクトルは変更しない）<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
 <p>これらの関数は入力オブジェクトの値を変更する。</p>
 <p>入力オブジェクトの値は返り値と同じ値になる。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
@@ -318,142 +366,142 @@
 <section id="methods-to-return-a-coordinate-without-modifying-itself">
 <h3>座標系を返すメソッド(自身のインスタンスの値を変更しない)<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
 <p>以下で、A は、coordinatesクラスのインスタンスである。</p>
-<ul class="simple">
-<li><p>method: <strong>inverse_transformation</strong> / 逆変換を表す変換を得る</p></li>
-</ul>
+<section id="inverse-transformation">
+<h4>inverse_transformation()<a class="headerlink" href="#inverse-transformation" title="Link to this heading"></a></h4>
+<p>自身の逆変換を返す</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>逆変換を返す</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>返り値の数学的表現は以下の通り。</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T^{-1} = \begin{pmatrix}
 \mathbf{R}^{-1}  &amp; - \mathbf{R}^{-1}\mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>method: <strong>transformation</strong> / 2つの座標間の変換を得る</p></li>
-</ul>
+</div>
+</section>
+<section id="transformation-target-coords-wrt">
+<h4>transformation(target_coords, [ wrt ])<a class="headerlink" href="#transformation-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>2つの座標間の変換を得る</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
 <p><span class="math notranslate nohighlight">\(T^{-1}A\)</span> が返る。</p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
 <p><span class="math notranslate nohighlight">\(AT^{-1}\)</span> が返る。</p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
 <p><span class="math notranslate nohighlight">\(W^{-1}AT^{-1}W\)</span> が返る。</p>
-<ul class="simple">
-<li><p>method: <strong>get_transformed</strong> / 変換を適用した結果を得る</p></li>
-</ul>
+</div>
+</section>
+<section id="get-transformed-target-coords-wrt">
+<h4>get_transformed(target_coords, [ wrt ])<a class="headerlink" href="#get-transformed-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>自身のインスタンスの値を変更せずに座標変換した座標系を得る</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">get_transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
+<p><span class="math notranslate nohighlight">\(TA\)</span></p>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
+<p><span class="math notranslate nohighlight">\(AT\)</span></p>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
+<p><span class="math notranslate nohighlight">\(\left( W A W^{-1} \right) T\)</span></p>
+</div>
+</section>
 </section>
 <section id="methods-to-modify-itself">
 <h3>自身のインスタンスの値を変更するメソッド<a class="headerlink" href="#methods-to-modify-itself" title="Link to this heading"></a></h3>
 <p>以下で、 <span class="math notranslate nohighlight">\(\leftarrow\)</span> は代入を表す。</p>
-<ul class="simple">
-<li><p>method: <strong>newcoords</strong> / 新しい変換の代入</p></li>
-</ul>
+<section id="newcoords-target-coords">
+<h4>newcoords(target_coords)<a class="headerlink" href="#newcoords-target-coords" title="Link to this heading"></a></h4>
+<p>自身に新しい座標系をセットする</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>attributes pos と rot に値が代入される。</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>move_to</strong> / 座標系への移動</p></li>
-</ul>
+</div>
+</section>
+<section id="move-to-target-coords-wrt">
+<h4>move_to(target_coords, [ wrt ])<a class="headerlink" href="#move-to-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>自身を対象の座標系へ動かす</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow WA\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>translate</strong> / 平行移動</p></li>
-</ul>
+</div>
+</section>
+<section id="translate-vec-wrt">
+<h4>translate(vec, [ wrt ])<a class="headerlink" href="#translate-vec-wrt" title="Link to this heading"></a></h4>
+<p>ベクトルを用いて平行移動する（自身を変更する）</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> は W の回転行列</p>
-<ul class="simple">
-<li><p>method: <strong>locate</strong> / 3次元位置への配置</p></li>
-</ul>
+</div>
+</section>
+<section id="locate-vec-wrt">
+<h4>locate(vec, [ wrt ])<a class="headerlink" href="#locate-vec-wrt" title="Link to this heading"></a></h4>
+<p>指定された位置に自身を配置する</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> は Wの回転行列、<span class="math notranslate nohighlight">\(\mathbf{p}_{W}\)</span> は Wの3次元位置。</p>
-<ul class="simple">
-<li><p>method: <strong>transform</strong> / 2つの座標間の変換を得る</p></li>
-</ul>
+</div>
+</section>
+<section id="transform-target-coords-wrt">
+<h4>transform(target_coords, [ wrt ])<a class="headerlink" href="#transform-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>座標系を使って自身を変換する（自身の値を変更する）</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.local の時は</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><em>wrt</em> は座標系を表す引数である。デフォルト値は 'local' である。</p>
+<p><em>wrt</em> が coordinates.wrt.local の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が coordinates.wrt.world の時は</p></li>
-</ul>
+<p><em>wrt</em> が coordinates.wrt.world の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
-<ul class="simple">
-<li><p><em>wrt</em> が W (coordinates class) の時は</p></li>
-</ul>
+<p><em>wrt</em> が W (coordinates class) の時は</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
+</div>
+</section>
 </section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>

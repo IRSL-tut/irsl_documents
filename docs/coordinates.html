@@ -66,11 +66,37 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#relation-between-system-of-coordinates-and-coordinates-class">Relation between system of coordinates and coordinates class</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#initializing-and-accessing-to-a-position-and-a-rotation-matrix">Initializing and accessing to a position and a rotation matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#properties">Properties</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">Methods to convert a vector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#properties">Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pos">pos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rot">rot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quaternion">quaternion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rpy">RPY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#angleaxis">angleAxis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoidposition">cnoidPosition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector">Methods to convert a vector</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#rotate-vector-vec">rotate_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-rotate-vector-vec">inverse_rotate_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transform-vector-vec">transform_vector(vec)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-transform-vector-vec">inverse_transform_vector(vec)</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#methods-to-convert-a-vector-change-input-value">Methods to convert a vector(change input value)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">Methods to return a coordinate (without modifying itself)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">Methods to modify itself</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-return-a-coordinate-without-modifying-itself">Methods to return a coordinate (without modifying itself)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-transformation">inverse_transformation()</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transformation-target-coords-wrt">transformation(target_coords, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-transformed-target-coords-wrt">get_transformed(target_coords, [ wrt ])</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods-to-modify-itself">Methods to modify itself</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#newcoords-target-coords">newcoords(target_coords)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#move-to-target-coords-wrt">move_to(target_coords, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#translate-vec-wrt">translate(vec, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locate-vec-wrt">locate(vec, [ wrt ])</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transform-target-coords-wrt">transform(target_coords, [ wrt ])</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
 </ul>
 </li>
@@ -229,46 +255,51 @@ by accessing to properties of coordinates class.</p>
 </section>
 <section id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Getting and setting 3D position (access attribute pos)</p></li>
-</ul>
+<section id="pos">
+<h4>pos<a class="headerlink" href="#pos" title="Link to this heading"></a></h4>
+<p>Getting and setting 3D position (access attribute pos)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">pos</span>
 <span class="go">array([1., 2., 3.])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting Rotation matrix (access attribute rot)</p></li>
-</ul>
+</section>
+<section id="rot">
+<h4>rot<a class="headerlink" href="#rot" title="Link to this heading"></a></h4>
+<p>Getting and setting Rotation matrix (access attribute rot)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rot</span>
 <span class="go">array([[ 0., -1.,  0.],</span>
 <span class="go">       [ 1.,  0.,  0.],</span>
 <span class="go">       [ 0.,  0.,  1.]])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting quaternion (access attribute quaternion)</p></li>
-</ul>
+</section>
+<section id="quaternion">
+<h4>quaternion<a class="headerlink" href="#quaternion" title="Link to this heading"></a></h4>
+<p>Getting and setting quaternion (access attribute quaternion)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">quaternion</span>
 <span class="go">array([0.        , 0.        , 0.70710678, 0.70710678])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting roll-pitch-yaw angle (access attribute RPY)</p></li>
-</ul>
+</section>
+<section id="rpy">
+<h4>RPY<a class="headerlink" href="#rpy" title="Link to this heading"></a></h4>
+<p>Getting and setting roll-pitch-yaw angle (access attribute RPY)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">RPY</span>
 <span class="go">array([ 0.        , -0.        ,  1.57079633])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting angle-axis (access attribute angleAxis)</p></li>
-</ul>
+</section>
+<section id="angleaxis">
+<h4>angleAxis<a class="headerlink" href="#angleaxis" title="Link to this heading"></a></h4>
+<p>Getting and setting angle-axis (access attribute angleAxis)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">angleAxis</span>
 <span class="go">array([0.        , 0.        , 1.        , 1.57079633])</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)</p></li>
-</ul>
+</section>
+<section id="cnoidposition">
+<h4>cnoidPosition<a class="headerlink" href="#cnoidposition" title="Link to this heading"></a></h4>
+<p>Getting and setting 4x4 homogeneous transformation matrix (access attribute cnoidPosition)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">cnoidPosition</span>
 <span class="go">array([[ 0., -1.,  0.,  1.],</span>
 <span class="go">       [ 1.,  0.,  0.,  2.],</span>
@@ -277,49 +308,66 @@ by accessing to properties of coordinates class.</p>
 </pre></div>
 </div>
 </section>
+</section>
 <section id="methods-to-convert-a-vector">
 <h3>Methods to convert a vector<a class="headerlink" href="#methods-to-convert-a-vector" title="Link to this heading"></a></h3>
 <p>In the following,
 <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> is 3D position vector (numpy.array).
 Folowing 4 functions do not change the input value.</p>
-<ul class="simple">
-<li><p>method: <strong>rotate_vector</strong> / Rotating vector</p></li>
-</ul>
+<section id="rotate-vector-vec">
+<h4>rotate_vector(vec)<a class="headerlink" href="#rotate-vector-vec" title="Link to this heading"></a></h4>
+<p>Rotating vector</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 <span class="go">array([-0.2,  0.1,  0.3])</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R} \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>inverse_rotate_vector</strong> / Rotating vector (inverse-rotation)</p></li>
-</ul>
+</div>
+</section>
+<section id="inverse-rotate-vector-vec">
+<h4>inverse_rotate_vector(vec)<a class="headerlink" href="#inverse-rotate-vector-vec" title="Link to this heading"></a></h4>
+<p>Rotating vector (inverse-rotation)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_rotate_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{v}^T \mathbf{R}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>transform_vector</strong> / Transforming vector</p></li>
-</ul>
+</div>
+</section>
+<section id="transform-vector-vec">
+<h4>transform_vector(vec)<a class="headerlink" href="#transform-vector-vec" title="Link to this heading"></a></h4>
+<p>Transforming vector</p>
 <p>Converts a vector represented in a local coordinate system T
 to a vector represented in the world coordinate system.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}\mathbf{v} + \mathbf{p}\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>inverse_transform_vector</strong> / Transforming vector(inverse-transformation)</p></li>
-</ul>
+</div>
+</section>
+<section id="inverse-transform-vector-vec">
+<h4>inverse_transform_vector(vec)<a class="headerlink" href="#inverse-transform-vector-vec" title="Link to this heading"></a></h4>
+<p>Transforming vector(inverse-transformation)</p>
 <p>Converts a vector represented in the world coordinate system.
 to a vector represented in a local coordinate system T.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transform_vector</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Mathmatical representation of a return value is</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}^{-1}\left( \mathbf{v} - \mathbf{p} \right)\)</span></p>
+</div>
+</section>
 </section>
 <section id="methods-to-convert-a-vector-change-input-value">
 <h3>Methods to convert a vector(change input value)<a class="headerlink" href="#methods-to-convert-a-vector-change-input-value" title="Link to this heading"></a></h3>
@@ -336,142 +384,142 @@ to a vector represented in a local coordinate system T.</p>
 <section id="methods-to-return-a-coordinate-without-modifying-itself">
 <h3>Methods to return a coordinate (without modifying itself)<a class="headerlink" href="#methods-to-return-a-coordinate-without-modifying-itself" title="Link to this heading"></a></h3>
 <p>In the following, A is an instance of the coordinates class.</p>
-<ul class="simple">
-<li><p>method: <strong>inverse_transformation</strong> / Getting inverse-transformation</p></li>
-</ul>
+<section id="inverse-transformation">
+<h4>inverse_transformation()<a class="headerlink" href="#inverse-transformation" title="Link to this heading"></a></h4>
+<p>Getting inverse transformation of self instance</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">inverse_transformation</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Returns inverse transformation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Mathmatical representation of a return value is following.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}T^{-1} = \begin{pmatrix}
 \mathbf{R}^{-1}  &amp; - \mathbf{R}^{-1}\mathbf{p} \\
 \mathbf{0}  &amp; 1
 \end{pmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p>method: <strong>transformation</strong> / Getting transformation between coordinates</p></li>
-</ul>
+</div>
+</section>
+<section id="transformation-target-coords-wrt">
+<h4>transformation(target_coords, [ wrt ])<a class="headerlink" href="#transformation-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>Getting transformation between coordinates</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transformation</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p><em>wrt</em> is an optional value and defult value is ‘local’</p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
 <p><span class="math notranslate nohighlight">\(T^{-1}A\)</span> is returned</p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
 <p><span class="math notranslate nohighlight">\(AT^{-1}\)</span> is returned</p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
+<p>If <em>wrt</em> = W (coordinates class)</p>
 <p><span class="math notranslate nohighlight">\(W^{-1}AT^{-1}W\)</span> is returned</p>
-<ul class="simple">
-<li><p>method: <strong>get_transformed</strong> / Making transformed coordinates</p></li>
-</ul>
+</div>
+</section>
+<section id="get-transformed-target-coords-wrt">
+<h4>get_transformed(target_coords, [ wrt ])<a class="headerlink" href="#get-transformed-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>Getting transformed coords without changing self instance</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">T</span><span class="o">.</span><span class="n">get_transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
-<p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>wrt</em> is an optional value and defult value is ‘local’</p>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
+<p><span class="math notranslate nohighlight">\(TA\)</span></p>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
+<p><span class="math notranslate nohighlight">\(AT\)</span></p>
+<p>If <em>wrt</em> = W (coordinates class)</p>
+<p><span class="math notranslate nohighlight">\(\left( W A W^{-1} \right) T\)</span></p>
+</div>
+</section>
 </section>
 <section id="methods-to-modify-itself">
 <h3>Methods to modify itself<a class="headerlink" href="#methods-to-modify-itself" title="Link to this heading"></a></h3>
 <p>In the following, <span class="math notranslate nohighlight">\(\leftarrow\)</span> represents substitution.</p>
-<ul class="simple">
-<li><p>method: <strong>newcoords</strong> / Setting new coordinates</p></li>
-</ul>
+<section id="newcoords-target-coords">
+<h4>newcoords(target_coords)<a class="headerlink" href="#newcoords-target-coords" title="Link to this heading"></a></h4>
+<p>Setting coordinates to self</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">newcoords</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Attributes pos and rot is substituted</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>move_to</strong> / Moving to new coordinates</p></li>
-</ul>
+</div>
+</section>
+<section id="move-to-target-coords-wrt">
+<h4>move_to(target_coords, [ wrt ])<a class="headerlink" href="#move-to-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>Moving self to target_coords</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>wrt</em> is an optional value and defult value is ‘local’</p>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow A\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
+<p>If <em>wrt</em> = W (coordinates class)</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow WA\)</span></p>
-<ul class="simple">
-<li><p>method: <strong>translate</strong> / Translating</p></li>
-</ul>
+</div>
+</section>
+<section id="translate-vec-wrt">
+<h4>translate(vec, [ wrt ])<a class="headerlink" href="#translate-vec-wrt" title="Link to this heading"></a></h4>
+<p>Translating self by the vector</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>wrt</em> is an optional value and defult value is ‘local’</p>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}\mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}+ \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
+<p>If <em>wrt</em> = W (coordinates class)</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R}_{W}\mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W</p>
-<ul class="simple">
-<li><p>method: <strong>locate</strong> / Locating</p></li>
-</ul>
+</div>
+</section>
+<section id="locate-vec-wrt">
+<h4>locate(vec, [ wrt ])<a class="headerlink" href="#locate-vec-wrt" title="Link to this heading"></a></h4>
+<p>Locating self to the position</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">locate</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>wrt</em> is an optional value and defult value is ‘local’</p>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p} + \mathbf{R} \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{v}\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
+<p>If <em>wrt</em> = W (coordinates class)</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{p} \leftarrow \mathbf{p}_{W} + \mathbf{R}_{W} \mathbf{v}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\mathbf{R}_{W}\)</span> is rotation matrix of W, and <span class="math notranslate nohighlight">\(\mathbf{p}_{W}\)</span> is 3D position of W.</p>
-<ul class="simple">
-<li><p>method: <strong>transform</strong> / Transforming</p></li>
-</ul>
+</div>
+</section>
+<section id="transform-target-coords-wrt">
+<h4>transform(target_coords, [ wrt ])<a class="headerlink" href="#transform-target-coords-wrt" title="Link to this heading"></a></h4>
+<p>Transforming self by the coordinates</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">wrt</span><span class="p">)</span>
 </pre></div>
 </div>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.local</p></li>
-</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>wrt</em> is an optional value and defult value is ‘local’</p>
+<p>If <em>wrt</em> = coordinates.wrt.local</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow TA\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = coordinates.wrt.world</p></li>
-</ul>
+<p>If <em>wrt</em> = coordinates.wrt.world</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow AT\)</span></p>
-<ul class="simple">
-<li><p>If <em>wrt</em> = W (coordinates class)</p></li>
-</ul>
+<p>If <em>wrt</em> = W (coordinates class)</p>
 <p><span class="math notranslate nohighlight">\(T \leftarrow \left( W A W^{-1} \right) T\)</span></p>
+</div>
+</section>
 </section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h3>
