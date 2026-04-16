@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 23:34+0900\n"
+"POT-Creation-Date: 2026-04-16 18:22+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,6 +104,7 @@ msgstr ""
 #: irsl_choreonoid.cnoid_util.fv:14 irsl_choreonoid.cnoid_util.parseURL:12
 #: irsl_choreonoid.make_shapes.makeLineAlignedWall:15
 #: irsl_choreonoid.robot_util.ImportedRobotModel:7
+#: irsl_choreonoid.robot_util.RobotModelWrapped:6
 #: irsl_choreonoid.robot_util.axisAlignedCoords:14
 #: irsl_choreonoid.robot_util.make_coordinates:14
 #: irsl_choreonoid.robot_util.make_coords_map:12 of
@@ -1991,7 +1992,7 @@ msgid "RobotModel is displayed as cnoid.Base.RobotItem"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.__init__:1 of
-msgid "robot model using this class"
+msgid "robot model using in this class"
 msgstr ""
 
 #: irsl_choreonoid.robot_util.RobotModelWrapped.registerNamedPose:1 of
@@ -2713,6 +2714,46 @@ msgstr ""
 #: irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap:10
 #: irsl_choreonoid.robot_util.addDeviceFromMap:10 of
 msgid "The style of dev_map is the same as the returns from getDeviceMap"
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:1 of
+msgid "Load a robot model as a kinematic model from a file."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:3
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:3 of
+msgid "The path to the robot model file to be loaded."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:5 of
+msgid ""
+"Additional keyword arguments to pass to both "
+"irsl_choreonoid.cnoid_util.loadRobot() and the class constructor."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:8
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:8 of
+msgid "An instance of the current class initialized with the loaded robot model."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:10
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:10 of
+msgid "If the specified file does not exist."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModel:11
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:11 of
+msgid "If the robot model file cannot be parsed or loaded."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:1 of
+msgid "Load a robot model as a BodyItem in the item-list."
+msgstr ""
+
+#: irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem:5 of
+msgid ""
+"Additional keyword arguments to pass to both "
+"irsl_choreonoid.cnoid_util.loadRobotItem() and the class constructor."
 msgstr ""
 
 #: irsl_choreonoid.robot_util.ImportedRobotModel:1 of
@@ -4547,5 +4588,25 @@ msgstr "irsl_choreonoid.make_shapes"
 #~ msgid ""
 #~ "0:EmbedModels, 1:LinkToOriginalModelFiles, "
 #~ "2:ReplaceWithStdSceneFiles, 3:ReplaceWithObjModelFiles"
+#~ msgstr ""
+
+#~ msgid "robot model using this class"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "fname (str): The path to the robot"
+#~ " model file to be loaded. **kwargs:"
+#~ " Additional keyword arguments to pass "
+#~ "to both irsl_choreonoid.cnoid_util.loadRobot()"
+#~ msgstr ""
+
+#~ msgid "and the class constructor."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "fname (str): The path to the robot"
+#~ " model file to be loaded. **kwargs:"
+#~ " Additional keyword arguments to pass "
+#~ "to both irsl_choreonoid.cnoid_util.loadRobotItem()"
 #~ msgstr ""
 

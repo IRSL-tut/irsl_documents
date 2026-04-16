@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IRSL python modules \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 18:07+0900\n"
+"POT-Creation-Date: 2026-04-16 18:22+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,12 +316,10 @@ msgid "Getting and setting angle-axis (access attribute angleAxis)"
 msgstr "軸回り回転(AngleAxis)のゲットとセット"
 
 #: ../../coordinates.rst:248
-#, fuzzy
 msgid "homogeneousTransformation"
-msgstr "同時変換行列"
+msgstr ""
 
 #: ../../coordinates.rst:250
-#, fuzzy
 msgid ""
 "Getting and setting 4x4 homogeneous transformation matrix (access "
 "attribute homogeneousTransformation)"
@@ -648,15 +646,21 @@ msgid ""
 "lecture/blob/main/notebooks/cps_lecture_cascaded_coordinates.ipynb"
 msgstr ""
 
-#: ../../coordinates.rst:566
+#: ../../coordinates.rst:564
+msgid ""
+"https://github.com/IRSL-tut/CPS-"
+"lecture/blob/main/notebooks/cps_lecture_coords_with_docs.ipynb"
+msgstr ""
+
+#: ../../coordinates.rst:568
 msgid "Reference book"
 msgstr "参考文献"
 
-#: ../../coordinates.rst:568
+#: ../../coordinates.rst:570
 msgid "実践ロボット制御 https://www.ohmsha.co.jp/book/9784274224300/"
 msgstr ""
 
-#: ../../coordinates.rst:570
+#: ../../coordinates.rst:572
 msgid "第2章 姿勢の記述 及び 第4章 運動学の一般的表現 の内容が参考になる"
 msgstr ""
 
