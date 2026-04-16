@@ -60,6 +60,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.getRPY"><code class="docutils literal notranslate"><span class="pre">coordinates.getRPY()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.getRotationAngle"><code class="docutils literal notranslate"><span class="pre">coordinates.getRotationAngle()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.get_transformed"><code class="docutils literal notranslate"><span class="pre">coordinates.get_transformed()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.homogeneousTransformation"><code class="docutils literal notranslate"><span class="pre">coordinates.homogeneousTransformation</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.init2D"><code class="docutils literal notranslate"><span class="pre">coordinates.init2D()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.inverse"><code class="docutils literal notranslate"><span class="pre">coordinates.inverse()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cnoid.IRSLCoords.coordinates.inverseRotateVector"><code class="docutils literal notranslate"><span class="pre">coordinates.inverseRotateVector()</span></code></a></li>
@@ -278,6 +279,20 @@
 <li><p>get_transformed(self: cnoid.IRSLCoords.coordinates, coords: cnoid.IRSLCoords.coordinates, wrt: cnoid.IRSLCoords.coordinates.wrt = &lt;wrt.local: 1&gt;) -&gt; cnoid.IRSLCoords.coordinates</p></li>
 <li><p>get_transformed(self: cnoid.IRSLCoords.coordinates, arg0: cnoid.IRSLCoords.coordinates, arg1: cnoid.IRSLCoords.coordinates) -&gt; cnoid.IRSLCoords.coordinates</p></li>
 </ol>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cnoid.IRSLCoords.coordinates.homogeneousTransformation">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">homogeneousTransformation</span></span><a class="headerlink" href="#cnoid.IRSLCoords.coordinates.homogeneousTransformation" title="Link to this definition"></a></dt>
+<dd><p>変換行列(Choreonoidで使っている4x4の同時変換行列)</p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>4x4 matrix</p>
+</dd>
+<dt class="field-even">戻り値の型<span class="colon">:</span></dt>
+<dd class="field-even"><p>numpy.array</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">

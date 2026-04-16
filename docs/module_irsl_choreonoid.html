@@ -248,6 +248,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.generateCurrentVisual"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.generateCurrentVisual()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.getDeviceMap"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.getDeviceMap()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.addDeviceFromMap"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.addDeviceFromMap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.loadModel"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.loadModel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem"><code class="docutils literal notranslate"><span class="pre">RobotModelWrapped.loadModelItem()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#irsl_choreonoid.robot_util.ImportedRobotModel"><code class="docutils literal notranslate"><span class="pre">ImportedRobotModel</span></code></a><ul>
@@ -2949,12 +2951,19 @@ base_type : [1,1,1, 1,1,1]</p>
 <dd><p>Bases: <a class="reference internal" href="#irsl_choreonoid.irsl_draw_object.coordsWrapper" title="irsl_choreonoid.irsl_draw_object.coordsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">coordsWrapper</span></code></a></p>
 <p>RobotModel for programming Interactively</p>
 <p>RobotModel is displayed as cnoid.Base.RobotItem</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">robot_kin</span> <span class="o">=</span> <span class="n">RobotModel</span><span class="o">.</span><span class="n">loadMode</span><span class="p">(</span><span class="s1">&#39;/path/to/your/robot.body&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## robot_kin is just kinematic-model of the robot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">robot_itm</span> <span class="o">=</span> <span class="n">RobotModel</span><span class="o">.</span><span class="n">loadModelItem</span><span class="p">(</span><span class="s1">&#39;/path/to/your/robot.body&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">## robot_item is displayed at item-list</span>
+</pre></div>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robot</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.__init__" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>robot</strong> (<a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body"><em>cnoid.Body.Body</em></a><em> or </em><em>cnoid.BodyPlugin.BodyItem</em>) – robot model using this class</p>
+<dd class="field-odd"><p><strong>robot</strong> (<a class="reference internal" href="module_cnoid_body.html#cnoid.Body.Body" title="cnoid.Body.Body"><em>cnoid.Body.Body</em></a><em> or </em><em>cnoid.BodyPlugin.BodyItem</em>) – robot model using in this class</p>
 </dd>
 </dl>
 </dd></dl>
@@ -4048,6 +4057,54 @@ optionally include ‘name’, ‘id’, and other configuration parameters.</p>
 <p class="admonition-title">Note</p>
 <p>The style of dev_map is the same as the returns from getDeviceMap</p>
 </div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.loadModel">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">loadModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.loadModel" title="Link to this definition"></a></dt>
+<dd><p>Load a robot model as a kinematic model from a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fname</strong> (<em>str</em>) – The path to the robot model file to be loaded.</p></li>
+<li><p><strong>**kwargs</strong> – Additional keyword arguments to pass to both irsl_choreonoid.cnoid_util.loadRobot()
+and the class constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the current class initialized with the loaded robot model.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>FileNotFoundError</strong> – If the specified file does not exist.</p></li>
+<li><p><strong>RuntimeError</strong> – If the robot model file cannot be parsed or loaded.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">loadModelItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#irsl_choreonoid.robot_util.RobotModelWrapped.loadModelItem" title="Link to this definition"></a></dt>
+<dd><p>Load a robot model as a BodyItem in the item-list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fname</strong> (<em>str</em>) – The path to the robot model file to be loaded.</p></li>
+<li><p><strong>**kwargs</strong> – Additional keyword arguments to pass to both irsl_choreonoid.cnoid_util.loadRobotItem()
+and the class constructor.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the current class initialized with the loaded robot model.</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>FileNotFoundError</strong> – If the specified file does not exist.</p></li>
+<li><p><strong>RuntimeError</strong> – If the robot model file cannot be parsed or loaded.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>

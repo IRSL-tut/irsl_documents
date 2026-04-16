@@ -561,6 +561,8 @@ https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords01
 
 https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_cascaded_coordinates.ipynb
 
+https://github.com/IRSL-tut/CPS-lecture/blob/main/notebooks/cps_lecture_coords_with_docs.ipynb
+
 **************
 Reference book
 **************
